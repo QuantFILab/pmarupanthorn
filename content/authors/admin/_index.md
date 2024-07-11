@@ -11,7 +11,7 @@ last_name: Marupanthorn
 
 # Status emoji
 status:
-  icon: :fire:
+  icon: 
 
 # Is this the primary user of the site?
 superuser: true
