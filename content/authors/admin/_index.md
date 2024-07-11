@@ -56,7 +56,11 @@ education:
     institution: Heriot-Watt University
     date_start: 2019-08-01
     date_end: 2024-08-08
-        summary: sscsc
+    summary: |
+      Responsibilities include:
+      - Migrated infrastructure to a new data center
+      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+      - lorem ipsum dolor sit amet, consectetur adipiscing elit
   - area: MSc Financial Engineering
     institution: WorldQuant Univeristy
     date_start: 2016-01-01
