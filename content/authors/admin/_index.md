@@ -1,17 +1,17 @@
 ---
 # Display name
-title: 吳健雄
+title: Pasin Marupanthorn
 
 # Name pronunciation (optional)
-name_pronunciation: Chien Shiung Wu
+name_pronunciation: Ph.D, CQF
 
 # Full name (for SEO)
-first_name: Shiung Wu
-last_name: Chien
+first_name: Pasin
+last_name: Marupanthorn
 
 # Status emoji
 status:
-  icon: ☕️
+  icon: :fire:
 
 # Is this the primary user of the site?
 superuser: true
