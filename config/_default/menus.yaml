@@ -28,3 +28,5 @@ main:
   - name: Teaching
     url: teaching/
     weight: 40
+  - name: Blog
+    url: https://quantfilab.github.io/pmarupanthorn-blog/
