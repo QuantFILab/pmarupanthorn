@@ -20,7 +20,7 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Chief Scientist
+role: Quantitative Researcher
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
@@ -74,7 +74,7 @@ education:
     date_end: 2020-12-31
 
 work:
-  - position: Director of Cloud Infrastructure
+  - position: Quantitative Researcher
     company_name: GenCoin
     company_url: ''
     company_logo: ''
@@ -132,12 +132,11 @@ skills:
         icon: camera
 
 languages:
-  - name: English
+  - name: Thai
     percent: 100
-  - name: Chinese
-    percent: 75
-  - name: Portuguese
-    percent: 25
+  - name: English
+    percent: 90
+
 
 # Awards.
 #   Add/remove as many awards below as you like.
@@ -173,4 +172,4 @@ awards:
 
 ## About Me
 
-Chien Shiung Wu is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+My background is in Applied Mathematics, with a keen interest in challenging problems in Finance, Insurance, and Risk Management. I am currently an energetic Quantitative Researcher and University Lecturer. I warmly welcome collaborative work with energetic colleagues who share similar interests. If you are interested in collaborating on research, workshops, seminars, lectures, or teaming up for enjoyable challenges, please feel free to contact me.
