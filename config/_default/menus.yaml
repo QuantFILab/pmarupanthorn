@@ -10,6 +10,9 @@ main:
   - name: Papers
     url: /#papers
     weight: 11
+  - name: Company Assistance
+    url: /#company
+    weight: 11
   - name: Talks
     url: /#talks
     weight: 12
