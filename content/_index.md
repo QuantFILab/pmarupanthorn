@@ -72,7 +72,7 @@ sections:
           - event
     design:
       view: article-grid
-      columns: 4
+      columns: 2
   - block: collection
     id: news
     content:
