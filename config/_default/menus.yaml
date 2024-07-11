@@ -10,9 +10,6 @@ main:
   - name: Papers
     url: /#papers
     weight: 11
-  - name: Company Assistance
-    url: /#company
-    weight: 11
   - name: Talks
     url: /#talks
     weight: 12
@@ -28,3 +25,6 @@ main:
   - name: Teaching
     url: teaching/
     weight: 40
+  - name: Collaboration
+    url: experience/
+    weight: 20
