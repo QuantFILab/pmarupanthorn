@@ -31,18 +31,18 @@ organizations:
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
   - icon: at-symbol
-    url: 'mailto:your-email@example.com'
+    url: 'mailto:quantfilab@gmail.com'
     label: E-mail Me
   - icon: brands/github
-    url: https://github.com/gcushen
+    url: [https://github.com/gcushen](https://github.com/QuantFILab)
   - icon: brands/linkedin
-    url: https://www.linkedin.com/
+    url: https://uk.linkedin.com/in/pasin-marupanthorn
   - icon: academicons/google-scholar
-    url: https://scholar.google.com/
+    url: https://scholar.google.com/citations?user=NcoXQYYAAAAJ&hl=en
   - icon: academicons/researchgate
-    url: https://orcid.org/
+    url: https://www.researchgate.net/profile/Pasin-Marupanthorn
   - icon: academicons/ssrn
-    url: https://orcid.org/
+    url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=5286317
     
 interests:
   - Financial Mathematics
@@ -90,7 +90,18 @@ work:
       - lorem ipsum dolor sit amet, consectetur adipiscing elit
       - lorem ipsum dolor sit amet, consectetur adipiscing elit
       - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - position: Backend Software Engineer
+  - position: LLecturer
+    company_name: X
+    company_url: ''
+    company_logo: ''
+    date_start: 2016-01-01
+    date_end: 2020-12-31
+    summary: |
+      Responsibilities include:
+      - Migrated infrastructure to a new data center
+      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - position: LLecturer
     company_name: X
     company_url: ''
     company_logo: ''
@@ -110,6 +121,9 @@ skills:
       - name: Python
         description: ''
         percent: 80
+      - name: R
+        description: ''
+        percent: 100
         icon: code-bracket
       - name: Data Science
         description: ''
