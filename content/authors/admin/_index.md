@@ -61,6 +61,7 @@ education:
     button:
       text: 'Read Thesis'
       url: 'https://example.com'
+    
   - area: MSc Financial Engineering
     institution: WorldQuant Univeristy
     date_start: 2016-01-01
