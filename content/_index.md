@@ -35,6 +35,7 @@ sections:
       title: 'Current Positions'
       subtitle: ''
       text: |-
+    
     Lecturer
     Quantitaitve Researcher and Principal Investigator, QuantCorner Research Laboratory
     Vice President, Thai Quantitative Analysis and Financial Engineer Association (TQF) 
