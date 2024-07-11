@@ -31,9 +31,9 @@ organizations:
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
   - icon: at-symbol
-    url: quantfilab@gmail.com
+    url: 'quantfilab@gmail.com'
   - icon: brands/github
-    url: [https://github.com/gcushen](https://github.com/QuantFILab)
+    url: https://github.com/QuantFILab
   - icon: brands/linkedin
     url: https://uk.linkedin.com/in/pasin-marupanthorn
   - icon: academicons/google-scholar
