@@ -32,7 +32,7 @@ sections:
           parallax: false
   - block: markdown
     content:
-      title: 'My Research'
+      title: 'Current Positions'
       subtitle: ''
       text: |-
         Use this area to speak to your mission. I'm a research scientist in the Moonshot team at DeepMind. I blog about machine learning, deep learning, and moonshots.
@@ -52,7 +52,7 @@ sections:
         featured_only: true
     design:
       view: article-grid
-      columns: 2
+      columns: 4
   - block: collection
     content:
       title: Recent Publications
@@ -72,7 +72,7 @@ sections:
           - event
     design:
       view: article-grid
-      columns: 1
+      columns: 4
   - block: collection
     id: news
     content:
