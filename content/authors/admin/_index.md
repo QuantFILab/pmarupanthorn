@@ -31,8 +31,7 @@ organizations:
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
   - icon: at-symbol
-    url: 'mailto:quantfilab@gmail.com'
-    label: E-mail Me
+    url: quantfilab@gmail.com
   - icon: brands/github
     url: [https://github.com/gcushen](https://github.com/QuantFILab)
   - icon: brands/linkedin
