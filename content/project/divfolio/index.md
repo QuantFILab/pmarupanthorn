@@ -1,11 +1,11 @@
 ---
-title: PyTorch
+title: DivFolio
 date: 2023-10-26
-external_link: https://github.com/pytorch/pytorch
+external_link: https://github.com/QuantFILab/Divfolio
 tags:
-  - Hugo
-  - Wowchemy
-  - Markdown
+  - R Shiny
+  - Portfolio Optimization
+  - Sustainable Finance
 ---
 
 PyTorch is a Python package that provides tensor computation (like NumPy) with strong GPU acceleration.
