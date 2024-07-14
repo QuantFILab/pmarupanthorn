@@ -30,15 +30,33 @@ sections:
           size: cover
           position: center
           parallax: false
-  - block: markdown
-    content:
-      title: 'Current Positions'
-      subtitle: ''
-      text: |-
-        - Lecturer
-        - Quantitaitve Researcher and Principal Investigator, QuantCorner Research Laboratory
-        - Vice President, Thai Quantitative Analysis and Financial Engineer Association (TQF)
-        - Associate Researcher, Thailand Capital Market Development Fund (CMDF)
+{{< table >}}
+  <tr>
+    <td style="width: 50px;">
+      <img src="path/to/your/image1.jpg" alt="Organization 1 Logo" style="width: 50px;">
+    </td>
+    <td style="width: 50px;">
+      <img src="path/to/your/image2.jpg" alt="Organization 2 Logo" style="width: 50px;">
+    </td>
+    <td style="width: 50px;">
+      <img src="path/to/your/image3.jpg" alt="Organization 3 Logo" style="width: 50px;">
+    </td>
+    <td style="width: 50px;">
+      <img src="path/to/your/image4.jpg" alt="Organization 4 Logo" style="width: 50px;">
+    </td>
+    <td>
+      <div>
+        <h1>Current Positions</h1>
+        <ul>
+          <li>Lecturer</li>
+          <li>Quantitative Researcher and Principal Investigator, QuantCorner Research Laboratory</li>
+          <li>Vice President, Thai Quantitative Analysis and Financial Engineer Association (TQF)</li>
+          <li>Associate Researcher, Thailand Capital Market Development Fund (CMDF)</li>
+        </ul>
+      </div>
+    </td>
+  </tr>
+{{< /table >}}
     design:
       columns: '1'
   - block: collection
