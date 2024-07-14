@@ -8,6 +8,6 @@ tags:
   - Sustainable Finance
 ---
 
-PyTorch is a Python package that provides tensor computation (like NumPy) with strong GPU acceleration.
+A Shiny Application for Portfolio Divestment in Green Finance Wealth Management
 
 <!--more-->
