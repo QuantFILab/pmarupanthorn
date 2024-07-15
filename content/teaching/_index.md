@@ -16,5 +16,7 @@ sections:
         folders:
           - teaching
     design:
-      view: compact
+      view: article-grid
+      columns: 4
+      pagerSize: 2
 ---
