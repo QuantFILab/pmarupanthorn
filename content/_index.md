@@ -116,6 +116,4 @@ sections:
         
         Please reach out to collaborate 😃
 
-    {{ partial "https://smallcounter.com/count.php?c_style=28&id=1721005806" . }}
-
 ---
