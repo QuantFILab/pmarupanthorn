@@ -6,6 +6,7 @@ cascade:
       kind: page
     params:
       show_breadcrumb: true
+      paginator: 10
 sections:
   - block: collection
     id: teaching
