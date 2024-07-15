@@ -1,8 +1,6 @@
 ---
 title: Teaching
 type: landing 
-taxonomies:
-  category: categories
 cascade:
   - _target:
       kind: page
