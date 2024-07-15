@@ -1,5 +1,6 @@
 ---
 title: Teaching
+type: project
 cascade:
   - _target:
       kind: page
