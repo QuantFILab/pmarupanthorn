@@ -2,15 +2,6 @@
 title: Teaching
 summary: My courses
 type: landing
-cascade:
-  - _target:
-      kind: page
-    params:
-      show_breadcrumb: true
-    pagination:
-      disableAliases: false
-      pagerSize: 10
-      path: page
 sections:
   - block: collection
     id: teaching
