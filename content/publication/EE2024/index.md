@@ -1,7 +1,7 @@
 ---
 title: "Mechanisms for implementing fossil fuel divestment in portfolio management with impact on risk, return and carbon reduction"
 authors:
-- Pasin Marupanthorn
+- admin
 - Christina S Nikitopoulos
 - Eric D Ofosu-Hene
 - Gareth W Peters
@@ -28,7 +28,7 @@ summary:
 tags:
 - Sustainable Finance
 - Portfolio Optimization
-- Statsitical Machine Learning
+- Statisitical Machine Learning
 featured: true
 # links:
 # - name: ""
