@@ -115,9 +115,4 @@ sections:
         I apply a range of qualitative and quantitative methods to comprehensively investigate the role of science and technology in the economy.
         
         Please reach out to collaborate 😃
-
-    {{ if not .Params.exclude_jquery}}
-        <script src="path/to/jquery.js"></script>
-    {{ end }}
-
 ---
