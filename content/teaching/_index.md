@@ -1,5 +1,5 @@
 ---
-title: Teaching
+title: Recent Classes
 summary: My courses
 type: landing
 
