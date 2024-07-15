@@ -7,11 +7,14 @@ cascade:
       kind: page
     params:
       show_breadcrumb: true
-content:
-    title: Teaching
-    filters:
-      folders:
-        - teaching
+sections:
+  - block: collection
+    id: teaching
+    content:
+      title: Teaching
+      filters:
+        folders:
+          - teaching
 
     
 ---
