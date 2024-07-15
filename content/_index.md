@@ -32,12 +32,6 @@ sections:
           parallax: false
     content:
       title: 'Current Positions'
-      subtitle: ''
-      text: |-
-        - Lecturer
-        - Quantitaitve Researcher and Principal Investigator, QuantCorner Research Laboratory
-        - Vice President, Thai Quantitative Analysis and Financial Engineer Association (TQF)
-        - Associate Researcher, Thailand Capital Market Development Fund (CMDF)
     design:
       columns: '1'
   - block: collection
