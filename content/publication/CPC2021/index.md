@@ -21,7 +21,7 @@ directed graphs. Network models are used to identify the probability that given 
 and therefore the effect of a failure at a given link. This is essential for network design, optimization,
 and reliability. In this study, we investigated three alternative ensembles for estimating network
 reliability using the Wang–Landau algorithm. The first performed random walks on a structure function
-having two possible states: connected and disconnected. The second used random walks on a reliability
+having two possible states; connected and disconnected. The second used random walks on a reliability
 polynomial. The third combined random walks with the average of connecting probabilities. The
 accuracy and limitations of the three ensembles were compared by estimating the reliability of
 three network models, a bridge network, a ladder-type network, and a dodecahedron network. The
