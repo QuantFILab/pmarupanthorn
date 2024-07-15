@@ -17,9 +17,7 @@ publication: "*Computer Physics Communications, 262, 2021*"
 publication_short: ""
 
 abstract: Modern physical networks, for example in communication and transportation, can be interpreted as
-directed graphs. Network models are used to identify the probability that given nodes are connected,
-and therefore the effect of a failure at a given link. This is essential for network design, optimization,
-and reliability. 
+directed graphs.
 # Summary. An optional shortened abstract.
 summary: 
 
