@@ -34,7 +34,7 @@ featured: true
 # - name: ""
 #   url: ""
 url_pdf: https://www.sciencedirect.com/science/article/pii/S0140988324004328
-url_code: ''
+url_code: 'https://github.com/QuantFILab/Divfolio'
 url_dataset: ''
 url_poster: ''
 url_project: ''
