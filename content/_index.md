@@ -115,6 +115,6 @@ sections:
         I apply a range of qualitative and quantitative methods to comprehensively investigate the role of science and technology in the economy.
         
         Please reach out to collaborate 😃
-        <img title="free world map counter" src="https://smallcounter.com/map/view.php?type=180&id=1721005786" border="1"/>
+        <div style="text-align: center;"><img src="https://smallcounter.com/count.php?c_style=3&id=1721009801" border=0 alt="web counter"></div>
 
 ---
