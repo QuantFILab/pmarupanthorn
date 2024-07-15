@@ -35,7 +35,7 @@ featured: true
 # - name: ""
 #   url: ""
 url_pdf: https://www.cambridge.org/core/journals/annals-of-actuarial-science/article/divfolio-a-shiny-application-for-portfolio-divestment-in-green-finance-wealth-management/80986512D29D1D2D3CDD7ADEB2FE0428
-url_code: ''
+url_code: 'https://github.com/QuantFILab/Divfolio'
 url_dataset: ''
 url_poster: ''
 url_project: ''
