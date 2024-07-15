@@ -30,10 +30,8 @@ sections:
           size: cover
           position: center
           parallax: false
-    content:
-      title: 'Current Positions'
     design:
-      columns: '1'
+      columns: '2'
   - block: collection
     id: papers
     content:
