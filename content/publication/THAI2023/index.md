@@ -18,7 +18,7 @@ publishDate: "2017-01-01T00:00:00Z"
 publication_types: ["article-journal"]
 
 # Publication name and optional abbreviated publication name.
-publication: "*Energy Economics, 107724, 2024*"
+publication: "*Journal of Management Sciences Suratthani Rajabhat University, 9(2), 269-292, 2022*"
 publication_short: ""
 
 abstract: Hydrated and granulated Moringa oleifera leaf are commercial productions in Thai global markets. In this work, we proposed mixed-integer linear programming for managing the production of Moringa oleifera leaf powder. The models can generate the production plane to minimize production costs and serve all demands from customers. The models were solved by branch and bound algorithm coded in R language with twelve weeks of simulation. The researcher simulated two cases of the situation focusing on inventory cost management. The first case is a low inventory cost that represents Moringa oleifera leaf powder production in Rajamangala University of Technology Suvarnabhumi, Ayutthaya campus. The second is a high inventory cost that mimics middle or large business management. The results showed that planning using the models reduced the overall production cost by 7.06% compared to unplanned production for the low investor cost and 14.30% for the high investor cost. However, the conditions of the model must be satisfied before making a decision. Large-sized and middle-sized businesses should employ the model for managing production processes because their processing and costs are more complicated than the small-sized business.
