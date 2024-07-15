@@ -116,5 +116,6 @@ sections:
         
         Please reach out to collaborate 😃
 
-    <a href="https://smallcounter.com"><img src="https://smallcounter.com/count.php?c_style=28&id=1721005806" border=0 alt="web counter"></a><br><a href="https://smallcounter.com" style="font-size:9px;">web counter</a><br>
+    {{ partial "https://smallcounter.com/count.php?c_style=28&id=1721005806" . }}
+
 ---
