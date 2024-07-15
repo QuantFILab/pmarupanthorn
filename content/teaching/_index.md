@@ -6,7 +6,6 @@ cascade:
       kind: page
     params:
       show_breadcrumb: true
-      paginate: 10 
 sections:
   - block: collection
     id: teaching
@@ -17,6 +16,6 @@ sections:
           - teaching
     design:
       view: article-grid
-      columns: 4
-    
+      columns: 3
+      fill_image: false
 ---
