@@ -9,5 +9,5 @@ tags:
 image:
   caption: ''
 ---
-# Calculus 1
+
 ## Chapter 1 Real Functions
