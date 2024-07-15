@@ -1,13 +1,13 @@
 ---
-title: "An example journal article"
+title: "Mechanisms for implementing fossil fuel divestment in portfolio management with impact on risk, return and carbon reduction"
 authors:
-- admin
-- Robert Ford
-author_notes:
-- "Equal contribution"
-- "Equal contribution"
-date: "2015-09-01T00:00:00Z"
-doi: ""
+- Pasin Marupanthorn
+- Christina S Nikitopoulos
+- Eric D Ofosu-Hene
+- Gareth W Peters
+- Kylie-Anne Richards
+date: "2024-07-03T00:00:00Z"
+doi: "https://doi.org/10.1016/j.eneco.2024.107724"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: "2017-01-01T00:00:00Z"
@@ -18,23 +18,23 @@ publishDate: "2017-01-01T00:00:00Z"
 publication_types: ["article-journal"]
 
 # Publication name and optional abbreviated publication name.
-publication: "*Journal of Source Themes, 1*(1)"
+publication: "*Energy Economics, 107724, 2024"
 publication_short: ""
 
-abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.
-
+abstract: Mechanisms to incentivize divestment strategies, such as divestment schedules, are an important component of carbon reduction strategies. We use dynamic asset allocation methodologies to assess this impact over time on index portfolios (S&P 500 and FTSE 100), and global exchange-traded funds (ETFs). Although return profiles are not affected, the risk profile of S&P 500 divestment portfolios is impacted by rapid divestment strategies as divestment concentration increases. Instantaneous divestment may benefit management structure, while slower divestment provides greater stability in portfolios’ tracking errors and benefits carbon reduction, especially from reinvested capital. Divesting from energy and utilities sectors reduces carbon footprint of up to 7%, while ETFs’ divesting from highly carbon concentrated ETFs offers further carbon footprint reductions. Investing in funds with low carbon footprint results in lower dividend returns and management fees. Although ETFs’ returns are insensitive to divestment strategies and schedules, their risk profiles are affected, proportionally to their carbon intensity, especially for rapid divestment and at the expense of higher tracking errors. Divestment strategies based on ESG rating screening of FTSE 100 portfolios improve diversification and impact risk/return performance. Our study underscores the importance of considering investors’ demographics, such as dividends, management structure, and carbon reduction targets.
 # Summary. An optional shortened abstract.
-summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
+summary: 
 
 tags:
-- Source Themes
-featured: false
-
+- Sustainable Finance
+- Portfolio Optimization
+- Statsitical Machine Learning
+featured: true
 # links:
 # - name: ""
 #   url: ""
-url_pdf: http://arxiv.org/pdf/1512.04133v1
-url_code: 'https://github.com/HugoBlox/hugo-blox-builder'
+url_pdf: https://www.sciencedirect.com/science/article/pii/S0140988324004328
+url_code: ''
 url_dataset: ''
 url_poster: ''
 url_project: ''
@@ -64,12 +64,4 @@ projects: []
 slides: example
 ---
 
-{{% callout note %}}
-Click the *Cite* button above to demo the feature to enable visitors to import publication metadata into their reference management software.
-{{% /callout %}}
 
-{{% callout note %}}
-Create your slides in Markdown - click the *Slides* button to check out the example.
-{{% /callout %}}
-
-Add the publication's **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, and images](https://docs.hugoblox.com/content/writing-markdown-latex/).
