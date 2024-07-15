@@ -10,4 +10,8 @@ image:
   caption: 'Embed rich media such as videos and LaTeX math'
 ---
 
+## Course Description
+
+Introductory logic. Functions. Limits, continuity, and introductory derivatives. Sequences and series. Matrices and determinants. Binomial theorem.
+
 ## Chapter 1
