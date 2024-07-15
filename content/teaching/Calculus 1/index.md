@@ -1,5 +1,5 @@
 ---
-title: MA131 Calculus 1 
+title: 401-12-04 Calculus 1 
 summary: at RMUTSB
 date: 2015-06-01
 type: docs
