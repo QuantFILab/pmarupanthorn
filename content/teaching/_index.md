@@ -3,12 +3,7 @@ title: Teaching
 summary: My courses
 type: landing
 
-cascade:
-  - _target:
-      kind: page
-    params:
-      show_breadcrumb: true
-      paginate: -1  # Disable pagination by setting to -1
+
 sections:
   - block: collection
     id: teaching
