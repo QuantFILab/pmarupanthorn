@@ -15,7 +15,7 @@ sections:
       text: Here are projects that I have worked on over the years.
       filters:
         folders:
-          - projects
+          - project
     design:
       view: article-grid
       fill_image: false
