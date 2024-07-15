@@ -19,6 +19,8 @@ sections:
     design:
       view: article-grid
       columns: 4
-      params:
-        paginator:10  # Show all items by setting paginator to 0
+      pagination:
+        disableAliases: false
+        pagerSize: 10
+        path: page
 ---
