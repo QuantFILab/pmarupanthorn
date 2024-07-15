@@ -1,6 +1,6 @@
 ---
 title: Teaching
-type: project
+type: landing 
 cascade:
   - _target:
       kind: page
