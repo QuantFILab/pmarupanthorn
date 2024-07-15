@@ -7,7 +7,13 @@ cascade:
       kind: page
     params:
       show_breadcrumb: true
+    pagination:
+      disableAliases: false
+      pagerSize: 10
+      path: page
 sections:
+  - block: collection
+    id: teaching
     content:
       title: Teaching
       filters:
@@ -16,8 +22,4 @@ sections:
     design:
       view: article-grid
       columns: 4
-pagination:
-  disableAliases: false
-  pagerSize: 10
-  path: page
 ---
