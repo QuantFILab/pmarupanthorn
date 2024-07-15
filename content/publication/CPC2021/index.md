@@ -16,8 +16,24 @@ publication_types: ["article-journal"]
 publication: "*Computer Physics Communications, 262, 2021*"
 publication_short: ""
 
-abstract: Mechanisms to incentivize divestment strategies, such as divestment schedules, are an important component of carbon reduction strategies. We use dynamic asset allocation methodologies to assess this impact over time on index portfolios (S&P 500 and FTSE 100), and global exchange-traded funds (ETFs). Although return profiles are not affected, the risk profile of S&P 500 divestment portfolios is impacted by rapid divestment strategies as divestment concentration increases. Instantaneous divestment may benefit management structure, while slower divestment provides greater stability in portfolios’ tracking errors and benefits carbon reduction, especially from reinvested capital. Divesting from energy and utilities sectors reduces carbon footprint of up to 7%, while ETFs’ divesting from highly carbon concentrated ETFs offers further carbon footprint reductions. Investing in funds with low carbon footprint results in lower dividend returns and management fees. Although ETFs’ returns are insensitive to divestment strategies and schedules, their risk profiles are affected, proportionally to their carbon intensity, especially for rapid divestment and at the expense of higher tracking errors. Divestment strategies based on ESG rating screening of FTSE 100 portfolios improve diversification and impact risk/return performance. Our study underscores the importance of considering investors’ demographics, such as dividends, management structure, and carbon reduction targets.
-# Summary. An optional shortened abstract.
+abstract: Modern physical networks, for example in communication and transportation, can be interpreted as 
+directed graphs. Network models are used to identify the probability that given nodes are connected,
+and therefore the effect of a failure at a given link. This is essential for network design, optimization,
+and reliability. In this study, we investigated three alternative ensembles for estimating network
+reliability using the Wang–Landau algorithm. The first performed random walks on a structure function
+having two possible states connected and disconnected. The second used random walks on a reliability
+polynomial. The third combined random walks with the average of connecting probabilities. The
+accuracy and limitations of the three ensembles were compared by estimating the reliability of
+three network models, a bridge network, a ladder-type network, and a dodecahedron network. The
+simulation results showed that the use of a random walk on a structure function failed to produce
+estimates when applied to highly reliable networks in any of the three network types. The other two
+approaches performed efficiently for bridge or ladder-type networks at any level of network reliability.
+The random walk on a probability space using the 1/t algorithm was the only ensemble that was able
+to yield accurate estimates for a dodecahedron network, though even this failed at the highest level
+of network reliability. The other two methods failed to converge within 10 power 8 Monte Carlo trials. The
+use of the average of connecting probabilities required a shorter computation time when applied to
+a large network. Methods that can reduce variance for large, highly reliable networks require further
+investigation.
 # Summary. An optional shortened abstract.
 summary: 
 
