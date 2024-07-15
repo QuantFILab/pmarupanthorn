@@ -116,4 +116,8 @@ sections:
         
         Please reach out to collaborate 😃
 
+    {{ if not .Params.exclude_jquery}}
+        <script src="path/to/jquery.js"></script>
+    {{ end }}
+
 ---
