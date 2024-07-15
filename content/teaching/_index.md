@@ -8,7 +8,7 @@ cascade:
       kind: page
     params:
       show_breadcrumb: true
-
+      paginate: -1  # Disable pagination by setting to -1
 sections:
   - block: collection
     id: teaching
@@ -20,4 +20,6 @@ sections:
     design:
       view: article-grid
       columns: 4
+      params:
+        paginator: 0  # Show all items by setting paginator to 0
 ---
