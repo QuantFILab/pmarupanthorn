@@ -24,7 +24,7 @@ reliability using the Wang–Landau algorithm. The first performed random walks 
 having two possible states: connected and disconnected. The second used random walks on a reliability
 polynomial. The third combined random walks with the average of connecting probabilities. The
 accuracy and limitations of the three ensembles were compared by estimating the reliability of
-three network models: a bridge network, a ladder-type network, and a dodecahedron network. The
+three network models, a bridge network, a ladder-type network, and a dodecahedron network. The
 simulation results showed that the use of a random walk on a structure function failed to produce
 estimates when applied to highly reliable networks in any of the three network types. The other two
 approaches performed efficiently for bridge or ladder-type networks at any level of network reliability.
