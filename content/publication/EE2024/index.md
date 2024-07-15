@@ -18,7 +18,7 @@ publishDate: "2017-01-01T00:00:00Z"
 publication_types: ["article-journal"]
 
 # Publication name and optional abbreviated publication name.
-publication: "*Energy Economics, 107724, 2024"
+publication: "*Energy Economics, 107724, 2024*"
 publication_short: ""
 
 abstract: Mechanisms to incentivize divestment strategies, such as divestment schedules, are an important component of carbon reduction strategies. We use dynamic asset allocation methodologies to assess this impact over time on index portfolios (S&P 500 and FTSE 100), and global exchange-traded funds (ETFs). Although return profiles are not affected, the risk profile of S&P 500 divestment portfolios is impacted by rapid divestment strategies as divestment concentration increases. Instantaneous divestment may benefit management structure, while slower divestment provides greater stability in portfolios’ tracking errors and benefits carbon reduction, especially from reinvested capital. Divesting from energy and utilities sectors reduces carbon footprint of up to 7%, while ETFs’ divesting from highly carbon concentrated ETFs offers further carbon footprint reductions. Investing in funds with low carbon footprint results in lower dividend returns and management fees. Although ETFs’ returns are insensitive to divestment strategies and schedules, their risk profiles are affected, proportionally to their carbon intensity, especially for rapid divestment and at the expense of higher tracking errors. Divestment strategies based on ESG rating screening of FTSE 100 portfolios improve diversification and impact risk/return performance. Our study underscores the importance of considering investors’ demographics, such as dividends, management structure, and carbon reduction targets.
