@@ -6,7 +6,7 @@ cascade:
   - _target:
       kind: page
     params:
-      show_breadcrumb: false
+      show_breadcrumb: true
 sections:
   - block: collection
     id: teaching
@@ -18,5 +18,7 @@ sections:
     design:
       view: article-grid
       columns: 4
+      params:
+        paginator: 2 
     
 ---
