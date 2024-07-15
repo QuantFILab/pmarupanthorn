@@ -1,5 +1,5 @@
 ---
-title: "Mechanisms for implementing fossil fuel divestment in portfolio management with impact on risk, return and carbon reduction"
+title: "Mechanisms for Implementing Fossil Fuel Divestment in Portfolio Management with Impact on Risk, Return and Carbon Reduction"
 authors:
 - admin
 - Christina S Nikitopoulos
