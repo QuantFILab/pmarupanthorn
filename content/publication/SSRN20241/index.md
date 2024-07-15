@@ -35,7 +35,7 @@ featured: true
 # - name: ""
 #   url: ""
 url_pdf: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4706129
-url_code: ''
+url_code: 'https://github.com/QuantFILab/SETFactorModel'
 url_dataset: ''
 url_poster: ''
 url_project: ''
