@@ -7,7 +7,7 @@ math: false
 tags:
   - Basic Mathematics
 image:
-  caption: 'Embed rich media such as videos and LaTeX math'
+  caption: ''
 ---
 
 ## Course Description
