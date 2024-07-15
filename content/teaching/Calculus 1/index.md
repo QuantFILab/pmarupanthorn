@@ -12,4 +12,4 @@ image:
 
 ## Course Description
 
-Real-valued functions, limits, and continuity. Derivatives and integrals of real-valued functions of a real variable. Indeterminate forms. Applications of derivatives. Techniques for finding integrals. Applications of integrals..
+Real-valued functions, limits, and continuity. Derivatives and integrals of real-valued functions of a real variable. Indeterminate forms. Applications of derivatives. Techniques for finding integrals. Applications of integrals.
