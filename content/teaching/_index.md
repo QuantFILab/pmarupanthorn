@@ -8,6 +8,7 @@ cascade:
     params:
       show_breadcrumb: true
 sections:
+  - block: collection
     design:
       view: article-grid
       columns: 4
