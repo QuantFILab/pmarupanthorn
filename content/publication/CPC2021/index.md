@@ -16,8 +16,7 @@ publication_types: ["article-journal"]
 publication: "*Computer Physics Communications, 262, 2021*"
 publication_short: ""
 
-abstract: Modern physical networks, for example in communication and transportation, can be interpreted as
-directed graphs.
+abstract: 
 # Summary. An optional shortened abstract.
 summary: 
 
