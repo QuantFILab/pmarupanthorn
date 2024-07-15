@@ -30,7 +30,7 @@ estimates when applied to highly reliable networks in any of the three network t
 approaches performed efficiently for bridge or ladder-type networks at any level of network reliability.
 The random walk on a probability space using the 1/t algorithm was the only ensemble that was able
 to yield accurate estimates for a dodecahedron network, though even this failed at the highest level
-of network reliability. The other two methods failed to converge within 10^8 Monte Carlo trials. The
+of network reliability. The other two methods failed to converge within 10 power 8 Monte Carlo trials. The
 use of the average of connecting probabilities required a shorter computation time when applied to
 a large network. Methods that can reduce variance for large, highly reliable networks require further
 investigation.
