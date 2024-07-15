@@ -1,4 +1,7 @@
 ---
+title: Teaching
+type: landing
+
 sections:
   - block: collection
     id: teaching
