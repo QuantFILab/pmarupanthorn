@@ -116,5 +116,5 @@ sections:
         
         Please reach out to collaborate 😃
 
-<a class="visitor"</a>
+        <a class="visitor"</a>
 ---
