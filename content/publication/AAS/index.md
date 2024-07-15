@@ -18,7 +18,7 @@ publishDate: "2017-01-01T00:00:00Z"
 publication_types: ["article-journal"]
 
 # Publication name and optional abbreviated publication name.
-publication: "Annals of Actuarial Science, 1 - 44, 2024"
+publication: "*Annals of Actuarial Science, 1 - 44, 2024*"
 publication_short: ""
 
 abstract: This paper introduces DivFolio, a multiperiod portfolio selection and analytic software application that incorporates automated and user-determined divestment practices accommodating Environmental Social Governance (ESG) and portfolio carbon footprint considerations. This freely available portfolio analytics software tool is written in R with a GUI interface developed as an R Shiny application for ease of user experience. Users can utilize this software to dynamically assess the performance of asset selections from global equity, exchange-traded funds, exchange-traded notes, and depositary receipts markets over multiple time periods. This assessment is based on the impact of ESG investment and fossil-fuel divestment practices on portfolio behavior in terms of risk, return, stability, diversification, and climate mitigation credentials of associated investment decisions. We highlight two applications of DivFolio. The first revolves around using sector scanning to divest from a specialized portfolio featuring constituents of the FTSE 100. The second, rooted in actuarial considerations, focuses on divestment strategies informed by environmental risk assessments for mixed pension portfolios in the US and UK.
