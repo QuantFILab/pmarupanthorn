@@ -3,7 +3,11 @@ title: Teaching
 summary: My courses
 type: landing
 
-
+cascade:
+  - _target:
+      kind: page
+    params:
+      show_breadcrumb: true
 sections:
   - block: collection
     id: teaching
@@ -14,7 +18,7 @@ sections:
           - teaching
     design:
       view: article-grid
-      columns: 3
+      columns: 4
       params:
-        paginator: 0  # Show all items by setting paginator to 0
+        paginator:10  # Show all items by setting paginator to 0
 ---
