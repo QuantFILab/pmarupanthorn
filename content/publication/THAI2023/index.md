@@ -28,7 +28,7 @@ summary:
 tags:
 - Optimization
 - Management Mathematics
-featured: true
+featured: false
 # links:
 # - name: ""
 #   url: ""
