@@ -19,7 +19,7 @@ sections:
           - teaching
     design:
       view: article-grid
-      columns: 4
+      columns: 3
       params:
         paginator: 0  # Show all items by setting paginator to 0
 ---
