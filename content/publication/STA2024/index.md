@@ -29,7 +29,7 @@ featured: false
 # - name: ""
 #   url: ""
 url_pdf: https://ph02.tci-thaijo.org/index.php/SciTechAsia/article/view/251338
-url_code: ''
+url_code: 'https://github.com/QuantFILab/Forward-Jump-Random-Walk'
 url_dataset: ''
 url_poster: ''
 url_project: ''
