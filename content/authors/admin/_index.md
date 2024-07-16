@@ -111,6 +111,14 @@ work:
       - Migrated infrastructure to a new data center
       - lorem ipsum dolor sit amet, consectetur adipiscing elit
       - lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - position: Journal Reviwer
+    company_name: Energy Economics
+    company_name: Annual of Actuarial Science
+    company_name: FILOMAT
+    company_name: Science and Technology Asia
+    company_name: Thailand and The World Economy
+
+
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
