@@ -54,7 +54,8 @@ sections:
           - event
     design:
       view: article-grid
-      columns: 4
+      columns: 3
+      fill_image: false
   - block: collection
     id: news
     content:
