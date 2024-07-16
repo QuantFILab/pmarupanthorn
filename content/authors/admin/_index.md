@@ -76,6 +76,7 @@ education:
     institution: Thammasat University
     date_start: 2016-01-01
     date_end: 2020-12-31
+    
 work:
   - position: Quantitative Researcher
     company_name: GenCoin
@@ -110,14 +111,14 @@ work:
       - Migrated infrastructure to a new data center
       - lorem ipsum dolor sit amet, consectetur adipiscing elit
       - lorem ipsum dolor sit amet, consectetur adipiscing elit
- 
-  work:
-  - position: International Journal Reviewer
-    company_name: Energy Economics
-    company_name: Annual of Actuarial Science
 
-
-        
+ ## International Journal Reviewer
+      - *Energy Economics* since 2024
+      - *Annual of Actuarial Science* since 2024
+      - *FILOMAT* since 2023
+      - *Science and Technology Asia* since 2024
+      - *Thailand and The World Economy* sincec 2024
+      
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
 skills:
