@@ -156,6 +156,14 @@ languages:
     percent: 90
 
 
+ ## International Journal Reviewer
+      - *Energy Economics* since 2024
+      - *Annual of Actuarial Science* since 2024
+      - *FILOMAT* since 2023
+      - *Science and Technology Asia* since 2024
+      - *Thailand and The World Economy* sincec 2024
+
+      
 # Awards.
 #   Add/remove as many awards below as you like.
 #   Only `title`, `awarder`, and `date` are required.
