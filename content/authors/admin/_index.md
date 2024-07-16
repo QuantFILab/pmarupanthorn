@@ -76,7 +76,6 @@ education:
     institution: Thammasat University
     date_start: 2016-01-01
     date_end: 2020-12-31
-
 work:
   - position: Quantitative Researcher
     company_name: GenCoin
