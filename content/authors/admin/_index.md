@@ -111,7 +111,15 @@ work:
       - Migrated infrastructure to a new data center
       - lorem ipsum dolor sit amet, consectetur adipiscing elit
       - lorem ipsum dolor sit amet, consectetur adipiscing elit
-
+      - 
+  - name: International Journal Reviewer
+    items:
+      - name: *Energy Economics* since 2024
+      - name: *Annual of Actuarial Science* since 2024
+      - name: *FILOMAT* since 2023
+      - name: *Science and Technology Asia* since 2024
+      - name: *Thailand and The World Economy* sincec 2024
+        
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
 skills:
