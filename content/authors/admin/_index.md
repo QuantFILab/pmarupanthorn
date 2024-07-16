@@ -191,3 +191,11 @@ awards:
 
 My background is in Applied Mathematics, with a keen interest in challenging problems in Finance, Insurance, and Risk Management. I am currently an energetic Quantitative Researcher and University Lecturer. I warmly welcome collaborative work with energetic colleagues who share similar interests. If you are interested in collaborating on research, workshops, seminars, lectures, or teaming up for enjoyable challenges, please feel free to contact me.
 
+
+ ## International Journal Reviewer
+      - *Energy Economics* since 2024
+      - *Annual of Actuarial Science* since 2024
+      - *FILOMAT* since 2023
+      - *Science and Technology Asia* since 2024
+      - *Thailand and The World Economy* sincec 2024
+
