@@ -2,7 +2,7 @@
 title: Quantitative Trading Strategy Design
 
 event: Groundup Academy 
-event_url: https://example.org
+event_url: https://fb.watch/tmkjWibpPx/
 
 location: Facebook Live
 
@@ -10,8 +10,8 @@ summary: The qunatitaive trading
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: '2030-06-01T13:00:00Z'
-date_end: '2030-06-01T15:00:00Z'
+date: '2024-05-30T20:00:00Z'
+date_end: '2024-05-30T22:00:00Z'
 all_day: false
 
 # Schedule page publish date (NOT talk date).
@@ -33,10 +33,10 @@ image:
 #    icon_pack: fab
 #    name: Follow
 #    url: https://twitter.com/georgecushen
-url_code: 'https://github.com'
+url_code: ''
 url_pdf: ''
-url_slides: 'https://slideshare.net'
-url_video: 'https://youtube.com'
+url_slides: ''
+url_video: ''
 
 
 slides: ""
