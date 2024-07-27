@@ -19,18 +19,6 @@ sections:
     design:
       font_size_min: 0.7
       font_size_max: 2.0
-sections:
-  - block: collection
-    id: post
-    content:
-      title: Blogs
-      count: 20
-      filters:
-        folders:
-          - post
-    design:
-      view: article-grid
-      columns: 3
-      fill_image: false
+
   
 ---
