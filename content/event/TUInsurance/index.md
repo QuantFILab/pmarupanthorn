@@ -1,4 +1,3 @@
-
 ---
 title: Reserach Trend in Modern Insurance Modelling
 
@@ -34,4 +33,5 @@ featured: false
 
 image:
   focal_point: Right
+  
 ---
