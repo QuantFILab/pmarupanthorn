@@ -1,4 +1,3 @@
-
 ---
 title: CQF Recap, Applied Stochastic Calculus II and Martingales
 
@@ -28,3 +27,4 @@ authors:
   - admin
 
 tags: []
+---
