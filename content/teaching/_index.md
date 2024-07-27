@@ -20,7 +20,7 @@ sections:
       fill_image: false
   - block: markdown
     content:
-      title: Teaching Courses
+      title: Note
       text: |
         This page shows only the most recent five courses. Please navigate to any course to see the list of all courses, which will appear on the left-hand side.
   
