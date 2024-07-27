@@ -7,17 +7,12 @@ cascade:
     params:
       show_breadcrumb: true
 sections:
-  - block: markdown
-    content:
-      title: Tags 
-      text: |
-    
-        <a href="https://gohugo.io/documentation/">Hugo Documentation</a>
-    
   - block: collection
     id: post
     content:
       title: Blogs
+      text: |
+        <a href="https://gohugo.io/documentation/">Hugo Documentation</a>
       count: 20
       filters:
         folders:
