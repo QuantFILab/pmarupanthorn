@@ -12,7 +12,7 @@ address:
   postcode: ''
   country: 
 
-summary: The CQF Recap provides a comprehensive review of key concepts, while Applied Stochastic Calculus II delves into advanced stochastic processes, and the study of Martingales focuses on their properties and applications in financial mathematics. Engage actively in your learning by participating in discussions, asking questions, and utilizing office hours. Take full advantage of university resources, such as the digital library and support services. Collaborate with peers through study groups and networking. Stay motivated by setting goals, taking regular breaks, and maintaining focus. Adhere to academic integrity by avoiding plagiarism and following university policies. Seek feedback from instructors and peers to continuously improve your performance. By following these guidelines, you can maximize your educational experience and achieve success.
+summary: The CQF Recap provides a comprehensive review of key concepts, while Applied Stochastic Calculus II delves into advanced stochastic processes, and the study of Martingales focuses on their properties and applications in financial mathematics.
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
