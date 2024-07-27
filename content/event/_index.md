@@ -1,5 +1,5 @@
 ---
-title: Teaching
+title: Recent & Upcoming Talks
 type: landing
 cascade:
   - _target:
