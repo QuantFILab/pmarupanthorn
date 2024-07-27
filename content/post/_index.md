@@ -12,7 +12,7 @@ sections:
     content:
       title: Blogs
       text: |
-        <a href="https://gohugo.io/documentation/">Hugo Documentation</a>
+        <a href=https://quantfilab.github.io/pmarupanthorn/tags/second-brain/" class="button">Hugo Documentation</a> <a href="/tags/second-brain/" class="button">Hugo Documentation</a>
       count: 20
       filters:
         folders:
