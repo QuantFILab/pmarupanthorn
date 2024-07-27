@@ -4,12 +4,12 @@ summary: Use popular tools such as Plotly, Mermaid, and data frames.
 date: 2023-10-25
 authors:
   - admin
-categories:
-  - X
+
 image:
   caption: 'Image credit: [**Unsplash**](https://unsplash.com)'
 ---
 
+<div style="font-size: 14px;">
 Hugo Blox is designed to give technical content creators a seamless experience. You can focus on the content and Hugo Blox handles the rest.
 
 Use popular tools such as Plotly, Mermaid, and data frames.
@@ -21,6 +21,7 @@ Hugo Blox supports the popular [Plotly](https://plot.ly/) format for interactive
 Save your Plotly JSON in your page folder, for example `line-chart.json`, and then add the `{{</* chart data="line-chart" */>}}` shortcode where you would like the chart to appear.
 
 Demo:
+</div>
 
 {{< chart data="line-chart" >}}
 
