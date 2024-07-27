@@ -34,4 +34,5 @@ featured: false
 
 image:
   focal_point: Right
+  
 ---
