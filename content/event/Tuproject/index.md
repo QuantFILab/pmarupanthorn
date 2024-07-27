@@ -12,13 +12,12 @@ address:
   postcode: '12120'
   country: Thailand
 
-
 summary: Providing a structured framework to effectively plan, execute, and present mathematical research and applications.
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
 date: '2024-16-05T13:30:00Z'
-date_end: '2027-16-05T16:30:00Z'
+date_end: '2024-16-05T16:30:00Z'
 all_day: false
 
 # Schedule page publish date (NOT talk date).
