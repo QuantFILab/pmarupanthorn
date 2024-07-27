@@ -11,8 +11,9 @@ sections:
     content:
       title: Tags 
       text: |
-        - [Hugo Documentation](https://gohugo.io/documentation/)
-        - [Hugo Themes](https://themes.gohugo.io/)
+    
+        <a href="https://gohugo.io/documentation/">Hugo Documentation</a>
+    
   - block: collection
     id: post
     content:
