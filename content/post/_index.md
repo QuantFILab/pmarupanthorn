@@ -7,6 +7,9 @@ cascade:
     params:
       show_breadcrumb: true
 sections:
+  - block: tags
+    content:
+      title: Tags
   - block: collection
     id: post
     content:
