@@ -13,7 +13,7 @@ image:
   caption: 'Embed rich media such as videos and LaTeX math'
 ---
 
-<div style="font-size: 14px; max-width: 1200px; margin: 0 auto;">
+<div style="font-size: 16px;">
 [Hugo Blox Builder](https://hugoblox.com) is designed to give technical content creators a seamless experience. You can focus on the content and the Hugo Blox Builder which this template is built upon handles the rest.
 
 **Embed videos, podcasts, code, LaTeX math, and even test students!**
