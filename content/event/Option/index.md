@@ -1,7 +1,7 @@
 ---
 title: Investing on Option Market Microstructure
 
-event: QuantCorner CQF Recap
+event: QuantCorner Paper Reading
 event_url: 
 
 location: QuantCorner Discord
