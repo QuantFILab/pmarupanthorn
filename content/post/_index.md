@@ -12,7 +12,7 @@ sections:
     content:
       title: Blogs
       text: |
-        <a href="https://quantfilab.github.io/pmarupanthorn/tags/second-brain/" class="button">Hugo Documentation</a> <a href="/tags/second-brain/" class="button">Hugo Documentation</a>
+        <a href="https://gohugo.io/documentation/" style="background-color: #32CD32; color: #fff; padding: 2px 4px; border-radius: 3px; text-decoration: none;">#FinancialProduct</a>
       count: 20
       filters:
         folders:
