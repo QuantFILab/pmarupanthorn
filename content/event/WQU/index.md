@@ -1,4 +1,3 @@
-
 ---
 title: Guideline for Studying at WorldQuant University
 
