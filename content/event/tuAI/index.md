@@ -1,5 +1,5 @@
 ---
-title: *Upcoming* AI for Research
+title: AI for Research
 
 event: Department of Mathematics and Statsitics Seminar
 event_url: https://www.facebook.com/photo/?fbid=938947611369309&set=a.629988592265214
