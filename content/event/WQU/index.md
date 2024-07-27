@@ -13,7 +13,7 @@ address:
   postcode: ''
   country: 
 
-summary: To succeed at WorldQuant University, familiarize yourself with the curriculum and course materials, and manage your time effectively by creating and adhering to a study schedule. Engage actively in your learning by participating in discussions, asking questions, and utilizing office hours. Take full advantage of university resources, such as the digital library and support services. Collaborate with peers through study groups and networking. Stay motivated by setting goals, taking regular breaks, and maintaining focus. Adhere to academic integrity by avoiding plagiarism and following university policies. Seek feedback from instructors and peers to continuously improve your performance. By following these guidelines, you can maximize your educational experience and achieve success.
+summary: To succeed at WorldQuant University, familiarize yourself with the curriculum and course materials, and manage your time effectively by creating and adhering to a study schedule. 
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
