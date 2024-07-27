@@ -18,10 +18,10 @@ sections:
       filter_button:
       - name: All
         tag: '*'
-      - name: Deep Learning
-        tag: Deep Learning
-      - name: Other
-        tag: Demo
+      - name: Hugo
+        tag: Hugo
+      - name: Calculus
+        tag: Calculus
       # Default filter toolbar button (e.g. 0 corresponds to the first `filter_button` instance above)
       filter_default: 0
     design:
