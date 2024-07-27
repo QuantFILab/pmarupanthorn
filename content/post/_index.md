@@ -1,5 +1,4 @@
 ---
-widget: portfolio
 title: Blogs
 type: landing
 cascade:
@@ -8,17 +7,16 @@ cascade:
     params:
       show_breadcrumb: true
 sections:
-  - block: tag_cloud
+  - block: collection
+    id: post
     content:
-      title: My title
-      subtitle: My subtitle
-      text: Add any **markdown** formatted content here - text, images, videos, galleries - and even HTML code!
-      taxonomy: tags
+      title: Blogs
       count: 20
-      id: post
+      filters:
+        folders:
+          - post
     design:
-      font_size_min: 0.7
-      font_size_max: 2.0
-
-  
+      view: article-grid
+      columns: 3
+      fill_image: false
 ---
