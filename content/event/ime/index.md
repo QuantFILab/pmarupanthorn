@@ -1,23 +1,22 @@
 ---
 title: Mechanisms to Incentivise Fossil Fuel Divestment and Implications on Portfolio Risk and Returns
 
-event: The 2nd NIC-NIDA Conference, 2023
-event_url: https://nida.ac.th/en/nic-nida-conference-2023/
+event: 26th International Congress on Insurance
+event_url: https://www.icms.org.uk/events/2023/IME2023
 
-location: QuantCorner Discord
+location: Heriot-Watt University
 address:
-  street: 148 Seri Thai Rd,
-  city: Khlong Chan,
-  region: Bang Kapi,
-  postcode: '10240'
-  country: Bangkok
+  city: Edinburgh
+  region: Riccarton
+  postcode: 'EH14 4AS'
+  country: United Kingdom
 
 summary: Developing divestment strategies is essential for carbon reduction.
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: '2023-07-17T14:00:00Z'
-date_end: '2023-07-17T15:00:00Z'
+date: '2023-07-04T14:00:00Z'
+date_end: '2023-07-04T15:00:00Z'
 all_day: false
 
 # Schedule page publish date (NOT talk date).
