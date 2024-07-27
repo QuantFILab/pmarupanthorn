@@ -7,6 +7,15 @@ cascade:
     params:
       show_breadcrumb: true
 sections:
+  - block: markdown
+    content:
+      title: Tags and Categories
+      text: |
+        ## Tags
+        {{< list_tags >}}
+        
+        ## Categories
+        {{< list_categories >}}
   - block: collection
     id: post
     content:
