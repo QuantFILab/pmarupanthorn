@@ -12,7 +12,7 @@ address:
   postcode: '10240'
   country: Bangkok
 
-summary: Developing divestment strategies is essential for carbon reduction, with over a thousand investors committing $40.43 trillion; our study on S&P 500 portfolios and global ETFs shows that rapid divestment reduces carbon footprints but increases tracking errors and management fees, while slower divestment offers greater stability, highlighting the need to balance carbon reduction with investment returns, especially for ESG-focused investors.
+summary: Developing divestment strategies is essential for carbon reduction.
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
