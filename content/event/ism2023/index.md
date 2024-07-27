@@ -1,7 +1,7 @@
 ---
 title: Mechanisms to Incentivise Fossil Fuel Divestment and Implications on Portfolio Risk and Returns 
 
-event: ISM-UCL-UCSB-MQ WORKSHOP, Stochastic Modelling in Climate Risk: Financial Mathematics and Economics
+event: ISM-UCL-UCSB-MQ WORKSHOP, Stochastic Modelling in Climate Risk Financial Mathematics and Economics
 event_url: https://sites.google.com/view/ism-ucl-ucsb-mq-ws/home
 
 location: The Institute of Statistical Mathematics (ISM)
