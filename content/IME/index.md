@@ -1,5 +1,5 @@
 ---
-title: Mechanisms to Incentivise Fossil Fuel Divestment and Implications on Portfolio Risk and Returns
+title: Mechanisms to Incentivise Fossil Fuel Divestment and Implications on Portfolio Risk and Returns 2
 
 event: 26th International Congress on Insurance Mathematics and Economics
 event_url: https://www.icms.org.uk/events/2023/IME2023
