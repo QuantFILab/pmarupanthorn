@@ -1,5 +1,5 @@
 ---
-title: Five Recent Teaching
+title: Teaching
 type: landing
 cascade:
   - _target:
