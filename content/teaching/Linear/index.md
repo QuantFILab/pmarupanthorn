@@ -5,7 +5,7 @@ date: 2014-01-01
 type: docs
 math: false
 tags:
-  - Calculus
+  - Linear Algebra
 image:
   caption: ''
 ---
