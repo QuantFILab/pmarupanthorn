@@ -5,8 +5,8 @@ cms_exclude: true
 
 # View
 view: article-grid
-columns: 4
-fill_image: false
+columns: 2
+fill_image: true
 
 # Optional cover image (relative to `assets/media/` folder).
 image:
