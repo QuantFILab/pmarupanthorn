@@ -13,7 +13,7 @@ address:
   country: Thailand
 
 
-summary: Developing divestment strategies is essential for carbon reduction.
+summary: Lecturer on AI tools that enhance productivity for researchers
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
