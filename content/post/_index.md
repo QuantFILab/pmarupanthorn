@@ -9,13 +9,10 @@ cascade:
 sections:
   - block: markdown
     content:
-      title: Tags and Categories
+      title: Tags 
       text: |
-        ## Tags
-        {{< list_tags >}}
-        
-        ## Categories
-        {{< list_categories >}}
+        - [Hugo Documentation](https://gohugo.io/documentation/)
+        - [Hugo Themes](https://themes.gohugo.io/)
   - block: collection
     id: post
     content:
