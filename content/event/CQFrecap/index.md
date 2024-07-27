@@ -27,4 +27,9 @@ authors:
   - admin
 
 tags: []
+# Is this a featured talk? (true/false)
+featured: false
+
+image:
+  focal_point: Right
 ---
