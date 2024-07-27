@@ -1,4 +1,3 @@
-
 ---
 title: Introduction to Factor Model
 
@@ -34,4 +33,5 @@ featured: true
 
 image:
   focal_point: Right
+  
 ---
