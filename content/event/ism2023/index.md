@@ -6,7 +6,7 @@ event_url: https://sites.google.com/view/ism-ucl-ucsb-mq-ws/home
 
 location: The Institute of Statistical Mathematics (ISM)
 address:
-  street:10-3 Midori-cho
+  street: 10-3 Midori-cho
   city: Tokyo
   region: Tachikawa
   postcode: '190-8562'
