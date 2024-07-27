@@ -1,0 +1,30 @@
+
+---
+title: CQF Recap, Applied Stochastic Calculus II and Martingales
+
+event: QuantCorner CQF Recap
+event_url: 
+
+location: QuantCorner Discord
+address:
+  street:
+  city: 
+  region: 
+  postcode: ''
+  country: 
+
+summary: The CQF Recap provides a comprehensive review of key concepts, while Applied Stochastic Calculus II delves into advanced stochastic processes, and the study of Martingales focuses on their properties and applications in financial mathematics. Engage actively in your learning by participating in discussions, asking questions, and utilizing office hours. Take full advantage of university resources, such as the digital library and support services. Collaborate with peers through study groups and networking. Stay motivated by setting goals, taking regular breaks, and maintaining focus. Adhere to academic integrity by avoiding plagiarism and following university policies. Seek feedback from instructors and peers to continuously improve your performance. By following these guidelines, you can maximize your educational experience and achieve success.
+
+# Talk start and end times.
+#   End time can optionally be hidden by prefixing the line with `#`.
+date: '2024-02-10T20:00:00Z'
+date_end: '2024-02-10T21:00:00Z'
+all_day: false
+
+# Schedule page publish date (NOT talk date).
+publishDate: '2017-01-01T00:00:00Z'
+
+authors:
+  - admin
+
+tags: []
