@@ -1,4 +1,3 @@
-
 ---
 title: Factor Investing
 
@@ -35,5 +34,5 @@ featured: false
 
 image:
   focal_point: Right
-  
+
 ---
