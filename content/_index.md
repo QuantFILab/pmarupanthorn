@@ -115,7 +115,9 @@ sections:
         Use this area to speak to your mission. I'm a research scientist in the Moonshot team at DeepMind. I blog about machine learning, deep learning, and moonshots.
 
         I apply a range of qualitative and quantitative methods to comprehensively investigate the role of science and technology in the economy.
-        
+
+        {{< Hugo >}}
+    
         Please reach out to collaborate 😃
         <div style="text-align: center;"><img src="https://smallcounter.com/count.php?c_style=3&id=1721009801" border=0 alt="web counter"></div>
         <a target="_blank" href="https://smallcounter.com/conline/1721005786/"><img border="0" src="https://smallcounter.com/online/fcc.php?id=1721005786"></a><br><a target="_blank" href="https://smallcounter.com"></a>
