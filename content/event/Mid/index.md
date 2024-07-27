@@ -1,4 +1,3 @@
-
 ---
 title: Decarbonizing Portfolio
 
@@ -34,4 +33,5 @@ featured: false
 
 image:
   focal_point: Right
+  
 ---
