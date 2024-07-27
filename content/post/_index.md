@@ -1,4 +1,5 @@
 ---
+widget: portfolio
 title: Blogs
 type: landing
 cascade:
