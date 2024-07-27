@@ -16,8 +16,8 @@ summary: Providing a structured framework to effectively plan, execute, and pres
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: '2024-16-05T13:30:00Z'
-date_end: '2024-16-05T16:30:00Z'
+date: '2024-08-16T13:30:00Z'
+date_end: '2024-08-16T16:30:00Z'
 all_day: false
 
 # Schedule page publish date (NOT talk date).
