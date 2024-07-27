@@ -12,7 +12,8 @@ sections:
     content:
       title: Blogs
       text: |
-        <a href="https://gohugo.io/documentation/" style="background-color: #32CD32; color: #fff; padding: 2px 4px; border-radius: 3px; text-decoration: none;">#FinancialProduct</a>
+        <a href="https://gohugo.io/documentation/" style="background-color: #0b3d0b; color: #fff; padding: 2px 4px; border-radius: 3px; text-decoration: none;">Hugo Documentation</a>
+        <a href="https://gohugo.io/documentation/" style="background-color: #0b3d0b; color: #fff; padding: 2px 4px; border-radius: 3px; text-decoration: none;">#FinancialProduct</a>
       count: 20
       filters:
         folders:
