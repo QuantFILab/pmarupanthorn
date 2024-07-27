@@ -17,7 +17,7 @@ sections:
       # Show a call-to-action button under your biography? (optional)
       button:
         text: Download CV
-        url: uploads/resume.pdf
+        url: https://quantfilab.github.io/pmarupanthorn/tags/academic/
     design:
       css_class: dark
       background:
@@ -109,9 +109,6 @@ sections:
   - block: markdown
     id: collaboration
     content:
-      button:
-        text: Get Started
-        url: https://quantfilab.github.io/pmarupanthorn/tags/academic/
       title: 'Collaboration'
       subtitle: ''
       text: |-
