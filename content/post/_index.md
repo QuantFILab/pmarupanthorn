@@ -10,6 +10,7 @@ sections:
   - block: tags
     content:
       title: Tags
+    
   - block: collection
     id: post
     content:
