@@ -6,6 +6,7 @@ cascade:
       kind: page
     params:
       show_breadcrumb: true
+sections:
   - block: collection
     id: teaching
     content:
@@ -21,6 +22,6 @@ cascade:
     content:
       title: Teaching Courses
       text: |
-        This page shows only the most recent five courses. Please navigate to any course to see the list of all courses, which will appear on the right-hand side.
+        This page shows only the most recent five courses. Please navigate to any course to see the list of all courses, which will appear on the left-hand side.
   
 ---
