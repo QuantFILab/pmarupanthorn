@@ -49,6 +49,7 @@ interests:
   - Quantitative Risk Management
   - Stochastic Process
   - Statistical Machine Learning
+  - Monte Carlo Simulation
 
 education:
   - area: PhD Actuarial Mathematics
