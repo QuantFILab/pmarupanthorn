@@ -1,15 +1,23 @@
 ---
-title: Recent & Upcoming Talks
-cms_exclude: true
-#url: talk
-
-# View
-view: article-grid
-columns: 2
-fill_image: true
-
-# Optional cover image (relative to `assets/media/` folder).
-image:
-  caption: ''
-  filename: ''
+title: Teaching
+type: landing
+cascade:
+  - _target:
+      kind: page
+    params:
+      show_breadcrumb: true
+sections:
+  - block: collection
+    id: event
+    content:
+      title: Recent & Upcoming Talks
+      count: 0
+      filters:
+        folders:
+          - event
+    design:
+      view: article-grid
+      columns: 3
+      fill_image: false
+  
 ---
