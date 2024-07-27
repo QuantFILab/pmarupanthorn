@@ -12,7 +12,7 @@ address:
   postcode: '190-8562'
   country: Japan
 
-summary: Stochastic Modelling in Climate Risk: Financial Mathematics and Economics
+summary: Stochastic Modelling in Climate Risk; Financial Mathematics and Economics
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
