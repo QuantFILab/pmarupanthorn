@@ -72,14 +72,14 @@ Using the sample data provided:
 
 It is important to note that the standard Euler-Maruyama scheme is not efficient when applied to path-dependent options. A more effective discretization method that accounts for intermediate time effects was discussed in [1] on pages 7-8.
 
-<img src="content/post/option2024-1/mc (2).png" alt="Figure 1. Simple paths simulated with m = 252 (daily)" class="center" />
+<img src="[content/post/option2024-1/](https://raw.githubusercontent.com/QuantFILab/pmarupanthorn/main/content/post/option2024-1/mc (2).png" alt="Figure 1. Simple paths simulated with m = 252 (daily)" class="center" />
 
 The 10,000 simple paths simulated are shown in Figure 1. The prices of the options follow a log-normal distribution. Next, the proposed algorithms are applied to estimate the prices of the options given the parameters. Here, the time step is set to $m = 252$ or one daily step.
 
   - The price of the Asian option is 5.843582.
   - The price of the lookback option is 18.348289.
 
-<img src="content/post/option2024-1/df (1).png" alt="Figure 2. Difference in Payoff between Lookback and Asian Options per Path" class="center" />
+<img src="https://raw.githubusercontent.com/QuantFILab/pmarupanthorn/main/content/post/option2024-1/df (1).png" alt="Figure 2. Difference in Payoff between Lookback and Asian Options per Path" class="center" />
 
 Figure 2 shows the difference in payoffs between lookback and Asian options for each path. The differences are all non-negative, implying that the payoff of the lookback option consistently dominates the Asian option payoff at equivalent parameters. This result is derived from their respective payoff functions. Since 
 
@@ -95,7 +95,7 @@ $$
 
 It is straightforward to prove that the maximum function always dominates the average function, as discussed in the Appendix.
 
-<img src="content/post/option2024-1/featured.png" alt="Figure 3. Difference in Payoff between Lookback and Asian Options per Path" class="center" />
+<img src="https://raw.githubusercontent.com/QuantFILab/pmarupanthorn/main/content/post/option2024-1/featured.png" alt="Figure 3. Difference in Payoff between Lookback and Asian Options per Path" class="center" />
 
 Next, it is crucial to consider what would happen to the spread of option prices if the maturity date varies. Figure 3 displays the difference between the lookback and Asian option prices at different maturities. As can be observed, the spread in price increases exponentially as the contract duration becomes longer. This makes sense because the issuer of the lookback option takes on more risk as the maximum value of the underlying price can be hit over a longer period. Conversely, the average payoff of the Asian option tends to be more predictable when the time series is extended, as a few samples will not significantly change the average of a large number.
 
