@@ -44,7 +44,7 @@ The dataset includes the following primary features:
 
 
 
-<img src="https://raw.githubusercontent.com/QuantFILab/pmarupanthorn/main/content/post/ML2024-1/hist.png" alt="Figure 1. DDistributions of Selected Features" style="display: block; margin-left: auto; margin-right: auto; width: 70%;" />
+<img src="https://raw.githubusercontent.com/QuantFILab/pmarupanthorn/main/content/post/ML2024-1/hist.png" alt="Figure 1. Distributions of Selected Features" style="display: block; margin-left: auto; margin-right: auto; width: 50%;" />
 
 Figure 1 displays the distributions of some selected features, providing insights into their ranges and central tendencies. There are no extreme outliers in the data. Since the SET100 does not grow rapidly compared to other markets and the investigation period is relatively short, the histograms of the features show central tendencies. Additionally, these features are highly correlated. Feature engineering is necessary to capture the underlying patterns and improve the model's performance.
 
@@ -168,10 +168,10 @@ The moderate accuracy and performance metrics of the SVM model suggest potential
 
 **Table:** Classification Report and Metrics
 
-<img src="https://raw.githubusercontent.com/QuantFILab/pmarupanthorn/main/content/post/ML2024-1/featured.png" alt="Figure 2. Classification Confusion Matrix" style="display: block; margin-left: auto; margin-right: auto; width: 70%;" />
+<img src="https://raw.githubusercontent.com/QuantFILab/pmarupanthorn/main/content/post/ML2024-1/featured.png" alt="Figure 2. Classification Confusion Matrix" style="display: block; margin-left: auto; margin-right: auto; width: 50%;" />
 
 <img src="https://raw.githubusercontent.com/QuantFILab/pmarupanthorn/main/content/post/ML2024-1/roc.png" alt="Figure 3. Classification Receiver Operating Characteris-
-tic Curve" style="display: block; margin-left: auto; margin-right: auto; width: 70%;" />
+tic Curve" style="display: block; margin-left: auto; margin-right: auto; width: 50%;" />
 
 
 ## Appendix
