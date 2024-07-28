@@ -162,7 +162,7 @@ After performing the Grid Search, the best parameters were found to be: $C = 1$ 
 
 In practice, Python's scikit-learn library uses the Sequential Minimal Optimization (SMO) algorithm \cite{platt1998sequential} to solve the dual formulation of the SVM optimization problem \cite{chauhan2019problem} (Appendix \ref{app:svmdual}). SMO breaks the problem into smaller sub-problems, each involving only two Lagrange multipliers at a time, which makes the optimization more efficient and scalable. The details can be explored in Appendix \ref{app:smo}.
 
-### Model Validation/Evolution
+## Model Validation/Evolution
 
 
 The model performance is listed in Table \ref{tab:classification_report}. The SVM model achieved an accuracy of 65.80\%, indicating a high rate of correct predictions. The precision for class 0.0 (negative returns) was 0.68, and for class 1.0 (positive returns) it was 0.62, demonstrating the model's ability to correctly identify negative returns more accurately than positive returns. The recall for class 0.0 was 0.74, and for class 1.0 it was 0.55, indicating that the model successfully identified a majority of actual negative returns but less so for positive returns. The F1-scores for both classes were moderate (0.71 for class 0.0 and 0.58 for class 1.0), reflecting a balance between precision and recall. The ROC AUC score of 0.64 further validates the model's discriminatory ability between positive and negative returns.
