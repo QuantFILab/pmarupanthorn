@@ -80,7 +80,7 @@ In this process, 70\% of the data was allocated to the training set, and 30\% to
 ## Feature Engineering
 
 
-The following table (\ref{tab:features}) lists the transformed features, their descriptions, and the mathematical formulas used to calculate them:
+The following table lists the transformed features, their descriptions, and the mathematical formulas used to calculate them:
 
 | **Feature**            | **Description**                                                                                                                  | **Mathematical Formula**                        |
 |------------------------|----------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------|
@@ -115,10 +115,12 @@ where $\mathbf{w}$ is the weight vector, $\mathbf{x}$ is the input vector, and $
 
 
 The objective of SVM is to maximize the margin while correctly classifying the training data. This can be formulated as a constrained optimization problem:
-\begin{align}
-& \min_{\mathbf{w}, b} \frac{1}{2} \|\mathbf{w}\|^2 + C \sum_{i=1}^{n} \xi_i \\
-& \text{subject to } y_i (\mathbf{w} \cdot \mathbf{x}_i + b) \geq 1 \quad \forall i
-\end{align}
+$$
+\min_{\mathbf{w}, b} \frac{1}{2} \|\mathbf{w}\|^2 + C \sum_{i=1}^{n} \xi_i 
+
+\text{subject to } y_i (\mathbf{w} \cdot \mathbf{x}_i + b) \geq 1 \quad \forall i
+$$
+
 where $y_i$ are the class labels, and $\mathbf{x}_i$ are the input vectors, $\xi_i \geq 0 \quad \forall i$, and $C$ is the regularization parameter.
 
 A larger value of $C$ puts more emphasis on minimizing the misclassification errors, potentially at the expense of a smaller margin. This can lead to a model that fits the training data very closely (low bias but high variance), which may result in overfitting.
@@ -177,25 +179,16 @@ The moderate accuracy and performance metrics of the SVM model suggest potential
 \end{figure}
 
 
-\begin{table}[H]
-\centering
-\begin{tabular}{|l|c|c|c|c|}
-\hline
-\textbf{Metric} & \textbf{Precision} & \textbf{Recall} & \textbf{F1-Score} & \textbf{Support} \\
-\hline
-0 & 0.68 & 0.74 & 0.71 & 262 \\
-1 & 0.62 & 0.55 & 0.58 & 200 \\
-\hline
-\textbf{Accuracy} & \multicolumn{3}{c|}{0.66} & 462 \\
-\hline
-\textbf{Macro Avg} & 0.65 & 0.64 & 0.65 & 462 \\
-\hline
-\textbf{Weighted Avg} & 0.65 & 0.66 & 0.65 & 462 \\
-\hline
-\end{tabular}
-\caption{Classification Report and Metrics}
-\label{tab:classification_report}
-\end{table}
+| **Metric**      | **Precision** | **Recall** | **F1-Score** | **Support** |
+|-----------------|---------------|------------|--------------|-------------|
+| 0               | 0.68          | 0.74       | 0.71         | 262         |
+| 1               | 0.62          | 0.55       | 0.58         | 200         |
+| **Accuracy**    | \multicolumn{3}{c|}{0.66}   | 462          |
+| **Macro Avg**   | 0.65          | 0.64       | 0.65         | 462         |
+| **Weighted Avg**| 0.65          | 0.66       | 0.65         | 462         |
+
+**Table:** Classification Report and Metrics
+
 
 ## Appendix
 
