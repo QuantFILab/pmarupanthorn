@@ -183,7 +183,7 @@ The moderate accuracy and performance metrics of the SVM model suggest potential
 |-----------------|---------------|------------|--------------|-------------|
 | 0               | 0.68          | 0.74       | 0.71         | 262         |
 | 1               | 0.62          | 0.55       | 0.58         | 200         |
-| **Accuracy**    | \multicolumn{3}{c|}{0.66}   | 462          |
+| **Accuracy**    | 0.66          | 0.66       | 0.66         | 462         |
 | **Macro Avg**   | 0.65          | 0.64       | 0.65         | 462         |
 | **Weighted Avg**| 0.65          | 0.66       | 0.65         | 462         |
 
