@@ -72,7 +72,7 @@ Using the sample data provided:
 
 It is important to note that the standard Euler-Maruyama scheme is not efficient when applied to path-dependent options. A more effective discretization method that accounts for intermediate time effects was discussed in [1] on pages 7-8.
 
-<img src="[content/post/option2024-1/](https://raw.githubusercontent.com/QuantFILab/pmarupanthorn/main/content/post/option2024-1/mc.png" alt="Figure 1. Simple paths simulated with m = 252 (daily)" class="center" />
+<img src="https://raw.githubusercontent.com/QuantFILab/pmarupanthorn/main/content/post/option2024-1/mc.png" alt="Figure 1. Simple paths simulated with m = 252 (daily)" class="center" />
 
 The 10,000 simple paths simulated are shown in Figure 1. The prices of the options follow a log-normal distribution. Next, the proposed algorithms are applied to estimate the prices of the options given the parameters. Here, the time step is set to $m = 252$ or one daily step.
 
