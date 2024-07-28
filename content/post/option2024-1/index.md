@@ -102,7 +102,7 @@ On the other hand, Asian options average the price of the underlying asset over 
 
 
 
-$$ Appendix
+## Appendix
 
 \textbf{Lemma}: Let $X$ be the set of real numbers. Then,
 
