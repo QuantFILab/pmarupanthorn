@@ -105,16 +105,16 @@ $$\mathbb{E}(X|F) = \int_F X d\mathbb{P},$$
 for $F \in \mathcal{F}$. We use the conditional expectation of the process $X_t^\alpha$, 
 
 $$
-X_s^\alpha = \mathbb{E}[(X_t^\alpha|F)]=  \int_{F} X_s^\alpha d\mathbb{P}, \label{1}
+E1. X_s^\alpha = \mathbb{E}[(X_t^\alpha|F)]=  \int_{F} X_s^\alpha d\mathbb{P}, 
 $$
 
 because of  an $\mathbb{F}$-martingale of $X_t^\alpha$ and the definition of the conditional expectation. We also know that $\mathbb{E}(X_t^\alpha) < \infty$. Then we consider again $X_s^\alpha$,
 
 $$
-X_s^\alpha = \mathbb{E}[(X_s^\alpha|F)]=  \int_{F} X_s^\alpha d\mathbb{P}, \label{2}
+E2. X_s^\alpha = \mathbb{E}[(X_s^\alpha|F)]=  \int_{F} X_s^\alpha d\mathbb{P}, 
 $$
 
-due to $X_s$ is $\mathcal{F}_s$-measurable and the definition of the conditional expectation. Setting (\ref{1}) = (\ref{2}), 
+due to $X_s$ is $\mathcal{F}_s$-measurable and the definition of the conditional expectation. Setting $E1 = E2$, 
 
 $$\int_{F} X_t^\alpha d \mathbb{P} = \int_{F} X_s^\alpha d\mathbb{P}$$
 
@@ -141,7 +141,7 @@ Taking $n$ time derivative respect to $\alpha$, we have
 Since $F \in \mathcal{F}_s$, 
 
 $$
-\mathbb{E}(H_n(W_t,t)|\mathcal{F}_s)  =  H_n(W_s,s) \label{4}
+\mathbb{E}(H_n(W_t,t)|\mathcal{F}_s)  =  H_n(W_s,s)
 $$
 
 
