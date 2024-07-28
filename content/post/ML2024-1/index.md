@@ -308,6 +308,7 @@ where $K(\mathbf{x}_i, \mathbf{x}_j)$ is the kernel function that computes the d
 
 
 The SMO algorithm works as follows:
+
 - Initialize the Lagrange multipliers $\alpha_i$ to zero.
 - item Repeat until convergence:
   1. Select two multipliers $\alpha_i$ and $\alpha_j$ that violate the Karush-Kuhn-Tucker (KKT) conditions.
