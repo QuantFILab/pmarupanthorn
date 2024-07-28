@@ -82,36 +82,18 @@ In this process, 70\% of the data was allocated to the training set, and 30\% to
 
 The following table (\ref{tab:features}) lists the transformed features, their descriptions, and the mathematical formulas used to calculate them:
 
-\begin{table}[h]
-\centering
-\begin{tabular}{|l|p{7cm}|p{4cm}|}
-\hline
-\textbf{Feature} & \textbf{Description} & \textbf{Mathematical Formula} \\
-\hline
-Volatility & Standard deviation of returns over a rolling window of 10 days. It captures the degree of variation in stock prices, indicating market uncertainty and risk. & $\text{std}(\text{Return}_{t-10:t-1})$ \\
-\hline
-Momentum & Difference between the current close price and the close price 10 days ago. This feature helps identify the trend and strength of stock price movements.& $\text{Close}_{t-10} - \text{Close}_{t-20}$ \\
-\hline
-Avg\_Open\_Close & Average of the open and close prices. It provides a smoothed value representing the central tendency of the prices within a trading day. & $\frac{\text{Open}_{t-1} + \text{Close}_{t-1}}{2}$ \\
-\hline
-Avg\_High\_Low & Average of the high and low prices, gives an insight into the range of price fluctuations within a day, indicating the volatility within a single trading day.& $\frac{\text{High}_{t-1} + \text{Low}_{t-1}}{2}$ \\
-\hline
-Price\_Range & Difference between the high and low prices, this feature shows the price movement within a day. & $\text{High}_{t-1} - \text{Low}_{t-1}$ \\
-\hline
-Daily\_Change & Difference between the close and open prices. & $\text{Close}_{t-1} - \text{Open}_{t-1}$ \\
-\hline
-Daily\_Change\_Percent & Daily change as a percentage of the open price, offering a normalized view of daily price changes. & $\frac{\text{Daily\_Change}_{t}}{\text{Open}_{t-1}} \times 100$ \\
-\hline
-Rolling\_Mean\_Close & Rolling mean of the close prices over a 10-day window, provides a smoothed trend of the closing prices. & $\text{mean}(\text{Close}_{t-10:t-1})$ \\
-\hline
-Rolling\_Mean\_Volume & Rolling mean of volatility over a 10-day window, highlighting longer-term trends in market volatility. & $\text{mean}(\text{Volatility}_{t-10:t-1})$ \\
-\hline
-Rolling\_Mean\_Momentum & Rolling mean of momentum over a 10-day window, helps in identifying sustained trends in price movements. & $\text{mean}(\text{Momentum}_{t-10:t-1})$ \\
-\hline
-\end{tabular}
-\caption{Description and Mathematical Formulas of Features Used in the SVM Model}
-\label{tab:features}
-\end{table}
+| **Feature**            | **Description**                                                                                                                  | **Mathematical Formula**                        |
+|------------------------|----------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------|
+| Volatility             | Standard deviation of returns over a rolling window of 10 days. It captures the degree of variation in stock prices, indicating market uncertainty and risk. | $\text{std}(\text{Return}_{t-10:t-1})$          |
+| Momentum               | Difference between the current close price and the close price 10 days ago. This feature helps identify the trend and strength of stock price movements. | $\text{Close}_{t-10} - \text{Close}_{t-20}$     |
+| Avg_Open_Close         | Average of the open and close prices. It provides a smoothed value representing the central tendency of the prices within a trading day. | $\frac{\text{Open}_{t-1} + \text{Close}_{t-1}}{2}$ |
+| Avg_High_Low           | Average of the high and low prices, gives an insight into the range of price fluctuations within a day, indicating the volatility within a single trading day. | $\frac{\text{High}_{t-1} + \text{Low}_{t-1}}{2}$ |
+| Price_Range            | Difference between the high and low prices, this feature shows the price movement within a day.                                    | $\text{High}_{t-1} - \text{Low}_{t-1}$          |
+| Daily_Change           | Difference between the close and open prices.                                                                                     | $\text{Close}_{t-1} - \text{Open}_{t-1}$        |
+| Daily_Change_Percent   | Daily change as a percentage of the open price, offering a normalized view of daily price changes.                                 | $\frac{\text{Daily_Change}_{t}}{\text{Open}_{t-1}} \times 100$ |
+| Rolling_Mean_Close     | Rolling mean of the close prices over a 10-day window, provides a smoothed trend of the closing prices.                            | $\text{mean}(\text{Close}_{t-10:t-1})$          |
+| Rolling_Mean_Volume    | Rolling mean of volatility over a 10-day window, highlighting longer-term trends in market volatility.                             | $\text{mean}(\text{Volatility}_{t-10:t-1})$     |
+| Rolling_Mean_Momentum  | Rolling mean of momentum over a 10-day window, helps in identifying sustained trends in price movements.                           | $\text{mean}(\text{Momentum}_{t-10:t-1})$       |
 
 
 By engineering these features, we transformed raw stock price data into a structured dataset that captures essential financial metrics, facilitating effective modeling and prediction using the SVM approach.
