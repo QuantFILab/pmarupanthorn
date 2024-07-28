@@ -51,12 +51,14 @@ is an $\mathbb{F}$-martingale
 
 We know that $W_t \sim N(0,t)$. From the moment generating of the normal distribution ($X \sim N(\mu,\sigma^2)$ then $M_X(\alpha) = \exp(\alpha\mu +  \frac{1}{2}\sigma^2\alpha^2)$,  the relationship between the $W_t-W_s \sim N(0,s-t)$ and its moment generating function is given by
 
+$$
 \begin{align}
 M_{W_t-W_s}(\alpha) &= \mathbb{E}(\exp(\alpha(W_t-W_s))) \nonumber\\
- &=  \exp(\alpha\mu +  \frac{1}{2}\sigma^2\alpha^2) & W_t - W_s \sim N(0,s-t \nonumber)\\
+ &=  \exp(\alpha\mu +  \frac{1}{2}\sigma^2\alpha^2) & W_t - W_s \sim N(0,s-t) \nonumber\\
 & = \exp(\alpha (\mathbb{E}(W_t) - \mathbb{E}(W_s)) +  \frac{1}{2}(s-t)\alpha^2) & \mu = \mathbb{E}(x),\ \sigma^2 = s-t  \nonumber\\
 & =  \exp(\frac{1}{2}(s-t)\alpha^2) & \mathbb{E}(W_t) = \mathbb{E}(W_s) = 0. \label{MGF} 
 \end{align}
+$$
 
 Again,  we consider the conditional expected value of the process $X_t^\alpha$,
 
