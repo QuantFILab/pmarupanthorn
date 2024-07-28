@@ -168,9 +168,9 @@ The moderate accuracy and performance metrics of the SVM model suggest potential
 
 **Table:** Classification Report and Metrics
 
-<img src="https://raw.githubusercontent.com/QuantFILab/pmarupanthorn/main/content/post/MLE2024-1/featured.png" alt="Figure 2. Classification Confusion Matrix" style="display: block; margin-left: auto; margin-right: auto; width: 70%;" />
+<img src="https://raw.githubusercontent.com/QuantFILab/pmarupanthorn/main/content/post/ML2024-1/featured.png" alt="Figure 2. Classification Confusion Matrix" style="display: block; margin-left: auto; margin-right: auto; width: 70%;" />
 
-<img src="https://raw.githubusercontent.com/QuantFILab/pmarupanthorn/main/content/post/MLE2024-1/roc.png" alt="Figure 3. Classification Receiver Operating Characteris-
+<img src="https://raw.githubusercontent.com/QuantFILab/pmarupanthorn/main/content/post/ML2024-1/roc.png" alt="Figure 3. Classification Receiver Operating Characteris-
 tic Curve" style="display: block; margin-left: auto; margin-right: auto; width: 70%;" />
 
 
