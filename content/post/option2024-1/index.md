@@ -55,4 +55,69 @@ $$
 
 where $r$ is the risk free rate, $S_i(t_j)$ is underlying asset price at the path index $i$ and time index $j$, $Z_{ij}$ is a standard normal variable . The algorithm for generating the path and estimating the expected discounted payoff is outlined in the following steps.
 
+## Simulation Results and Discussion
+
+Following the discussed algorithms, we estimate the price of the Asian and lookback options by setting the parameters as the following list.
+Using the sample data provided:
+
+  - Initial stock price \( S_0 = 100 \)
+  - Strike price \( E = 100 \)
+  - Time to expiry \( T-t = 1 \) year
+  - Volatility \( \sigma = 20\% \)
+  - Constant risk-free interest rate \( r = 5\% \)
+
+It is important to note that the standard Euler-Maruyama scheme is not efficient when applied to path-dependent options. A more effective discretization method that accounts for intermediate time effects was discussed in \cite{glasserman2004monte} on pages 7-8.
+
+The 10,000 simple paths simulated by Equation (\ref{eq:euler}) are shown in Figure \ref{fig:mc}. The prices of the options follow a log-normal distribution. Next, the proposed algorithms are applied to estimate the prices of the options given the parameters. Here, the time step is set to \(m = 252\) or one daily step.
+
+  - The price of the Asian option is 5.843582.
+  - The price of the lookback option is 18.348289.
+
+
+Figure \ref{fig:dif} shows the difference in payoffs between lookback and Asian options for each path. The differences are all non-negative, implying that the payoff of the lookback option consistently dominates the Asian option payoff at equivalent parameters. This result is derived from their respective payoff functions. Since 
+
+$$
+\max\{S(t_1), S(t_2), \dots, S(t_j)\} \geq \bar{S}(t),
+$$
+
+it follows that:
+
+$$
+    \Lambda_{asian}(t) \leq \Lambda_{lookback}(t).
+$$
+
+It is straightforward to prove that the maximum function always dominates the average function, as discussed in the Appendix.
+
+
+Next, it is crucial to consider what would happen to the spread of option prices if the maturity date varies. Figure \ref{fig:vdif} displays the difference between the lookback and Asian option prices at different maturities. As can be observed, the spread in price increases exponentially as the contract duration becomes longer. This makes sense because the issuer of the lookback option takes on more risk as the maximum value of the underlying price can be hit over a longer period. Conversely, the average payoff of the Asian option tends to be more predictable when the time series is extended, as a few samples will not significantly change the average of a large number.
+
+Financially, lookback options effectively eliminate timing risk because the holder is guaranteed to benefit from the best prices achieved over the option's life. This feature is particularly attractive in volatile markets, where predicting the optimal time to exercise an option can be challenging. Conversely, Asian options reduce the risk of market manipulation near expiration and mitigate the risk associated with short-term volatility. These characteristics make them less risky from the issuer's perspective compared to lookback options.
+
+
+## Conclusion
+
+This report has explored the financial characteristics and pricing mechanisms of call Asian and lookback options using the Euler-Maruyama simulation method. Our simulations confirm that lookback options consistently command higher prices than Asian options under equivalent parameters. This difference is attributed to the inherent payoff structures of the two options. Lookback options, which pay based on the maximum or minimum price reached by the underlying asset, provide a payoff that capitalizes on the optimal market conditions during the option's life. Consequently, these options are particularly valuable in volatile markets where price peaks can be significant.
+
+On the other hand, Asian options average the price of the underlying asset over a period, which tends to smooth out extremes of market movements. This characteristic not only reduces the cost of the option but also diminishes the payoff potential compared to lookback options. From a risk management perspective, Asian options offer a more stable but generally less lucrative investment compared to lookback options.
+
+
+
+$$ Appendix
+
+\textbf{Lemma}: Let $X$ be the set of real numbers. Then,
+
+$$
+\bar{X} \leq \max X
+$$
+
+\noindent\textbf{Proof}:
+Given that $\bar{X} = \frac{1}{m}\sum_{i = 1}^m x_i$, where $x_i \in X$, it follows that each $x_i \leq \max X$. Therefore, we have
+
+$$
+\bar{X} = \frac{1}{m}\sum_{i = 1}^m x_i \leq \frac{1}{m}\sum_{i = 1}^m \max X = \frac{1}{m} (m \max X) = \max X.
+$$
+
+This shows that the average of the elements in \(X\) cannot exceed the maximum element in $X$.
+
+
 </div>
