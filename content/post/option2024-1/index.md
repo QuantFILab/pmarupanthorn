@@ -14,6 +14,10 @@ image:
 
 <div style="font-size: 16px;">
   
+## Note
+
+The project was the CQF exam in Monte Carlo simulation for option pricing.
+
 ## Introduction
 
 Asian and lookback options, two distinct types of exotic options, differ fundamentally in their payoff structures, each designed to meet specific financial needs and risk profiles. Asian options, encompassing average price and average strike varieties, calculate their payoffs based on the average price of the underlying asset over a designated period. This averaging reduces the effects of volatility, often making these options less costly than standard options, which makes them particularly suitable for hedging in markets characterized by high volatility but indeterminate price trends.
