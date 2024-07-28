@@ -58,7 +58,7 @@ $$
 M_{W_t-W_s}(\alpha) &= \mathbb{E}(\exp(\alpha(W_t-W_s))) \nonumber\\
  &=  \exp(\alpha\mu +  \frac{1}{2}\sigma^2\alpha^2) & W_t - W_s \sim N(0,s-t) \nonumber\\
 & = \exp(\alpha (\mathbb{E}(W_t) - \mathbb{E}(W_s)) +  \frac{1}{2}(s-t)\alpha^2) & \mu = \mathbb{E}(x),\ \sigma^2 = s-t  \nonumber\\
-& =  \exp(\frac{1}{2}(s-t)\alpha^2) & \mathbb{E}(W_t) = \mathbb{E}(W_s) = 0. \label{MGF} 
+& =  \exp(\frac{1}{2}(s-t)\alpha^2) & \mathbb{E}(W_t) = \mathbb{E}(W_s) = 0. \ (E3)
 \end{align}
 $$
 
@@ -71,7 +71,7 @@ $$
 & =  \mathbb{E}\left[\exp(\alpha(W_t - W_s))\exp(\alpha W_s -\frac{1}{2}\alpha^2t) \Bigg|\mathcal{F}_s\right] &\text{Exponential function's property} \\
 & =  \exp(\alpha W_s -\frac{1}{2}\alpha^2t)  \mathbb{E}\left[\exp(\alpha(W_t - W_s)) \Bigg|\mathcal{F}_s\right] &\text{$W_s$ is measurable with respect to $\mathcal{F}_s$} \\
 & =  \exp(\alpha W_s -\frac{1}{2}\alpha^2t) \mathbb{E}[\exp(\alpha(W_t - W_s))]&\text{$W_t - W_s \sim N(0,t-s)$ independent of $\mathcal{F}_s$}\\
-& =   \exp(\alpha W_s -\frac{1}{2}\alpha^2t)\exp(\frac{1}{2}(s-t)\alpha^2)  &\text{Using MGF (\ref{MGF})} \\
+& =   \exp(\alpha W_s -\frac{1}{2}\alpha^2t)\exp(\frac{1}{2}(s-t)\alpha^2)  &\text{Using MGF (E3)} \\
 & =    \exp(\alpha W_s - \frac{1}{2}\alpha^2s)  &\text{Simplifying} \\
 & =   X_s^\alpha &\text{From Definition of $X_s^\alpha$} 
 \end{align*}
