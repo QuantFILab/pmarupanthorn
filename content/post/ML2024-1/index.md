@@ -30,7 +30,7 @@ Accurately predicting stock returns is crucial for informed investment decisions
 
 ## Data Retrieving
 
-The data for this study, including the open, high, low, and close (OHLC) prices of the SET100 stocks, was retrieved from [Investing.com](https://www.investing.com/). The dataset spans from January 3, 2018, to May 30, 2024, providing a comprehensive range of historical price data [here](https://raw.githubusercontent.com/QuantFILab/pmarupanthorn/main/content/post/MLE2024-1/SET100Data.csv). All prices are adjusted for dividends and are presented in Thai Baht (THB). Upon retrieval, the data underwent a thorough cleaning process to ensure its quality and reliability. This process involved handling missing values, removing any duplicates, and ensuring consistency in the date formats. 
+The data for this study, including the open, high, low, and close (OHLC) prices of the SET100 stocks, was retrieved from [Investing.com](https://www.investing.com/). The dataset spans from January 3, 2018, to May 30, 2024, providing a comprehensive range of historical price data [here](https://raw.githubusercontent.com/QuantFILab/pmarupanthorn/main/content/post/ML2024-1/SET100Data.csv). All prices are adjusted for dividends and are presented in Thai Baht (THB). Upon retrieval, the data underwent a thorough cleaning process to ensure its quality and reliability. This process involved handling missing values, removing any duplicates, and ensuring consistency in the date formats. 
 
 
 ## Data Visualization/Description
@@ -44,7 +44,7 @@ The dataset includes the following primary features:
 
 
 
-<img src="https://raw.githubusercontent.com/QuantFILab/pmarupanthorn/main/content/post/MLE2024-1/hist.png" alt="Figure 1. DDistributions of Selected Features" style="display: block; margin-left: auto; margin-right: auto; width: 70%;" />
+<img src="https://raw.githubusercontent.com/QuantFILab/pmarupanthorn/main/content/post/ML2024-1/hist.png" alt="Figure 1. DDistributions of Selected Features" style="display: block; margin-left: auto; margin-right: auto; width: 70%;" />
 
 Figure 1 displays the distributions of some selected features, providing insights into their ranges and central tendencies. There are no extreme outliers in the data. Since the SET100 does not grow rapidly compared to other markets and the investigation period is relatively short, the histograms of the features show central tendencies. Additionally, these features are highly correlated. Feature engineering is necessary to capture the underlying patterns and improve the model's performance.
 
