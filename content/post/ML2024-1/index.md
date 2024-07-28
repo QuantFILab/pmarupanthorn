@@ -151,9 +151,9 @@ To optimize the performance of the SVM model, we employed Grid Search, a systema
 
 In this study, we considered three key hyperparameters for the SVM model:
 
-    - $C$: The regularization parameter, which controls the trade-off between achieving a low error on the training data and minimizing the model complexity to avoid overfitting.
-    - $\gamma$: The kernel coefficient for non-linear kernels (e.g., Radial Basis Function, RBF). It defines how far the influence of a single training example reaches, with low values meaning ‘far’ and high values meaning ‘close’. 
-    - kernel: The type of kernel function used to transform the input data. We considered two kernel types: Linear and Radial Basis Function, and Sigmiod Kernels.
+- $C$: The regularization parameter, which controls the trade-off between achieving a low error on the training data and minimizing the model complexity to avoid overfitting.
+- $\gamma$: The kernel coefficient for non-linear kernels (e.g., Radial Basis Function, RBF). It defines how far the influence of a single training example reaches, with low values meaning ‘far’ and high values meaning ‘close’. 
+- kernel: The type of kernel function used to transform the input data. We considered two kernel types: Linear and Radial Basis Function, and Sigmiod Kernels.
 
 
 We defined a grid of hyperparameters with the following values $C \in \{0.1, 1, 10, 100\}$, $\gamma \in \{1, 0.1, 0.01, 0.001\}$, and three types of kernel as discuses previous. The grid defined above results in a total of 48 combinations (4 values for $C$, 4 values for $\gamma$, and 3 values for kernel). Each combination was evaluated to determine the optimal set of hyperparameters.
