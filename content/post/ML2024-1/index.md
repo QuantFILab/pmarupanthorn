@@ -32,6 +32,7 @@ Accurately predicting stock returns is crucial for informed investment decisions
 
 The data for this study, including the open, high, low, and close (OHLC) prices of the SET100 stocks, was retrieved from [Investing.com](https://www.investing.com/). The dataset spans from January 3, 2018, to May 30, 2024, providing a comprehensive range of historical price data. All prices are adjusted for dividends and are presented in Thai Baht (THB). Upon retrieval, the data underwent a thorough cleaning process to ensure its quality and reliability. This process involved handling missing values, removing any duplicates, and ensuring consistency in the date formats. 
 
+{{< table path="SET100Data.csv" header="true" caption="Table 1: SET100 Data" >}}
 
 ## Data Visualization/Description
 
