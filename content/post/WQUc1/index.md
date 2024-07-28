@@ -30,6 +30,7 @@ Show that $W$ is an $\mathbb{F}$-martingale
 
 We consider the information at the state $s$ such that $s \leq t$. From the assumption $W$ is Brownian motion, that imply $W_t \sim N(0,t)$ and $W_s \sim N(0,s)$. The conditional expectation given the information state $s$ of the Brownian motion is,
 
+$$
 \begin{align*}
 \mathbb{E}[W_t|\mathcal{F}_s] &= \mathbb{E}[(W_t - W_s + W_s)|\mathcal{F}_s] & \text{Include and exclude rules} \\
 &   = \mathbb{E}[(W_t - W_s)|\mathcal{F}_s]  + \mathbb{E}[W_s|\mathcal{F}_s] & \text{Linear property of the expectation } \\
@@ -38,6 +39,7 @@ We consider the information at the state $s$ such that $s \leq t$. From the assu
 & = 0 - 0+ W_s & \text{$W_t \sim N(0,t)$ and $W_s \sim N(0,s)$} \\
 & = W_s.
 \end{align*} 
+$$
 
 Therefore, $W$ is an $\mathbb{F}-$martingale. 
 
@@ -62,6 +64,7 @@ $$
 
 Again,  we consider the conditional expected value of the process $X_t^\alpha$,
 
+$$
 \begin{align*}
 \mathbb{E}[X_t^{\alpha}|\mathcal{F}_s]  &= \mathbb{E}\left[\exp(\alpha W_t - \frac{1}{2}\alpha^2t)\Bigg|\mathcal{F}_s\right] &\text{Given information} \\
 & = \mathbb{E}\left[\exp(\alpha(W_t - W_s) + \alpha W_s- \frac{1}{2}\alpha^2t) \Bigg|\mathcal{F}_s\right] &  \text{Include and exclude rules} \\
@@ -72,6 +75,8 @@ Again,  we consider the conditional expected value of the process $X_t^\alpha$,
 & =    \exp(\alpha W_s - \frac{1}{2}\alpha^2s)  &\text{Simplifying} \\
 & =   X_s^\alpha &\text{From Definition of $X_s^\alpha$} 
 \end{align*}
+$$
+
 Therefore, $X_t^\alpha$ is an $\mathbb{F}-$martingale for all $\alpha \in \mathbb{R}$. \\
 
 
@@ -130,6 +135,7 @@ $$\mathbb{E}(H_n(W_t,t)|\mathcal{F}_s) = H_n(W_s,s),$$
 
 Taking $n$ time derivative respect to $\alpha$, we have
 
+$$
 \begin{align*}
 \pdv[n]{}{\alpha}\int_{F} X_t^\alpha d \mathbb{P} &= \pdv[n]{}{\alpha}\int_{F} X_s^\alpha d\mathbb{P} &\text{From (3a)}  \\
 \int_{F} \pdv[n]{}{\alpha} X_t^\alpha d \mathbb{P} &=\int_{F}  \pdv[n]{}{\alpha} X_s^\alpha d\mathbb{P} & \text{Interchange between} \\
@@ -140,6 +146,8 @@ Taking $n$ time derivative respect to $\alpha$, we have
 &&\text{the conditional expectation}\\
 \mathbb{E}(H_n(W_t,t)|F)  &=  H_n(W_s,s) &\text{$W_s$ is $F$-measurable}
 \end{align*} 
+$$
+
 Since $F \in \mathcal{F}_s$, 
 
 $$
