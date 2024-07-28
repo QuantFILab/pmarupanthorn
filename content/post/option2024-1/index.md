@@ -1,6 +1,6 @@
 ---
 title: Why the Lookback Option is More Expensive Than the Asian Option, A Simulation Approach
-summary: 
+summary: The project was the CQF exam in Monte Carlo simulation for option pricing.
 date: 2024-04-22
 math: true
 authors:
