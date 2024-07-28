@@ -105,13 +105,13 @@ $$\mathbb{E}(X|F) = \int_F X d\mathbb{P},$$
 for $F \in \mathcal{F}$. We use the conditional expectation of the process $X_t^\alpha$, 
 
 $$
-E1. X_s^\alpha = \mathbb{E}[(X_t^\alpha|F)]=  \int_{F} X_s^\alpha d\mathbb{P}, 
+X_s^\alpha = \mathbb{E}[(X_t^\alpha|F)]=  \int_{F} X_s^\alpha d\mathbb{P} \ (E1.), 
 $$
 
 because of  an $\mathbb{F}$-martingale of $X_t^\alpha$ and the definition of the conditional expectation. We also know that $\mathbb{E}(X_t^\alpha) < \infty$. Then we consider again $X_s^\alpha$,
 
 $$
-E2. X_s^\alpha = \mathbb{E}[(X_s^\alpha|F)]=  \int_{F} X_s^\alpha d\mathbb{P}, 
+X_s^\alpha = \mathbb{E}[(X_s^\alpha|F)]=  \int_{F} X_s^\alpha d\mathbb{P} \ (E2.), 
 $$
 
 due to $X_s$ is $\mathcal{F}_s$-measurable and the definition of the conditional expectation. Setting $E1 = E2$, 
