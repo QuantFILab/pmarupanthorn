@@ -1,5 +1,5 @@
 ---
-title: Why the Lookback Option is More Expensive Than the Asian Option: A Simulation Approach
+title: Why the Lookback Option is More Expensive Than the Asian Option, A Simulation Approach
 summary: 
 date: 2024-04-22
 math: true
