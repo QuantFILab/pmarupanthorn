@@ -29,13 +29,17 @@ $$
 where $r$ is the risk-free rate, $T$ is the time of expiry, $t$ is the current time, $S_T$ is the stock price at expiry, and $\Lambda(S_T)$ denotes the option's specific payoff function.
 
 Path-dependent options such as the arithmetic average-type call Asian option demonstrate the influence of the underlying asset's historical prices on the payoff:
+
 $$
     \Lambda_{asian}(t) = (\bar{S} - K)^+, \ \text{where} \ \bar{S} = \frac{1}{m}\sum_{j = 1}^m S(t_j),
 $$
+
 with $m$ representing the number of observation periods. Similarly, the fixed-strike lookback option's payoff is determined by:
+
 $$
     \Lambda_{lookback}(t) = (S_{\text{max}} - K)^+
 $$
+
 where $S_{\text{max}}$ is the maximum price reached during the option's duration. Both option payoffs can be readily found in the literature textbook such as the standard book by Hull and Basu \cite{hull2016options}. 
 
 While these options cannot be priced analytically within the traditional Black-Scholes framework, alternative analytical methods such as spectral theory have been employed to estimate the prices of Asian options \cite{linetsky2001exact}. However, this discussion will primarily focus on using the standard Euler-Maruyama scheme for approximating the prices of these options and explaination mathematically why the lockback option more expensive than the Asian option at the equivalent parameters in the subsequent section.
