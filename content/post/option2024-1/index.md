@@ -13,7 +13,9 @@ image:
 ---
 
 <div style="font-size: 16px;">
-  
+
+# English Version
+
 ## Note
 
 The project was the CQF exam in Monte Carlo simulation for option pricing.
@@ -138,5 +140,9 @@ This shows that the average of the elements in \(X\) cannot exceed the maximum e
 
 [4] G. Maruyama. Continuous markov processes and stochastic equations. *Rendiconti del Circolo Matematico
 di Palermo*, 4:48–90, 1955.
+
+
+# Thai Version
+
 
 </div>
