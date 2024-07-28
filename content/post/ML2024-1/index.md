@@ -215,14 +215,13 @@ The moderate accuracy and performance metrics of the SVM model suggest potential
 \label{tab:classification_report}
 \end{table}
 
-\appendix
+## Appendix
 
-\section{Kernel Trick}
-\label{app:A}
+### Kernel Trick
 
 SVM can efficiently perform non-linear classification using kernel functions. Kernels transform the input data into a higher-dimensional space where a linear separator can be used to distinguish between classes. Here, we describe three commonly used kernels: Linear, Radial Basis Function (RBF), and Sigmoid.
 
-### Linear Kernel
+#### Linear Kernel
 The linear kernel is the simplest type of kernel, used when the data is linearly separable in the original feature space. The decision boundary is a hyperplane in the original feature space.
 
 Mathematically, the linear kernel function is defined as:
@@ -241,7 +240,7 @@ $$
 
 where $\mathbf{w}$ is the weight vector and $b$ is the bias term.
 
-### Radial Basis Function (RBF) Kernel
+#### Radial Basis Function (RBF) Kernel
 
 The RBF kernel, also known as the Gaussian kernel, is a popular choice for SVMs because it can handle non-linear relationships by mapping the data into an infinite-dimensional space. It is particularly effective when the decision boundary is highly non-linear.
 
@@ -261,7 +260,7 @@ $$
 
 where $\alpha_i$ are the Lagrange multipliers, $y_i$ are the class labels, and $b$ is the bias term.
 
-### Sigmoid Kernel
+#### Sigmoid Kernel
 
 The sigmoid kernel is based on the sigmoid function, often used in neural networks. It can map the input data into a higher-dimensional space, similar to RBF, but is less commonly used.
 
@@ -281,7 +280,7 @@ $$
 
 where $\alpha_i$  are the Lagrange multipliers, $y_i$ are the class labels, and $c$ is a parameter.
 
-## SVM Dual Formulation
+### SVM Dual Formulation
 
 The optimization problem is often solved using its dual formulation. The dual problem focuses on finding the Lagrange multipliers $\alpha_i$ that satisfy the following:
 
@@ -304,7 +303,7 @@ $$
 where $K(\mathbf{x}_i, \mathbf{x}_j)$ is the kernel function that computes the dot product in the transformed feature space.
 
 
-## Sequential Minimal Optimization
+### Sequential Minimal Optimization
 
 
 The SMO algorithm works as follows:
