@@ -161,25 +161,6 @@ The ROC AUC score, which stands for Receiver Operating Characteristic Area Under
 
 The moderate accuracy and performance metrics of the SVM model suggest potential applications in financial trading strategies. For instance, predictions of positive returns (Class 1.0) could serve as buy signals, whereas negative return predictions (Class 0.0) might indicate sell or hold actions. This predictive capability can be integrated into automated trading systems to enhance decision-making processes. Moreover, incorporating risk management strategies, such as setting stop-loss orders based on volatility predictions, can mitigate potential losses. Portfolio optimization can also benefit from these predictions by diversifying investments across multiple stocks within the SET100, thereby balancing risk and return.
 
-\begin{figure}[H]
-    \centering
-    \begin{subfigure}[b]{0.45\textwidth}
-        \centering
-        \includegraphics[scale=0.7]{confuse.png}
-        \caption{Classification Confusion Matrix}
-        \label{fig:conm}
-    \end{subfigure}
-    \hfill
-    \begin{subfigure}[b]{0.45\textwidth}
-        \centering
-        \includegraphics[scale=0.6]{roc.png}
-        \caption{Classification Receiver Operating Characteristic Curve}
-        \label{fig:roc}
-    \end{subfigure}
-    \caption{Model Validation/Evolution}
-    \label{fig:results}
-\end{figure}
-
 
 | **Metric**      | **Precision** | **Recall** | **F1-Score** | **Support** |
 |-----------------|---------------|------------|--------------|-------------|
