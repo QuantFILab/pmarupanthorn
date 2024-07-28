@@ -44,4 +44,15 @@ where $S_{\text{max}}$ is the maximum price reached during the option's duration
 
 While these options cannot be priced analytically within the traditional Black-Scholes framework, alternative analytical methods such as spectral theory have been employed to estimate the prices of Asian options \cite{linetsky2001exact}. However, this discussion will primarily focus on using the standard Euler-Maruyama scheme for approximating the prices of these options and explaination mathematically why the lockback option more expensive than the Asian option at the equivalent parameters in the subsequent section.
 
+
+## Numerical Method
+
+The simplest approximation method for the log-normal price process is the Euler-Maruyama scheme, as discussed in \cite{maruyama1955continuous}, for simulating the stock price $S$ at time $t + \Delta t$ based on the stock price at time $t$. The formula is given by:
+
+$$
+    S_i(t_j) = S_i(t_{j-1})\left(1 + r (t_j - t_{j-1}) + \sigma \sqrt{t_j - t_{j-1}} Z_{ij} \right) 
+$$
+
+where $r$ is the risk free rate, $S_i(t_j)$ is underlying asset price at the path index $i$ and time index $j$, $Z_{ij}$ is a standard normal variable . The algorithm for generating the path and estimating the expected discounted payoff is outlined in the following steps.
+
 </div>
