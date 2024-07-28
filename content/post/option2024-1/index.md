@@ -40,14 +40,14 @@ $$
     \Lambda_{lookback}(t) = (S_{\text{max}} - K)^+
 $$
 
-where $S_{\text{max}}$ is the maximum price reached during the option's duration. Both option payoffs can be readily found in the literature textbook such as the standard book by Hull and Basu \cite{hull2016options}. 
+where $S_{\text{max}}$ is the maximum price reached during the option's duration. Both option payoffs can be readily found in the literature textbook such as the standard book by Hull and Basu [2]. 
 
-While these options cannot be priced analytically within the traditional Black-Scholes framework, alternative analytical methods such as spectral theory have been employed to estimate the prices of Asian options \cite{linetsky2001exact}. However, this discussion will primarily focus on using the standard Euler-Maruyama scheme for approximating the prices of these options and explaination mathematically why the lockback option more expensive than the Asian option at the equivalent parameters in the subsequent section.
+While these options cannot be priced analytically within the traditional Black-Scholes framework, alternative analytical methods such as spectral theory have been employed to estimate the prices of Asian options [3]. However, this discussion will primarily focus on using the standard Euler-Maruyama scheme for approximating the prices of these options and explaination mathematically why the lockback option more expensive than the Asian option at the equivalent parameters in the subsequent section.
 
 
 ## Numerical Method
 
-The simplest approximation method for the log-normal price process is the Euler-Maruyama scheme, as discussed in \cite{maruyama1955continuous}, for simulating the stock price $S$ at time $t + \Delta t$ based on the stock price at time $t$. The formula is given by:
+The simplest approximation method for the log-normal price process is the Euler-Maruyama scheme, as discussed in [4], for simulating the stock price $S$ at time $t + \Delta t$ based on the stock price at time $t$. The formula is given by:
 
 $$
     S_i(t_j) = S_i(t_{j-1})\left(1 + r (t_j - t_{j-1}) + \sigma \sqrt{t_j - t_{j-1}} Z_{ij} \right) 
@@ -60,13 +60,13 @@ where $r$ is the risk free rate, $S_i(t_j)$ is underlying asset price at the pat
 Following the discussed algorithms, we estimate the price of the Asian and lookback options by setting the parameters as the following list.
 Using the sample data provided:
 
-  - Initial stock price \( S_0 = 100 \)
-  - Strike price \( E = 100 \)
-  - Time to expiry \( T-t = 1 \) year
-  - Volatility \( \sigma = 20\% \)
-  - Constant risk-free interest rate \( r = 5\% \)
+  - Initial stock price $S_0 = 100$
+  - Strike price $E = 100$
+  - Time to expiry $T-t = 1$ year
+  - Volatility $\sigma = 20\%$
+  - Constant risk-free interest rate $r = 5\%$
 
-It is important to note that the standard Euler-Maruyama scheme is not efficient when applied to path-dependent options. A more effective discretization method that accounts for intermediate time effects was discussed in \cite{glasserman2004monte} on pages 7-8.
+It is important to note that the standard Euler-Maruyama scheme is not efficient when applied to path-dependent options. A more effective discretization method that accounts for intermediate time effects was discussed in [1] on pages 7-8.
 
 The 10,000 simple paths simulated by Equation (\ref{eq:euler}) are shown in Figure \ref{fig:mc}. The prices of the options follow a log-normal distribution. Next, the proposed algorithms are applied to estimate the prices of the options given the parameters. Here, the time step is set to \(m = 252\) or one daily step.
 
@@ -104,13 +104,13 @@ On the other hand, Asian options average the price of the underlying asset over 
 
 ## Appendix
 
-\textbf{Lemma}: Let $X$ be the set of real numbers. Then,
+**Lemma**: Let $X$ be the set of real numbers. Then,
 
 $$
 \bar{X} \leq \max X
 $$
 
-\noindent\textbf{Proof}:
+**Proof**:
 Given that $\bar{X} = \frac{1}{m}\sum_{i = 1}^m x_i$, where $x_i \in X$, it follows that each $x_i \leq \max X$. Therefore, we have
 
 $$
