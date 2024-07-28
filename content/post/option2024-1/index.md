@@ -79,7 +79,7 @@ The 10,000 simple paths simulated are shown in Figure 1. The prices of the optio
   - The price of the Asian option is 5.843582.
   - The price of the lookback option is 18.348289.
 
-<img src="https://raw.githubusercontent.com/QuantFILab/pmarupanthorn/main/content/post/option2024-1/df.png" alt="Figure 2. Difference in Payoff between Lookback and Asian Options per Path" class="center" />
+<img src="https://raw.githubusercontent.com/QuantFILab/pmarupanthorn/main/content/post/option2024-1/dif.png" alt="Figure 2. Difference in Payoff between Lookback and Asian Options per Path" class="center" />
 
 Figure 2 shows the difference in payoffs between lookback and Asian options for each path. The differences are all non-negative, implying that the payoff of the lookback option consistently dominates the Asian option payoff at equivalent parameters. This result is derived from their respective payoff functions. Since 
 
