@@ -308,12 +308,11 @@ where $K(\mathbf{x}_i, \mathbf{x}_j)$ is the kernel function that computes the d
 
 
 The SMO algorithm works as follows:
-
-    - Initialize the Lagrange multipliers $\alpha_i$ to zero.
-    - item Repeat until convergence:
-        1. Select two multipliers $\alpha_i$ and $\alpha_j$ that violate the Karush-Kuhn-Tucker (KKT) conditions.
-        2. Solve the optimization problem for these two multipliers while keeping the others fixed.
-        3. Update the multipliers and the corresponding weight vector $\mathbf{w}$ and bias term $b$.
+- Initialize the Lagrange multipliers $\alpha_i$ to zero.
+- item Repeat until convergence:
+  1. Select two multipliers $\alpha_i$ and $\alpha_j$ that violate the Karush-Kuhn-Tucker (KKT) conditions.
+  2. Solve the optimization problem for these two multipliers while keeping the others fixed.
+  3. Update the multipliers and the corresponding weight vector $\mathbf{w}$ and bias term $b$.
 
 
 The advantage of the SMO algorithm is that it decomposes the large quadratic programming problem into a series of smaller problems that are easier and faster to solve.
