@@ -119,5 +119,11 @@ $$
 
 This shows that the average of the elements in \(X\) cannot exceed the maximum element in $X$.
 
+## References
+[1] P. Glasserman. *Monte Carlo methods in financial engineering* volume 53. Springer, 2004.
+[2] J. C. Hull and S. Basu. *Options, futures, and other derivatives*. Pearson Education India, 2016.
+[3] V. Linetsky. Exact pricing of asian options: an application of spectral theory. *Operat. Res*, 2001.
+[4] G. Maruyama. Continuous markov processes and stochastic equations. *Rendiconti del Circolo Matematico
+di Palermo*, 4:48–90, 1955.
 
 </div>
