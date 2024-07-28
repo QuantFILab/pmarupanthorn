@@ -117,7 +117,9 @@ where $\mathbf{w}$ is the weight vector, $\mathbf{x}$ is the input vector, and $
 The objective of SVM is to maximize the margin while correctly classifying the training data. This can be formulated as a constrained optimization problem:
 $$
 \min_{\mathbf{w}, b} \frac{1}{2} \|\mathbf{w}\|^2 + C \sum_{i=1}^{n} \xi_i 
+$$
 
+$$
 \text{subject to } y_i (\mathbf{w} \cdot \mathbf{x}_i + b) \geq 1 \quad \forall i
 $$
 
