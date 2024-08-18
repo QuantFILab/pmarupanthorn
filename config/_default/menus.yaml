@@ -12,7 +12,7 @@ main:
     weight: 30
   - name: Monte Carlo Methods
     parent: Research
-    url: research/
+    url: monte/
   - name: Asset Management
     parent: Research
     url: categories/asset-management/
