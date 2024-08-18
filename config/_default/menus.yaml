@@ -20,7 +20,7 @@ main:
     url: /#news
     weight: 60
   - name: Collaboration
-    url: /#collaboration
+    url: collaboration.md
     weight: 50
   - name: Experience
     url: experience/
