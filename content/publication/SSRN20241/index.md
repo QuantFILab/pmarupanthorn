@@ -30,6 +30,10 @@ tags:
 - Sustainable Finance
 - Factor Model
 - Thai Stock Market
+
+categories:
+- Asset Management
+  
 featured: true
 # links:
 # - name: ""
