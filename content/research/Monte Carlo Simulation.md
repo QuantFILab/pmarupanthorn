@@ -5,7 +5,7 @@ date: 2022-10-24
 type: landing
 
 sections:
-  - block: collection
+  - block: portfolio
     content:
       title: Monte Carlo Integration
       text: ""
