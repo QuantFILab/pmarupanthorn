@@ -62,7 +62,7 @@ features:
 # Tags Page
 tags_page:
   enable: true
-  style: "list"  # Options: "list", "cloud"
+  style: "cloud" 
   title: "Tags"
   description: "Browse posts by tags."
   layout: "tags"
