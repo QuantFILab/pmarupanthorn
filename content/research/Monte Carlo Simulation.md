@@ -9,9 +9,20 @@ share: false  # Show social sharing links?
 profile: false  # Show author profile?
 comments: false  # Show comments?
 
-view: citation
-
----
+sections:
+- block: collection
+    content:
+      title: Monte Carlo Integration
+      text: ""
+      filters:
+        folders:
+          - publication
+        tags:
+          - Monte Carlo
+        exclude_featured: false
+    design:
+      view: citation
+ ---
 
 
 
