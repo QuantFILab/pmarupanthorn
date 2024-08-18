@@ -9,27 +9,27 @@ main:
     weight: 10
   - name: Papers
     url: /#papers
-    weight: 20
+    weight: 30
   - name: Calculus
     parent: Research
     url: tags/calculus/
-    weight: 10
+    weight: 20
   - name: Talks
     url: /#talks
-    weight: 30
+    weight: 40
   - name: Blogs
     url: /#news
-    weight: 50
+    weight: 60
   - name: Collaboration
     url: /#collaboration
-    weight: 40  
+    weight: 50
   - name: Experience
     url: experience/
-    weight: 60
+    weight: 70
   - name: Projects
     url: projects/
-    weight: 70
+    weight: 80
   - name: Teaching
     url: teaching/
-    weight: 80
+    weight: 90
 
