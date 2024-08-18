@@ -29,4 +29,15 @@ sections:
         exclude_featured: false
     design:
       view: citation
+
+  - block: collection
+    content:
+      title: Random Walk Simulation
+      filters:
+        folders:
+          - publication
+        category: 'simulation'
+        exclude_featured: false
+    design:
+      view: citation
 ---
