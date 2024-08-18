@@ -16,4 +16,16 @@ sections:
     design:
       view: citation
       columns: '2'
+    
+  - block: collection
+    content:
+      title: Network Reliability
+      filters:
+        folders:
+          - publication
+        tag: 'simulation'
+        exclude_featured: false
+    design:
+      view: citation
+      columns: '2'
 ---
