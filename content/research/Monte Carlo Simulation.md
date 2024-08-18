@@ -3,6 +3,9 @@
 title: Monte Carlo Simulation
 date: 2022-10-24
 type: landing
+summary: Here we describe how to add a page to your site.
+
+weight: 4
 
 sections:
   - block: collection
@@ -14,8 +17,8 @@ sections:
         tag: 'simulation'
         exclude_featured: false
     design:
-        view: compact
-        columns: '2'
+        view: citation
+
     
   - block: collection
     content:
