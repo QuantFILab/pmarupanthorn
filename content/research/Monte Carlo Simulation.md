@@ -10,8 +10,7 @@ sections:
       title: Monte Carlo Integration
       text: ""
       filters:
-        tags:
-          - simulation
+        tags: [simulation]
         exclude_featured: false
     design:
       view: citation
