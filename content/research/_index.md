@@ -10,7 +10,7 @@ sections:
   - block: collection
     id: research
     content:
-      title: Teaching
+      title: Research
       count: 0
       filters:
         folders:
