@@ -23,7 +23,3 @@ sections:
     design:
       view: citation
  ---
-
-
-
-
