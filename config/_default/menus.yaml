@@ -10,7 +10,7 @@ main:
   - name: Papers
     url: /#papers
     weight: 20
-  - name: tags
+  - name: Calculus
     parent: Research
     url: tags/calculus/
   - name: Talks
