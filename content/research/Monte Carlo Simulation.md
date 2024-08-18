@@ -5,15 +5,14 @@ date: 2022-10-24
 type: landing
 
 sections:
-  - block: portfolio
+  - block: collection
     content:
       title: Monte Carlo Integration
       text: ""
       filters:
         folders:
           - publication
-        tags:
-          - Portfolio Optimization
+        tags: ['Portfolio Optimization']
         exclude_featured: false
     design:
       view: citation
