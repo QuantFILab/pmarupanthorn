@@ -10,9 +10,8 @@ sections:
       title: Monte Carlo Integration
       text: ""
       filters:
-        folders:
-          - publication
-        tags: ['Portfolio Optimization']
+        tags:
+          - Simulation
         exclude_featured: false
     design:
       view: citation
