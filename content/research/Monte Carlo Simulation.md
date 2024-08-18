@@ -12,8 +12,8 @@ sections:
       filters:
         folders:
           - publication
-          tags:
-            - Calculus
+        tags:
+          - Portfolio Optimization
         exclude_featured: false
     design:
       view: citation
