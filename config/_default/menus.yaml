@@ -10,7 +10,7 @@ main:
   - name: Papers
     url: /#papers
     weight: 30
-  - name: Calculus
+  - name: Monte Carlo Methods
     parent: Research
     url: tags/monte-carlo-method/
     weight: 20
