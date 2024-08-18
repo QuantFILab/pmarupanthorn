@@ -58,3 +58,12 @@ features:
     enable: true
   privacy_pack:
     enable: false
+
+# Tags Page
+tags_page:
+  enable: true
+  style: "list"  # Options: "list", "cloud"
+  title: "Tags"
+  description: "Browse posts by tags."
+  layout: "tags"
+  permalink: "/tags/"
