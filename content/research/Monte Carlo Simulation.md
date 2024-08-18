@@ -18,8 +18,6 @@ sections:
         exclude_featured: false
     design:
         view: citation
-
-    
   - block: collection
     content:
       title: Network Reliability
@@ -30,7 +28,6 @@ sections:
         exclude_featured: false
     design:
       view: citation
-
    - block: collection
     content:
       title: Random Walk Simulation
