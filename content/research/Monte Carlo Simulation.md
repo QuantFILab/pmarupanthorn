@@ -11,7 +11,7 @@ sections:
       text: ""
       filters:
         tags:
-          - Simulation
+          - simulation
         exclude_featured: false
     design:
       view: citation
