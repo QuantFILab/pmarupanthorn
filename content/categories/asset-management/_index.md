@@ -6,6 +6,7 @@ cascade:
       kind: page
     params:
       show_breadcrumb: true
+    
 sections:
   - block: collection
       count: 20
