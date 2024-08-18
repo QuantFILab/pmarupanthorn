@@ -15,13 +15,13 @@ sections:
       filters:
         folders:
           - teaching
-        filter_button:
-          - name: All
-            tag: '*'
-          - name: Deep Learning
-            tag: Deep Learning
-          - name: Other
-            tag: Demo
+      filter_button:
+        - name: All
+          tag: '*'
+        - name: Deep Learning
+          tag: Deep Learning
+        - name: Other
+          tag: Demo
     design:
       view: article-grid
       columns: 3
