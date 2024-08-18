@@ -14,7 +14,8 @@ sections:
         tag: 'simulation'
         exclude_featured: false
     design:
-      view: citation
+        view: compact
+        columns: '2'
     
   - block: collection
     content:
