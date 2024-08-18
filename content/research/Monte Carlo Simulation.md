@@ -8,7 +8,6 @@ sections:
   - block: collection
     content:
       title: Monte Carlo Integration
-      text: ""
       filters:
         folders:
           - publication
@@ -16,4 +15,5 @@ sections:
         exclude_featured: false
     design:
       view: citation
+      columns: '2'
 ---
