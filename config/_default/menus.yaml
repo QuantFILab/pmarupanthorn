@@ -31,4 +31,6 @@ main:
   - name: Teaching
     url: teaching/
     weight: 90
-
+  - name: Trading
+    url: teaching/
+    weight: 100
