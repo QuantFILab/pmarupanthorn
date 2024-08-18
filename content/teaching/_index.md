@@ -1,4 +1,5 @@
 ---
+widget: portfolio
 title: Teaching
 type: landing
 cascade:
