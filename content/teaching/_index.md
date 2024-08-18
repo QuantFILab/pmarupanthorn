@@ -15,6 +15,7 @@ sections:
       filters:
         folders:
           - teaching
+    
       filter_button:
       - name: All
         tag: '*'
