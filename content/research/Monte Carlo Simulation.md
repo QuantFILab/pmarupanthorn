@@ -5,7 +5,7 @@ date: 2022-10-24
 type: landing
 
 sections:
-  - block: collection
+  - block: portfolio
     content:
       title: Monte Carlo Integration
       filters:
@@ -23,7 +23,7 @@ sections:
       filters:
         folders:
           - publication
-        tag: 'simulation'
+        category: 'simulation'
         exclude_featured: false
     design:
       view: citation
