@@ -10,7 +10,9 @@ sections:
       title: Monte Carlo Integration
       text: ""
       filters:
-        tags: [simulation]
+        folders:
+          - publication
+        tag: 'simulation'
         exclude_featured: false
     design:
       view: citation
