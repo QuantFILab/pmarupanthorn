@@ -5,7 +5,7 @@ date: 2022-10-24
 type: landing
 
 sections:
-  - block: portfolio
+  - block: collection
     content:
       title: Monte Carlo Integration
       filters:
@@ -15,7 +15,6 @@ sections:
         exclude_featured: false
     design:
       view: citation
-      columns: '2'
     
   - block: collection
     content:
@@ -27,5 +26,4 @@ sections:
         exclude_featured: false
     design:
       view: citation
-      columns: '2'
 ---
