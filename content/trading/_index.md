@@ -8,7 +8,7 @@ cascade:
       show_breadcrumb: true
 sections:
   - block: collection
-    id: post
+    id: trading
     content:
       title: Trading
       count: 10
