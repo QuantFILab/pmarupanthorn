@@ -28,9 +28,12 @@ main:
   - name: Teaching
     url: teaching/
     weight: 80
-  - name: Trading Record
+  - name: Trading
     url: teaching/
     weight: 90
-  - name: Blogs
+  - name: Service
     url: post/
     weight: 100
+  - name: Blogs
+    url: post/
+    weight: 110
