@@ -1,6 +1,6 @@
 ---
 title: Monte Carlo Simulation
-summary: Here we describe how to add a page to your site.
+summary: My focus is on applying the Monte Carlo method in various fields, with an emphasis on improving and developing novel approaches.
 date: "2018-06-28T00:00:00Z"
 
 reading_time: false  # Show estimated reading time?
