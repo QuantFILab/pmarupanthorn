@@ -20,7 +20,7 @@ ___
 ### Industrial Collaboration
 
 - ***ResilientML***, Quantitative Researcher
-- ***QuantConnect Research LAboratory***, Quantitative Researcher
+- ***QuantConnect Research Laboratory***, Quantitative Researcher
 ___
 
 
