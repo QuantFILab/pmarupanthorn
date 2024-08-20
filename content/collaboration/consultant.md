@@ -23,5 +23,9 @@ ___
 - ***QuantConnect Research Laboratory***, Quantitative Researcher
 ___
 
+### Consultant
+
+
+___
 
 </div>
