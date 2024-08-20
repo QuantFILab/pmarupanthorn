@@ -1,7 +1,7 @@
 ---
 title: Students
 summary: Lsit of my students
-date: "2024-01-01"
+date: 2024-01-01
 
 # Optional header image (relative to `assets/media/` folder).
 header:
