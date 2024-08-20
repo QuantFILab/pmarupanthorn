@@ -1,5 +1,5 @@
 ---
-title: Teaching
+title: Courses
 type: landing
 cascade:
   - _target:
@@ -10,7 +10,7 @@ sections:
   - block: collection
     id: teaching
     content:
-      title: Teaching
+      title: Courses
       count: 0
       filters:
         folders:
