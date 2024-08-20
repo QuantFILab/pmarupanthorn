@@ -22,8 +22,8 @@ sections:
         folders:
           - research
     design:
-      view: article-grid
-      columns: 3
+      view: compact
+      # columns: 3
       fill_image: false
   
 ---
