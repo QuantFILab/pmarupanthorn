@@ -23,15 +23,19 @@ image:
 
   .left-cell {
     width: 30%;
+    vertical-align: top;
   }
 
   .right-cell {
     width: 70%;
+    vertical-align: top;
   }
 
   .book-cover {
     max-width: 100%;
     height: auto;
+    display: block;
+    margin: 0 auto;
   }
 
   .book-description {
