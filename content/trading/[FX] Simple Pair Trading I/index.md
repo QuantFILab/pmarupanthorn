@@ -1,4 +1,5 @@
 ---
+
 title: [FX] Simple Pair Trading I
 summary: My other areas of interest, though not my primary focus. 
 date: "2023-09-28T00:00:00Z"
