@@ -6,6 +6,11 @@ cascade:
       kind: page
     params:
       show_breadcrumb: true
+      pager: true
+      reading_time: false 
+      share: false  
+      profile: false  
+      comments: false  
 sections:
   - block: collection
     id: research
