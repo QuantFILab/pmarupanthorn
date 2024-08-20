@@ -18,13 +18,8 @@ sections:
       filters:
         folders:
           - post
-      buttons:
-        - name: All
-          tag: '*'
-        - name: Deep Learning
-          tag: Deep Learning
-        - name: Other
-          tag: Demo
     design:
-      view: masonry
+      view: article-grid
+      columns: 3
+      fill_image: false
 ---
