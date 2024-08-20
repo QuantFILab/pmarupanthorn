@@ -1,5 +1,5 @@
 ---
-title: Trading
+title: Trading Record
 type: landing
 cascade:
   - _target:
@@ -10,7 +10,7 @@ sections:
   - block: collection
     id: trading
     content:
-      title: Trading
+      title: Trading Record
       count: 10
       filters:
         folders:
