@@ -16,7 +16,7 @@ header:
 
 <div style="font-size: 14px;">
   
-### Decarbonization and ESG Investment
+### Decarbonization and ESG 
 
 
 - [Mechanisms for Implementing Fossil Fuel Divestment in Portfolio Management with Impact on Risk, Return and Carbon Reduction](https://www.sciencedirect.com/science/article/pii/S0140988324004328) (Pasin, Christina, Eric, Gareth, and Kylie-Anne)
