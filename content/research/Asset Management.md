@@ -15,10 +15,15 @@ header:
 ---
 
 **Fossil Fuel and Carbon Divestment**
-***
+___
 
+- Mechanisms for Implementing Fossil Fuel Divestment in Portfolio Management with Impact on Risk, Return and Carbon Reduction
+- DivFolio: a Shiny application for portfolio divestment in green finance wealth management
 
-
+___
 
 **Factor Investing**
+___
+
+- Development of ESG Factors for Enhancing Factor Model in the Thai Stock Market
 ___
