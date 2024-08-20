@@ -1,5 +1,5 @@
 ---
-title: Persnal Collaboration
+title: Personal Collaboration
 summary: Collaboration on a Personal Level
 date: 2024-01-01
 
