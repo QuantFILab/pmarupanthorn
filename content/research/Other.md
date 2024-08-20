@@ -14,4 +14,12 @@ header:
   image: ""
 ---
 
-Add your *content* here...
+<div style="font-size: 14px;">
+  
+
+### Operational Research
+
+- [Moringa Leaf Powder Production Planning using Mixed-Integer Linear Programming](https://so03.tci-thaijo.org/index.php/msj/article/view/256431) (Nassamon, Pasin, Kulisara, Uparittha, and Wisit)
+___
+
+</div>
