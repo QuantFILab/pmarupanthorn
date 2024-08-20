@@ -76,7 +76,7 @@ image:
 <table>
   <tr>
     <td class="left-cell">
-      <img src="path_to_cover_image.jpg" alt="Book Cover" class="book-cover" />
+      <img src="https://github.com/QuantFILab/pmarupanthorn/blob/main/content/book/ACM/pmi.png?raw=true" alt="Book Cover" class="book-cover" />
     </td>
     <td class="right-cell">
       <div class="book-description">
