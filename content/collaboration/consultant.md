@@ -19,13 +19,8 @@ ___
 
 ### Industrial Collaboration
 
-
-___
-
-### Corrabolation
-
 - ***ResilientML***, Quantitative Researcher
-
+- ***QuantConnect Research LAboratory***, Quantitative Researcher
 ___
 
 
