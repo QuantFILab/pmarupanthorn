@@ -10,7 +10,8 @@ header:
 
 <div style="font-size: 14px;">
   
-### Bachelor Project
+
+### Doctoral Project
 
 
 ___
@@ -20,7 +21,7 @@ ___
 
 ___
 
-### Doctoral Project
+### Bachelor Project
 
 
 ___
