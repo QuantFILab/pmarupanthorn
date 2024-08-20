@@ -23,7 +23,7 @@ main:
     url: /#talks
     weight: 50
   - name: Service
-    url: #talks
+    url: #collaboration
     weight: 60
   - name: Experience
     url: experience/
