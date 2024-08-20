@@ -7,7 +7,8 @@ date: "2023-09-28T00:00:00Z"
 header:
   caption: ""
   image: ""
-  
+---
+
 <div style="font-size: 14px;">
 
 ### Key Quantitative Design
@@ -17,5 +18,3 @@ header:
 ### Forward Testing
 
 </div>
-
----
