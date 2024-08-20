@@ -1,7 +1,7 @@
 ---
 title: Industry and Company
 summary: List of Industries I Collaborate
-date: "2024-01-01"
+date: 2024-01-01
 
 # Optional header image (relative to `assets/media/` folder).
 header:
