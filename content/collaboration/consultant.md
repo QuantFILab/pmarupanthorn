@@ -1,5 +1,5 @@
 ---
-title: Industry Collaboration
+title: Industry and Company
 summary: List of Industries I Collaborate
 
 
@@ -17,7 +17,7 @@ header:
 
 ___
 
-### Industrial Collaboration
+### Working and Members
 
 - ***ResilientML***, Quantitative Researcher
 - ***QuantConnect Research Laboratory***, Quantitative Researcher
