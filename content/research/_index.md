@@ -12,7 +12,6 @@ cascade:
       profile: false  
       comments: false
       show_related: true
-      show_breadcrumb: true
       share: true
 sections:
   - block: collection
