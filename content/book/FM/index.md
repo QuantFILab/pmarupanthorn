@@ -68,12 +68,12 @@ image:
     font-style: italic;
   }
 </style>
-### Financial Quantitiave Risk Management
+### Quantitiave Risk Management
 
 <table>
   <tr>
     <td class="left-cell">
-      <img src="path_to_cover_image.jpg" alt="Book Cover" class="book-cover" />
+      <img src="https://github.com/QuantFILab/pmarupanthorn/blob/main/content/book/FM/qrm.png?raw=true" alt="Book Cover" class="book-cover" />
     </td>
     <td class="right-cell">
       <div class="book-description">
@@ -84,4 +84,19 @@ image:
   </tr>
 </table>
 
+### Markowitz Portfolio Theory
+
+<table>
+  <tr>
+    <td class="left-cell">
+      <img src="https://github.com/QuantFILab/pmarupanthorn/blob/main/content/book/FM/MPT.png?raw=true" alt="Book Cover" class="book-cover" />
+    </td>
+    <td class="right-cell">
+      <div class="book-description">
+        This is a brief description of the book. It provides an overview of the content, highlights key features, and explains the intended audience. The description should be concise yet informative, giving potential readers a clear idea of what to expect from the book.
+      </div>
+    <p class="upcoming">Upcoming</p>
+    </td>
+  </tr>
+</table>
 
