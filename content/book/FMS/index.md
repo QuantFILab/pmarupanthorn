@@ -37,6 +37,27 @@ image:
   .book-description {
     font-size: 1em;
     line-height: 1.5;
+    margin-bottom: 20px;
+  }
+
+  .button-container {
+    margin-top: 10px;
+  }
+
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: #007BFF;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+
+  .button:hover {
+    background-color: #0056b3;
   }
 </style>
 
@@ -49,6 +70,11 @@ image:
       <div class="book-description">
         This is a brief description of the book. It provides an overview of the content, highlights key features, and explains the intended audience. The description should be concise yet informative, giving potential readers a clear idea of what to expect from the book.
       </div>
+      <div class="button-container">
+        <a href="link_to_thai_version" class="button">Thai</a>
+        <a href="link_to_english_version" class="button">English</a>
+      </div>
     </td>
   </tr>
 </table>
+
