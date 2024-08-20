@@ -13,3 +13,9 @@ header:
   caption: ""
   image: ""
 ---
+
+### Large Language Models (LLMs)
+
+- [Leveraging Generative Pre-trained Transformers for the Integration of Environmental, Social, and Governance Considerations into Investment Management for Thai Stock](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4715431) (Nuthdanai, Teerasit, Pasin, Jutha, Chanon, and Carat)
+
+---
