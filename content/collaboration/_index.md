@@ -22,8 +22,11 @@ sections:
         folders:
           - collaboration
     design:
-      view: article-grid
-      columns: 3
-      fill_image: false
+        view: compact
+    
+    # design:
+      # view: article-grid
+      # columns: 3
+      # fill_image: false
   
 ---
