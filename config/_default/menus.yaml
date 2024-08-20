@@ -34,7 +34,7 @@ main:
   - name: Collaboration
     url: /collaboration/
     weight: 60
-  - name: Teaching
+  - name: Course
     parent: Teaching
     url: /teaching/
     weight: 70
