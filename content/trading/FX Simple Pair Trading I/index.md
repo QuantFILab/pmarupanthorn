@@ -1,6 +1,6 @@
 ---
 
-title: [FX] Simple Pair Trading I
+title: FX Simple Pair Trading I
 summary: My other areas of interest, though not my primary focus. 
 date: "2023-09-28T00:00:00Z"
 
@@ -24,7 +24,6 @@ header:
 ### Forward Testing
 
 myForexbook Weddget
-___
 
 </div>
 
