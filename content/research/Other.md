@@ -1,7 +1,7 @@
 ---
 title: Other
 summary: My other areas of interest, though not my primary focus. 
-date: "2018-06-28T00:00:00Z"
+date: "2019-06-28T00:00:00Z"
 
 reading_time: false  # Show estimated reading time?
 share: false  # Show social sharing links?
