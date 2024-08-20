@@ -10,7 +10,10 @@ cascade:
       reading_time: false 
       share: false  
       profile: false  
-      comments: false  
+      comments: false
+      show_related: true
+      show_breadcrumb: true
+      share: true
 sections:
   - block: collection
     id: research
