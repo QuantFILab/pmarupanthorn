@@ -34,12 +34,6 @@ image:
     height: auto;
   }
 
-  .book-title {
-    font-size: 1.5em;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-
   .book-description {
     font-size: 1em;
     line-height: 1.5;
@@ -52,7 +46,6 @@ image:
       <img src="path_to_cover_image.jpg" alt="Book Cover" class="book-cover" />
     </td>
     <td class="right-cell">
-      <div class="book-title">Book Title</div>
       <div class="book-description">
         This is a brief description of the book. It provides an overview of the content, highlights key features, and explains the intended audience. The description should be concise yet informative, giving potential readers a clear idea of what to expect from the book.
       </div>
