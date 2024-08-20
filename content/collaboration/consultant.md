@@ -17,7 +17,7 @@ header:
 
 ___
 
-### Working and Members
+### Working, Members or Collaborator
 
 - ***ResilientML***, Quantitative Researcher
 - ***QuantConnect Research Laboratory***, Quantitative Researcher
