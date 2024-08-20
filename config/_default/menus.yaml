@@ -13,7 +13,7 @@ main:
   - name: All Papers
     weight: 21
     parent: Research
-    url: /#papers
+    url: /publication/
   - name: Research Themes
     weight: 22
     parent: Research
@@ -23,7 +23,7 @@ main:
     parent: Research
     url: /projects/
   - name: Talks
-    url: /#talks
+    url: /event/
     weight: 30
   - name: Service
     url: /#collaboration
