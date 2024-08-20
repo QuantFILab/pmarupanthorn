@@ -1,6 +1,6 @@
 ---
 title: Asset Management
-summary: Here we describe how to add a page to your site.
+summary: My focus is on portfolio optimization and management across various asset classes such as equity, commodities, and ETFs, as well as different investment styles. Additionally, I conduct deep mathematical analysis on these areas.
 date: "2024-06-28T00:00:00Z"
 
 reading_time: false  # Show estimated reading time?
