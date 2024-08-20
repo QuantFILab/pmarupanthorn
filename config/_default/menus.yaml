@@ -23,7 +23,7 @@ main:
     url: projects/
     weight: 60
   - name: Collaboration
-    url: /#collaboration
+    url: collaboration/
     weight: 70
   - name: Teaching
     url: teaching/
