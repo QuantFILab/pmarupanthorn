@@ -1,7 +1,7 @@
 ---
 title: Asset Management
 summary: Here we describe how to add a page to your site.
-date: "2018-06-28T00:00:00Z"
+date: "2024-06-28T00:00:00Z"
 
 reading_time: false  # Show estimated reading time?
 share: false  # Show social sharing links?
@@ -16,7 +16,7 @@ header:
 
 <div style="font-size: 14px;">
   
-### Fossil Fuel and Carbon Divestment
+### Decarbonization and ESG Investment
 
 
 - [Mechanisms for Implementing Fossil Fuel Divestment in Portfolio Management with Impact on Risk, Return and Carbon Reduction](https://www.sciencedirect.com/science/article/pii/S0140988324004328) (Pasin, Christina, Eric, Gareth, and Kylie-Anne)
@@ -24,7 +24,7 @@ header:
 
 ___
 
-### Factor Investing
+### Factor Investing and Smart Beta Investing
 
 - [Development of ESG Factors for Enhancing Factor Model in the Thai Stock Market](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4706129) (Pasin, Teerasit, Nuthdanai, Jutha, Chanon, Carat)
 ___
