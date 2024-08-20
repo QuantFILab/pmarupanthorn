@@ -76,7 +76,7 @@ image:
       <div class="book-description">
         This is a brief description of the book. It provides an overview of the content, highlights key features, and explains the intended audience. The description should be concise yet informative, giving potential readers a clear idea of what to expect from the book.
       </div>
-    <p class="upcoming">upcoming</p>
+    <p class="upcoming">Upcoming</p>
     </td>
   </tr>
 </table>
