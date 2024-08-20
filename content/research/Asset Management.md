@@ -14,7 +14,7 @@ header:
   image: ""
 ---
 
-<div style="font-size: 15px;">
+<div style="font-size: 14px;">
   
 ### Fossil Fuel and Carbon Divestment
 
