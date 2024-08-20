@@ -24,6 +24,7 @@ sections:
     design:
       view: compact
       # columns: 3
+      columns: 2
       fill_image: false
   
 ---
