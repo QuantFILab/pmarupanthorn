@@ -7,7 +7,7 @@ cascade:
     params:
       show_breadcrumb: true
 sections:
-  - block: masonry
+  - block: collection
     id: post
     content:
       title: Blogs
@@ -18,5 +18,8 @@ sections:
       filters:
         folders:
           - post
-
+    design:
+      view: article-grid
+      columns: 3
+      fill_image: false
 ---
