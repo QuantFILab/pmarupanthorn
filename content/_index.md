@@ -38,6 +38,7 @@ sections:
   - block: collection
     content:
       title: Recent Publications
+      count: 3
       text: ""
       filters:
         folders:
@@ -49,7 +50,7 @@ sections:
     id: talks
     content:
       title: Recent & Upcoming Talks
-      count: 6
+      count: 3
       filters:
         folders:
           - event
