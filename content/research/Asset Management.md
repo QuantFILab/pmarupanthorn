@@ -3,6 +3,7 @@ title: Asset Management
 summary: My focus is on portfolio optimization and management across various asset classes such as equity, commodities, and ETFs, as well as different investment styles. Additionally, I conduct deep mathematical analysis on these areas.
 date: "2024-06-28T00:00:00Z"
 
+type: docs
 
 # Optional header image (relative to `assets/media/` folder).
 header:
