@@ -23,7 +23,7 @@ sections:
           - collaboration
     design:
       view: article-grid
-      columns: 1
+      columns: 3
       fill_image: false
   
 ---
