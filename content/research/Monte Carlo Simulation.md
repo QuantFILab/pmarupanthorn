@@ -1,49 +1,30 @@
 ---
-
 title: Monte Carlo Simulation
-date: 2022-10-24
 summary: Here we describe how to add a page to your site.
-type: landing
+date: "2018-06-28T00:00:00Z"
 
 reading_time: false  # Show estimated reading time?
 share: false  # Show social sharing links?
 profile: false  # Show author profile?
 comments: false  # Show comments?
 
-
-weight: 4
-
-sections:
-  - block: collection
-    content:
-      title: Monte Carlo Integration
-      filters:
-        folders:
-          - publication
-        tag: 'simulation'
-        exclude_featured: false
-    design:
-        view: citation
-    
-  - block: collection
-    content:
-      title: Network Reliability
-      filters:
-        folders:
-          - publication
-        category: 'simulation'
-        exclude_featured: false
-    design:
-      view: citation
-
-  - block: collection
-    content:
-      title: Random Walk Simulation
-      filters:
-        folders:
-          - publication
-        category: 'simulation'
-        exclude_featured: false
-    design:
-      view: citation
+# Optional header image (relative to `assets/media/` folder).
+header:
+  caption: ""
+  image: ""
 ---
+
+**Monte Carlo Integration**
+___
+
+- [A 1/t Algorithm with the Density of Two States for Estimating Multidimensional Integrals](https://www.sciencedirect.com/science/article/abs/pii/S0010465517302060) (Wanyok, Pasin)
+- [Obviating the Bin Width Effect of the 1/t Algorithm for Multidimensional Numerical Integration](https://www.sciencedirect.com/science/article/abs/pii/S0168927415001373) (Wanyok, Pasin)
+- [An Improved 1/t Method for Numerical Integration of Ill-Behaved Integrals](https://www.researchgate.net/profile/Wanyok-Atisattapong/publication/280941144_An_improved_1t_method_for_numerical_integration_of_ill-behaved_integrals/links/55cd860908aeeaab209b5424/An-improved-1-t-method-for-numerical-integration-of-ill-behaved-integrals.pdf) (Wanyok, Pasin)
+___
+
+**Ramdom Walk on Network**
+___
+
+- [Forward Jump Random Walk on a Cycle Graph and Its Hitting Time](https://ph02.tci-thaijo.org/index.php/SciTechAsia/article/view/251338) (Rachanai, Pasin)
+- [Wang–Landau Sampling for Estimation of the Reliability of Physical Networks](https://www.sciencedirect.com/science/article/abs/pii/S0010465521000059) (Wanyok, Pasin)
+___
