@@ -22,4 +22,9 @@ header:
 - [Moringa Leaf Powder Production Planning using Mixed-Integer Linear Programming](https://so03.tci-thaijo.org/index.php/msj/article/view/256431) (Nassamon, Pasin, Kulisara, Uparittha, and Wisit)
 ___
 
+### Agricultural Data Analysis
+
+- [Production performances and morphometric traits of Maehongson chickens comparing Praduhangdum, male layer chickens, and broiler](https://li01.tci-thaijo.org/index.php/agkasetkaj/article/view/258270) (Watcharapong, Nakarin, Niraporn, Nuttawut, Pasin, and Kulisara)
+___
+
 </div>
