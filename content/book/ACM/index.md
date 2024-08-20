@@ -59,6 +59,11 @@ image:
   .button:hover {
     background-color: #0056b3;
   }
+
+  .upcoming {
+    font-weight: bold;
+    font-style: italic;
+  }
 </style>
 
 
