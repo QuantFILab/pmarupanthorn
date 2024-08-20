@@ -14,10 +14,11 @@ header:
   image: ""
 ---
 
-***Fossil Fuel and Carbon Divestment***
-___
+**Fossil Fuel and Carbon Divestment**
+***
 
 
 
-***Factor Investing***
+
+**Factor Investing**
 ___
