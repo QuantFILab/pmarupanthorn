@@ -11,9 +11,9 @@ header:
 
 <div style="font-size: 14px;">
   
-### Committe
+### Committee
 
-- ***Thai Quantitative Analyst and Financial Engineer***
+- ***Thai Quantitative Analyst and Financial Engineer Association***, Vice President
 
 ___
 
@@ -24,7 +24,7 @@ ___
 
 ### Corrabolation
 
-- ***ResilientML***
+- ***ResilientML***, Quantitative Researcher
 
 ___
 
