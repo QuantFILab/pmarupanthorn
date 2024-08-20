@@ -3,6 +3,10 @@ title: FX Simple Pair Trading I
 summary: Quantitative Trading Strategy
 date: "2023-09-28T00:00:00Z"
 
+tag: 
+  - live
+  - Forex
+    
 # Optional header image (relative to `assets/media/` folder).
 header:
   caption: ""
