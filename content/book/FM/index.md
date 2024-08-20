@@ -22,13 +22,12 @@ image:
 
   .left-cell {
     width: 30%;
-    vertical-align: middle;
     text-align: center;
   }
 
   .right-cell {
     width: 70%;
-    vertical-align: top;
+    vertical-align: middle;
   }
 
   .book-cover {
