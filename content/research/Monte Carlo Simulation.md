@@ -2,7 +2,7 @@
 title: Monte Carlo Simulation
 summary: My focus is on applying the Monte Carlo method in various fields, with an emphasis on improving and developing novel approaches.
 date: "2024-03-29T00:00:00Z"
-
+type: docs
 # reading_time: false  # Show estimated reading time?
 # share: false  # Show social sharing links?
 # profile: false  # Show author profile?
