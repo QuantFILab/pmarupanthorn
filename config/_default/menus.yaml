@@ -7,36 +7,39 @@ main:
   - name: Bio
     url: /
     weight: 10
-  - name: All Papers
+  - name: Research
+    url: /research/
     weight: 20
+  - name: All Papers
+    weight: 21
     parent: Research
     url: /#papers
   - name: Research Themes
-    weight: 30
+    weight: 22
     parent: Research
-    url: research/
+    url: /research/
   - name: Projects
-    weight: 40
+    weight: 23
     parent: Research
-    url: projects/
+    url: /projects/
   - name: Talks
     url: /#talks
-    weight: 50
+    weight: 30
   - name: Service
-    url: #collaboration
-    weight: 60
+    url: /#collaboration
+    weight: 40
   - name: Experience
-    url: experience/
-    weight: 70
+    url: /experience/
+    weight: 50
   - name: Collaboration
-    url: collaboration/
-    weight: 80
+    url: /collaboration/
+    weight: 60
   - name: Teaching
-    url: teaching/
-    weight: 90
+    url: /teaching/
+    weight: 70
   - name: Trading
-    url: teaching/
-    weight: 100
+    url: /teaching/
+    weight: 80
   - name: Blogs
-    url: post/
-    weight: 110
+    url: /post/
+    weight: 90
