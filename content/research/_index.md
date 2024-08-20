@@ -1,5 +1,5 @@
 ---
-title: Research
+title: Research Themes
 type: landing
 cascade:
   - _target:
@@ -16,7 +16,7 @@ sections:
   - block: collection
     id: research
     content:
-      title: Research
+      title: Research Themes
       count: 0
       filters:
         folders:
