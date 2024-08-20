@@ -46,8 +46,8 @@ image:
 
   .button {
     display: inline-block;
-    padding: 10px 20px;
-    font-size: 1em;
+    padding: 5px 15px;
+    font-size: 0.9em;
     text-align: center;
     text-decoration: none;
     color: white;
