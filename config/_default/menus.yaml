@@ -37,14 +37,14 @@ main:
   - name: Course
     parent: Teaching
     url: /teaching/
-    weight: 70
+    weight: 61
   - name: Books
-    weight: 71
+    weight: 62
     parent: Teaching
     url: /book/
   - name: Trading
     url: /trading/
-    weight: 80
+    weight: 70
   - name: Blogs
     url: /post/
-    weight: 90
+    weight: 80
