@@ -35,8 +35,13 @@ main:
     url: /collaboration/
     weight: 60
   - name: Teaching
+    parent: Teaching
     url: /teaching/
     weight: 70
+  - name: Books
+    weight: 71
+    parent: Teaching
+    url: /book/
   - name: Trading
     url: /trading/
     weight: 80
