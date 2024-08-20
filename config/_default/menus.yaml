@@ -10,19 +10,21 @@ main:
   - name: All Papers
     parent: Research
     url: /#papers
+    weight: 20
   - name: Research Themes
     parent: Research
     url: research/
+    weight: 30
   - name: Projects
     parent: Research
     url: projects/
-    weight: 20
+    weight: 40
   - name: Talks
     url: /#talks
-    weight: 30
+    weight: 50
   - name: Experience
     url: experience/
-    weight: 50
+    weight: 60
   - name: Collaboration
     url: collaboration/
     weight: 70
