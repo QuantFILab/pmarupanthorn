@@ -16,7 +16,6 @@ header:
 
 ### Forward Testing
 
-  myForexbook Weddget
-
 </div>
+
 ---
