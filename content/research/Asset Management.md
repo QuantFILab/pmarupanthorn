@@ -14,6 +14,8 @@ header:
   image: ""
 ---
 
+<div style="font-size: 16px;">
+  
 **Fossil Fuel and Carbon Divestment**
 ___
 
@@ -27,3 +29,5 @@ ___
 
 - [Development of ESG Factors for Enhancing Factor Model in the Thai Stock Market](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4706129) (Pasin, Teerasit, Nuthdanai, Jutha, Chanon, Carat)
 ___
+
+</div>
