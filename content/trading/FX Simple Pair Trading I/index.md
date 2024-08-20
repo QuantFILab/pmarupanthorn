@@ -3,7 +3,7 @@ title: FX Simple Pair Trading I
 summary: Quantitative Trading Strategy
 date: "2023-09-28T00:00:00Z"
 
-tag: 
+tags: 
   - live
   - Forex
     
