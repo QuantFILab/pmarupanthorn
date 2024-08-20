@@ -1,7 +1,6 @@
 ---
 title: Industry Collaboration
 summary: List of Industries I Collaborate
-date: ""
 
 
 # Optional header image (relative to `assets/media/` folder).
