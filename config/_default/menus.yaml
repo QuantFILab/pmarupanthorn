@@ -38,7 +38,7 @@ main:
     url: /teaching/
     weight: 70
   - name: Trading
-    url: /teaching/
+    url: /trading/
     weight: 80
   - name: Blogs
     url: /post/
