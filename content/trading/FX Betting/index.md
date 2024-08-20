@@ -2,7 +2,7 @@
 title: FX Betting System I
 summary: Quantitative Trading Strategy
 date: "2023-09-28T00:00:00Z"
-
+type: docs
 tags: 
   - Achieve
   - Forex
