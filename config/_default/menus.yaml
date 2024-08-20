@@ -8,17 +8,17 @@ main:
     url: /
     weight: 10
   - name: All Papers
+    weight: 20
     parent: Research
     url: /#papers
-    weight: 20
   - name: Research Themes
+    weight: 30
     parent: Research
     url: research/
-    weight: 30
   - name: Projects
+    weight: 40
     parent: Research
     url: projects/
-    weight: 40
   - name: Talks
     url: /#talks
     weight: 50
