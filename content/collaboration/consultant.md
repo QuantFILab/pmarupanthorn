@@ -1,6 +1,6 @@
 ---
-title: Consultant
-summary: List of Industries I Consult
+title: Industry Collaboration
+summary: List of Industries I Collaborate
 date: ""
 
 
