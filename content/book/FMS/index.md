@@ -23,7 +23,8 @@ image:
 
   .left-cell {
     width: 30%;
-    vertical-align: top;
+    vertical-align: middle;
+    text-align: center;
   }
 
   .right-cell {
