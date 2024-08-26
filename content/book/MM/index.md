@@ -70,7 +70,7 @@ image:
   }
 </style>
 
-### Mathematical Boilogy
+### Mathematical Biology
 
 <table>
   <tr>
