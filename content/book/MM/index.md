@@ -70,7 +70,7 @@ image:
   }
 </style>
 
-### Mathematical Biology
+### Mathematical Biology I
 
 <table>
   <tr>
