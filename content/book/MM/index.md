@@ -75,7 +75,7 @@ image:
 <table>
   <tr>
     <td class="left-cell">
-      <img src="https://github.com/QuantFILab/pmarupanthorn/blob/07d2ccea5e5a4c554ed0f49a46456596e9bd1aed/content/book/MM/mthbio1.png?raw=true" alt="Book Cover" class="book-cover" />
+      <img src="https://github.com/QuantFILab/pmarupanthorn/blob/07d2ccea5e5a4c554ed0f49a46456596e9bd1aed/content/book/MM/mathbio1.png?raw=true" alt="Book Cover" class="book-cover" />
     </td>
     <td class="right-cell">
       <div class="book-description">
