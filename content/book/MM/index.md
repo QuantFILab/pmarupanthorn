@@ -69,3 +69,21 @@ image:
     font-style: italic;
   }
 </style>
+
+### Mathematical Boilogy
+
+<table>
+  <tr>
+    <td class="left-cell">
+      <img src="https://github.com/QuantFILab/pmarupanthorn/blob/07d2ccea5e5a4c554ed0f49a46456596e9bd1aed/content/book/MM/mthbio1.png?raw=true" alt="Book Cover" class="book-cover" />
+    </td>
+    <td class="right-cell">
+      <div class="book-description">
+        This is a brief description of the book. It provides an overview of the content, highlights key features, and explains the intended audience. The description should be concise yet informative, giving potential readers a clear idea of what to expect from the book.
+      </div>
+      </div>
+    <p class="upcoming">upcoming</p>
+    </td>
+    </td>
+  </tr>
+</table>
