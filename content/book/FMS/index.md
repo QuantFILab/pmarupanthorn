@@ -79,7 +79,7 @@ image:
     </td>
     <td class="right-cell">
       <div class="book-description">
-        This is a brief description of the book. It provides an overview of the content, highlights key features, and explains the intended audience. The description should be concise yet informative, giving potential readers a clear idea of what to expect from the book.
+        This book covers topics including limits and continuity, derivatives and integrals of real-valued functions of a real variable, indeterminate forms, applications of derivatives, techniques for finding integrals, and applications of integrals. All theorems are accompanied by detailed proofs, and visualizations are provided to enhance understanding
       </div>
       <div class="button-container">
         <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4939118" class="button">Thai</a>
