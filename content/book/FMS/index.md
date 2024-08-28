@@ -82,7 +82,7 @@ image:
         This is a brief description of the book. It provides an overview of the content, highlights key features, and explains the intended audience. The description should be concise yet informative, giving potential readers a clear idea of what to expect from the book.
       </div>
       <div class="button-container">
-        <a href="link_to_thai_version" class="button">Thai</a>
+        <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4939118" class="button">Thai</a>
         <a href="link_to_english_version" class="button">English</a>
       </div>
     </td>
