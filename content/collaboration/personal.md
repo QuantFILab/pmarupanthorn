@@ -13,14 +13,20 @@ header:
   
 ### Academics Collaboration
 
+
 Chair Profressor Gareth W. Peters, University of California, Santa Barbara
 
 Profressor Christina Nikitopoulos Sklibosios, University of Technology Sydney
 
 Eric D. Ofosu-Hene, De Montfort University
+
+
+
 ___
 
 ### Industrial Collaboration
+
+Nuthdanai Wangpratham, KAsset
 
 
 ___
