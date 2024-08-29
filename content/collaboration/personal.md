@@ -13,7 +13,7 @@ header:
   
 ### Academics Collaboration
 
-
+Chair Profressor Gareth W. Peters, University of California, Santa Barbara
 ___
 
 ### Industrial Collaboration
