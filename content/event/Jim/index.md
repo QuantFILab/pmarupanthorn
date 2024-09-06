@@ -3,7 +3,6 @@ title: Discussion on King Quant Trading Strategy
 
 event: QuantCorner Meetup
 event_url: 
-url_pdf: "https://github.com/QuantFILab/pmarupanthorn/raw/main/content/event/Jim/Quant_Meetup_Jim_Simons.pdf"
 url_slides: "https://github.com/QuantFILab/pmarupanthorn/raw/main/content/event/Jim/Quant_Meetup_Jim_Simons.pdf"
 
 location: Chulalongkorn University
