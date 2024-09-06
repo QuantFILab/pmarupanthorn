@@ -36,7 +36,7 @@ image:
 
 <iframe src="https://github.com/QuantFILab/pmarupanthorn/raw/main/content/event/Jim/Quant_Meetup_Jim_Simons.pdf" width="100%" height="600px">
     This browser does not support PDFs. Please download the PDF to view it: 
-    <a href="/files/my-presentation.pdf">Download PDF</a>.
+    <a href="https://github.com/QuantFILab/pmarupanthorn/raw/main/content/event/Jim/Quant_Meetup_Jim_Simons.pdf">Download PDF</a>.
 </iframe>
 
 
