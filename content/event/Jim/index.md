@@ -34,4 +34,4 @@ image:
   focal_point: Right
 ---
 
-<script src= 'https://github.com/QuantFILab/pmarupanthorn/raw/main/content/event/Jim/Quant_Meetup_Jim_Simons.pdf.js'></script>
+<script src= 'https://github.com/QuantFILab/pmarupanthorn/raw/main/content/event/Jim/Quant_Meetup_Jim_Simons.pdf'></script>
