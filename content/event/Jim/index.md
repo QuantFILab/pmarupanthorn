@@ -43,9 +43,7 @@ slides:
 ---
 
 # Create slides in Markdown with Wowchemy
-
 [Wowchemy](https://hugoblox.com/) | [Documentation](https://docs.hugoblox.com/content/slides/)
-
 ---
 
 ## Features
