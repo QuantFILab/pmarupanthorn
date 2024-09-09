@@ -3,6 +3,7 @@ title: Guideline of Applied Mathematics Projects
 
 event: Department of Mathematics and Statsitics Seminar
 event_url: https://www.facebook.com/photo/?fbid=938947611369309&set=a.629988592265214
+url_slides: "https://drive.google.com/file/d/1QQtYvN0xG3zCJGKM0vLtB_yt80u9tSbj/view?usp=sharing"
 
 location: Department of Mathematics and Statistics, Thammasat University
 address:
