@@ -203,6 +203,6 @@ My background is in Applied Mathematics, with a keen interest in challenging pro
 My main projects for 2024 to 2025 are listed below:
   - Emission Trading System and Carbon Credit
   - Sustainability in Pension Fund
-  - Sustainable Portfolio Management
+  - Sustainable Investing
   - Manifold and Polytope Learning
 
