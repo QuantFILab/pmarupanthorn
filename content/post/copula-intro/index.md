@@ -1,5 +1,5 @@
 ---
-title: Support Vector Machines for Classification on SET100 Returns
+title: Introduction to Copula (โคปูลาเบื้องต้น)
 summary: The project was the CQF exam in Machine Learning in Finance.
 date: 2024-06-17
 math: true
@@ -15,9 +15,8 @@ image:
 
 <div style="font-size: 16px;">
 
-## Note
 
-The project was the CQF exam in Machine Learning in Finance.
+โคปูลาเป็นเครื่องมือที่นิยมใช้กันในศาสตร์การจัดการความเสี่ยงเชิงปริมาณ (Quantitative Risk Management)
 
 ## Problem Understanding
 
