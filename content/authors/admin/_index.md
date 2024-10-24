@@ -58,17 +58,21 @@ education:
     date_end: 2024-08-08
     summary: |
       Responsibilities include:
-      - Migrated infrastructure to a new data center
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+      - Quantitaive Methods in Sustainable Investment
   - area: Certificate in Quantitative Finance 
     institution: Fitch Learning
+    summary: |
+      Responsibilities include:
+      - Back-Litterman Portfolio with Risk Facotrs  
     date_start: 2024-11-07
     date_end: 2024-01-27
   - area: MSc Financial Engineering
     institution: WorldQuant Univeristy
     date_start: 2016-01-01
     date_end: 2020-12-31
+    summary: |
+      Responsibilities include:
+      - Trading System based on Pair Trading in Cryptocurrency: A Binance Edition   
   - area: MSc Mathematical Modelling
     institution: University of Birmingham
     date_start: 2016-01-01
