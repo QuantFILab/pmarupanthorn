@@ -61,6 +61,10 @@ education:
       - Migrated infrastructure to a new data center
       - lorem ipsum dolor sit amet, consectetur adipiscing elit
       - lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - area: CQF Certificate in Quantitative Finance 
+    institution: Fitch Learning
+    date_start: 2024-11-07
+    date_end: 2024-01-27
   - area: MSc Financial Engineering
     institution: WorldQuant Univeristy
     date_start: 2016-01-01
