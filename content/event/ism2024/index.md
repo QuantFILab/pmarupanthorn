@@ -1,8 +1,8 @@
 ---
-title: Evaluating the Impact of ESG Sustainability Factors on US Index Returns
+title: Mechanisms to Incentivise Fossil Fuel Divestment and Implications on Portfolio Risk and Returns 
 
-event: ISM-UCL-UCSB-MQ WORKSHOP, Climate Finance and Risk
-event_url: https://sites.google.com/view/climate-finance-and-risk-2024/home
+event: ISM-UCL-UCSB-MQ WORKSHOP, Stochastic Modelling in Climate Risk Financial Mathematics and Economics
+event_url: https://sites.google.com/view/ism-ucl-ucsb-mq-ws/home
 
 location: The Institute of Statistical Mathematics (ISM)
 address:
@@ -12,16 +12,16 @@ address:
   postcode: '190-8562'
   country: Japan 
 
-summary:
+summary: Developing divestment strategies is essential for carbon reduction.
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: '2024-11-28T08:00:00Z'
-date_end: '2024-11-30T16:00:00Z'
+date: '2023-11-21T14:00:00Z'
+date_end: '2023-11-21T15:00:00Z'
 all_day: false
 
 # Schedule page publish date (NOT talk date).
-publishDate: '2024-11-20T00:00:00Z'
+publishDate: '2017-01-01T00:00:00Z'
 
 authors:
   - admin
