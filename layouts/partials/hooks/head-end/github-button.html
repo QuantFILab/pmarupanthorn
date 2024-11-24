@@ -1,1 +1,20 @@
 <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+{{ if .Paginator }}
+  {{ range .Paginator.Pages }}
+    <!-- Render your events here -->
+    {{ .Render "summary" }}
+  {{ end }}
+  <!-- Add pagination links -->
+  <div class="pagination">
+    {{ if .Paginator.HasPrev }}
+      <a href="{{ .Paginator.Prev.URL }}">Previous</a>
+    {{ end }}
+    {{ range .Paginator.Pages }}
+      <a href="{{ .URL }}">{{ .PageNumber }}</a>
+    {{ end }}
+    {{ if .Paginator.HasNext }}
+      <a href="{{ .Paginator.Next.URL }}">Next</a>
+    {{ end }}
+  </div>
+{{ end }}
