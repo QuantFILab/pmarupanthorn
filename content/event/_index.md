@@ -11,7 +11,8 @@ sections:
     id: event
     content:
       title: Recent & Upcoming Talks
-      count: 30
+      count: 15
+      paginate: true
       filters:
         folders:
           - event
