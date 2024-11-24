@@ -11,8 +11,7 @@ sections:
     id: event
     content:
       title: Recent & Upcoming Talks
-      count: 0
-      paginate: true # Enables pagination
+      count: -1
       filters:
         folders:
           - event
