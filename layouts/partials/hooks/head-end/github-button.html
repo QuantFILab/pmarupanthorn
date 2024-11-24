@@ -11,7 +11,7 @@
       <a href="{{ .Paginator.Prev.URL }}">Previous</a>
     {{ end }}
     {{ range .Paginator.Pages }}
-      <a href="{{ .URL }}">{{ .PageNumber }}</a>
+      <a href="{{ .Permalink }}">GitHub</a>
     {{ end }}
     {{ if .Paginator.HasNext }}
       <a href="{{ .Paginator.Next.URL }}">Next</a>
