@@ -12,6 +12,7 @@ sections:
     content:
       title: Recent & Upcoming Talks
       count: 15
+      paginate: true # Enables pagination
       filters:
         folders:
           - event
