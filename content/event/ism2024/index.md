@@ -1,5 +1,5 @@
 ---
-title: Evaluating the Impact of ESG Sustainability Factors on US Index Returns 
+title: Evaluating the Impact of ESG Sustainability Factors on US Index Returns
 
 event: ISM-UCL-UCSB-MQ WORKSHOP, Climate Finance and Risk
 event_url: https://sites.google.com/view/climate-finance-and-risk-2024/home
