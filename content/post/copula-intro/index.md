@@ -12,12 +12,12 @@ image:
   caption: 'Confuse Matrix'
 ---
 
-<details style="margin: 10px 0; padding: 10px; border: 1px solid #ccc; border-radius: 5px; background-color: #f0f0f0;">
-    <summary style="cursor: pointer; font-weight: bold; color: #333; padding: 5px 10px; background-color: #007bff; color: white; border-radius: 5px; display: inline-block; text-align: center;">
+<details style="margin: 10px 0; padding: 0; border: 1px solid #ddd; border-radius: 8px; background-color: white; max-width: 250px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+    <summary style="cursor: pointer; font-weight: bold; font-size: 14px; color: #007bff; padding: 8px 12px; background-color: #f9f9f9; border-radius: 8px; text-align: center; display: inline-block; margin: 5px;">
         ภาษาไทย
     </summary>
 
-<div style="font-size: 16px;">
+<div style="margin-top: 10px; padding: 10px; font-size: 13px; line-height: 1.5; color: #333;">
 
 ## 1. Copula คืออะไร
 
