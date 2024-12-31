@@ -5,6 +5,7 @@ date: 2024-09-19
 math: true
 authors:
   - admin
+type: docs
 tags:
   - Quantitative Risk Management
   - Copula
