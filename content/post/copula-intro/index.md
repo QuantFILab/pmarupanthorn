@@ -5,7 +5,6 @@ date: 2024-09-19
 math: true
 authors:
   - admin
-type: docs
 tags:
   - Quantitative Risk Management
   - Copula
@@ -16,10 +15,10 @@ image:
     <h4 style="margin-bottom: 10px; font-weight: bold;">Related Articles</h4>
     <ul style="list-style: none; padding: 0; margin: 0; font-size: 14px;">
         <li style="margin-bottom: 5px;">
-            <a href="/path-to-fx-betting-system-i/" style="color: #007bff; text-decoration: none;">FX Betting System I</a>
+            <a href="/content/post/copula-intro/" style="color: #007bff; text-decoration: none;">FX Betting System I</a>
         </li>
         <li style="margin-bottom: 5px;">
-            <a href="/path-to-another-title/" style="color: #007bff; text-decoration: none;">Another Title You Want</a>
+            <a href="/content/post/copula-intro/" style="color: #007bff; text-decoration: none;">Another Title You Want</a>
         </li>
     </ul>
 </div>
