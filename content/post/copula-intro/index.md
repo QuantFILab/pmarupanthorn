@@ -12,6 +12,12 @@ image:
   caption: 'Confuse Matrix'
 ---
 
+<div style="display: inline-block; padding: 10px; background-color: #f0f0f0; border: 1px solid #ccc; border-radius: 5px; margin: 10px 0;">
+    <a href="https://github.com/QuantFILab/pmarupanthorn/tree/main/content/ThaiBlog/IntroCopula" style="text-decoration: none; color: #333; font-weight: bold;">
+        ภาษาไทย
+    </a>
+</div>
+
 <div style="font-size: 16px;">
 
 ## 1. Copula คืออะไร
