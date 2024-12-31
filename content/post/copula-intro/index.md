@@ -11,28 +11,10 @@ tags:
 image:
   caption: 'Confuse Matrix'
 ---
-<div style="display: flex; flex-direction: row;">
-    <!-- Sidebar -->
-    <div style="flex: 1; padding-right: 20px;">
-        <div style="padding: 10px; border: 1px solid #ddd; border-radius: 8px; background-color: #f9f9f9;">
-            <h4 style="margin-bottom: 10px; font-weight: bold;">Related Articles</h4>
-            <ul style="list-style: none; padding: 0; margin: 0; font-size: 14px;">
-                <li style="margin-bottom: 5px;">
-                    <a href="/content/post/copula-intro/" style="color: #007bff; text-decoration: none;">FX Betting System I</a>
-                </li>
-                <li style="margin-bottom: 5px;">
-                    <a href="/content/post/copula-intro/" style="color: #007bff; text-decoration: none;">Another Title You Want</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-    <!-- Main Content -->
-    <div style="flex: 3;">
-        <details style="margin: 20px 0; padding: 0; border: 1px solid #ddd; border-radius: 8px; background-color: white; max-width: 900px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-            <summary style="cursor: pointer; font-weight: bold; font-size: 14px; color: #007bff; padding: 10px 15px; background-color: #f9f9f9; border-radius: 8px; text-align: center; display: inline-block; margin: 10px;">
-                ภาษาไทย
-            </summary>
+<details style="margin: 20px 0; padding: 0; border: 1px solid #ddd; border-radius: 8px; background-color: white; max-width: 900px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+    <summary style="cursor: pointer; font-weight: bold; font-size: 14px; color: #007bff; padding: 10px 15px; background-color: #f9f9f9; border-radius: 8px; text-align: center; display: inline-block; margin: 10px;">
+        ภาษาไทย
+    </summary>
 
 <div style="font-size: 16px;">
 
@@ -78,9 +60,17 @@ review. *Artificial Intelligence Review*, 52(2):803–855, 2019.
 
 [2] J. Platt. Sequential minimal optimization: A fast algorithm for training support vector machines.
 1998.
+</div>
+</details>
 
-
-            </div>
-        </details>
-    </div>
+<div style="padding: 10px; border: 1px solid #ddd; border-radius: 8px; background-color: #f9f9f9; max-width: 250px;">
+    <h4 style="margin-bottom: 10px; font-weight: bold;">Related Articles</h4>
+    <ul style="list-style: none; padding: 0; margin: 0; font-size: 14px;">
+        <li style="margin-bottom: 5px;">
+            <a href="/content/post/copula-intro/" style="color: #007bff; text-decoration: none;">FX Betting System I</a>
+        </li>
+        <li style="margin-bottom: 5px;">
+            <a href="/content/post/copula-intro/" style="color: #007bff; text-decoration: none;">Another Title You Want</a>
+        </li>
+    </ul>
 </div>
