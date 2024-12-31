@@ -12,11 +12,16 @@ image:
   caption: 'Confuse Matrix'
 ---
 
-<div style="display: inline-block; padding: 10px; background-color: #f0f0f0; border: 1px solid #ccc; border-radius: 5px; margin: 10px 0;">
-    <a href="https://github.com/QuantFILab/pmarupanthorn/tree/main/content/ThaiBlog/IntroCopula/" style="text-decoration: none; color: #333; font-weight: bold;">
+<details style="margin: 10px 0; padding: 10px; border: 1px solid #ccc; border-radius: 5px; background-color: #f0f0f0; max-width: 300px;">
+    <summary style="cursor: pointer; font-weight: bold; color: #333; text-align: center;">
         ภาษาไทย
-    </a>
-</div>
+    </summary>
+    <div style="margin-top: 10px;">
+        <a href="https://github.com/QuantFILab/pmarupanthorn/tree/main/content/ThaiBlog/IntroCopula" style="text-decoration: none; color: #007bff;">
+            Go to Thai Blog
+        </a>
+    </div>
+</details>
 
 <div style="font-size: 16px;">
 
