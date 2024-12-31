@@ -12,16 +12,10 @@ image:
   caption: 'Confuse Matrix'
 ---
 
-<details style="margin: 10px 0; padding: 10px; border: 1px solid #ccc; border-radius: 5px; background-color: #f0f0f0; max-width: 300px;">
-    <summary style="cursor: pointer; font-weight: bold; color: #333; text-align: center;">
+<details style="margin: 10px 0; padding: 10px; border: 1px solid #ccc; border-radius: 5px; background-color: #f0f0f0;">
+    <summary style="cursor: pointer; font-weight: bold; color: #333; padding: 5px 10px; background-color: #007bff; color: white; border-radius: 5px; display: inline-block; text-align: center;">
         ภาษาไทย
     </summary>
-    <div style="margin-top: 10px;">
-        <a href="https://github.com/QuantFILab/pmarupanthorn/tree/main/content/ThaiBlog/IntroCopula" style="text-decoration: none; color: #007bff;">
-            Go to Thai Blog
-        </a>
-    </div>
-</details>
 
 <div style="font-size: 16px;">
 
@@ -70,3 +64,4 @@ review. *Artificial Intelligence Review*, 52(2):803–855, 2019.
 
 
 </div>
+</details>
