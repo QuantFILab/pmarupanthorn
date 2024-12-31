@@ -12,9 +12,8 @@ sections:
     content:
       title: Blogs
       text: |
-        <a href="https://quantfilab.github.io/pmarupanthorn/tags/sustainable-finance/" style="background-color: #0b3d0b; color: #fff; padding: 2px 4px; border-radius: 3px; text-decoration: none;">#Investment</a>
-        <a href="https://quantfilab.github.io/pmarupanthorn/tags/large-language-model/" style="background-color: #0b3d0b; color: #fff; padding: 2px 4px; border-radius: 3px; text-decoration: none;">#Financial Product</a>
-      count: 2
+        The default blogs are written in English. If you are looking for content in Thai, please follow the link provided within the blogs.
+      count: 100
       filters:
         folders:
           - post
