@@ -17,7 +17,7 @@ image:
         ภาษาไทย
     </summary>
 
-<div style="margin-top: 10px; padding: 10px; font-size: 13px; line-height: 1.5; color: #333;">
+<div style="font-size: 16px;">
 
 ## 1. Copula คืออะไร
 
