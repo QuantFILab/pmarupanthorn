@@ -13,11 +13,11 @@ image:
 ---
 
 <details style="margin: 20px 0; padding: 0; border: 1px solid #ddd; border-radius: 8px; background-color: white; max-width: 300px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-    <summary style="cursor: pointer; font-weight: bold; font-size: 14px; color: #007bff; padding: 10px 15px; background-color: #f9f9f9; border-radius: 8px; text-align: center; display: inline-block; margin: 20px;">
+    <summary style="cursor: pointer; font-weight: bold; font-size: 14px; color: #007bff; padding: 10px 15px; background-color: #f9f9f9; border-radius: 8px; text-align: center; display: inline-block; margin: 10px;">
         ภาษาไทย
     </summary>
 
-<div style="font-size: 16px;">
+<div style="margin: 20px; padding: 15px;font-size: 16px;">
 
 ## 1. Copula คืออะไร
 
