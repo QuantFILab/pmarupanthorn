@@ -30,6 +30,10 @@ ___
 - [Wang–Landau Sampling for Estimation of the Reliability of Physical Networks](https://www.sciencedirect.com/science/article/abs/pii/S0010465521000059) (Wanyok, Pasin)
 ___
 
+### Confidence Region and Asymptotic Statistics
+
+- Asymptotic Confidence Ellipse for Lognormal Distribution with Applications in Actuarial Pricing (Nassamon, Uparittha, Pasin)
+___
 
 ### Stochastic Optimization
 
