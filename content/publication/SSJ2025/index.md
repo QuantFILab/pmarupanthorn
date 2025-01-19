@@ -24,9 +24,9 @@ abstract: This paper presents the construction and validation of asymptotic conf
 summary: 
 
 tags:
+- Actuarial Pricing
 - Confidence Ellipse
 - Monte Carlo Method
-- Actuarial Pricing
 featured: True
 # links:
 # - name: ""
