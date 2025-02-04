@@ -1,6 +1,6 @@
 ---
 title: AI and Machine Learning in Finance and Insurance
-summary: My focus is on portfolio optimization and management across various asset classes such as equity, commodities, and ETFs, as well as different investment styles. Additionally, I conduct deep mathematical analysis on these areas.
+summary: My focus is on applying AI and machine learning techniques in finance and insurance, covering areas such as risk assessment, algorithmic trading, and predictive modeling. Additionally, I conduct deep mathematical analysis to enhance model robustness and interpretability in these domains.
 date: "2024-06-28T00:00:00Z"
 
 type: docs
@@ -13,17 +13,12 @@ header:
 
 <div style="font-size: 14px;">
   
-### Decarbonization and ESG 
+### Large Language Models
 
 
-- [Mechanisms for Implementing Fossil Fuel Divestment in Portfolio Management with Impact on Risk, Return and Carbon Reduction](https://www.sciencedirect.com/science/article/pii/S0140988324004328) (Pasin, Christina, Eric, Gareth, and Kylie-Anne)
-- [DivFolio: A Shiny Application for Portfolio Divestment in Green Finance Wealth Management](https://www.cambridge.org/core/journals/annals-of-actuarial-science/article/divfolio-a-shiny-application-for-portfolio-divestment-in-green-finance-wealth-management/80986512D29D1D2D3CDD7ADEB2FE0428) (Pasin, Gareth, Eric, Christina, and Kylie-Anne)
+- [Leveraging Generative Pre-trained Transformers for the Integration of Environmental, Social, and Governance Considerations into Investment Management for Thai Stock](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4715431) (Nuthdanai, Teerasit, Pasin, Jutha, Chanon, Carat)
 
 ___
 
-### Factor Investing and Smart Beta
-
-- [Development of ESG Factors for Enhancing Factor Model in the Thai Stock Market](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4706129) (Pasin, Teerasit, Nuthdanai, Jutha, Chanon, Carat)
-___
 
 </div>
