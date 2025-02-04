@@ -1,5 +1,5 @@
 ---
-title: Machine Learning in Finance and Insurance
+title: AL and Machine Learning in Finance and Insurance
 summary: My focus is on applying machine learning techniques, such as clustering and classification, to address problems in finance and insurance. I also consider developing novel statistical machine learning methods. Additionally, I investigate the application of AI in these fields.
 date: "2024-02-03T00:00:00Z"
 type: docs
