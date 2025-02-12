@@ -20,7 +20,7 @@ header:
 
 ___
 
-### Classification in Stock Market
+### Classification in Financial Market
 
 
 ___
