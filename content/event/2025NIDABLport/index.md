@@ -1,5 +1,5 @@
 ---
-title: Introduction to Black-Litterman Model and Factor Model: From Practice to theory
+title: Introduction to Black-Litterman Model and Factor Model From Practice to theory
 
 event: NIDA Ph.D. Seminar
 event_url: 
