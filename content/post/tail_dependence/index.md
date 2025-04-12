@@ -259,10 +259,8 @@ def empirical_tail_dependence(x, y, u=0.05):
     upper = np.sum((ux > 1 - u) & (uy > 1 - u)) / np.sum(ux > 1 - u)
 
     return lower, upper
+```
 
-
-
-✍️  
 **พศิน มรุปัณฑ์ธร, Ph.D, CQF**  
 Quantitative Risk Researcher | Financial Mathematics
 
