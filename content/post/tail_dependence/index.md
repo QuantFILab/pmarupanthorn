@@ -51,6 +51,8 @@ image:
 - แต่ในช่วงเกิดเหตุการณ์ Tariff — ค่า correlation พุ่งขึ้นถึง 0.8  
 - 👉 สะท้อนว่าพอร์ตที่ดู "diversified" กลับประสบความเสียหายพร้อมกัน
 
+![Tail Dependence 1](https://raw.githubusercontent.com/QuantFILab/pmarupanthorn/main/content/post/tail_dependence/featured.png)
+![Tail Dependence 2](https://raw.githubusercontent.com/QuantFILab/pmarupanthorn/main/content/post/tail_dependence/Figure.png)
 ---
 
 ##❗ นิยามของ Tail Dependence
