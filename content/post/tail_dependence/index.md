@@ -11,10 +11,6 @@ tags:
 image:
   caption: 'Dependence'
 ---
-<details style="margin: 20px 0; padding: 0; border: 1px solid #ddd; border-radius: 8px; background-color: white; max-width: 900px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-    <summary style="cursor: pointer; font-weight: bold; font-size: 14px; color: #007bff; padding: 10px 15px; background-color: #f9f9f9; border-radius: 8px; text-align: center; display: inline-block; margin: 10px;">
-        ภาษาไทย
-    </summary>
 
 <div style="font-size: 16px;">
 
@@ -172,6 +168,8 @@ Tail Dependence สามารถนิยามได้สองรูปแ�
 
 ---
 
+
+
 ✍️  
 **พศิน มรุปัณฑ์ธร, Ph.D, CQF**  
 Quantitative Risk Researcher | Financial Mathematics
@@ -180,20 +178,6 @@ Quantitative Risk Researcher | Financial Mathematics
 
 ---
 
-**พศิน มรุปัณฑ์ธร, Ph.D, CQF**  
-*Quantitative Researcher | Risk Analytics | Financial Mathematics*
 
 </div>
-</details>
 
-<div style="padding: 10px; border: 1px solid #ddd; border-radius: 8px; background-color: #f9f9f9; max-width: 250px;">
-    <h4 style="margin-bottom: 10px; font-weight: bold;">Related Articles</h4>
-    <ul style="list-style: none; padding: 0; margin: 0; font-size: 14px;">
-        <li style="margin-bottom: 5px;">
-            <a href="/content/post/copula-intro/" style="color: #007bff; text-decoration: none;">FX Betting System I</a>
-        </li>
-        <li style="margin-bottom: 5px;">
-            <a href="/content/post/copula-intro/" style="color: #007bff; text-decoration: none;">Another Title You Want</a>
-        </li>
-    </ul>
-</div>
