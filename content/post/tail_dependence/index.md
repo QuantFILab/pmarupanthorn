@@ -261,9 +261,6 @@ def empirical_tail_dependence(x, y, u=0.05):
     return lower, upper
 ```
 
-**พศิน มรุปัณฑ์ธร, Ph.D, CQF**  
-Quantitative Risk Researcher | Financial Mathematics
-
 
 
 ---
