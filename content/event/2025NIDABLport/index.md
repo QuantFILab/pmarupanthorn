@@ -33,6 +33,14 @@ links:
     icon_pack: fas
     name: Week 1 Algorithmic Trading & Mean-Variance Portfolio in Practice
     url: https://github.com/QuantFILab/pmarupanthorn/raw/main/content/event/Nida/Week%201%20Algorithmic%20Trading%20%26%20Mean-Variance%20Portfolio%20in%20Practice.pdf
+  - icon: file-pdf
+    icon_pack: fas
+    name: Week 2 Black-Litterman Model & Investor View with Factors
+    url: https://raw.githubusercontent.com/QuantFILab/pmarupanthorn/main/content/event/Nida/Week%202%20Black-Litterman%20Model%20%26%20Investor%20View%20with%20Factors.pdf
+  - icon: file-pdf
+    icon_pack: fas
+    name: Week 3 Advanced Mathematics behind Back-Litterman Model & other Bayesian Approach Portfolios
+    url: https://raw.githubusercontent.com/QuantFILab/pmarupanthorn/main/content/event/Nida/Week%203%20Advanced%20Mathematics%20behind%20Back-Litterman%20Model%20%26%20other%20Bayesian%20Approach%20Portfolios.pdf
 image:
   focal_point: Right
 ---
