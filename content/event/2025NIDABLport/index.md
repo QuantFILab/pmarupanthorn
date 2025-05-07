@@ -28,6 +28,11 @@ tags: []
 # Is this a featured talk? (true/false)
 featured: false
 
+links:
+  - icon: file-pdf
+    icon_pack: fas
+    name: Week 1 Algorithmic Trading & Mean-Variance Portfolio in Practice
+    url: https://github.com/QuantFILab/pmarupanthorn/raw/main/content/event/Nida/Week%201%20Algorithmic%20Trading%20%26%20Mean-Variance%20Portfolio%20in%20Practice.pdf
 image:
   focal_point: Right
 ---
