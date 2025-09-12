@@ -13,7 +13,7 @@ header:
 
 <div style="font-size: 14px;">
   
-### Pair Trading
+### Statistical Arbitrage
 
 ___
 
