@@ -24,6 +24,7 @@ ___
 ### Factor Investing and Smart Beta
 
 - [Development of ESG Factors for Enhancing Factor Model in the Thai Stock Market](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4706129) (Pasin, Teerasit, Nuthdanai, Jutha, Chanon, Carat)
+- [Structural Change Detection in Panel-MIDAS-ARDL Time Series Regression Models: An Application to Firm Values and ESG Scores](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4706129) (Meysam, Gareth, Pasin, Emese, Vu) 
 ___
 
 </div>
