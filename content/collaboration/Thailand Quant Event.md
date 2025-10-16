@@ -134,19 +134,6 @@ header:
     </tbody>
   </table>
 
-  <!-- Optional: Committee / Collaborators (moved below) -->
-  <hr style="margin:2.5rem 0;">
-  <h3>Committee</h3>
-  <ul>
-    <li><strong>Thai Quantitative Analyst and Financial Engineer Association</strong>, Vice President</li>
-  </ul>
-
-  <h3>Working, Members or Collaborator</h3>
-  <ul>
-    <li><strong>ResilientML</strong>, Quantitative Researcher</li>
-    <li><strong>QuantConnect Research Laboratory</strong>, Quantitative Researcher</li>
-  </ul>
-
 </div>
 
 <script>
