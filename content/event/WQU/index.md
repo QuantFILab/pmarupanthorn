@@ -28,6 +28,9 @@ authors:
 
 tags: []
 
+tags:
+  - Quantitative Finance
+
 # Is this a featured talk? (true/false)
 featured: false
 

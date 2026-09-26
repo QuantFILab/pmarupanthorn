@@ -27,6 +27,9 @@ authors:
   - admin
 
 tags: []
+tags:
+  - Statistical Arbitrage
+
 # Is this a featured talk? (true/false)
 featured: false
 

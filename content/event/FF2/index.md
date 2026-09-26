@@ -29,6 +29,9 @@ authors:
 
 tags: []
 
+tags:
+  - Factor Investing
+
 # Is this a featured talk? (true/false)
 featured: false
 

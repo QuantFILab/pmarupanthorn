@@ -28,6 +28,9 @@ authors:
 
 tags: []
 
+tags:
+  - Insurance
+
 # Is this a featured talk? (true/false)
 featured: false
 

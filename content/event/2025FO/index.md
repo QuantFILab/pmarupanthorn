@@ -25,6 +25,9 @@ authors:
   - admin
 
 tags: []
+tags:
+  - Financial Markets
+
 # Is this a featured talk? (true/false)
 featured: false
 

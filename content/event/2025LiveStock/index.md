@@ -25,6 +25,9 @@ authors:
   - admin
 
 tags: []
+tags:
+  - Machine Learning
+
 # Is this a featured talk? (true/false)
 featured: false
 

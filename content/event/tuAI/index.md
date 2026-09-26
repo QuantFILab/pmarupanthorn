@@ -29,6 +29,9 @@ authors:
   - admin
 
 tags: []
+tags:
+  - Artificial Intelligence
+
 # Is this a featured talk? (true/false)
 featured: false
 

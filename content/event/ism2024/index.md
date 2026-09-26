@@ -27,6 +27,9 @@ authors:
   - admin
 
 tags: []
+tags:
+  - Sustainable Investing
+
 # Is this a featured talk? (true/false)
 featured: false
 

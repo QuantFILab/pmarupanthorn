@@ -26,6 +26,9 @@ authors:
   - admin
 
 tags: []
+tags:
+  - Agent-Based Modeling
+
 # Is this a featured talk? (true/false)
 featured: false
 

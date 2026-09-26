@@ -22,6 +22,9 @@ authors:
 
 tags: []
 
+tags:
+  - Quantitative Trading
+
 # Is this a featured talk? (true/false)
 featured: true
 

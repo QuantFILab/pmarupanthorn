@@ -26,6 +26,9 @@ authors:
   - admin
 
 tags: []
+tags:
+  - Financial Mathematics
+
 # Is this a featured talk? (true/false)
 featured: false
 

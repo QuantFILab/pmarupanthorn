@@ -28,6 +28,9 @@ authors:
   - admin
 
 tags: []
+tags:
+  - Applied Mathematics
+
 # Is this a featured talk? (true/false)
 featured: false
 

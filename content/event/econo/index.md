@@ -28,6 +28,9 @@ authors:
 
 tags: []
 
+tags:
+  - Econophysics
+
 # Is this a featured talk? (true/false)
 featured: true
 
