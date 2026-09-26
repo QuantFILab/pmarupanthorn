@@ -19,9 +19,9 @@ authors:
   - admin
 
 tags:
+  - Statistical Arbitrage
   - AI Agents
   - Quantitative Trading
-  - Statistical Arbitrage
   - Mathematical Modeling
 
 # Is this a featured talk? (true/false)
