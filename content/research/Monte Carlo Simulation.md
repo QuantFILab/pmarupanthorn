@@ -1,5 +1,6 @@
 ---
 title: Monte Carlo Simulation
+weight: 70
 summary: My focus is on applying the Monte Carlo method in various fields, with an emphasis on improving and developing novel approaches.
 date: "2024-03-29T00:00:00Z"
 type: docs

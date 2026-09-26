@@ -1,5 +1,6 @@
 ---
 title: AI and Machine Learning in Finance and Insurance
+weight: 10
 summary: My focus is on applying AI and machine learning techniques in finance and insurance, covering areas such as risk assessment, algorithmic trading, and predictive modeling. Additionally, I conduct deep mathematical analysis to enhance model robustness and interpretability in these domains.
 date: "2024-06-28T00:00:00Z"
 

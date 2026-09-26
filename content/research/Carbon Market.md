@@ -1,5 +1,6 @@
 ---
 title: Carbon Market
+weight: 30
 summary: My research focuses on emissions trading systems, carbon allowances, carbon-credit markets, policy-driven market dynamics, and quantitative methods for monitoring and managing carbon-market risk.
 date: "2026-09-26T00:00:00Z"
 

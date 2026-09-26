@@ -18,7 +18,7 @@ sections:
     content:
       title: Research Themes
       count: 0
-      sort_by: Title
+      sort_by: Weight
       sort_ascending: true
       filters:
         folders:

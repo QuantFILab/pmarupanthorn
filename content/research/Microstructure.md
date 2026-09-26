@@ -1,5 +1,6 @@
 ---
 title: Microstructure
+weight: 60
 summary: Financial Ecosystem, Market Maker, HFT
 date: "2024-03-29T00:00:00Z"
 type: docs
