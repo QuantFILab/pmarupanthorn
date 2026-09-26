@@ -208,9 +208,10 @@ awards:
 
 My background is in Applied Mathematics, with a keen interest in challenging problems in Finance, Insurance, and Risk Management. I am currently an energetic Quantitative Researcher and University Lecturer. I warmly welcome collaborative work with energetic colleagues who share similar interests. If you are interested in collaborating on research, workshops, seminars, lectures, or teaming up for enjoyable challenges, please feel free to contact me. 
 
-My main projects for 2024 to 2025 are listed below:
+My main projects for 2026 to 2031 are listed below:
   - Emission Trading System and Carbon Credit
   - Sustainability in Pension Fund
-  - Sustainable Investing
-  - Manifold and Polytope Learning
+  - Statistical Arbitrage
+  - Insurance-linked Investment
+  - Statistical Machine Learning and XAI
 
