@@ -72,7 +72,7 @@ sections:
         - **Co-Founder / Quantitative Researcher / Trader**, L2 Technology
         - **WorldQuant BRAIN Gold Level**, [Certificate of Accomplishment](/pmarupanthorn/uploads/worldquant-brain-gold-certificate.png)
 
-        **Current site portfolio:** 15 publications and working papers · 44 talks and workshops · 10 courses · 9 research themes
+        **Current site portfolio:** 15 publications and working papers · 44 talks and workshops · 10 courses · 10 research themes
   - block: markdown
     id: collaboration
     content:
