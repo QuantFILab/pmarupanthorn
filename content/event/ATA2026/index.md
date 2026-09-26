@@ -2,7 +2,7 @@
 title: "Event Study Analytics and Statistical Arbitrage"
 
 event: Algorithmic Trading in Action (ATA) Certification Program
-event_url: "https://www.facebook.com/permalink.php?story_fbid=pfbid0CjTVetSKyDLR863Cv9UrARXSVGAADHg2oKDPc5MBgMs3FJjcoAMPp9uktto5Uqh7l&id=61569334229421"
+event_url: "https://www.facebook.com/61569334229421/posts/122173242488644474/"
 
 location: GroundUp Academy
 
