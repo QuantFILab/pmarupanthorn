@@ -4,7 +4,7 @@ authors:
 - Nassamon Bootwisas
 - admin
 date: "2026-01-02T00:00:00Z"
-doi: "http://dx.doi.org/10.2139/ssrn.5927422"
+doi: "https://doi.org/10.2139/ssrn.6002314"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: "2026-01-02T00:00:00Z"

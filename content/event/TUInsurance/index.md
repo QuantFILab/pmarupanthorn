@@ -1,5 +1,5 @@
 ---
-title: Reserach Trend in Modern Insurance Modelling
+title: Research Trends in Modern Insurance Modelling
 
 event: Thammasat University Seminar
 event_url: 

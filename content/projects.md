@@ -1,5 +1,5 @@
 ---
-title: 'Projects'
+title: 'Software, Code & Data'
 date: 2024-05-19
 type: landing
 
@@ -11,8 +11,11 @@ design:
 sections:
   - block: collection
     content:
-      title: Projects
-      text: Here are projects that I have worked on over the years.
+      title: Software, Code & Data
+      text: Open research software, reproducible code, and data-access tools for quantitative finance, insurance, sustainable investing, and applied mathematics.
+      count: 0
+      sort_by: Title
+      sort_ascending: true
       filters:
         folders:
           - project

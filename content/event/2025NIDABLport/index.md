@@ -42,7 +42,7 @@ links:
     url: https://raw.githubusercontent.com/QuantFILab/pmarupanthorn/main/content/event/Nida/Week%202%20Black-Litterman%20Model%20%26%20Investor%20View%20with%20Factors.pdf
   - icon: file-pdf
     icon_pack: fas
-    name: Week 3 Advanced Mathematics behind Back-Litterman Model & other Bayesian Approach Portfolios
+name: Week 3 Advanced Mathematics behind Black-Litterman Model & Other Bayesian Portfolio Approaches
     url: https://raw.githubusercontent.com/QuantFILab/pmarupanthorn/main/content/event/Nida/Week%203%20Advanced%20Mathematics%20behind%20Back-Litterman%20Model%20%26%20other%20Bayesian%20Approach%20Portfolios.pdf
 image:
   focal_point: Right

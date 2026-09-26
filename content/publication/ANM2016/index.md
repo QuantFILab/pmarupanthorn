@@ -4,7 +4,7 @@ authors:
 - Wanyok Atisattapong
 - admin
 date: "2016-06-01T00:00:00Z"
-doi: "https://doi.org/10.1016/j.eneco.2024.107724"
+doi: "https://doi.org/10.1016/j.apnum.2015.09.004"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: "2017-01-01T00:00:00Z"

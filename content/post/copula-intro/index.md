@@ -1,5 +1,5 @@
 ---
-title: โคปูลาเบื้องต้น (Intorduction to Copula)
+title: โคปูลาเบื้องต้น (Introduction to Copula)
 summary: 
 date: 2024-09-19
 math: true

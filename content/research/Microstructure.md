@@ -1,6 +1,6 @@
 ---
 title: Microstructure
-summary: Financial Ecosyetem, Market Maker, HFT
+summary: Financial Ecosystem, Market Maker, HFT
 date: "2024-03-29T00:00:00Z"
 type: docs
 # reading_time: false  # Show estimated reading time?

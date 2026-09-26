@@ -8,7 +8,7 @@ authors:
 - Chanon Chanpiwat
 - Carat Pathomsathit
 date: "2024-02-03T00:00:00Z"
-doi: ""
+doi: "https://doi.org/10.2139/ssrn.4715431"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: "2017-01-01T00:00:00Z"

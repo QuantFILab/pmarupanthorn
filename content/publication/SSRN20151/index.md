@@ -7,7 +7,7 @@ authors:
 - Emese Lazar
 - Vu Tran
 date: "2025-08-08T00:00:00Z"
-doi: ""
+doi: "https://doi.org/10.2139/ssrn.5418895"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: "2017-01-01T00:00:00Z"
@@ -36,7 +36,7 @@ featured: true
 # links:
 # - name: ""
 #   url: ""
-url_pdf: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4706129
+url_pdf: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5418895
 url_code: ''
 url_dataset: ''
 url_poster: ''

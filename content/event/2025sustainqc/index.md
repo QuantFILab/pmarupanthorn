@@ -1,5 +1,5 @@
 ---
-title: Introduction to Quantitaive Sustainable and ESG Portfolio Construction
+title: Introduction to Quantitative Sustainable and ESG Portfolio Construction
 
 event: QuantCorner
 event_url: 

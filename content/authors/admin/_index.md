@@ -3,7 +3,7 @@
 title: Pasin Marupanthorn
 
 # Name pronunciation (optional)
-name_pronunciation: Ph.D CQF
+name_pronunciation: ''
 
 # Full name (for SEO)
 first_name: Pasin
@@ -20,18 +20,18 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Quantitative Researcher
+role: Quantitative Researcher · PhD · CQF
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
   - name: QuantCorner Research Laboratory
-    url: https://openai.com/
+    url: https://www.quant-corner.com/about-3
 
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
   - icon: at-symbol
-    url: 'quantfilab@gmail.com'
+    url: 'mailto:quantfilab@gmail.com'
   - icon: brands/github
     url: https://github.com/QuantFILab
   - icon: brands/linkedin
@@ -58,16 +58,16 @@ education:
     date_end: 2024-08-08
     summary: |
       Responsibilities include:
-      - Quantitaive Methods in Sustainable Investment
+      - Quantitative Methods in Sustainable Investment
   - area: Certificate in Quantitative Finance 
     institution: Fitch Learning
     summary: |
       Responsibilities include:
-      - Back-Litterman Portfolio with Risk Facotrs  
-    date_start: 2024-11-07
-    date_end: 2024-01-27
+      - Black-Litterman Portfolio with Risk Factors
+    date_start: 2024-01-27
+    date_end: 2024-11-07
   - area: MSc Financial Engineering
-    institution: WorldQuant Univeristy
+    institution: WorldQuant University
     date_start: 2016-01-01
     date_end: 2020-12-31
     summary: |

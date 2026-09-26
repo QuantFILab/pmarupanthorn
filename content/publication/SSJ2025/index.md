@@ -5,7 +5,7 @@ authors:
 - Uparittha Intarasat
 - admin
 date: "2025-01-19T00:00:00Z"
-doi: ""
+doi: "https://doi.org/10.55766/sujst6597"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: "2017-01-01T00:00:00Z"
@@ -31,7 +31,7 @@ featured: True
 # links:
 # - name: ""
 #   url: ""
-url_pdf: ''
+url_pdf: 'https://ph04.tci-thaijo.org/index.php/SUJST/article/view/6597'
 url_code: ''
 url_dataset: ''
 url_poster: ''

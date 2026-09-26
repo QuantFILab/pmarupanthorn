@@ -7,6 +7,12 @@ cascade:
     params:
       show_breadcrumb: true
 sections:
+  - block: markdown
+    id: focus
+    content:
+      title: Browse by Focus
+      text: |
+        [Statistical Arbitrage](/pmarupanthorn/tags/statistical-arbitrage/) · [Quantitative Trading](/pmarupanthorn/tags/quantitative-trading/) · [Sustainable Investing](/pmarupanthorn/tags/sustainable-investing/) · [Artificial Intelligence](/pmarupanthorn/tags/artificial-intelligence/) · [Machine Learning](/pmarupanthorn/tags/machine-learning/) · [Options](/pmarupanthorn/tags/options/) · [Insurance](/pmarupanthorn/tags/insurance/) · [Portfolio Optimization](/pmarupanthorn/tags/portfolio-optimization/) · [Quantitative Finance](/pmarupanthorn/tags/quantitative-finance/)
   - block: collection
     id: event
     content:

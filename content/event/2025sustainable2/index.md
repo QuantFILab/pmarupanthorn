@@ -1,5 +1,5 @@
 ---
-title: Evoluating ESG Impact on Portfolio Using Factor Model
+title: Evaluating ESG Impact on Portfolio Using Factor Model
 
 event: QuantCorner
 event_url: 

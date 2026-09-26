@@ -6,7 +6,7 @@ event_url: https://fb.watch/tmkjWibpPx/
 
 location: Facebook Live
 
-summary: The qunatitaive trading 
+summary: Quantitative trading strategy design.
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.

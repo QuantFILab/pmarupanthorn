@@ -18,7 +18,7 @@ main:
     weight: 22
     parent: Research
     url: /research/
-  - name: Projects
+  - name: Software & Data
     weight: 23
     parent: Research
     url: /projects/
