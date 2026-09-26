@@ -213,5 +213,6 @@ My main projects for 2026 to 2031 are listed below:
   - Sustainability in Pension Fund
   - Statistical Arbitrage
   - Insurance-linked Investment
+  - Stochastic Model in Financial and Insurance Technology
   - Statistical Machine Learning and XAI
 
