@@ -39,6 +39,11 @@ url_slides: ''
 url_source: ''
 url_video: ''
 
+image:
+  caption: "Refinitiv EUA futures price and estimated high-stress regime."
+  focal_point: Center
+  preview_only: false
+
 projects: []
 slides: ""
 ---

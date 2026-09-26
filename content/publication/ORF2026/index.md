@@ -39,6 +39,11 @@ url_slides: ''
 url_source: ''
 url_video: ''
 
+image:
+  caption: "Model ranking, calibration, and XGBoost state contributions."
+  focal_point: Center
+  preview_only: false
+
 projects: []
 slides: ""
 ---
