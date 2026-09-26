@@ -16,6 +16,7 @@ header:
 ### Decarbonization and ESG 
 
 
+- [Policy-state gated regime dynamics in European emission allowance futures](https://quantfilab.github.io/pmarupanthorn/publication/ds2026/) (Wanyok, Pasin)
 - [Mechanisms for Implementing Fossil Fuel Divestment in Portfolio Management with Impact on Risk, Return and Carbon Reduction](https://www.sciencedirect.com/science/article/pii/S0140988324004328) (Pasin, Christina, Eric, Gareth, and Kylie-Anne)
 - [DivFolio: A Shiny Application for Portfolio Divestment in Green Finance Wealth Management](https://www.cambridge.org/core/journals/annals-of-actuarial-science/article/divfolio-a-shiny-application-for-portfolio-divestment-in-green-finance-wealth-management/80986512D29D1D2D3CDD7ADEB2FE0428) (Pasin, Gareth, Eric, Christina, and Kylie-Anne)
 - [Structural Change Detection in Panel-MIDAS-ARDL Time Series Regression Models; An Application to Firm Values and ESG Scores](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4706129) (Meysam, Gareth, Pasin, Emese, Vu) 

@@ -22,6 +22,7 @@ ___
 
 ### Classification in Financial Market
 
+- [State Conditional Boosting for Prospective Early Warning of CFPB Reported Relief Workload](https://quantfilab.github.io/pmarupanthorn/publication/orf2026/) (Nassamon, Pasin)
 
 ___
 
