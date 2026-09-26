@@ -19,8 +19,8 @@ authors:
   - admin
 
 tags:
-  - Event Study
   - Statistical Arbitrage
+  - Event Study
   - Algorithmic Trading
   - Quantitative Finance
 
