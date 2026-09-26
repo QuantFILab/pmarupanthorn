@@ -87,45 +87,52 @@ education:
     date_end: 2020-12-31
     
 work:
-  - position: Quantitative Researcher
-    company_name: GenCoin
-    company_url: ''
+  - position: Vice President
+    company_name: Thailand Association of Quantitative Analysts and Financial Engineers (TQF)
+    company_url: 'https://www.tqf.or.th/team'
     company_logo: ''
-    date_start: 2021-01-01
+    date_start: 2025-01-01
     date_end: ''
-    summary: |2-
-      Responsibilities include:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - position: LLecturer
-    company_name: X
+    summary: |
+      - Serve as Vice President of the association.
+  - position: Co-Founder / Quantitative Researcher / Trader
+    company_name: L2 Technology
     company_url: ''
     company_logo: ''
-    date_start: 2016-01-01
-    date_end: 2020-12-31
+    date_start: 2025-05-01
+    date_end: ''
     summary: |
-      Responsibilities include:
-      - Migrated infrastructure to a new data center
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - position: LLecturer
-    company_name: X
+      - Conduct research on multi-strategy trading across cryptocurrency, derivatives, U.S. equities, Thai equities, and currency markets, with a focus on statistical arbitrage.
+      - Lead technology-driven initiatives, including LLM applications for legal analytics and blockchain-based infrastructure projects.
+  - position: Researcher / Lecturer
+    company_name: Groundup Academy
     company_url: ''
     company_logo: ''
-    date_start: 2016-01-01
-    date_end: 2020-12-31
+    date_start: 2025-01-01
+    date_end: ''
     summary: |
-      Responsibilities include:
-      - Migrated infrastructure to a new data center
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - position: Journal Reviwer
-    company_name: Energy Economics
-    company_name: Annual of Actuarial Science
-    company_name: FILOMAT
-    company_name: Science and Technology Asia
-    company_name: Thailand and The World Economy
+      - Design and research AI- and technology-driven learning systems.
+      - Lecture in mathematics, statistics, quantitative finance, and investment.
+  - position: Teaching Assistant (Ph.D. Program)
+    company_name: Heriot-Watt University
+    company_url: 'https://www.hw.ac.uk/'
+    company_logo: ''
+    date_start: 2020-09-01
+    date_end: 2025-09-30
+    summary: |
+      - Assisted with F71RA and F71RB, Machine Learning for Risk and Insurance I-II.
+      - Supported tutorials, grading, and academic development.
+      - Worked under the supervision of Professor Gareth W. Peters and Dr. Eric Ofosu-Hene.
+  - position: Lecturer
+    company_name: Rajamangala University of Technology Suvarnabhumi
+    company_url: 'https://www.rmutsb.ac.th/'
+    company_logo: ''
+    date_start: 2015-09-01
+    date_end: 2018-09-30
+    summary: |
+      - Lectured undergraduate courses in mathematics and statistics.
+      - Supervised student projects and conducted applied mathematical research.
+      - Participated in curriculum development and academic committees.
 
 
 
