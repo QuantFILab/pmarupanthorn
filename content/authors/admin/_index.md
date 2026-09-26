@@ -150,11 +150,11 @@ awards:
   - title: WorldQuant BRAIN Gold Level
     date: '2026-09-26'
     awarder: WorldQuant BRAIN
-    certificate_url: /uploads/worldquant-brain-gold-certificate.png
+    certificate_url: /pmarupanthorn/uploads/worldquant-brain-gold-certificate.png
     summary: |
       Certificate of Accomplishment for reaching Gold Level in the WorldQuant Challenge.
 
-      [![WorldQuant BRAIN Gold Level Certificate](/uploads/worldquant-brain-gold-certificate.png)](/uploads/worldquant-brain-gold-certificate.png)
+      [![WorldQuant BRAIN Gold Level Certificate](/pmarupanthorn/uploads/worldquant-brain-gold-certificate.png)](/pmarupanthorn/uploads/worldquant-brain-gold-certificate.png)
 ---
 
 ## About Me
