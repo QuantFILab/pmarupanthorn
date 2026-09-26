@@ -12,8 +12,8 @@ sections:
         folders:
           - book
     design:
-      view: compact
-      # columns: 3
+      view: article-grid
+      columns: 3
       fill_image: false
   
 ---
