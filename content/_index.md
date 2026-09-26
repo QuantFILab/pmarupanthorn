@@ -25,6 +25,18 @@ sections:
     design:
       columns: '1'
   - block: collection
+    id: courses
+    content:
+      title: Featured Courses
+      count: 3
+      filters:
+        folders:
+          - teaching
+    design:
+      view: article-grid
+      columns: 3
+      fill_image: false
+  - block: collection
     id: papers
     content:
       title: Featured Publications
