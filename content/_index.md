@@ -16,16 +16,6 @@ sections:
         url: uploads/resume.pdf
     design:
       columns: '1'
-  - block: markdown
-    id: current-research
-    content:
-      title: Current Research 2026–2031
-      text: |
-        - **[Carbon Markets](/pmarupanthorn/research/carbon-market/)** — emissions trading systems, carbon credits, policy regimes, and market risk.
-        - **[Statistical Arbitrage](/pmarupanthorn/tags/statistical-arbitrage/)** — pairs trading, derivatives, market microstructure, and systematic strategy design.
-        - **[Insurance-linked Investment](/pmarupanthorn/research/insurance-market/)** — actuarial pricing, insurance risk, and investment-linked insurance applications.
-        - **[Statistical Machine Learning and XAI](/pmarupanthorn/research/ai-and-machine-learning-in-finance-and-insurance/)** — robust, interpretable predictive models for finance and insurance.
-        - **[Stochastic Models in Financial and Insurance Technology](/pmarupanthorn/research/monte-carlo-simulation/)** — simulation, stochastic processes, computational finance, and InsurTech.
   - block: collection
     id: papers
     content:
