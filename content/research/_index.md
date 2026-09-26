@@ -18,6 +18,8 @@ sections:
     content:
       title: Research Themes
       count: 0
+      sort_by: Title
+      sort_ascending: true
       filters:
         folders:
           - research
