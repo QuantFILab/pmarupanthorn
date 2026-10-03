@@ -1,5 +1,6 @@
 {{ $page := .page }}
 {{ $variant := .variant | default "page" }}
+{{ $isThai := eq $page.Language.Lang "th" }}
 {{ $publicationYear := $page.Date | time.Format "2006" }}
 {{ $metrics := $page.Params.journal_metrics }}
 {{ $scopus := false }}
@@ -38,30 +39,30 @@
   {{ end }}
 {{ end }}
 
-<div class="journal-quality journal-quality--{{ $variant }}" aria-label="Journal quality metrics">
+<div class="journal-quality journal-quality--{{ $variant }}" aria-label="{{ if $isThai }}ตัวชี้วัดคุณภาพวารสาร{{ else }}Journal quality metrics{{ end }}">
   {{ if eq $variant "best" }}
-    <span class="journal-quality__label">Best quality</span>
+    <span class="journal-quality__label">{{ if $isThai }}คุณภาพสูงสุด{{ else }}Best quality{{ end }}</span>
 
     {{ if $bestQuartile }}
       <a class="journal-quality__badge {{ if eq $bestSource "Scopus" }}journal-quality__badge--scopus{{ else }}journal-quality__badge--scimago{{ end }}"
          href="{{ $bestURL }}" target="_blank" rel="noopener"
-         title="Best available journal-quality result for this {{ $publicationYear }} publication">
+         title="{{ if $isThai }}ผลการจัดอันดับวารสารที่ดีที่สุดสำหรับบทความปี {{ $publicationYear }}{{ else }}Best available journal-quality result for this {{ $publicationYear }} publication{{ end }}">
         <span class="journal-quality__source">{{ $bestSource }} {{ $publicationYear }}</span>
         <strong>{{ $bestQuartile }}</strong>
         {{ with $bestPercentile }}<span>· {{ . }}</span>{{ end }}
       </a>
     {{ else }}
       <span class="journal-quality__badge journal-quality__badge--undefined">
-        <strong>Undefined</strong>
+        <strong>{{ if $isThai }}ไม่ระบุ{{ else }}Undefined{{ end }}</strong>
       </span>
     {{ end }}
   {{ else }}
-    <span class="journal-quality__label">Journal quality</span>
+    <span class="journal-quality__label">{{ if $isThai }}คุณภาพวารสาร{{ else }}Journal quality{{ end }}</span>
 
     {{ if $scopus }}
       <a class="journal-quality__badge journal-quality__badge--scopus"
          href="{{ $scopus.url }}" target="_blank" rel="noopener"
-         title="Scopus CiteScore: highest listed subject-category result for this {{ $publicationYear }} publication">
+         title="{{ if $isThai }}Scopus CiteScore: ผลสูงสุดตามหมวดวิชาสำหรับบทความปี {{ $publicationYear }}{{ else }}Scopus CiteScore: highest listed subject-category result for this {{ $publicationYear }} publication{{ end }}">
         <span class="journal-quality__source">Scopus {{ $publicationYear }}</span>
         <strong>{{ $scopus.quartile }}</strong>
         <span>· {{ $scopus.percentile }}</span>
@@ -69,21 +70,21 @@
     {{ else }}
       <span class="journal-quality__badge journal-quality__badge--undefined">
         <span class="journal-quality__source">Scopus</span>
-        <strong>Undefined</strong>
+        <strong>{{ if $isThai }}ไม่ระบุ{{ else }}Undefined{{ end }}</strong>
       </span>
     {{ end }}
 
     {{ if $scimago }}
       <a class="journal-quality__badge journal-quality__badge--scimago"
          href="{{ $scimago.url }}" target="_blank" rel="noopener"
-         title="SCImago Journal Rank: best quartile for this {{ $publicationYear }} publication">
+         title="{{ if $isThai }}SCImago Journal Rank: ควอไทล์ที่ดีที่สุดสำหรับบทความปี {{ $publicationYear }}{{ else }}SCImago Journal Rank: best quartile for this {{ $publicationYear }} publication{{ end }}">
         <span class="journal-quality__source">SCImago {{ $publicationYear }}</span>
         <strong>{{ $scimago.quartile }}</strong>
       </a>
     {{ else }}
       <span class="journal-quality__badge journal-quality__badge--undefined">
         <span class="journal-quality__source">SCImago</span>
-        <strong>Undefined</strong>
+        <strong>{{ if $isThai }}ไม่ระบุ{{ else }}Undefined{{ end }}</strong>
       </span>
     {{ end }}
   {{ end }}

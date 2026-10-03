@@ -5,13 +5,10 @@
 {{- end -}}
 {{- $english := $entry.en -}}
 {{- $thai := $entry.th -}}
+{{- $language := cond (eq site.Language.Lang "th") "th" "en" -}}
+{{- $content := cond (eq $language "th") $thai $english -}}
 
 <style>
-  .policy-category-style .research-language-switch {
-    justify-content: flex-start;
-    margin-bottom: 1.5rem;
-  }
-
   .policy-category-panel {
     font-size: 14px;
   }
@@ -42,14 +39,8 @@
   }
 </style>
 
-<div class="research-bilingual policy-category-style" data-research-bilingual data-title-en="{{ $english.title }}" data-title-th="{{ $thai.title }}">
-  <div class="research-language-switch" role="group" aria-label="Select policy language">
-    <button class="research-language-button" type="button" data-research-language="en" aria-controls="policy-content-{{ $key }}-en" aria-pressed="true">English</button>
-    <button class="research-language-button research-thai-font" type="button" data-research-language="th" aria-controls="policy-content-{{ $key }}-th" aria-pressed="false">ไทย</button>
-  </div>
-
-  {{- range $language, $content := dict "en" $english "th" $thai }}
-  <section id="policy-content-{{ $key }}-{{ $language }}" class="research-language-panel policy-category-panel{{ if eq $language "th" }} research-language-panel--th{{ end }}" data-research-language-panel="{{ $language }}" lang="{{ $language }}"{{ if eq $language "th" }} hidden{{ end }}>
+<div class="research-bilingual policy-category-style" data-research-bilingual>
+  <section id="policy-content-{{ $key }}-{{ $language }}" class="research-language-panel policy-category-panel{{ if eq $language "th" }} research-language-panel--th{{ end }}" lang="{{ $language }}">
     <h3>{{ $content.focus_heading }}</h3>
     <ul>
       {{- range $content.focus }}
@@ -75,12 +66,4 @@
     </ul>
     {{- end }}
   </section>
-  {{- end }}
-
-  <noscript>
-    <style>
-      .research-language-switch { display: none !important; }
-      .research-language-panel[hidden] { display: block !important; }
-    </style>
-  </noscript>
 </div>

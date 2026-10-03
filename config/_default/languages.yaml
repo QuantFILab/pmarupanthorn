@@ -5,18 +5,65 @@
 # Default language
 en:
   languageCode: en-us
-  # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
-  #contentDir: content/en
+  weight: 1
 
-# Uncomment the lines below to configure your website in a second language.
-#zh:
-#  languageCode: zh-Hans
-#  contentDir: content/zh
-#  title: Chinese website title...
-#  params:
-#    description: Site description in Chinese...
-#  menu:
-#    main:
-#      - name: 传
-#        url: '#about'
-#        weight: 1
+th:
+  languageCode: th-TH
+  languageName: ไทย
+  title: 'พศิน มรุพรรณ์ธร | นักวิจัยเชิงปริมาณ'
+  weight: 2
+  params:
+    description: ผลงานวิจัยของพศิน มรุพรรณ์ธร ครอบคลุมการเงินเชิงปริมาณ คณิตศาสตร์ประกันภัย ตลาดคาร์บอน การอาร์บิทราจเชิงสถิติ การประกันภัย และการเรียนรู้ของเครื่องเชิงสถิติ
+  menu:
+    main:
+      - name: ประวัติ
+        url: ./
+        weight: 10
+      - name: งานวิจัย
+        url: research/
+        weight: 20
+      - name: ผลงานทั้งหมด
+        parent: งานวิจัย
+        url: publication/
+        weight: 21
+      - name: หัวข้องานวิจัย
+        parent: งานวิจัย
+        url: research/
+        weight: 22
+      - name: ซอฟต์แวร์และข้อมูล
+        parent: งานวิจัย
+        url: projects/
+        weight: 23
+      - name: การสนับสนุนนโยบายและอุตสาหกรรม
+        parent: งานวิจัย
+        url: policy-industry-support/
+        weight: 24
+      - name: การบรรยาย
+        url: event/
+        weight: 30
+      - name: บริการวิชาการ
+        url: ./#collaboration
+        weight: 40
+      - name: ประสบการณ์
+        url: experience/
+        weight: 50
+      - name: ความร่วมมือ
+        url: collaboration/
+        weight: 60
+      - name: การสอน
+        url: teaching/
+        weight: 70
+      - name: รายวิชา
+        parent: การสอน
+        url: teaching/
+        weight: 71
+      - name: หนังสือ
+        parent: การสอน
+        url: book/
+        weight: 72
+      - name: การซื้อขาย
+        url: trading/
+        weight: 80
+      - name: บทความ
+        url: post/
+        weight: 90

@@ -38,4 +38,3 @@ image:
   focal_point: Right
 ---
 
-

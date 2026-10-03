@@ -1,0 +1,9 @@
+/.hugo_build.lock
+/hugo_stats.json
+/public/
+/resources/
+/tmp/
+/.edge-*/
+
+__pycache__/
+*.py[cod]

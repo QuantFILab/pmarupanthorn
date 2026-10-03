@@ -1,3 +1,4 @@
+{{- $isThai := eq site.Language.Lang "th" -}}
 <style>
   :is(#books, #courses) .grid {
     grid-template-columns: minmax(0, 1fr) !important;
@@ -367,6 +368,29 @@
   document.addEventListener('DOMContentLoaded', function () {
     const bookSeries = {{ $bookSeries | jsonify | safeJS }};
     const courses = {{ $courses | jsonify | safeJS }};
+    const labels = {{ (cond $isThai
+      (dict
+        "book" "เล่ม" "books" "เล่ม" "in" "ใน"
+        "showDetails" "แสดงรายละเอียดของ" "hideDetails" "ซ่อนรายละเอียดของ"
+        "noBooks" "ยังไม่มีรายชื่อหนังสือในชุดนี้"
+        "bookHeading" "หนังสือ" "availability" "สถานะ"
+        "details" "รายละเอียด" "upcoming" "เร็ว ๆ นี้" "available" "พร้อมใช้งาน"
+        "course" "รายวิชา" "courseDetail" "รายละเอียดรายวิชา" "information" "ข้อมูล"
+        "courseInstitution" "รายวิชา / สถาบัน" "subjectAreas" "สาขาวิชา"
+        "overview" "ภาพรวม" "materials" "เอกสารประกอบ" "general" "ทั่วไป"
+        "openForDetails" "เปิดหน้ารายวิชาเพื่อดูรายละเอียด"
+        "openCourse" "เปิดหน้ารายวิชา →")
+      (dict
+        "book" "book" "books" "books" "in" "in"
+        "showDetails" "Show details for" "hideDetails" "Hide details for"
+        "noBooks" "No book titles are listed in this series yet."
+        "bookHeading" "Book" "availability" "Availability"
+        "details" "Details" "upcoming" "Upcoming" "available" "Available"
+        "course" "Course" "courseDetail" "Course detail" "information" "Information"
+        "courseInstitution" "Course / institution" "subjectAreas" "Subject areas"
+        "overview" "Overview" "materials" "Materials" "general" "General"
+        "openForDetails" "Open the course page for details."
+        "openCourse" "Open course page →")) | jsonify | safeJS }};
 
     function recordFor(map, link) {
       const href = link.getAttribute('href');
@@ -431,8 +455,8 @@
       button.className = 'catalog-expand-button';
       button.type = 'button';
       button.textContent = '+';
-      button.title = 'Show details for ' + title;
-      button.setAttribute('aria-label', 'Show details for ' + title);
+      button.title = labels.showDetails + ' ' + title;
+      button.setAttribute('aria-label', labels.showDetails + ' ' + title);
       button.setAttribute('aria-expanded', 'false');
       button.setAttribute('aria-controls', panelId);
       heading.appendChild(button);
@@ -445,8 +469,8 @@
       button.addEventListener('click', function () {
         const expanded = button.getAttribute('aria-expanded') === 'true';
         button.setAttribute('aria-expanded', String(!expanded));
-        button.setAttribute('aria-label', (expanded ? 'Show' : 'Hide') + ' details for ' + title);
-        button.title = (expanded ? 'Show' : 'Hide') + ' details for ' + title;
+        button.setAttribute('aria-label', (expanded ? labels.showDetails : labels.hideDetails) + ' ' + title);
+        button.title = (expanded ? labels.showDetails : labels.hideDetails) + ' ' + title;
         panel.hidden = expanded;
       });
     }
@@ -462,18 +486,18 @@
         const badge = document.createElement('span');
         badge.className = 'catalog-count-badge';
         badge.textContent = count;
-        badge.title = count + ' ' + (count === 1 ? 'book' : 'books');
-        badge.setAttribute('aria-label', count + ' ' + (count === 1 ? 'book' : 'books') + ' in ' + title);
+        badge.title = count + ' ' + (count === 1 ? labels.book : labels.books);
+        badge.setAttribute('aria-label', count + ' ' + (count === 1 ? labels.book : labels.books) + ' ' + labels.in + ' ' + title);
         prepared.heading.insertBefore(badge, prepared.titleLink);
 
         const panel = document.createElement('div');
         if (!count) {
           const empty = document.createElement('p');
           empty.className = 'catalog-empty';
-          empty.textContent = 'No book titles are listed in this series yet.';
+          empty.textContent = labels.noBooks;
           panel.appendChild(empty);
         } else {
-          const built = makeTable(['Book', 'Availability']);
+          const built = makeTable([labels.bookHeading, labels.availability]);
           const tbody = document.createElement('tbody');
           record.books.forEach(function (book) {
             const row = document.createElement('tr');
@@ -488,7 +512,7 @@
             const status = document.createElement('span');
             status.className = 'catalog-status-pill';
             status.dataset.status = book.status.toLowerCase();
-            status.textContent = book.status;
+            status.textContent = labels[book.status.toLowerCase()] || book.status;
             statusCell.appendChild(status);
             row.appendChild(statusCell);
             tbody.appendChild(row);
@@ -511,7 +535,7 @@
 
         const badge = document.createElement('span');
         badge.className = 'catalog-type-badge';
-        badge.textContent = 'Course';
+        badge.textContent = labels.course;
         prepared.heading.insertBefore(badge, prepared.titleLink);
 
         const meta = document.createElement('div');
@@ -520,25 +544,25 @@
         prepared.heading.insertAdjacentElement('afterend', meta);
 
         const panel = document.createElement('div');
-        const built = makeTable(['Course detail', 'Information']);
+        const built = makeTable([labels.courseDetail, labels.information]);
         const tbody = document.createElement('tbody');
-        tbody.appendChild(makeRow('Course / institution', record.meta));
+        tbody.appendChild(makeRow(labels.courseInstitution, record.meta));
 
         const tags = document.createElement('div');
         tags.className = 'catalog-tags';
-        (record.tags.length ? record.tags : ['General']).forEach(function (tag) {
+        (record.tags.length ? record.tags : [labels.general]).forEach(function (tag) {
           const chip = document.createElement('span');
           chip.className = 'catalog-tag';
           chip.textContent = tag;
           tags.appendChild(chip);
         });
-        tbody.appendChild(makeRow('Subject areas', tags));
-        tbody.appendChild(makeRow('Overview', record.overview || 'Open the course page for details.'));
+        tbody.appendChild(makeRow(labels.subjectAreas, tags));
+        tbody.appendChild(makeRow(labels.overview, record.overview || labels.openForDetails));
 
         const courseLink = document.createElement('a');
         courseLink.href = record.url;
-        courseLink.textContent = 'Open course page →';
-        tbody.appendChild(makeRow('Materials', courseLink));
+        courseLink.textContent = labels.openCourse;
+        tbody.appendChild(makeRow(labels.materials, courseLink));
         built.table.appendChild(tbody);
         panel.appendChild(built.wrap);
         addToggle(card, prepared.heading, title, panel, index, 'course');

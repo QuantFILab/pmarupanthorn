@@ -5,15 +5,11 @@
 {{- end -}}
 {{- $english := $entry.en -}}
 {{- $thai := $entry.th -}}
+{{- $language := cond (eq site.Language.Lang "th") "th" "en" -}}
+{{- $content := cond (eq $language "th") $thai $english -}}
 
-<div class="research-bilingual" data-research-bilingual data-title-en="{{ $english.title }}" data-title-th="{{ $thai.title }}">
-  <div class="research-language-switch" role="group" aria-label="Select article language">
-    <button class="research-language-button" type="button" data-research-language="en" aria-controls="research-content-{{ $key }}-en" aria-pressed="true">English</button>
-    <button class="research-language-button research-thai-font" type="button" data-research-language="th" aria-controls="research-content-{{ $key }}-th" aria-pressed="false">ไทย</button>
-  </div>
-
-  {{- range $language, $content := dict "en" $english "th" $thai }}
-  <section id="research-content-{{ $key }}-{{ $language }}" class="research-language-panel{{ if eq $language "th" }} research-language-panel--th{{ end }}" data-research-language-panel="{{ $language }}" lang="{{ $language }}"{{ if eq $language "th" }} hidden{{ end }}>
+<div class="research-bilingual" data-research-bilingual>
+  <section id="research-content-{{ $key }}-{{ $language }}" class="research-language-panel{{ if eq $language "th" }} research-language-panel--th{{ end }}" lang="{{ $language }}">
     {{- $mapImage := $.Page.Resources.GetMatch (printf "concept-map-%s.*" $language) }}
     {{- with $mapImage }}
     <figure class="research-concept-map research-concept-map--image">
@@ -49,12 +45,4 @@
     <h2>{{ $content.results_heading }}</h2>
     <p>{{ $content.results }}</p>
   </section>
-  {{- end }}
-
-  <noscript>
-    <style>
-      .research-language-switch { display: none !important; }
-      .research-language-panel[hidden] { display: block !important; }
-    </style>
-  </noscript>
 </div>

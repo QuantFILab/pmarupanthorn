@@ -31,48 +31,25 @@
     font-display: swap;
   }
 
-  .research-language-switch {
-    display: flex;
-    justify-content: center;
-    gap: 0.5rem;
-    margin: 0 0 1.75rem;
+  html[lang^="th"] body,
+  html[lang^="th"] button,
+  html[lang^="th"] input,
+  html[lang^="th"] textarea,
+  html[lang^="th"] select {
+    font-family: "TH SarabunPSK", "TH Sarabun New", sans-serif !important;
   }
 
-  .research-language-button {
-    min-width: 7rem;
-    border: 1px solid rgb(var(--color-primary-600));
-    border-radius: 9999px;
-    padding: 0.5rem 1.25rem;
-    background: transparent;
-    color: rgb(var(--color-primary-700));
-    cursor: pointer;
-    font-weight: 700;
-    transition: background-color 150ms ease, color 150ms ease, box-shadow 150ms ease;
+  html[lang^="th"] .prose p,
+  html[lang^="th"] .prose li,
+  html[lang^="th"] .article-style p,
+  html[lang^="th"] .article-style li {
+    font-size: 1.35rem;
+    line-height: 1.55;
   }
 
-  .research-language-button:hover,
-  .research-language-button:focus-visible {
-    box-shadow: 0 0 0 3px rgb(var(--color-primary-200));
-    outline: none;
-  }
-
-  .research-language-button[aria-pressed="true"] {
-    background: rgb(var(--color-primary-600));
-    color: #fff;
-  }
-
-  .dark .research-language-button {
-    border-color: rgb(var(--color-primary-400));
-    color: rgb(var(--color-primary-300));
-  }
-
-  .dark .research-language-button[aria-pressed="true"] {
-    background: rgb(var(--color-primary-500));
-    color: #fff;
-  }
-
-  .research-language-panel[hidden] {
-    display: none !important;
+  html[lang^="th"] .navbar,
+  html[lang^="th"] .navbar-nav {
+    font-size: 1.08rem;
   }
 
   .research-concept-map {
@@ -203,6 +180,18 @@
     font-family: "TH SarabunPSK", "TH Sarabun New", sans-serif !important;
   }
 
+  html[lang^="th"] .research-link-en {
+    display: none !important;
+  }
+
+  html[lang^="th"] .research-link-th {
+    display: inline !important;
+  }
+
+  html:not([lang^="th"]) .research-link-th {
+    display: none !important;
+  }
+
   .research-language-panel--th {
     font-size: 1.65rem;
     line-height: 1.55;
@@ -273,73 +262,3 @@
     }
   }
 </style>
-
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const root = document.querySelector('[data-research-bilingual]');
-    if (!root) return;
-
-    const buttons = Array.from(root.querySelectorAll('[data-research-language]'));
-    const panels = Array.from(root.querySelectorAll('[data-research-language-panel]'));
-    const englishLinks = Array.from(document.querySelectorAll('.research-link-en'));
-    const thaiLinks = Array.from(document.querySelectorAll('.research-link-th'));
-    const articleTitle = document.querySelector('main h1') || document.querySelector('h1');
-    const englishTitle = root.dataset.titleEn;
-    const thaiTitle = root.dataset.titleTh;
-    const documentTitleSuffixIndex = document.title.indexOf(' | ');
-    const documentTitleSuffix = documentTitleSuffixIndex >= 0
-      ? document.title.slice(documentTitleSuffixIndex)
-      : '';
-
-    function setLanguage(language) {
-      const selected = language === 'th' ? 'th' : 'en';
-
-      buttons.forEach(function (button) {
-        button.setAttribute('aria-pressed', String(button.dataset.researchLanguage === selected));
-      });
-
-      panels.forEach(function (panel) {
-        panel.hidden = panel.dataset.researchLanguagePanel !== selected;
-      });
-
-      englishLinks.forEach(function (link) { link.hidden = selected !== 'en'; });
-      thaiLinks.forEach(function (link) { link.hidden = selected !== 'th'; });
-
-      if (articleTitle && englishTitle && thaiTitle) {
-        articleTitle.textContent = selected === 'th' ? thaiTitle : englishTitle;
-        articleTitle.lang = selected;
-        articleTitle.classList.toggle('research-thai-title', selected === 'th');
-      }
-
-      if (englishTitle && thaiTitle) {
-        document.title = (selected === 'th' ? thaiTitle : englishTitle) + documentTitleSuffix;
-      }
-
-      try {
-        window.localStorage.setItem('publication-language', selected);
-      } catch (error) {
-        // The language switch still works when storage is unavailable.
-      }
-    }
-
-    let initialLanguage = 'en';
-    try {
-      const savedLanguage = window.localStorage.getItem('publication-language');
-      if (savedLanguage === 'en' || savedLanguage === 'th') {
-        initialLanguage = savedLanguage;
-      } else if (window.navigator.language.toLowerCase().startsWith('th')) {
-        initialLanguage = 'th';
-      }
-    } catch (error) {
-      if (window.navigator.language.toLowerCase().startsWith('th')) initialLanguage = 'th';
-    }
-
-    buttons.forEach(function (button) {
-      button.addEventListener('click', function () {
-        setLanguage(button.dataset.researchLanguage);
-      });
-    });
-
-    setLanguage(initialLanguage);
-  });
-</script>

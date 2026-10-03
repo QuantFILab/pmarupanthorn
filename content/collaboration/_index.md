@@ -14,7 +14,7 @@ cascade:
       share: true
 sections:
   - block: collection
-    id: research
+    id: collaboration
     content:
       title: Collaboration
       count: 0
@@ -23,7 +23,7 @@ sections:
           - collaboration
     design:
       view: article-grid
-      columns: 2
+      columns: 1
       fill_image: false
     
     # design:

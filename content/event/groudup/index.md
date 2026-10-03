@@ -44,4 +44,3 @@ url_video: ''
 
 slides: ""
 ---
-

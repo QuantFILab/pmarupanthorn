@@ -1,0 +1,161 @@
+# Navigation
+- id: toggle_navigation
+  translation: เปิดหรือปิดเมนูนำทาง
+- id: table_of_contents
+  translation: สารบัญ
+- id: on_this_page
+  translation: ในหน้านี้
+- id: back_to_top
+  translation: กลับไปด้านบน
+- id: home
+  translation: หน้าหลัก
+- id: close
+  translation: ปิด
+- id: languages
+  translation: ภาษา
+
+# General
+- id: related
+  translation: เนื้อหาที่เกี่ยวข้อง
+- id: backlinks
+  translation: ลิงก์ย้อนกลับ
+- id: minute_read
+  translation: นาทีในการอ่าน
+- id: previous
+  translation: ก่อนหน้า
+- id: next
+  translation: ถัดไป
+- id: figure
+  translation: 'ภาพที่ %d:'
+- id: edit_page
+  translation: แก้ไขหน้านี้
+
+# Themes
+- id: theme_selector
+  translation: การแสดงผล
+- id: theme_light
+  translation: สว่าง
+- id: theme_dark
+  translation: มืด
+- id: theme_auto
+  translation: อัตโนมัติ
+
+# Buttons
+- id: btn_preprint
+  translation: ฉบับก่อนตีพิมพ์
+- id: btn_pdf
+  translation: PDF
+- id: btn_cite
+  translation: อ้างอิง
+- id: btn_slides
+  translation: สไลด์
+- id: btn_video
+  translation: วิดีโอ
+- id: btn_code
+  translation: โค้ด
+- id: btn_dataset
+  translation: ชุดข้อมูล
+- id: btn_project
+  translation: โครงการ
+- id: btn_poster
+  translation: โปสเตอร์
+- id: btn_source
+  translation: เอกสารต้นฉบับ
+- id: btn_copy
+  translation: คัดลอก
+- id: btn_copied
+  translation: คัดลอกแล้ว
+- id: btn_download
+  translation: ดาวน์โหลด
+
+# Profile
+- id: interests
+  translation: ความสนใจ
+- id: education
+  translation: การศึกษา
+- id: user_profile_latest
+  translation: ล่าสุด
+- id: experience
+  translation: ประสบการณ์
+- id: present
+  translation: ปัจจุบัน
+- id: see_certificate
+  translation: ดูประกาศนียบัตร
+
+# Collections
+- id: read_more
+  translation: อ่านเพิ่มเติม
+- id: more_pages
+  translation: ดูทั้งหมด
+- id: more_posts
+  translation: ดูบทความทั้งหมด
+- id: more_talks
+  translation: ดูกิจกรรมทั้งหมด
+- id: more_publications
+  translation: ดูผลงานตีพิมพ์ทั้งหมด
+
+# Publication and event details
+- id: abstract
+  translation: บทคัดย่อ
+- id: publication
+  translation: สิ่งพิมพ์
+- id: publication_type
+  translation: ประเภท
+- id: date
+  translation: วันที่
+- id: last_updated
+  translation: ปรับปรุงล่าสุดเมื่อ
+- id: event
+  translation: กิจกรรม
+- id: location
+  translation: สถานที่
+- id: pub_paper_conference
+  translation: บทความประชุมวิชาการ
+- id: pub_article_journal
+  translation: บทความวารสาร
+- id: pub_article
+  translation: ฉบับก่อนตีพิมพ์
+- id: pub_report
+  translation: รายงาน
+- id: pub_book
+  translation: หนังสือ
+- id: pub_chapter
+  translation: บทในหนังสือ
+- id: pub_thesis
+  translation: วิทยานิพนธ์
+- id: pub_patent
+  translation: สิทธิบัตร
+
+# Archives and search
+- id: posts
+  translation: บทความ
+- id: publications
+  translation: ผลงานตีพิมพ์
+- id: talks
+  translation: กิจกรรม
+- id: projects
+  translation: โครงการ
+- id: slides
+  translation: สไลด์
+- id: authors
+  translation: ผู้เขียน
+- id: search
+  translation: ค้นหา
+- id: search_placeholder
+  translation: ค้นหา...
+- id: search_results
+  translation: ผลลัพธ์ที่พบ
+- id: search_no_results
+  translation: ไม่พบผลลัพธ์
+- id: search_common_queries
+  translation: คำค้นที่พบบ่อย
+
+# Miscellaneous
+- id: page_not_found
+  translation: ไม่พบหน้านี้
+- id: 404_recommendations
+  translation: คุณอาจกำลังมองหาเนื้อหาเหล่านี้
+- id: open_project_site
+  translation: ไปยังเว็บไซต์โครงการ
+- id: published_with
+  translation: เผยแพร่ด้วย {hugoblox} — เครื่องมือสร้างเว็บไซต์{repo_link}โอเพนซอร์ส{/repo_link}ที่ทุกคนใช้งานได้

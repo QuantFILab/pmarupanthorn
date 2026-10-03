@@ -1,3 +1,4 @@
+{{- $isThai := eq site.Language.Lang "th" -}}
 <style>
   #research .grid {
     grid-template-columns: minmax(0, 1fr) !important;
@@ -60,6 +61,28 @@
 
   #research .grid > .group h2 > a {
     min-width: 0;
+  }
+
+  html:not([lang^="th"]) #research .grid > .group {
+    padding: 0.78rem 1.05rem 0.78rem 1.25rem;
+  }
+
+  html:not([lang^="th"]) #research .grid > .group h2 {
+    gap: 0.36rem;
+    font-size: 1rem;
+    line-height: 1.3;
+  }
+
+  html:not([lang^="th"]) #research .research-count-badge {
+    min-width: 1.3rem;
+    height: 1.3rem;
+    font-size: 0.66rem;
+  }
+
+  html:not([lang^="th"]) #research .research-expand-button {
+    width: 1.62rem;
+    height: 1.62rem;
+    font-size: 1.05rem;
   }
 
   #research .grid > .group p {
@@ -333,6 +356,19 @@
 
     const researchCounts = {{ $researchCounts | jsonify | safeJS }};
     const researchPapers = {{ $researchPapers | jsonify | safeJS }};
+    const labels = {{ (cond $isThai
+      (dict
+        "paper" "บทความวิจัย" "papers" "บทความวิจัย" "in" "ใน"
+        "show" "แสดงบทความใน" "hide" "ซ่อนบทความใน"
+        "empty" "ยังไม่มีบทความที่ระบุไว้ในหัวข้อนี้"
+        "paperHeading" "บทความ" "journal" "วารสาร" "bestQuality" "คุณภาพสูงสุด"
+        "undefined" "ไม่ระบุ")
+      (dict
+        "paper" "research paper" "papers" "research papers" "in" "in"
+        "show" "Show papers in" "hide" "Hide papers in"
+        "empty" "No papers are listed in this theme yet."
+        "paperHeading" "Paper" "journal" "Journal" "bestQuality" "Best quality"
+        "undefined" "Undefined")) | jsonify | safeJS }};
     const qualityOrder = { Q1: 1, Q2: 2, Q3: 3, Q4: 4 };
 
     function createCell(text) {
@@ -353,7 +389,7 @@
       if (qualityOrder[paper.scimagoQuartile]) {
         candidates.push({ quartile: paper.scimagoQuartile, source: 'SCImago', percentile: '' });
       }
-      if (!candidates.length) return { quartile: '', text: 'Undefined' };
+      if (!candidates.length) return { quartile: '', text: labels.undefined };
 
       candidates.sort(function (a, b) {
         return qualityOrder[a.quartile] - qualityOrder[b.quartile];
@@ -384,8 +420,8 @@
 
       badge.className = 'research-count-badge';
       badge.textContent = count;
-      badge.title = count + ' research ' + (count === 1 ? 'paper' : 'papers');
-      badge.setAttribute('aria-label', count + ' research ' + (count === 1 ? 'paper' : 'papers') + ' in ' + title);
+      badge.title = count + ' ' + (count === 1 ? labels.paper : labels.papers);
+      badge.setAttribute('aria-label', count + ' ' + (count === 1 ? labels.paper : labels.papers) + ' ' + labels.in + ' ' + title);
       titleHeading.insertBefore(badge, titleLink);
 
       const panelId = 'research-papers-' + Math.random().toString(36).slice(2, 10);
@@ -393,8 +429,8 @@
       button.className = 'research-expand-button';
       button.type = 'button';
       button.textContent = '+';
-      button.title = 'Show papers in ' + title;
-      button.setAttribute('aria-label', 'Show papers in ' + title);
+      button.title = labels.show + ' ' + title;
+      button.setAttribute('aria-label', labels.show + ' ' + title);
       button.setAttribute('aria-expanded', 'false');
       button.setAttribute('aria-controls', panelId);
       titleHeading.appendChild(button);
@@ -407,7 +443,7 @@
       if (!papers.length) {
         const empty = document.createElement('p');
         empty.className = 'research-paper-empty';
-        empty.textContent = 'No papers are listed in this theme yet.';
+        empty.textContent = labels.empty;
         panel.appendChild(empty);
       } else {
         const wrap = document.createElement('div');
@@ -416,7 +452,7 @@
         table.className = 'research-paper-table';
         const thead = document.createElement('thead');
         const headRow = document.createElement('tr');
-        ['Paper', 'Journal', 'Best quality'].forEach(function (heading) {
+        [labels.paperHeading, labels.journal, labels.bestQuality].forEach(function (heading) {
           const th = document.createElement('th');
           th.scope = 'col';
           th.textContent = heading;
@@ -456,8 +492,8 @@
       button.addEventListener('click', function () {
         const expanded = button.getAttribute('aria-expanded') === 'true';
         button.setAttribute('aria-expanded', String(!expanded));
-        button.setAttribute('aria-label', (expanded ? 'Show' : 'Hide') + ' papers in ' + title);
-        button.title = (expanded ? 'Show' : 'Hide') + ' papers in ' + title;
+        button.setAttribute('aria-label', (expanded ? labels.show : labels.hide) + ' ' + title);
+        button.title = (expanded ? labels.show : labels.hide) + ' ' + title;
         panel.hidden = expanded;
       });
     });

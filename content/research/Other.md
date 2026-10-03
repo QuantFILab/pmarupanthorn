@@ -21,11 +21,6 @@ header:
 <div style="font-size: 14px;">
   
 
-### Operational Research
-
-- [Moringa Leaf Powder Production Planning using Mixed-Integer Linear Programming]({{< relref "/publication/THAI2023" >}}) (Nassamon, Pasin, Kulisara, Uparittha, and Wisit)
-___
-
 ### Agricultural Data Analysis
 
 - [Production Performances and Morphometric Traits of Maehongson Chickens Comparing Praduhangdum, Male Layer Chickens, and Broiler]({{< relref "/publication/KAJ2023" >}}) (Watcharapong, Nakarin, Niraporn, Nuttawut, Pasin, and Kulisara)

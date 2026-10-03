@@ -1,0 +1,35 @@
+---
+title: "เทรดแบบ Quant — The Trading Lab EP.14"
+
+event: The Trading Lab EP.14
+event_url: "https://www.youtube.com/watch?v=4ztRlVesFns&t=953s"
+
+location: YouTube
+
+summary: "การอภิปรายอย่างละเอียดเกี่ยวกับการเก็งกำไรทางสถิติและกระบวนการซื้อขายเชิงปริมาณ รวมถึงอัตราส่วนการป้องกันความเสี่ยง การเลือกสินทรัพย์ ความสัมพันธ์และการรวมตัวของข้อมูล ความเสี่ยงจากมูลค่า การกลับสู่ค่าเฉลี่ย การเก็งกำไรแบบถือสินทรัพย์และเงินสด ขนาดตำแหน่ง และการประยุกต์ใช้การเรียนรู้ของเครื่องและปัญญาประดิษฐ์"
+
+date: '2026-08-19T20:00:00+07:00'
+date_end: '2026-08-19T21:08:25+07:00'
+all_day: false
+
+# Schedule page publish date (NOT talk date).
+publishDate: '2026-08-19T20:00:00+07:00'
+
+authors:
+  - admin
+
+tags:
+  - Statistical Arbitrage
+  - Quantitative Trading
+  - Pair Trading
+  - Machine Learning
+
+# Is this a featured talk? (true/false)
+featured: false
+
+image:
+  focal_point: Center
+
+url_video: "https://www.youtube.com/watch?v=4ztRlVesFns&t=953s"
+---
+

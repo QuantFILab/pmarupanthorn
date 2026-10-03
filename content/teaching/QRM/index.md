@@ -15,4 +15,3 @@ image:
 ## Course Description:
 
 Risk Management and Risk Measurement Definitions of risk, uncertainty, probability, and events related to risk. Risk management techniques, applications and limitations of quantitative analysis, quantitative risk measurement, volatility and value at risk, asset class risk analysis, and presentation of risk analysis results
-

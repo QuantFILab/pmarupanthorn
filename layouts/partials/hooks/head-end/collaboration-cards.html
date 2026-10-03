@@ -1,0 +1,390 @@
+{{- $isThai := eq site.Language.Lang "th" -}}
+{{- $collaborations := dict -}}
+{{- with site.GetPage "/collaboration" -}}
+  {{- range .RegularPages -}}
+    {{- $key := lower .File.BaseFileName -}}
+    {{- $area := cond $isThai "ความร่วมมือ" "Collaboration" -}}
+    {{- if eq $key "consultant" -}}
+      {{- $area = cond $isThai "อุตสาหกรรมและบริษัท" "Industry and company" -}}
+    {{- else if eq $key "personal" -}}
+      {{- $area = cond $isThai "เครือข่ายวิชาการและอุตสาหกรรม" "Academic and industry network" -}}
+    {{- else if eq $key "students" -}}
+      {{- $area = cond $isThai "การดูแลนักศึกษา" "Student supervision" -}}
+    {{- else if eq $key "thailand quant event" -}}
+      {{- $area = cond $isThai "กิจกรรมวิชาชีพ" "Professional events" -}}
+    {{- end -}}
+    {{- $collaborations = merge $collaborations (dict .RelPermalink (dict
+      "title" .Title
+      "summary" (.Params.summary | default "" | markdownify | plainify)
+      "area" $area
+      "url" .RelPermalink
+    )) -}}
+  {{- end -}}
+{{- end -}}
+
+<style>
+  #collaboration .grid {
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 1.05rem !important;
+  }
+
+  #collaboration .grid > .group {
+    position: relative;
+    display: flex;
+    min-height: 0;
+    overflow: hidden;
+    border: 1px solid rgb(148 163 184 / 0.28);
+    border-radius: 1rem;
+    padding: 0.95rem 1.25rem 0.95rem 1.4rem;
+    background: linear-gradient(160deg, rgb(255 255 255 / 0.98), rgb(248 250 252 / 0.94));
+    box-shadow: 0 0.7rem 2rem rgb(15 23 42 / 0.08);
+    transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+  }
+
+  #collaboration .grid > .group::before {
+    position: absolute;
+    inset: 0 auto 0 0;
+    width: 0.32rem;
+    background: linear-gradient(180deg, rgb(var(--color-primary-400)), rgb(var(--color-primary-700)));
+    content: "";
+  }
+
+  #collaboration .grid > .group:hover {
+    transform: translateY(-0.25rem);
+    border-color: rgb(var(--color-primary-500) / 0.55);
+    box-shadow: 0 1rem 2.4rem rgb(15 23 42 / 0.14);
+  }
+
+  #collaboration .grid > .group > .overflow-hidden,
+  #collaboration .grid > .group p,
+  #collaboration .grid > .group time,
+  #collaboration .grid > .group .grow,
+  #collaboration .grid > .group .flex-none {
+    display: none;
+  }
+
+  #collaboration .collaboration-card-main {
+    display: flex;
+    width: 100%;
+    flex: 1;
+    padding: 0;
+  }
+
+  #collaboration .collaboration-card-main > div {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  #collaboration .grid > .group h2 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+    margin: 0;
+    letter-spacing: -0.015em;
+  }
+
+  #collaboration .grid > .group h2 > a {
+    min-width: 0;
+  }
+
+  .collaboration-type-badge {
+    display: inline-flex;
+    flex: 0 0 auto;
+    align-items: center;
+    border-radius: 9999px;
+    padding: 0.27rem 0.6rem;
+    background: rgb(var(--color-primary-50));
+    color: rgb(var(--color-primary-700));
+    font-size: 0.7rem;
+    font-weight: 800;
+    letter-spacing: 0.045em;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+
+  .collaboration-expand-button {
+    display: inline-grid;
+    flex: 0 0 auto;
+    width: 1.8rem;
+    height: 1.8rem;
+    margin-left: auto;
+    place-items: center;
+    border: 1px solid rgb(var(--color-primary-500) / 0.5);
+    border-radius: 9999px;
+    background: rgb(var(--color-primary-50));
+    color: rgb(var(--color-primary-700));
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1;
+    transition: background-color 160ms ease, color 160ms ease, transform 160ms ease;
+  }
+
+  .collaboration-expand-button:hover,
+  .collaboration-expand-button:focus-visible,
+  .collaboration-expand-button[aria-expanded="true"] {
+    background: rgb(var(--color-primary-600));
+    color: #fff;
+    outline: none;
+  }
+
+  .collaboration-expand-button[aria-expanded="true"] {
+    transform: rotate(45deg);
+  }
+
+  .collaboration-detail-panel {
+    width: 100%;
+    margin-top: 0.8rem;
+    border-top: 1px solid rgb(148 163 184 / 0.28);
+    padding-top: 0.75rem;
+  }
+
+  .collaboration-detail-panel[hidden] {
+    display: none !important;
+  }
+
+  .collaboration-table-wrap {
+    overflow-x: auto;
+  }
+
+  .collaboration-table {
+    width: 100%;
+    border: 0;
+    border-collapse: collapse;
+    background: transparent;
+    font-size: 0.86rem;
+  }
+
+  .collaboration-table th,
+  .collaboration-table td {
+    border: 0;
+    padding: 0.56rem 0.65rem;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  .collaboration-table thead th {
+    color: rgb(71 85 105);
+    font-size: 0.68rem;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  .collaboration-table tbody th {
+    width: 22%;
+    min-width: 8.5rem;
+    color: rgb(71 85 105);
+    font-size: 0.75rem;
+    letter-spacing: 0.025em;
+  }
+
+  .collaboration-table tbody tr + tr > * {
+    border-top: 1px solid rgb(226 232 240 / 0.82);
+  }
+
+  .collaboration-table a {
+    color: rgb(var(--color-primary-700));
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .collaboration-table a:hover,
+  .collaboration-table a:focus-visible {
+    text-decoration: underline;
+  }
+
+  .collaboration-area-pill {
+    display: inline-flex;
+    align-items: center;
+    border-radius: 9999px;
+    padding: 0.25rem 0.55rem;
+    background: rgb(226 232 240 / 0.75);
+    color: rgb(51 65 85);
+    font-size: 0.74rem;
+    font-weight: 700;
+  }
+
+  .dark #collaboration .grid > .group {
+    border-color: rgb(71 85 105 / 0.75);
+    background: linear-gradient(160deg, rgb(15 23 42 / 0.98), rgb(15 23 42 / 0.86));
+    box-shadow: 0 0.8rem 2rem rgb(0 0 0 / 0.28);
+  }
+
+  .dark #collaboration .grid > .group:hover {
+    border-color: rgb(var(--color-primary-400) / 0.75);
+    box-shadow: 0 1rem 2.5rem rgb(0 0 0 / 0.4);
+  }
+
+  .dark .collaboration-type-badge,
+  .dark .collaboration-expand-button {
+    border-color: rgb(var(--color-primary-400) / 0.65);
+    background: rgb(15 23 42);
+    color: rgb(var(--color-primary-300));
+  }
+
+  .dark .collaboration-detail-panel,
+  .dark .collaboration-table tbody tr + tr > * {
+    border-color: rgb(71 85 105 / 0.65);
+  }
+
+  .dark .collaboration-table thead th,
+  .dark .collaboration-table tbody th {
+    color: rgb(148 163 184);
+  }
+
+  .dark .collaboration-table a {
+    color: rgb(var(--color-primary-300));
+  }
+
+  .dark .collaboration-area-pill {
+    background: rgb(51 65 85);
+    color: rgb(226 232 240);
+  }
+
+  html[lang^="th"] .collaboration-table,
+  html[lang^="th"] .collaboration-type-badge,
+  html[lang^="th"] .collaboration-area-pill,
+  html[lang^="th"] .collaboration-expand-button {
+    font-family: "TH SarabunPSK", "TH Sarabun New", sans-serif;
+  }
+
+  html[lang^="th"] .collaboration-table {
+    font-size: 1.12rem;
+  }
+
+  @media (max-width: 680px) {
+    #collaboration .grid > .group {
+      padding: 0.85rem 0.9rem 0.85rem 1.12rem;
+    }
+
+    #collaboration .grid > .group h2 {
+      align-items: flex-start;
+    }
+
+    .collaboration-type-badge {
+      display: none;
+    }
+
+    .collaboration-table thead {
+      display: none;
+    }
+
+    .collaboration-table tbody th {
+      width: 6.8rem;
+      min-width: 6.8rem;
+    }
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const grid = document.querySelector('#collaboration .grid');
+    if (!grid) return;
+
+    const records = {{ $collaborations | jsonify | safeJS }};
+    const labels = {{ (cond $isThai
+      (dict
+        "badge" "ความร่วมมือ" "show" "แสดงรายละเอียดของ" "hide" "ซ่อนรายละเอียดของ"
+        "detail" "รายละเอียดความร่วมมือ" "information" "ข้อมูล"
+        "area" "ขอบเขต" "overview" "ภาพรวม" "page" "หน้าเว็บ"
+        "open" "เปิดหน้ารายละเอียด →")
+      (dict
+        "badge" "Collaboration" "show" "Show details for" "hide" "Hide details for"
+        "detail" "Collaboration detail" "information" "Information"
+        "area" "Area" "overview" "Overview" "page" "Page"
+        "open" "Open detail page →")) | jsonify | safeJS }};
+
+    function recordFor(link) {
+      const href = link.getAttribute('href');
+      const pathname = new URL(link.href, window.location.href).pathname;
+      return records[href] || records[pathname] || null;
+    }
+
+    function addRow(tbody, label, value) {
+      const row = document.createElement('tr');
+      const heading = document.createElement('th');
+      heading.scope = 'row';
+      heading.textContent = label;
+      const cell = document.createElement('td');
+      if (value instanceof Node) cell.appendChild(value);
+      else cell.textContent = value;
+      row.append(heading, cell);
+      tbody.appendChild(row);
+    }
+
+    grid.querySelectorAll(':scope > .group').forEach(function (card, index) {
+      const titleLink = card.querySelector('h2 a[href]');
+      const heading = titleLink ? titleLink.closest('h2') : null;
+      const record = titleLink ? recordFor(titleLink) : null;
+      if (!titleLink || !heading || !record || heading.querySelector('.collaboration-expand-button')) return;
+
+      const image = card.querySelector(':scope > .overflow-hidden');
+      const main = Array.from(card.children).find(function (child) { return child !== image; });
+      if (main) main.classList.add('collaboration-card-main');
+
+      const badge = document.createElement('span');
+      badge.className = 'collaboration-type-badge';
+      badge.textContent = labels.badge;
+      heading.insertBefore(badge, titleLink);
+
+      const panelId = 'collaboration-details-' + index;
+      const button = document.createElement('button');
+      button.className = 'collaboration-expand-button';
+      button.type = 'button';
+      button.textContent = '+';
+      button.title = labels.show + ' ' + record.title;
+      button.setAttribute('aria-label', labels.show + ' ' + record.title);
+      button.setAttribute('aria-expanded', 'false');
+      button.setAttribute('aria-controls', panelId);
+      heading.appendChild(button);
+
+      const panel = document.createElement('div');
+      panel.className = 'collaboration-detail-panel';
+      panel.id = panelId;
+      panel.hidden = true;
+
+      const wrap = document.createElement('div');
+      wrap.className = 'collaboration-table-wrap';
+      const table = document.createElement('table');
+      table.className = 'collaboration-table';
+      const thead = document.createElement('thead');
+      const headRow = document.createElement('tr');
+      [labels.detail, labels.information].forEach(function (text) {
+        const th = document.createElement('th');
+        th.scope = 'col';
+        th.textContent = text;
+        headRow.appendChild(th);
+      });
+      thead.appendChild(headRow);
+      table.appendChild(thead);
+
+      const tbody = document.createElement('tbody');
+      const area = document.createElement('span');
+      area.className = 'collaboration-area-pill';
+      area.textContent = record.area;
+      addRow(tbody, labels.area, area);
+      addRow(tbody, labels.overview, record.summary);
+
+      const link = document.createElement('a');
+      link.href = record.url;
+      link.textContent = labels.open;
+      addRow(tbody, labels.page, link);
+
+      table.appendChild(tbody);
+      wrap.appendChild(table);
+      panel.appendChild(wrap);
+      card.appendChild(panel);
+
+      button.addEventListener('click', function () {
+        const expanded = button.getAttribute('aria-expanded') === 'true';
+        button.setAttribute('aria-expanded', String(!expanded));
+        button.setAttribute('aria-label', (expanded ? labels.show : labels.hide) + ' ' + record.title);
+        button.title = (expanded ? labels.show : labels.hide) + ' ' + record.title;
+        panel.hidden = expanded;
+      });
+    });
+  });
+</script>
