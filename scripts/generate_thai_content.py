@@ -41,7 +41,7 @@ TRANSLATABLE_KEYS = {
 }
 
 CURATED = {
-    "Pasin Marupanthorn": "พศิน มรุพรรณ์ธร",
+    "Pasin Marupanthorn": "พศิน มรุปัณฑ์ธร",
     "Books": "หนังสือ",
     "Book Series": "ชุดหนังสือ",
     "Courses": "รายวิชา",
