@@ -37,7 +37,6 @@ ___
 ### Confidence Region and Asymptotic Statistics
 
 - [Asymptotic Confidence Ellipse for Lognormal Distribution with Applications in Actuarial Pricing]({{< relref "/publication/SSJ2025" >}}) (Nassamon, Uparittha, Pasin)
-- [Curvature-Calibrated Wald Confidence Ellipsoids in Nonlinear Regression]({{< relref "/publication/Wald2025" >}}) (Nassamon, Pasin)
 ___
 
 ### Stochastic Optimization

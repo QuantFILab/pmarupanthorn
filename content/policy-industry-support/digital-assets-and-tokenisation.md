@@ -1,0 +1,19 @@
+---
+title: "Digital Assets and Tokenisation"
+title_th: "สินทรัพย์ดิจิทัลและโทเคนไนเซชัน"
+weight: 5
+summary: Policy research for public-sector and financial-market tokenisation, including regulatory design, investor protection, market integrity, financial inclusion, and technology risk.
+summary_th: "งานวิจัยนโยบายสำหรับการแปลงสิทธิและสินทรัพย์ของภาครัฐและตลาดการเงินเป็นโทเคน ครอบคลุมการออกแบบกฎเกณฑ์ การคุ้มครองผู้ลงทุน ความน่าเชื่อถือของตลาด การเข้าถึงบริการทางการเงิน และความเสี่ยงด้านเทคโนโลยี"
+date: "2026-10-03T00:00:00+07:00"
+type: docs
+categories:
+  - Policy Research
+country: Thailand
+country_th: "ประเทศไทย"
+country_flag: "🇹🇭"
+header:
+  caption: ""
+  image: ""
+---
+
+{{< policy-bilingual key="DAT2026" >}}

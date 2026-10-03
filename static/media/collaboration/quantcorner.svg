@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 128" role="img" aria-labelledby="title description">
+  <title id="title">QuantCorner Research Laboratory</title>
+  <desc id="description">QuantCorner symbol and wordmark</desc>
+  <rect width="360" height="128" rx="18" fill="#111827"/>
+  <g transform="translate(18 0)">
+    <path d="M47 9H71C94 9 113 28 113 51V84H88V52C88 42 79 33 69 33H51C41 33 32 42 32 52V73C32 86 42 96 55 96H76V120H54C28 120 7 99 7 73V50C7 27 25 9 47 9Z" fill="#F5F3ED"/>
+    <path d="M72 74H101V103H82V94H72Z" fill="#F5F3ED"/>
+    <circle cx="111" cy="111" r="10" fill="#69F0AE"/>
+  </g>
+  <text x="150" y="61" fill="#F5F3ED" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="700">QuantCorner</text>
+  <text x="151" y="87" fill="#B8C0CC" font-family="Arial, Helvetica, sans-serif" font-size="14" letter-spacing="1.2">RESEARCH LABORATORY</text>
+</svg>

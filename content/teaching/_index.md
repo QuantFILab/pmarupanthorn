@@ -8,16 +8,18 @@ cascade:
       show_breadcrumb: true
 sections:
   - block: collection
-    id: teaching
+    id: courses
     content:
       title: Courses
       count: 0
+      sort_by: Date
+      sort_ascending: false
       filters:
         folders:
           - teaching
     design:
       view: article-grid
-      columns: 3
+      columns: 1
       fill_image: false
   
 ---

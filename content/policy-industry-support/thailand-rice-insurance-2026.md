@@ -1,0 +1,19 @@
+---
+title: "Thailand Rice Insurance Programme 2026"
+title_th: "โครงการประกันภัยข้าวนาปี ปี 2569"
+weight: 7
+summary: Quantitative policy research for inclusive rice insurance, targeted premium support, satellite-assisted loss assessment, rapid claims, and integrated agricultural-risk data.
+summary_th: "งานวิจัยนโยบายเชิงปริมาณสำหรับประกันภัยข้าวที่เข้าถึงเกษตรกรรายย่อย การสนับสนุนเบี้ยแบบมุ่งเป้า การประเมินความเสียหายด้วยดาวเทียม การจ่ายค่าสินไหมที่รวดเร็ว และการบูรณาการข้อมูลความเสี่ยงภาคเกษตร"
+date: "2026-10-03T00:00:00+07:00"
+type: docs
+categories:
+  - Policy Research
+country: Thailand
+country_th: "ประเทศไทย"
+country_flag: "🇹🇭"
+header:
+  caption: ""
+  image: ""
+---
+
+{{< policy-bilingual key="RICEINS2026" >}}

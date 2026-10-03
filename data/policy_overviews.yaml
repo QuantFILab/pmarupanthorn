@@ -323,3 +323,131 @@ HEDGE2026:
         url: "/pmarupanthorn/research/asset-management/"
       - label: "ทฤษฎีพอร์ตโฟลิโอการเขียนออปชันยุโรป"
         url: "/pmarupanthorn/publication/op2026/"
+
+URBAN2026:
+  en:
+    title: "Urban Productivity and Secondary-City Development"
+    focus_heading: "Policy Focus"
+    focus:
+      - "Raise Bangkok's productivity while reducing congestion, infrastructure pressure, and climate vulnerability"
+      - "Develop specialised and connected secondary cities that complement rather than duplicate Bangkok's economic role"
+      - "Coordinate transport, land use, resilient infrastructure, public services, and urban investment finance"
+      - "Strengthen multi-level governance, project prioritisation, and measurable place-based policy evaluation"
+    country_heading: "Country"
+    country: "Thailand"
+    official_heading: "Policy Evidence and References"
+    sources:
+      - label: "World Bank: Thailand Cities of the Future - Urban Foundations for a High-Income Economy"
+        url: "https://documents1.worldbank.org/curated/en/099091526050042573/pdf/P512265-20827add-f79b-4b5e-b387-4875f6d81bb8.pdf"
+      - label: "Prachatai: World Bank report on Bangkok and Thailand's secondary cities"
+        url: "https://prachatai.com/journal/2026/09/118857"
+  th:
+    title: "ผลิตภาพเมืองและการพัฒนาเมืองรอง"
+    focus_heading: "ประเด็นนโยบาย"
+    focus:
+      - "ยกระดับผลิตภาพของกรุงเทพมหานคร พร้อมลดความแออัด แรงกดดันต่อโครงสร้างพื้นฐาน และความเปราะบางด้านภูมิอากาศ"
+      - "พัฒนาเมืองรองที่มีความเชี่ยวชาญและเชื่อมโยงกัน เพื่อเสริมบทบาททางเศรษฐกิจของกรุงเทพมหานครแทนการแข่งขันซ้ำซ้อน"
+      - "ประสานการลงทุนด้านคมนาคม การใช้ที่ดิน โครงสร้างพื้นฐานที่ยืดหยุ่น บริการสาธารณะ และการเงินเพื่อพัฒนาเมือง"
+      - "เสริมธรรมาภิบาลหลายระดับ การจัดลำดับโครงการ และการประเมินนโยบายเชิงพื้นที่ที่วัดผลได้"
+    country_heading: "ประเทศ"
+    country: "ประเทศไทย"
+    official_heading: "หลักฐานและแหล่งอ้างอิงเชิงนโยบาย"
+    sources:
+      - label: "ธนาคารโลก: เมืองแห่งอนาคตของประเทศไทย - รากฐานเมืองเพื่อเศรษฐกิจรายได้สูง"
+        url: "https://documents1.worldbank.org/curated/en/099091526050042573/pdf/P512265-20827add-f79b-4b5e-b387-4875f6d81bb8.pdf"
+      - label: "ประชาไท: รายงานธนาคารโลกว่าด้วยกรุงเทพมหานครและเมืองรองของไทย"
+        url: "https://prachatai.com/journal/2026/09/118857"
+
+DAT2026:
+  en:
+    title: "Digital Assets and Tokenisation"
+    focus_heading: "Policy Focus"
+    focus:
+      - "Design the regulatory perimeter for government tokens, tokenised rights, and emerging digital-asset structures"
+      - "Evaluate issuance, distribution, custody, trading, indicative pricing, and secondary-market liquidity"
+      - "Protect investors through suitability assessment, transparent disclosure, fair access, and market-conduct controls"
+      - "Assess financial-inclusion benefits alongside operational, cyber, technology, and public-debt risks"
+    country_heading: "Country"
+    country: "Thailand"
+    official_heading: "Official Policy Information"
+    sources:
+      - label: "Thai SEC: Rules governing the Government Token (G-Token)"
+        url: "https://www.sec.or.th/TH/Pages/News_Detail.aspx?SECID=11911"
+  th:
+    title: "สินทรัพย์ดิจิทัลและโทเคนไนเซชัน"
+    focus_heading: "ประเด็นนโยบาย"
+    focus:
+      - "ออกแบบขอบเขตการกำกับดูแลสำหรับโทเคนดิจิทัลของรัฐบาล สิทธิที่แปลงเป็นโทเคน และโครงสร้างสินทรัพย์ดิจิทัลรูปแบบใหม่"
+      - "ประเมินการออก การจัดจำหน่าย การเก็บรักษา การซื้อขาย ราคาอ้างอิง และสภาพคล่องในตลาดรอง"
+      - "คุ้มครองผู้ลงทุนด้วยการประเมินความเหมาะสม การเปิดเผยข้อมูลที่โปร่งใส การเข้าถึงอย่างเป็นธรรม และการกำกับพฤติกรรมตลาด"
+      - "ประเมินประโยชน์ด้านการเข้าถึงบริการทางการเงินควบคู่กับความเสี่ยงด้านปฏิบัติการ ไซเบอร์ เทคโนโลยี และหนี้สาธารณะ"
+    country_heading: "ประเทศ"
+    country: "ประเทศไทย"
+    official_heading: "ข้อมูลนโยบายจากหน่วยงานทางการ"
+    sources:
+      - label: "สำนักงาน ก.ล.ต.: หลักเกณฑ์เกี่ยวกับโทเคนดิจิทัลของรัฐบาล (G-Token)"
+        url: "https://www.sec.or.th/TH/Pages/News_Detail.aspx?SECID=11911"
+
+IDP52026:
+  en:
+    title: "Thailand Insurance Development Plan No. 5 (2026-2030)"
+    focus_heading: "Policy Focus"
+    focus:
+      - "Stability: proactive, risk-based supervision of intermediaries, insurers, and insurance groups"
+      - "Resilience: reinsurance capacity, catastrophe analytics, emerging-risk readiness, and national risk-buffer mechanisms"
+      - "Inclusion: accessible protection for households, an ageing society, and underserved groups through digital policies and services"
+      - "Innovation: data integration, InsurTech, e-policy infrastructure, workforce capability, and measurable regulatory outcomes"
+    country_heading: "Country"
+    country: "Thailand"
+    official_heading: "Official Policy Information"
+    sources:
+      - label: "Government Public Relations Department: OIC policy direction for Insurance Development Plan No. 5"
+        url: "https://www.prd.go.th/th/content/category/detail/id/9/iid/479216"
+      - label: "Office of Insurance Commission: Public hearing on the draft Fifth Insurance Development Plan"
+        url: "https://www.oic.or.th/web-upload/1xff0d34e409a13ef56eea54c52a291126/202510/m_news/217/69287/file_download/b5aaba86e9b84a8199d21383c78c6e01.pdf"
+  th:
+    title: "แผนพัฒนาการประกันภัย ฉบับที่ 5 (พ.ศ. 2569-2573)"
+    focus_heading: "ประเด็นนโยบาย"
+    focus:
+      - "อึด: การกำกับดูแลคนกลาง บริษัท และกลุ่มธุรกิจประกันภัยเชิงป้องกันและอิงความเสี่ยง"
+      - "รับ: ศักยภาพการประกันภัยต่อ การวิเคราะห์ภัยพิบัติ ความพร้อมต่อความเสี่ยงใหม่ และกลไกกันชนความเสี่ยงระดับประเทศ"
+      - "ทั่ว: ความคุ้มครองที่เข้าถึงได้สำหรับครัวเรือน สังคมสูงวัย และกลุ่มที่ยังเข้าไม่ถึง ผ่านกรมธรรม์และบริการดิจิทัล"
+      - "ล้ำ: การบูรณาการข้อมูล InsurTech โครงสร้างพื้นฐาน e-Policy การพัฒนาบุคลากร และผลลัพธ์การกำกับที่วัดได้"
+    country_heading: "ประเทศ"
+    country: "ประเทศไทย"
+    official_heading: "ข้อมูลนโยบายจากหน่วยงานทางการ"
+    sources:
+      - label: "กรมประชาสัมพันธ์: ทิศทางนโยบายของ คปภ. ภายใต้แผนพัฒนาการประกันภัย ฉบับที่ 5"
+        url: "https://www.prd.go.th/th/content/category/detail/id/9/iid/479216"
+      - label: "สำนักงาน คปภ.: การรับฟังความคิดเห็นต่อร่างแผนพัฒนาการประกันภัย ฉบับที่ 5"
+        url: "https://www.oic.or.th/web-upload/1xff0d34e409a13ef56eea54c52a291126/202510/m_news/217/69287/file_download/b5aaba86e9b84a8199d21383c78c6e01.pdf"
+
+RICEINS2026:
+  en:
+    title: "Thailand Rice Insurance Programme 2026"
+    focus_heading: "Policy Focus"
+    focus:
+      - "Target premium support to smallholders and BAAC customers for up to ten rai of cultivated land"
+      - "Design blended protection that balances farmer coverage, public expenditure, insurer capacity, and climate risk"
+      - "Use satellite imagery with existing assessment processes to improve loss verification and deliver claims within 7-14 days"
+      - "Integrate public-private agricultural data, strengthen risk literacy, and evaluate coverage, speed, accuracy, and distributional outcomes"
+    country_heading: "Country"
+    country: "Thailand"
+    official_heading: "Official Policy Information"
+    sources:
+      - label: "Royal Thai Government: 2026 in-season rice insurance programme"
+        url: "https://www.thaigov.go.th/th/news/163827"
+  th:
+    title: "โครงการประกันภัยข้าวนาปี ปี 2569"
+    focus_heading: "ประเด็นนโยบาย"
+    focus:
+      - "สนับสนุนค่าเบี้ยแบบมุ่งเป้าแก่เกษตรกรรายย่อยและลูกค้า ธ.ก.ส. สำหรับพื้นที่เพาะปลูกไม่เกินรายละ 10 ไร่"
+      - "ออกแบบความคุ้มครองแบบผสมผสานให้สมดุลระหว่างการคุ้มครองเกษตรกร งบประมาณรัฐ ศักยภาพของผู้รับประกัน และความเสี่ยงภูมิอากาศ"
+      - "ใช้ภาพถ่ายดาวเทียมร่วมกับกระบวนการประเมินเดิม เพื่อเพิ่มความแม่นยำในการตรวจสอบความเสียหายและจ่ายสินไหมภายใน 7-14 วัน"
+      - "บูรณาการข้อมูลเกษตรภาครัฐและเอกชน เสริมความรู้ด้านความเสี่ยง และประเมินความครอบคลุม ความเร็ว ความแม่นยำ และผลด้านการกระจายประโยชน์"
+    country_heading: "ประเทศ"
+    country: "ประเทศไทย"
+    official_heading: "ข้อมูลนโยบายจากหน่วยงานทางการ"
+    sources:
+      - label: "รัฐบาลไทย: โครงการประกันภัยข้าวนาปี ปี 2569"
+        url: "https://www.thaigov.go.th/th/news/163827"

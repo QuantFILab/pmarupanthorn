@@ -1,0 +1,548 @@
+<style>
+  :is(#books, #courses) .grid {
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 1.05rem !important;
+  }
+
+  :is(#books, #courses) .grid > .group {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    overflow: hidden;
+    border: 1px solid rgb(148 163 184 / 0.28);
+    border-radius: 1rem;
+    padding: 0.95rem 1.25rem 0.95rem 1.4rem;
+    background: linear-gradient(160deg, rgb(255 255 255 / 0.98), rgb(248 250 252 / 0.94));
+    box-shadow: 0 0.7rem 2rem rgb(15 23 42 / 0.08);
+    transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+  }
+
+  :is(#books, #courses) .grid > .group::before {
+    position: absolute;
+    inset: 0 auto 0 0;
+    width: 0.32rem;
+    background: linear-gradient(180deg, rgb(var(--color-primary-400)), rgb(var(--color-primary-700)));
+    content: "";
+  }
+
+  :is(#books, #courses) .grid > .group:hover {
+    transform: translateY(-0.25rem);
+    border-color: rgb(var(--color-primary-500) / 0.55);
+    box-shadow: 0 1rem 2.4rem rgb(15 23 42 / 0.14);
+  }
+
+  :is(#books, #courses) .grid > .group > .overflow-hidden,
+  :is(#books, #courses) .grid > .group p,
+  :is(#books, #courses) .grid > .group time,
+  :is(#books, #courses) .grid > .group .grow,
+  :is(#books, #courses) .grid > .group .flex-none {
+    display: none;
+  }
+
+  :is(#books, #courses) .catalog-card-main {
+    display: flex;
+    flex: 1;
+    padding: 0;
+  }
+
+  :is(#books, #courses) .catalog-card-main > div {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  :is(#books, #courses) .grid > .group h2 {
+    display: flex;
+    align-items: center;
+    gap: 0.48rem;
+    width: 100%;
+    margin: 0;
+    letter-spacing: -0.015em;
+  }
+
+  :is(#books, #courses) .grid > .group h2 > a {
+    min-width: 0;
+  }
+
+  .catalog-count-badge,
+  .catalog-type-badge {
+    display: inline-grid;
+    flex: 0 0 auto;
+    min-width: 1.5rem;
+    height: 1.5rem;
+    padding: 0 0.42rem;
+    place-items: center;
+    border-radius: 9999px;
+    background: rgb(var(--color-primary-600));
+    color: #fff;
+    font-size: 0.7rem;
+    font-weight: 800;
+    line-height: 1;
+    box-shadow: 0 0.18rem 0.45rem rgb(var(--color-primary-700) / 0.25);
+  }
+
+  .catalog-type-badge {
+    min-width: auto;
+    padding-inline: 0.6rem;
+    background: rgb(var(--color-primary-50));
+    color: rgb(var(--color-primary-700));
+    box-shadow: none;
+    text-transform: uppercase;
+    letter-spacing: 0.055em;
+  }
+
+  .catalog-expand-button {
+    display: inline-grid;
+    flex: 0 0 auto;
+    width: 1.8rem;
+    height: 1.8rem;
+    margin-left: auto;
+    place-items: center;
+    border: 1px solid rgb(var(--color-primary-500) / 0.5);
+    border-radius: 9999px;
+    background: rgb(var(--color-primary-50));
+    color: rgb(var(--color-primary-700));
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1;
+    transition: background-color 160ms ease, color 160ms ease, transform 160ms ease;
+  }
+
+  .catalog-expand-button:hover,
+  .catalog-expand-button:focus-visible,
+  .catalog-expand-button[aria-expanded="true"] {
+    background: rgb(var(--color-primary-600));
+    color: #fff;
+    outline: none;
+  }
+
+  .catalog-expand-button[aria-expanded="true"] {
+    transform: rotate(45deg);
+  }
+
+  .catalog-card-meta {
+    margin-top: 0.28rem;
+    color: rgb(100 116 139);
+    font-size: 0.78rem;
+    line-height: 1.45;
+  }
+
+  .catalog-panel {
+    width: 100%;
+    margin-top: 0.8rem;
+    border-top: 1px solid rgb(148 163 184 / 0.28);
+    padding-top: 0.75rem;
+  }
+
+  .catalog-panel[hidden] {
+    display: none !important;
+  }
+
+  .catalog-table-wrap {
+    overflow-x: auto;
+  }
+
+  .catalog-table {
+    width: 100%;
+    border: 0;
+    border-collapse: collapse;
+    background: transparent;
+    font-size: 0.86rem;
+  }
+
+  .catalog-table th,
+  .catalog-table td {
+    border: 0;
+    padding: 0.56rem 0.65rem;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  .catalog-table th {
+    color: rgb(71 85 105);
+    font-size: 0.68rem;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  .catalog-table tbody tr + tr td,
+  .catalog-table tbody tr + tr th {
+    border-top: 1px solid rgb(226 232 240 / 0.82);
+  }
+
+  .catalog-table tbody th {
+    width: 23%;
+    min-width: 8.2rem;
+    color: rgb(71 85 105);
+    font-size: 0.75rem;
+    letter-spacing: 0.025em;
+  }
+
+  .catalog-table a {
+    color: rgb(var(--color-primary-700));
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .catalog-table a:hover,
+  .catalog-table a:focus-visible {
+    text-decoration: underline;
+  }
+
+  .catalog-status-pill,
+  .catalog-tag {
+    display: inline-flex;
+    align-items: center;
+    border-radius: 9999px;
+    padding: 0.25rem 0.55rem;
+    background: rgb(241 245 249);
+    color: rgb(71 85 105);
+    font-size: 0.72rem;
+    font-weight: 700;
+    white-space: nowrap;
+  }
+
+  .catalog-status-pill[data-status="available"] {
+    background: rgb(220 252 231);
+    color: rgb(21 128 61);
+  }
+
+  .catalog-status-pill[data-status="upcoming"] {
+    background: rgb(254 249 195);
+    color: rgb(161 98 7);
+  }
+
+  .catalog-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+  }
+
+  .catalog-empty {
+    margin: 0 !important;
+    color: rgb(100 116 139);
+    font-size: 0.85rem;
+  }
+
+  .dark :is(#books, #courses) .grid > .group {
+    border-color: rgb(71 85 105 / 0.75);
+    background: linear-gradient(160deg, rgb(15 23 42 / 0.98), rgb(15 23 42 / 0.86));
+    box-shadow: 0 0.8rem 2rem rgb(0 0 0 / 0.28);
+  }
+
+  .dark :is(#books, #courses) .grid > .group:hover {
+    border-color: rgb(var(--color-primary-400) / 0.75);
+    box-shadow: 0 1rem 2.5rem rgb(0 0 0 / 0.4);
+  }
+
+  .dark .catalog-count-badge {
+    background: rgb(var(--color-primary-400));
+    color: rgb(6 30 26);
+  }
+
+  .dark .catalog-type-badge,
+  .dark .catalog-expand-button {
+    border-color: rgb(var(--color-primary-400) / 0.65);
+    background: rgb(15 23 42);
+    color: rgb(var(--color-primary-300));
+  }
+
+  .dark .catalog-card-meta,
+  .dark .catalog-empty,
+  .dark .catalog-table th,
+  .dark .catalog-table tbody th {
+    color: rgb(148 163 184);
+  }
+
+  .dark .catalog-panel,
+  .dark .catalog-table tbody tr + tr td,
+  .dark .catalog-table tbody tr + tr th {
+    border-color: rgb(71 85 105 / 0.65);
+  }
+
+  .dark .catalog-table a {
+    color: rgb(var(--color-primary-300));
+  }
+
+  .dark .catalog-status-pill,
+  .dark .catalog-tag {
+    background: rgb(51 65 85);
+    color: rgb(226 232 240);
+  }
+
+  .dark .catalog-status-pill[data-status="available"] {
+    background: rgb(20 83 45 / 0.7);
+    color: rgb(187 247 208);
+  }
+
+  .dark .catalog-status-pill[data-status="upcoming"] {
+    background: rgb(113 63 18 / 0.65);
+    color: rgb(254 240 138);
+  }
+
+  @media (max-width: 760px) {
+    :is(#books, #courses) .grid > .group {
+      padding: 0.85rem 0.9rem 0.85rem 1.12rem;
+    }
+
+    :is(#books, #courses) .grid > .group h2 {
+      align-items: flex-start;
+    }
+
+    .catalog-type-badge {
+      display: none;
+    }
+
+    .catalog-table thead {
+      display: none;
+    }
+
+    #books .catalog-table td:first-child {
+      width: 72%;
+    }
+
+    #courses .catalog-table tbody th {
+      width: 7.2rem;
+      min-width: 7.2rem;
+    }
+  }
+</style>
+
+{{- $bookSeries := dict -}}
+{{- with site.GetPage "/book" -}}
+  {{- range .RegularPages -}}
+    {{- $seriesPage := . -}}
+    {{- $books := slice -}}
+    {{- $segments := split .RawContent "### " -}}
+    {{- range after 1 $segments -}}
+      {{- $lines := split . "\n" -}}
+      {{- $bookTitle := trim (index $lines 0) " \t\r\n" -}}
+      {{- if $bookTitle -}}
+        {{- $status := "Details" -}}
+        {{- if gt (len (findRE `(?i)upcoming` .)) 0 -}}
+          {{- $status = "Upcoming" -}}
+        {{- else if gt (len (findRE `(?i)class="button"|<a\s+href=` .)) 0 -}}
+          {{- $status = "Available" -}}
+        {{- end -}}
+        {{- $books = $books | append (dict
+          "title" $bookTitle
+          "url" (printf "%s#%s" $seriesPage.RelPermalink ($bookTitle | anchorize))
+          "status" $status
+        ) -}}
+      {{- end -}}
+    {{- end -}}
+    {{- $bookSeries = merge $bookSeries (dict .RelPermalink (dict
+      "title" .Title
+      "books" $books
+    )) -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $courses := dict -}}
+{{- with site.GetPage "/teaching" -}}
+  {{- range .RegularPages -}}
+    {{- $summary := .Params.summary | default "" | markdownify | plainify -}}
+    {{- $courseMeta := "Course information" -}}
+    {{- $courseOverview := $summary -}}
+    {{- $metaMatches := findRESubmatch `^\(([^)]+)\)` $summary -}}
+    {{- if gt (len $metaMatches) 0 -}}
+      {{- $courseMeta = index (index $metaMatches 0) 1 -}}
+      {{- $courseOverview = replaceRE `^\([^)]+\)\s*` "" $summary -}}
+    {{- end -}}
+    {{- $courses = merge $courses (dict .RelPermalink (dict
+      "title" .Title
+      "meta" $courseMeta
+      "overview" $courseOverview
+      "tags" (.Params.tags | default (slice))
+      "year" (.Date | time.Format "2006")
+      "url" .RelPermalink
+    )) -}}
+  {{- end -}}
+{{- end -}}
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const bookSeries = {{ $bookSeries | jsonify | safeJS }};
+    const courses = {{ $courses | jsonify | safeJS }};
+
+    function recordFor(map, link) {
+      const href = link.getAttribute('href');
+      const pathname = new URL(link.href, window.location.href).pathname;
+      return map[href] || map[pathname] || null;
+    }
+
+    function makeCell(text) {
+      const cell = document.createElement('td');
+      cell.textContent = text;
+      return cell;
+    }
+
+    function makeRow(label, content) {
+      const row = document.createElement('tr');
+      const heading = document.createElement('th');
+      heading.scope = 'row';
+      heading.textContent = label;
+      const cell = document.createElement('td');
+      if (content instanceof Node) cell.appendChild(content);
+      else cell.textContent = content;
+      row.appendChild(heading);
+      row.appendChild(cell);
+      return row;
+    }
+
+    function makeTable(headings) {
+      const wrap = document.createElement('div');
+      wrap.className = 'catalog-table-wrap';
+      const table = document.createElement('table');
+      table.className = 'catalog-table';
+      const thead = document.createElement('thead');
+      const row = document.createElement('tr');
+      headings.forEach(function (text) {
+        const th = document.createElement('th');
+        th.scope = 'col';
+        th.textContent = text;
+        row.appendChild(th);
+      });
+      thead.appendChild(row);
+      table.appendChild(thead);
+      wrap.appendChild(table);
+      return { wrap: wrap, table: table };
+    }
+
+    function prepareCard(card) {
+      const titleLink = card.querySelector('h2 a[href]');
+      const heading = titleLink ? titleLink.closest('h2') : null;
+      if (!titleLink || !heading || heading.querySelector('.catalog-expand-button')) return null;
+
+      const image = card.querySelector(':scope > .overflow-hidden');
+      const cardMain = Array.from(card.children).find(function (child) {
+        return child !== image;
+      });
+      if (cardMain) cardMain.classList.add('catalog-card-main');
+      return { titleLink: titleLink, heading: heading };
+    }
+
+    function addToggle(card, heading, title, panel, index, kind) {
+      const panelId = kind + '-details-' + index;
+      const button = document.createElement('button');
+      button.className = 'catalog-expand-button';
+      button.type = 'button';
+      button.textContent = '+';
+      button.title = 'Show details for ' + title;
+      button.setAttribute('aria-label', 'Show details for ' + title);
+      button.setAttribute('aria-expanded', 'false');
+      button.setAttribute('aria-controls', panelId);
+      heading.appendChild(button);
+
+      panel.className = 'catalog-panel';
+      panel.id = panelId;
+      panel.hidden = true;
+      card.appendChild(panel);
+
+      button.addEventListener('click', function () {
+        const expanded = button.getAttribute('aria-expanded') === 'true';
+        button.setAttribute('aria-expanded', String(!expanded));
+        button.setAttribute('aria-label', (expanded ? 'Show' : 'Hide') + ' details for ' + title);
+        button.title = (expanded ? 'Show' : 'Hide') + ' details for ' + title;
+        panel.hidden = expanded;
+      });
+    }
+
+    const booksGrid = document.querySelector('#books .grid');
+    if (booksGrid) {
+      booksGrid.querySelectorAll(':scope > .group').forEach(function (card, index) {
+        const prepared = prepareCard(card);
+        if (!prepared) return;
+        const record = recordFor(bookSeries, prepared.titleLink) || { books: [] };
+        const title = prepared.titleLink.textContent.trim();
+        const count = record.books.length;
+        const badge = document.createElement('span');
+        badge.className = 'catalog-count-badge';
+        badge.textContent = count;
+        badge.title = count + ' ' + (count === 1 ? 'book' : 'books');
+        badge.setAttribute('aria-label', count + ' ' + (count === 1 ? 'book' : 'books') + ' in ' + title);
+        prepared.heading.insertBefore(badge, prepared.titleLink);
+
+        const panel = document.createElement('div');
+        if (!count) {
+          const empty = document.createElement('p');
+          empty.className = 'catalog-empty';
+          empty.textContent = 'No book titles are listed in this series yet.';
+          panel.appendChild(empty);
+        } else {
+          const built = makeTable(['Book', 'Availability']);
+          const tbody = document.createElement('tbody');
+          record.books.forEach(function (book) {
+            const row = document.createElement('tr');
+            const titleCell = document.createElement('td');
+            const link = document.createElement('a');
+            link.href = book.url;
+            link.textContent = book.title;
+            titleCell.appendChild(link);
+            row.appendChild(titleCell);
+
+            const statusCell = document.createElement('td');
+            const status = document.createElement('span');
+            status.className = 'catalog-status-pill';
+            status.dataset.status = book.status.toLowerCase();
+            status.textContent = book.status;
+            statusCell.appendChild(status);
+            row.appendChild(statusCell);
+            tbody.appendChild(row);
+          });
+          built.table.appendChild(tbody);
+          panel.appendChild(built.wrap);
+        }
+        addToggle(card, prepared.heading, title, panel, index, 'book-series');
+      });
+    }
+
+    const coursesGrid = document.querySelector('#courses .grid');
+    if (coursesGrid) {
+      coursesGrid.querySelectorAll(':scope > .group').forEach(function (card, index) {
+        const prepared = prepareCard(card);
+        if (!prepared) return;
+        const record = recordFor(courses, prepared.titleLink);
+        if (!record) return;
+        const title = prepared.titleLink.textContent.trim();
+
+        const badge = document.createElement('span');
+        badge.className = 'catalog-type-badge';
+        badge.textContent = 'Course';
+        prepared.heading.insertBefore(badge, prepared.titleLink);
+
+        const meta = document.createElement('div');
+        meta.className = 'catalog-card-meta';
+        meta.textContent = record.meta + ' · ' + record.year;
+        prepared.heading.insertAdjacentElement('afterend', meta);
+
+        const panel = document.createElement('div');
+        const built = makeTable(['Course detail', 'Information']);
+        const tbody = document.createElement('tbody');
+        tbody.appendChild(makeRow('Course / institution', record.meta));
+
+        const tags = document.createElement('div');
+        tags.className = 'catalog-tags';
+        (record.tags.length ? record.tags : ['General']).forEach(function (tag) {
+          const chip = document.createElement('span');
+          chip.className = 'catalog-tag';
+          chip.textContent = tag;
+          tags.appendChild(chip);
+        });
+        tbody.appendChild(makeRow('Subject areas', tags));
+        tbody.appendChild(makeRow('Overview', record.overview || 'Open the course page for details.'));
+
+        const courseLink = document.createElement('a');
+        courseLink.href = record.url;
+        courseLink.textContent = 'Open course page →';
+        tbody.appendChild(makeRow('Materials', courseLink));
+        built.table.appendChild(tbody);
+        panel.appendChild(built.wrap);
+        addToggle(card, prepared.heading, title, panel, index, 'course');
+      });
+    }
+  });
+</script>

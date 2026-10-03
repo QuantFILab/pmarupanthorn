@@ -4,16 +4,18 @@ type: landing
 
 sections:
   - block: collection
-    id: teaching
+    id: books
     content:
-      title: Books
+      title: Book Series
       count: 0
+      sort_by: Title
+      sort_ascending: true
       filters:
         folders:
           - book
     design:
       view: article-grid
-      columns: 3
+      columns: 1
       fill_image: false
   
 ---
