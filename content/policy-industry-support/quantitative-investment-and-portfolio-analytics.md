@@ -13,20 +13,4 @@ header:
   image: ""
 ---
 
-<div style="font-size: 14px;">
-
-### Areas of Support
-
-- Portfolio construction and optimization
-- Factor research, smart beta, and ESG integration
-- Backtesting and performance attribution
-- Research prototypes and reproducible analytics
-
-___
-
-### Relevant Research & Tools
-
-- [Development of ESG Factors for Enhancing Factor Model in the Thai Stock Market](https://quantfilab.github.io/pmarupanthorn/publication/ssrn20241/)
-- [DivFolio](https://quantfilab.github.io/pmarupanthorn/project/divfolio/)
-
-</div>
+{{< policy-bilingual key="QIPA2026" >}}

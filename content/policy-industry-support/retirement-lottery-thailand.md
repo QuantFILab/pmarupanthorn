@@ -16,25 +16,4 @@ header:
   image: ""
 ---
 
-<div style="font-size: 14px;">
-
-### Policy Focus
-
-- Savings incentives and participation modelling
-- Prize-design and probability analysis
-- Retirement-wealth and distributional impact assessment
-- Fiscal sustainability and programme evaluation
-
-___
-
-### Country
-
-Thailand
-
-___
-
-### Official Policy Information
-
-- [Thai Government information on the Retirement Lottery](https://www.thaigov.go.th/uploads/document/275/2025/08/pdf/Doc_20250825084855000000.pdf)
-
-</div>
+{{< policy-bilingual key="RLT2026" >}}

@@ -13,20 +13,4 @@ header:
   image: ""
 ---
 
-<div style="font-size: 14px;">
-
-### Areas of Support
-
-- Actuarial pricing and uncertainty quantification
-- Predictive modelling and machine learning
-- Model validation, robustness, and interpretability
-- Research-to-prototype development for decision support
-
-___
-
-### Relevant Research
-
-- [Asymptotic Confidence Ellipse for Lognormal Distribution with Applications in Actuarial Pricing](https://quantfilab.github.io/pmarupanthorn/publication/ssj2025/)
-- [AI and Machine Learning in Finance and Insurance](https://quantfilab.github.io/pmarupanthorn/research/ai-and-machine-learning-in-finance-and-insurance/)
-
-</div>
+{{< policy-bilingual key="IAAI2026" >}}

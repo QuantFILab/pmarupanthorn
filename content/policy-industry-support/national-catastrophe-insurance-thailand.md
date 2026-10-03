@@ -16,25 +16,4 @@ header:
   image: ""
 ---
 
-<div style="font-size: 14px;">
-
-### Policy Focus
-
-- Catastrophe-risk modelling and portfolio aggregation
-- Premium, coverage, and claims-capacity analysis
-- Public-private risk transfer and reinsurance design
-- Fiscal stress testing and household-protection evaluation
-
-___
-
-### Country
-
-Thailand
-
-___
-
-### Official Policy Information
-
-- [Thai Government: National Catastrophe Insurance](https://www.thaigov.go.th/th/government-policy/read/88)
-
-</div>
+{{< policy-bilingual key="NCI2026" >}}

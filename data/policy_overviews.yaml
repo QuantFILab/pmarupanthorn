@@ -83,3 +83,243 @@ THETS2026:
         url: "https://carbonmarket.tgo.or.th/index.php?lang=TH&mod=dHJhZGVfcGlsb3Q%3D"
       - label: "กรมการเปลี่ยนแปลงสภาพภูมิอากาศและสิ่งแวดล้อม: กลไก ETS ภายใต้ร่างกฎหมายการเปลี่ยนแปลงสภาพภูมิอากาศ"
         url: "https://www.dcce.go.th/14391/"
+
+NCI2026:
+  en:
+    title: "National Catastrophe Insurance"
+    focus_heading: "Policy Focus"
+    focus:
+      - "Catastrophe-risk modelling and portfolio aggregation"
+      - "Premium, coverage, and claims-capacity analysis"
+      - "Public-private risk transfer and reinsurance design"
+      - "Fiscal stress testing and household-protection evaluation"
+    country_heading: "Country"
+    country: "Thailand"
+    official_heading: "Official Policy Information"
+    sources:
+      - label: "Thai Government: National Catastrophe Insurance"
+        url: "https://www.thaigov.go.th/th/government-policy/read/88"
+  th:
+    title: "ประกันภัยพิบัติแห่งชาติ"
+    focus_heading: "ประเด็นนโยบาย"
+    focus:
+      - "การสร้างแบบจำลองความเสี่ยงจากภัยพิบัติและการรวมความเสี่ยงของพอร์ตโฟลิโอ"
+      - "การวิเคราะห์เบี้ยประกัน ความคุ้มครอง และศักยภาพในการชำระค่าสินไหม"
+      - "การออกแบบการถ่ายโอนความเสี่ยงและการประกันภัยต่อระหว่างภาครัฐกับภาคเอกชน"
+      - "การทดสอบภาวะวิกฤตทางการคลังและการประเมินการคุ้มครองครัวเรือน"
+    country_heading: "ประเทศ"
+    country: "ประเทศไทย"
+    official_heading: "ข้อมูลนโยบายจากหน่วยงานทางการ"
+    sources:
+      - label: "รัฐบาลไทย: ประกันภัยพิบัติแห่งชาติ"
+        url: "https://www.thaigov.go.th/th/government-policy/read/88"
+
+RLT2026:
+  en:
+    title: "Retirement Lottery"
+    focus_heading: "Policy Focus"
+    focus:
+      - "Savings incentives and participation modelling"
+      - "Prize-design and probability analysis"
+      - "Retirement-wealth and distributional impact assessment"
+      - "Fiscal sustainability and programme evaluation"
+    country_heading: "Country"
+    country: "Thailand"
+    official_heading: "Official Policy Information"
+    sources:
+      - label: "Thai Government information on the Retirement Lottery"
+        url: "https://www.thaigov.go.th/uploads/document/275/2025/08/pdf/Doc_20250825084855000000.pdf"
+  th:
+    title: "หวยเกษียณ"
+    focus_heading: "ประเด็นนโยบาย"
+    focus:
+      - "การสร้างแรงจูงใจในการออมและการสร้างแบบจำลองการเข้าร่วมโครงการ"
+      - "การออกแบบรางวัลและการวิเคราะห์ความน่าจะเป็น"
+      - "การประเมินความมั่งคั่งเพื่อการเกษียณและผลกระทบด้านการกระจายผลประโยชน์"
+      - "ความยั่งยืนทางการคลังและการประเมินผลโครงการ"
+    country_heading: "ประเทศ"
+    country: "ประเทศไทย"
+    official_heading: "ข้อมูลนโยบายจากหน่วยงานทางการ"
+    sources:
+      - label: "ข้อมูลรัฐบาลไทยเกี่ยวกับหวยเกษียณ"
+        url: "https://www.thaigov.go.th/uploads/document/275/2025/08/pdf/Doc_20250825084855000000.pdf"
+
+IAAI2026:
+  en:
+    title: "Insurance, Actuarial & AI Solutions"
+    focus_heading: "Areas of Support"
+    focus:
+      - "Actuarial pricing and uncertainty quantification"
+      - "Predictive modelling and machine learning"
+      - "Model validation, robustness, and interpretability"
+      - "Research-to-prototype development for decision support"
+    official_heading: "Relevant Research"
+    sources:
+      - label: "Asymptotic Confidence Ellipse for Lognormal Distribution with Applications in Actuarial Pricing"
+        url: "/pmarupanthorn/publication/ssj2025/"
+      - label: "AI and Machine Learning in Finance and Insurance"
+        url: "/pmarupanthorn/research/ai-and-machine-learning-in-finance-and-insurance/"
+  th:
+    title: "โซลูชันประกันภัย คณิตศาสตร์ประกันภัย และปัญญาประดิษฐ์"
+    focus_heading: "พื้นที่การสนับสนุน"
+    focus:
+      - "การกำหนดราคาเชิงคณิตศาสตร์ประกันภัยและการหาปริมาณความไม่แน่นอน"
+      - "การสร้างแบบจำลองเชิงพยากรณ์และการเรียนรู้ของเครื่อง"
+      - "การตรวจสอบความถูกต้อง ความทนทาน และความสามารถในการอธิบายของแบบจำลอง"
+      - "การพัฒนางานวิจัยสู่ต้นแบบเพื่อสนับสนุนการตัดสินใจ"
+    official_heading: "งานวิจัยที่เกี่ยวข้อง"
+    sources:
+      - label: "วงรีความเชื่อมั่นเชิงกำกับสำหรับการแจกแจงล็อกนอร์มอลและการประยุกต์ในการกำหนดราคาเชิงคณิตศาสตร์ประกันภัย"
+        url: "/pmarupanthorn/publication/ssj2025/"
+      - label: "ปัญญาประดิษฐ์และการเรียนรู้ของเครื่องในการเงินและประกันภัย"
+        url: "/pmarupanthorn/research/ai-and-machine-learning-in-finance-and-insurance/"
+
+QIPA2026:
+  en:
+    title: "Quantitative Investment & Portfolio Analytics"
+    focus_heading: "Areas of Support"
+    focus:
+      - "Portfolio construction and optimization"
+      - "Factor research, smart beta, and ESG integration"
+      - "Backtesting and performance attribution"
+      - "Research prototypes and reproducible analytics"
+    official_heading: "Relevant Research & Tools"
+    sources:
+      - label: "Development of ESG Factors for Enhancing Factor Model in the Thai Stock Market"
+        url: "/pmarupanthorn/publication/ssrn20241/"
+      - label: "DivFolio"
+        url: "/pmarupanthorn/project/divfolio/"
+  th:
+    title: "การลงทุนเชิงปริมาณและการวิเคราะห์พอร์ตโฟลิโอ"
+    focus_heading: "พื้นที่การสนับสนุน"
+    focus:
+      - "การสร้างพอร์ตโฟลิโอและการหาค่าที่เหมาะสม"
+      - "งานวิจัยปัจจัยการลงทุน สมาร์ตเบตา และการบูรณาการ ESG"
+      - "การทดสอบย้อนหลังและการวิเคราะห์ที่มาของผลการดำเนินงาน"
+      - "ต้นแบบงานวิจัยและการวิเคราะห์ที่ทำซ้ำได้"
+    official_heading: "งานวิจัยและเครื่องมือที่เกี่ยวข้อง"
+    sources:
+      - label: "การพัฒนาปัจจัย ESG เพื่อยกระดับแบบจำลองปัจจัยในตลาดหุ้นไทย"
+        url: "/pmarupanthorn/publication/ssrn20241/"
+      - label: "DivFolio"
+        url: "/pmarupanthorn/project/divfolio/"
+
+TDMR2026:
+  en:
+    title: "Trading, Derivatives & Market Risk"
+    focus_heading: "Areas of Support"
+    focus:
+      - "Systematic strategy research and backtesting"
+      - "Derivatives pricing and volatility analysis"
+      - "Tail-risk measurement and stress-responsive limits"
+      - "Market-microstructure and statistical-arbitrage research"
+    official_heading: "Relevant Research"
+    sources:
+      - label: "Stress-Responsive Lambda Value at Risk with a VIX-Driven Smooth Sigmoid Distortion"
+        url: "/pmarupanthorn/publication/lvarvix2026/"
+      - label: "Quantitative Trading"
+        url: "/pmarupanthorn/research/quantitative-trading/"
+  th:
+    title: "การซื้อขาย ตราสารอนุพันธ์ และความเสี่ยงตลาด"
+    focus_heading: "พื้นที่การสนับสนุน"
+    focus:
+      - "การวิจัยกลยุทธ์การซื้อขายอย่างเป็นระบบและการทดสอบย้อนหลัง"
+      - "การกำหนดราคาตราสารอนุพันธ์และการวิเคราะห์ความผันผวน"
+      - "การวัดความเสี่ยงส่วนหางและขีดจำกัดที่ตอบสนองต่อภาวะตึงเครียด"
+      - "งานวิจัยโครงสร้างจุลภาคของตลาดและการทำอาร์บิทราจเชิงสถิติ"
+    official_heading: "งานวิจัยที่เกี่ยวข้อง"
+    sources:
+      - label: "Lambda Value at Risk ที่ตอบสนองต่อภาวะตึงเครียดด้วยการบิดเบือนซิกมอยด์แบบเรียบที่ขับเคลื่อนด้วย VIX"
+        url: "/pmarupanthorn/publication/lvarvix2026/"
+      - label: "การซื้อขายเชิงปริมาณ"
+        url: "/pmarupanthorn/research/quantitative-trading/"
+
+AGBANK2026:
+  en:
+    title: "Agricultural Bank"
+    focus_heading: "Areas of Support"
+    focus:
+      - "Agricultural credit scoring and borrower-risk segmentation"
+      - "Crop, weather, climate, and catastrophe-risk analytics"
+      - "Rural-finance portfolio monitoring and stress testing"
+      - "Early-warning systems for arrears, liquidity, and operational workloads"
+    official_heading: "Relevant Research"
+    sources:
+      - label: "AI and Machine Learning in Finance and Insurance"
+        url: "/pmarupanthorn/research/ai-and-machine-learning-in-finance-and-insurance/"
+      - label: "Quantitative Risk Management"
+        url: "/pmarupanthorn/research/quantitative-risk-management/"
+  th:
+    title: "ธนาคารเพื่อการเกษตร"
+    focus_heading: "พื้นที่การสนับสนุน"
+    focus:
+      - "การให้คะแนนสินเชื่อภาคเกษตรและการแบ่งกลุ่มความเสี่ยงของผู้กู้"
+      - "การวิเคราะห์ความเสี่ยงด้านผลผลิต สภาพอากาศ ภูมิอากาศ และภัยพิบัติ"
+      - "การติดตามและทดสอบภาวะวิกฤตของพอร์ตโฟลิโอการเงินชนบท"
+      - "ระบบเตือนล่วงหน้าสำหรับหนี้ค้างชำระ สภาพคล่อง และภาระงานปฏิบัติการ"
+    official_heading: "งานวิจัยที่เกี่ยวข้อง"
+    sources:
+      - label: "ปัญญาประดิษฐ์และการเรียนรู้ของเครื่องในการเงินและประกันภัย"
+        url: "/pmarupanthorn/research/ai-and-machine-learning-in-finance-and-insurance/"
+      - label: "การบริหารความเสี่ยงเชิงปริมาณ"
+        url: "/pmarupanthorn/research/quantitative-risk-management/"
+
+RETAIL2026:
+  en:
+    title: "Retail Trader"
+    focus_heading: "Areas of Support"
+    focus:
+      - "Transparent strategy design and no-look-ahead backtesting"
+      - "Transaction-cost, slippage, and execution-quality analysis"
+      - "Position sizing, diversification, and portfolio-risk limits"
+      - "Derivatives education and explainable decision dashboards"
+    official_heading: "Relevant Research"
+    sources:
+      - label: "Quantitative Trading"
+        url: "/pmarupanthorn/research/quantitative-trading/"
+      - label: "Stress-Responsive Lambda Value at Risk with a VIX-Driven Smooth Sigmoid Distortion"
+        url: "/pmarupanthorn/publication/lvarvix2026/"
+  th:
+    title: "นักลงทุนรายย่อย"
+    focus_heading: "พื้นที่การสนับสนุน"
+    focus:
+      - "การออกแบบกลยุทธ์อย่างโปร่งใสและการทดสอบย้อนหลังโดยไม่ใช้ข้อมูลอนาคต"
+      - "การวิเคราะห์ต้นทุนธุรกรรม สลิปเพจ และคุณภาพการส่งคำสั่ง"
+      - "การกำหนดขนาดสถานะ การกระจายความเสี่ยง และขีดจำกัดความเสี่ยงพอร์ตโฟลิโอ"
+      - "ความรู้ด้านตราสารอนุพันธ์และแดชบอร์ดตัดสินใจที่อธิบายได้"
+    official_heading: "งานวิจัยที่เกี่ยวข้อง"
+    sources:
+      - label: "การซื้อขายเชิงปริมาณ"
+        url: "/pmarupanthorn/research/quantitative-trading/"
+      - label: "Lambda Value at Risk ที่ตอบสนองต่อภาวะตึงเครียดด้วยการบิดเบือนซิกมอยด์แบบเรียบที่ขับเคลื่อนด้วย VIX"
+        url: "/pmarupanthorn/publication/lvarvix2026/"
+
+HEDGE2026:
+  en:
+    title: "Hedge Fund"
+    focus_heading: "Areas of Support"
+    focus:
+      - "Systematic alpha research and statistical-arbitrage validation"
+      - "Multi-asset portfolio construction and dynamic allocation"
+      - "Derivatives, volatility, and nonlinear payoff analysis"
+      - "Tail-risk controls, stress testing, and model governance"
+    official_heading: "Relevant Research"
+    sources:
+      - label: "Asset Management"
+        url: "/pmarupanthorn/research/asset-management/"
+      - label: "Theory of European Option Underwriting Portfolios"
+        url: "/pmarupanthorn/publication/op2026/"
+  th:
+    title: "กองทุนเฮดจ์ฟันด์"
+    focus_heading: "พื้นที่การสนับสนุน"
+    focus:
+      - "การวิจัยอัลฟาอย่างเป็นระบบและการตรวจสอบอาร์บิทราจเชิงสถิติ"
+      - "การสร้างพอร์ตโฟลิโอหลายสินทรัพย์และการจัดสรรแบบพลวัต"
+      - "การวิเคราะห์ตราสารอนุพันธ์ ความผันผวน และผลตอบแทนแบบไม่เชิงเส้น"
+      - "การควบคุมความเสี่ยงส่วนหาง การทดสอบภาวะวิกฤต และธรรมาภิบาลแบบจำลอง"
+    official_heading: "งานวิจัยที่เกี่ยวข้อง"
+    sources:
+      - label: "การบริหารสินทรัพย์"
+        url: "/pmarupanthorn/research/asset-management/"
+      - label: "ทฤษฎีพอร์ตโฟลิโอการเขียนออปชันยุโรป"
+        url: "/pmarupanthorn/publication/op2026/"

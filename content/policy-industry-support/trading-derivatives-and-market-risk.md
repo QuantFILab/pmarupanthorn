@@ -13,20 +13,4 @@ header:
   image: ""
 ---
 
-<div style="font-size: 14px;">
-
-### Areas of Support
-
-- Systematic strategy research and backtesting
-- Derivatives pricing and volatility analysis
-- Tail-risk measurement and stress-responsive limits
-- Market-microstructure and statistical-arbitrage research
-
-___
-
-### Relevant Research
-
-- [A VIX-linked Dynamic Lambda-VaR Framework for Stress-Responsive Tail-Risk Limits](https://quantfilab.github.io/pmarupanthorn/publication/lvarvix2026/)
-- [Quantitative Trading](https://quantfilab.github.io/pmarupanthorn/research/quantitative-trading/)
-
-</div>
+{{< policy-bilingual key="TDMR2026" >}}

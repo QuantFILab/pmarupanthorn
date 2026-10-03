@@ -57,19 +57,23 @@
       {{- end }}
     </ul>
 
+    {{- with $content.country }}
     <hr>
 
     <h3>{{ $content.country_heading }}</h3>
-    <p>{{ $content.country }}</p>
+    <p>{{ . }}</p>
+    {{- end }}
 
+    {{- with $content.sources }}
     <hr>
 
     <h3>{{ $content.official_heading }}</h3>
     <ul>
-      {{- range $content.sources }}
+      {{- range . }}
       <li><a href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ .label }}</a></li>
       {{- end }}
     </ul>
+    {{- end }}
   </section>
   {{- end }}
 

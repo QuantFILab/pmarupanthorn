@@ -1,0 +1,16 @@
+---
+title: "Retail Trader"
+title_th: "นักลงทุนรายย่อย"
+weight: 80
+summary: Practical quantitative support for strategy testing, trading costs, portfolio risk, derivatives, and disciplined evidence-based investment decisions.
+summary_th: "การสนับสนุนเชิงปริมาณที่นำไปใช้ได้จริงสำหรับการทดสอบกลยุทธ์ ต้นทุนการซื้อขาย ความเสี่ยงพอร์ตโฟลิโอ ตราสารอนุพันธ์ และการตัดสินใจลงทุนอย่างมีวินัยบนหลักฐาน"
+date: "2026-10-03T00:00:00+07:00"
+type: docs
+categories:
+  - Industry Research
+header:
+  caption: ""
+  image: ""
+---
+
+{{< policy-bilingual key="RETAIL2026" >}}
