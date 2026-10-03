@@ -21,17 +21,17 @@ publication_types: ["article-journal"]
 publication: "*Journal of Management Sciences Suratthani Rajabhat University, 9(2), 269-292, 2022*"
 publication_short: ""
 
-abstract: Hydrated and granulated Moringa oleifera leaf are commercial productions in Thai global markets. In this work, we proposed mixed-integer linear programming for managing the production of Moringa oleifera leaf powder. The models can generate the production plane to minimize production costs and serve all demands from customers. The models were solved by branch and bound algorithm coded in R language with twelve weeks of simulation. The researcher simulated two cases of the situation focusing on inventory cost management. The first case is a low inventory cost that represents Moringa oleifera leaf powder production in Rajamangala University of Technology Suvarnabhumi, Ayutthaya campus. The second is a high inventory cost that mimics middle or large business management. The results showed that planning using the models reduced the overall production cost by 7.06% compared to unplanned production for the low investor cost and 14.30% for the high investor cost. However, the conditions of the model must be satisfied before making a decision. Large-sized and middle-sized businesses should employ the model for managing production processes because their processing and costs are more complicated than the small-sized business.
+abstract: ""
 # Summary. An optional shortened abstract.
-summary: 
+summary: "A mixed-integer production plan that meets moringa leaf-powder demand while reducing production and inventory costs."
 
 tags:
 - Optimization
 - Management Mathematics
 featured: false
-# links:
-# - name: ""
-#   url: ""
+links:
+- name: "<span class='research-link-en'>Preprint not available</span><span class='research-link-th' lang='th' hidden>ยังไม่มีฉบับพิมพ์ล่วงหน้า</span>"
+  url: "#preprint-unavailable"
 url_pdf: https://so03.tci-thaijo.org/index.php/msj/article/view/256431
 url_code: ''
 url_dataset: ''
@@ -46,7 +46,7 @@ url_video: ''
 image:
   caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/jdD8gXaTZsc)'
   focal_point: ""
-  preview_only: false
+  preview_only: true
 
 # Associated Projects (optional).
 #   Associate this publication with one or more of your projects.
@@ -63,3 +63,4 @@ projects: []
 slides: example
 ---
 
+{{< research-bilingual key="THAI2023" >}}

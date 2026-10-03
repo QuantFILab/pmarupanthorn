@@ -21,9 +21,9 @@ publication_types: ["article-journal"]
 publication: "*SSRN, 2025*"
 publication_short: ""
 
-abstract: This paper proposes an innovative change detection methodology for panel MIDAS models, where dependent and independent variables are sampled at different frequencies. Detecting structural changes in mixed-data sampling (MIDAS) models presents a significant challenge for data analysis, particularly in panel data settings. We propose a three-stage procedure for a panel MIDAS estimation. To detect structural breaks, we employ the Cross-Entropy method, which is a fast and precise algorithm. We apply the proposed methodology to a sample of Exchange-Traded Funds (ETFs) from April 2013 to December 2023. Specifically, we investigate structural changes in the effects of sustainability on the market value of the sampled ETFs. We find that ESG factors have a time-varying effect on Tobin's Q values. This effect is found heterogeneous accross sectors amoung the U.S. ETFs. This highlights the dynamic nature of how sustainability factors are incorporated into market valuations and the importance of accounting for structural breaks.
+abstract: ""
 # Summary. An optional shortened abstract.
-summary: 
+summary: "A three-stage Panel-MIDAS-ARDL and SBS-Cross-Entropy method for detecting sector-specific structural changes in the effect of ESG on ETF valuations."
 
 tags:
 - Sustainable Finance
@@ -32,10 +32,10 @@ tags:
 categories:
 - Asset Management
   
-featured: true
-# links:
-# - name: ""
-#   url: ""
+featured: false
+links:
+- name: "<span class='research-link-en'>Preprint</span><span class='research-link-th' lang='th' hidden>ฉบับพิมพ์ล่วงหน้า</span>"
+  url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5418895"
 url_pdf: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5418895
 url_code: ''
 url_dataset: ''
@@ -50,7 +50,7 @@ url_video: ''
 image:
   caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/jdD8gXaTZsc)'
   focal_point: ""
-  preview_only: false
+  preview_only: true
 
 # Associated Projects (optional).
 #   Associate this publication with one or more of your projects.
@@ -67,4 +67,4 @@ projects: []
 slides: example
 ---
 
-
+{{< research-bilingual key="SSRN20151" >}}

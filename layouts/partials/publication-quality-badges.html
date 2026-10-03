@@ -1,0 +1,90 @@
+{{ $page := .page }}
+{{ $variant := .variant | default "page" }}
+{{ $publicationYear := $page.Date | time.Format "2006" }}
+{{ $metrics := $page.Params.journal_metrics }}
+{{ $scopus := false }}
+{{ $scimago := false }}
+{{ with $metrics }}
+  {{ $scopus = .scopus }}
+  {{ $scimago = .scimago }}
+{{ end }}
+
+{{ $quartileRank := dict "Q1" 1 "Q2" 2 "Q3" 3 "Q4" 4 }}
+{{ $bestRank := 99 }}
+{{ $bestQuartile := "" }}
+{{ $bestSource := "" }}
+{{ $bestPercentile := "" }}
+{{ $bestURL := "" }}
+
+{{ with $scopus }}
+  {{ $rank := index $quartileRank (.quartile | default "") | default 99 }}
+  {{ if lt $rank $bestRank }}
+    {{ $bestRank = $rank }}
+    {{ $bestQuartile = .quartile | default "" }}
+    {{ $bestSource = "Scopus" }}
+    {{ $bestPercentile = .percentile | default "" }}
+    {{ $bestURL = .url | default "" }}
+  {{ end }}
+{{ end }}
+
+{{ with $scimago }}
+  {{ $rank := index $quartileRank (.quartile | default "") | default 99 }}
+  {{ if lt $rank $bestRank }}
+    {{ $bestRank = $rank }}
+    {{ $bestQuartile = .quartile | default "" }}
+    {{ $bestSource = "SCImago" }}
+    {{ $bestPercentile = "" }}
+    {{ $bestURL = .url | default "" }}
+  {{ end }}
+{{ end }}
+
+<div class="journal-quality journal-quality--{{ $variant }}" aria-label="Journal quality metrics">
+  {{ if eq $variant "best" }}
+    <span class="journal-quality__label">Best quality</span>
+
+    {{ if $bestQuartile }}
+      <a class="journal-quality__badge {{ if eq $bestSource "Scopus" }}journal-quality__badge--scopus{{ else }}journal-quality__badge--scimago{{ end }}"
+         href="{{ $bestURL }}" target="_blank" rel="noopener"
+         title="Best available journal-quality result for this {{ $publicationYear }} publication">
+        <span class="journal-quality__source">{{ $bestSource }} {{ $publicationYear }}</span>
+        <strong>{{ $bestQuartile }}</strong>
+        {{ with $bestPercentile }}<span>· {{ . }}</span>{{ end }}
+      </a>
+    {{ else }}
+      <span class="journal-quality__badge journal-quality__badge--undefined">
+        <strong>Undefined</strong>
+      </span>
+    {{ end }}
+  {{ else }}
+    <span class="journal-quality__label">Journal quality</span>
+
+    {{ if $scopus }}
+      <a class="journal-quality__badge journal-quality__badge--scopus"
+         href="{{ $scopus.url }}" target="_blank" rel="noopener"
+         title="Scopus CiteScore: highest listed subject-category result for this {{ $publicationYear }} publication">
+        <span class="journal-quality__source">Scopus {{ $publicationYear }}</span>
+        <strong>{{ $scopus.quartile }}</strong>
+        <span>· {{ $scopus.percentile }}</span>
+      </a>
+    {{ else }}
+      <span class="journal-quality__badge journal-quality__badge--undefined">
+        <span class="journal-quality__source">Scopus</span>
+        <strong>Undefined</strong>
+      </span>
+    {{ end }}
+
+    {{ if $scimago }}
+      <a class="journal-quality__badge journal-quality__badge--scimago"
+         href="{{ $scimago.url }}" target="_blank" rel="noopener"
+         title="SCImago Journal Rank: best quartile for this {{ $publicationYear }} publication">
+        <span class="journal-quality__source">SCImago {{ $publicationYear }}</span>
+        <strong>{{ $scimago.quartile }}</strong>
+      </a>
+    {{ else }}
+      <span class="journal-quality__badge journal-quality__badge--undefined">
+        <span class="journal-quality__source">SCImago</span>
+        <strong>Undefined</strong>
+      </span>
+    {{ end }}
+  {{ end }}
+</div>

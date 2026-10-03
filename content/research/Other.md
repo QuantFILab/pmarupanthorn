@@ -4,6 +4,9 @@ weight: 100
 summary: My other areas of interest, though not my primary focus. 
 date: "2023-09-28T00:00:00Z"
 type: docs
+image:
+  filename: research-themes/interdisciplinary-research.png
+  focal_point: Center
 # reading_time: false  # Show estimated reading time?
 # share: false  # Show social sharing links?
 # profile: false  # Show author profile?
@@ -20,12 +23,12 @@ header:
 
 ### Operational Research
 
-- [Moringa Leaf Powder Production Planning using Mixed-Integer Linear Programming](https://so03.tci-thaijo.org/index.php/msj/article/view/256431) (Nassamon, Pasin, Kulisara, Uparittha, and Wisit)
+- [Moringa Leaf Powder Production Planning using Mixed-Integer Linear Programming]({{< relref "/publication/THAI2023" >}}) (Nassamon, Pasin, Kulisara, Uparittha, and Wisit)
 ___
 
 ### Agricultural Data Analysis
 
-- [Production Performances and Morphometric Traits of Maehongson Chickens Comparing Praduhangdum, Male Layer Chickens, and Broiler](https://li01.tci-thaijo.org/index.php/agkasetkaj/article/view/258270) (Watcharapong, Nakarin, Niraporn, Nuttawut, Pasin, and Kulisara)
+- [Production Performances and Morphometric Traits of Maehongson Chickens Comparing Praduhangdum, Male Layer Chickens, and Broiler]({{< relref "/publication/KAJ2023" >}}) (Watcharapong, Nakarin, Niraporn, Nuttawut, Pasin, and Kulisara)
 ___
 
 </div>

@@ -6,6 +6,10 @@ date: "2026-09-26T00:00:00Z"
 
 type: docs
 
+image:
+  filename: research-themes/carbon-market.png
+  focal_point: Center
+
 # Optional header image (relative to `assets/media/` folder).
 header:
   caption: ""
@@ -16,7 +20,7 @@ header:
 
 ### Emissions Trading and Carbon-Market Dynamics
 
-- [Policy-state gated regime dynamics in European emission allowance futures](https://quantfilab.github.io/pmarupanthorn/publication/ds2026/) (Wanyok, Pasin)
+- [Policy-state gated regime dynamics in European emission allowance futures]({{< relref "/publication/DS2026" >}}) (Wanyok, Pasin)
 
 ___
 

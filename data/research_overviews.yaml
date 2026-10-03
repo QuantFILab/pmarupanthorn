@@ -1,0 +1,1065 @@
+OP2026:
+  en:
+    title: "Theory of European Option Underwriting Portfolios"
+    map_caption: "Conceptual map: European option underwriting as a capital-normalized liability portfolio"
+    map:
+      - title: "Two-tail liabilities"
+        detail: "Choose lower put and upper call attachment points around a no-claim corridor."
+      - title: "Capital normalization"
+        detail: "Separate observed premium income from physical claims and express each liability per unit of declared capital."
+      - title: "Joint optimization"
+        detail: "Select strikes and allocate capital using analytical claim moments, KKT conditions, and concentration limits."
+      - title: "Solvency-aware evidence"
+        detail: "Compare staged policies with matched fixed-moneyness benchmarks without treating finite call capital as a loss bound."
+    problem_heading: "The problem"
+    problem: >-
+      Writing unhedged European options creates a liability-management problem rather than an ordinary investment problem. The writer must decide where downside put claims and upside call claims attach, and how a finite underwriting-capital sleeve should be allocated across them. Cash-secured puts have a genuine terminal claim bound, but an uncovered call remains unbounded even when a finite capital proxy is used to size the position.
+    benefits_heading: "Who benefits:"
+    beneficiaries:
+      - "Option writers and derivatives portfolio managers"
+      - "Broker, exchange, and market-maker risk teams"
+      - "Quantitative analysts designing strike and capital-allocation policies"
+      - "Capital, margin, and solvency analysts"
+      - "Researchers studying crypto derivatives and nonlinear portfolio risk"
+    method_heading: "Method"
+    method: >-
+      The paper develops a static terminal framework for European cash-settled written puts and calls with a common maturity. It separates observed formation premiums from expected physical claims, divides each claim by a declared capital unit, and maximizes expected underwriting surplus minus a quadratic penalty based on the raw second moment of aggregate normalized claims. Under a multivariate lognormal terminal law, the study derives closed-form put, call, and cross-claim moments, conditional KKT capital allocations, local strike conditions, dependence effects, and a liability-side frontier. The empirical implementation applies staged contract screening and capped allocation to archived Deribit crypto-option formations, using only point-in-time information, 365 preceding aligned returns, fixed 90% put and 110% call benchmarks, paired HAC intervals, and circular block bootstrap diagnostics.
+    results_heading: "Results"
+    results: >-
+      In 209 matched BTC/ETH put formations, the staged 70%-cap policy raises mean gross surplus from 0.294% to 0.945%, a paired difference of 0.651 percentage points with a 95% HAC interval of [0.382, 0.920], but it has higher dispersion and does not establish downside-risk dominance. In the same 209 two-sided formations, mean surplus is 3.112% versus 0.601%, a 2.511-point difference [1.499, 3.522]; the worst-5% mean improves, while the volatility difference remains imprecise. Across 23 retained USDC multi-asset formations, mean surplus is 5.685% versus 1.684%, a 4.001-point difference [2.885, 5.116] with 20 wins, but volatility rises from 1.376% to 3.864%. A realized fixed BTC uncovered-call claim exceeds its finite capital proxy and produces a -99.917% formation surplus. The evidence therefore supports a solvency-aware diagnostic framework, not calibrated tail probabilities, executable net profitability, or broker-margin survival.
+  th:
+    title: "ทฤษฎีพอร์ตโฟลิโอการเขียนออปชันยุโรป"
+    map_caption: "แผนผังแนวคิด: การเขียนออปชันยุโรปในฐานะพอร์ตโฟลิโอภาระที่ปรับด้วยเงินทุน"
+    map:
+      - title: "ภาระสองด้าน"
+        detail: "เลือกราคาใช้สิทธิของพุตด้านล่างและคอลด้านบนโดยมีช่วงปลอดภาระคั่นกลาง"
+      - title: "การปรับด้วยเงินทุน"
+        detail: "แยกรายได้ค่าพรีเมียมที่สังเกตได้ออกจากภาระภายใต้ความน่าจะเป็นจริง และวัดภาระต่อหนึ่งหน่วยเงินทุน"
+      - title: "การหาค่าที่เหมาะสมร่วมกัน"
+        detail: "เลือกราคาใช้สิทธิและจัดสรรเงินทุนด้วยโมเมนต์ของภาระ เงื่อนไข KKT และข้อจำกัดการกระจุกตัว"
+      - title: "หลักฐานที่คำนึงถึงความสามารถชำระภาระ"
+        detail: "เปรียบเทียบนโยบายแบบเป็นขั้นกับเกณฑ์ราคาใช้สิทธิคงที่ โดยไม่ตีความเงินทุนคอลแบบจำกัดว่าเป็นเพดานขาดทุน"
+    problem_heading: "ปัญหาที่งานวิจัยแก้ไข"
+    problem: >-
+      การเขียนออปชันยุโรปโดยไม่ป้องกันความเสี่ยงเป็นปัญหาการจัดการภาระมากกว่าปัญหาการลงทุนทั่วไป ผู้ขายต้องกำหนดจุดที่ภาระพุตด้านล่างและภาระคอลด้านบนเริ่มเกิดขึ้น พร้อมจัดสรรเงินทุนรับภาระที่มีอยู่อย่างจำกัด พุตที่มีเงินสดค้ำประกันมีขอบเขตภาระเมื่อครบกำหนดที่แท้จริง แต่คอลที่ไม่มีสินทรัพย์ค้ำยังมีขาดทุนไม่จำกัด แม้ใช้ตัวแทนเงินทุนแบบจำกัดเพื่อกำหนดขนาดสถานะ
+    benefits_heading: "ผู้ได้รับประโยชน์:"
+    beneficiaries:
+      - "ผู้ขายออปชันและผู้จัดการพอร์ตโฟลิโออนุพันธ์"
+      - "ทีมความเสี่ยงของโบรกเกอร์ ตลาดซื้อขาย และผู้ดูแลสภาพคล่อง"
+      - "นักวิเคราะห์เชิงปริมาณที่ออกแบบราคาใช้สิทธิและนโยบายจัดสรรเงินทุน"
+      - "นักวิเคราะห์เงินทุน มาร์จิน และความมั่นคงทางการเงิน"
+      - "นักวิจัยด้านอนุพันธ์คริปโตและความเสี่ยงพอร์ตโฟลิโอไม่เชิงเส้น"
+    method_heading: "วิธีการ"
+    method: >-
+      งานวิจัยพัฒนากรอบปลายงวดแบบสถิตสำหรับพุตและคอลยุโรปที่ชำระด้วยเงินสดและมีวันครบกำหนดร่วมกัน กรอบดังกล่าวแยกค่าพรีเมียมที่สังเกตได้ ณ วันสร้างพอร์ตออกจากภาระคาดหมายภายใต้ความน่าจะเป็นจริง หารภาระแต่ละรายการด้วยหน่วยเงินทุนที่กำหนด และเพิ่มค่าส่วนเกินคาดหมายจากการรับภาระภายใต้พจน์ลงโทษกำลังสองจากโมเมนต์อันดับสองดิบของภาระรวมที่ปรับแล้ว ภายใต้กฎราคาปลายงวดแบบล็อกนอร์มัลหลายตัวแปร งานวิจัยหาโมเมนต์ของพุต คอล และภาระร่วมแบบปิด การจัดสรรเงินทุนตามเงื่อนไข KKT เงื่อนไขราคาใช้สิทธิเฉพาะที่ ผลของความสัมพันธ์ และเส้นขอบประสิทธิภาพฝั่งภาระ การประยุกต์ใช้ข้อมูลออปชันคริปโตย้อนหลังจาก Deribit โดยคัดกรองสัญญาและจัดสรรเงินทุนแบบมีเพดาน ใช้เฉพาะข้อมูลที่มี ณ เวลาตัดสินใจ ผลตอบแทนย้อนหลัง 365 วัน เกณฑ์พุต 90% และคอล 110% ช่วงความเชื่อมั่น HAC แบบจับคู่ และ circular block bootstrap
+    results_heading: "ผลการศึกษา"
+    results: >-
+      สำหรับพุต BTC/ETH ที่จับคู่กัน 209 รอบ นโยบายแบบเป็นขั้นภายใต้เพดาน 70% เพิ่มส่วนเกินรวมเฉลี่ยจาก 0.294% เป็น 0.945% ต่างกัน 0.651 จุดร้อยละ โดยช่วงความเชื่อมั่น HAC 95% เท่ากับ [0.382, 0.920] แต่มีการกระจายสูงขึ้นและยังไม่ยืนยันความเหนือกว่าด้านความเสี่ยงขาลง สำหรับพอร์ตสองด้าน 209 รอบ ค่าเฉลี่ยเท่ากับ 3.112% เทียบกับ 0.601% ต่างกัน 2.511 จุดร้อยละ [1.499, 3.522] ค่าเฉลี่ยของ 5% ที่แย่ที่สุดดีขึ้น แต่ความแตกต่างของความผันผวนยังไม่แม่นยำ สำหรับ USDC หลายสินทรัพย์ 23 รอบ ค่าเฉลี่ยเท่ากับ 5.685% เทียบกับ 1.684% ต่างกัน 4.001 จุดร้อยละ [2.885, 5.116] และชนะ 20 รอบ แต่ความผันผวนเพิ่มจาก 1.376% เป็น 3.864% นอกจากนี้ ภาระคอล BTC ที่ไม่มีสินทรัพย์ค้ำหนึ่งครั้งเกินตัวแทนเงินทุนแบบจำกัดและทำให้ส่วนเกินในรอบนั้นเท่ากับ -99.917% หลักฐานจึงสนับสนุนกรอบวินิจฉัยที่คำนึงถึงความสามารถชำระภาระ ไม่ได้ยืนยันความน่าจะเป็นหางที่ปรับเทียบแล้ว กำไรสุทธิที่ซื้อขายได้จริง หรือการรอดพ้นมาร์จินของโบรกเกอร์
+
+AAS:
+  en:
+    title: "DivFolio: a Shiny Application for Portfolio Divestment in Green Finance Wealth Management"
+    map_caption: "DivFolio workflow: from portfolio inputs and divestment schedules to analytics, case studies, and evidence-based decisions"
+    map:
+      - title: "Portfolio inputs"
+        detail: "Global equities, ETFs, ETNs, depositary receipts, ESG scores, and carbon-footprint data."
+      - title: "Divestment design"
+        detail: "Choose automated or user-defined screens, schedules, and reinvestment rules."
+      - title: "Dynamic assessment"
+        detail: "Compare risk, return, stability, diversification, and climate metrics over multiple periods."
+      - title: "Decision support"
+        detail: "Use the R Shiny interface to test and communicate green-finance portfolio choices."
+    problem_heading: "The problem"
+    problem: >-
+      Investors need an accessible way to test how ESG screens, carbon constraints, and divestment schedules alter a portfolio over time. Without an integrated tool, comparing financial performance and climate objectives across many assets and periods is difficult.
+    benefits_heading: "Who benefits:"
+    beneficiaries:
+      - "Portfolio and wealth managers"
+      - "Pension, actuarial, and investment-advisory teams"
+      - "Sustainable-finance analysts and institutional investors"
+      - "Researchers and educators teaching ESG portfolio design"
+    method_heading: "Method"
+    method: >-
+      The study develops DivFolio as a freely available R Shiny application with a graphical interface. Its multiperiod engine supports passive and active equal-weighted portfolios, global minimum variance, maximum Sharpe, and principal-portfolio strategies. Users choose investable and divestable assets manually or with ESG criteria, apply instant, linear, or hyperbolic divestment schedules, and reinvest released capital across the remaining assets. The software compares risk and return, uses CLARA clustering to assess stability, and applies Graphical Lasso to examine diversification. Demonstrations cover FTSE 100 sector divestment and environmentally informed mixed pension portfolios in the United States and United Kingdom.
+    results_heading: "Results"
+    results: >-
+      DivFolio brings portfolio construction and divestment analysis into one transparent workflow. The FTSE 100 illustration shows that environmental attributes can improve while divestment choices may change risk, tracking, and stability. In the 2013-2023 US and UK mixed-pension examples, differences in mean returns before and after divestment were not statistically significant at the 99% confidence level. Slow divestment nevertheless produced the highest return and Sharpe ratio among the tested schedules in those examples, illustrating why the pace of divestment should be evaluated rather than treated as a one-time exclusion.
+  th:
+    title: "DivFolio: แอปพลิเคชัน Shiny สำหรับการถอนการลงทุนในพอร์ตโฟลิโอเพื่อการบริหารความมั่งคั่งด้านการเงินสีเขียว"
+    map_caption: "กระบวนการ DivFolio: จากข้อมูลพอร์ตโฟลิโอและตารางเวลาการถอนการลงทุน สู่การวิเคราะห์ กรณีศึกษา และการตัดสินใจที่อิงหลักฐาน"
+    map:
+      - title: "ข้อมูลพอร์ตโฟลิโอ"
+        detail: "หุ้นทั่วโลก ETF, ETN, ตราสารแสดงสิทธิ คะแนน ESG และข้อมูลคาร์บอนฟุตพรินต์"
+      - title: "ออกแบบการถอนการลงทุน"
+        detail: "เลือกเกณฑ์คัดกรอง ตารางเวลา และกฎการลงทุนซ้ำแบบอัตโนมัติหรือกำหนดเอง"
+      - title: "ประเมินแบบพลวัต"
+        detail: "เปรียบเทียบความเสี่ยง ผลตอบแทน เสถียรภาพ การกระจายความเสี่ยง และตัวชี้วัดด้านสภาพภูมิอากาศ"
+      - title: "สนับสนุนการตัดสินใจ"
+        detail: "ใช้ส่วนติดต่อ R Shiny เพื่อทดสอบและสื่อสารทางเลือกของพอร์ตโฟลิโอการเงินสีเขียว"
+    problem_heading: "ปัญหาที่งานวิจัยแก้ไข"
+    problem: >-
+      นักลงทุนต้องการเครื่องมือที่ใช้งานง่ายสำหรับทดสอบว่าเกณฑ์ ESG ข้อจำกัดด้านคาร์บอน และตารางเวลาการถอนการลงทุนส่งผลต่อพอร์ตโฟลิโอตลอดเวลาอย่างไร หากไม่มีเครื่องมือแบบบูรณาการ การเปรียบเทียบผลการดำเนินงานทางการเงินกับเป้าหมายด้านสภาพภูมิอากาศในสินทรัพย์และหลายช่วงเวลาทำได้ยาก
+    benefits_heading: "ผู้ได้รับประโยชน์:"
+    beneficiaries:
+      - "ผู้จัดการพอร์ตโฟลิโอและผู้จัดการความมั่งคั่ง"
+      - "ทีมกองทุนบำนาญ คณิตศาสตร์ประกันภัย และที่ปรึกษาการลงทุน"
+      - "นักวิเคราะห์การเงินยั่งยืนและนักลงทุนสถาบัน"
+      - "นักวิจัยและผู้สอนด้านการออกแบบพอร์ตโฟลิโอ ESG"
+    method_heading: "วิธีการ"
+    method: >-
+      งานวิจัยพัฒนา DivFolio เป็นแอปพลิเคชัน R Shiny แบบเปิดให้ใช้งานฟรีพร้อมส่วนติดต่อแบบกราฟิก กลไกหลายช่วงเวลารองรับพอร์ตโฟลิโอถ่วงน้ำหนักเท่ากันแบบเชิงรับและเชิงรุก พอร์ตความแปรปรวนต่ำสุด พอร์ต Sharpe สูงสุด และ Principal Portfolios ผู้ใช้เลือกสินทรัพย์ลงทุนและสินทรัพย์ที่จะถอนด้วยตนเองหรือด้วยเกณฑ์ ESG กำหนดตารางการถอนแบบทันที เชิงเส้น หรือไฮเพอร์โบลิก แล้วลงทุนเงินที่ถอนออกกลับไปในสินทรัพย์ที่เหลือ ซอฟต์แวร์เปรียบเทียบความเสี่ยงและผลตอบแทน ใช้การจัดกลุ่ม CLARA ประเมินเสถียรภาพ และใช้ Graphical Lasso วิเคราะห์การกระจายความเสี่ยง ตัวอย่างครอบคลุมการถอนการลงทุนรายภาคส่วนใน FTSE 100 และพอร์ตโฟลิโอบำนาญผสมในสหรัฐอเมริกาและสหราชอาณาจักร
+    results_heading: "ผลการศึกษา"
+    results: >-
+      DivFolio รวมการสร้างพอร์ตโฟลิโอและการวิเคราะห์การถอนการลงทุนไว้ในกระบวนการที่โปร่งใส กรณี FTSE 100 แสดงว่าคุณลักษณะด้านสิ่งแวดล้อมสามารถดีขึ้น ขณะที่ทางเลือกการถอนอาจเปลี่ยนความเสี่ยง การติดตามเกณฑ์อ้างอิง และเสถียรภาพ สำหรับตัวอย่างกองทุนบำนาญผสมสหรัฐอเมริกาและสหราชอาณาจักรช่วงปี 2013-2023 ค่าเฉลี่ยผลตอบแทนก่อนและหลังถอนการลงทุนไม่แตกต่างอย่างมีนัยสำคัญทางสถิติที่ระดับความเชื่อมั่น 99% อย่างไรก็ตาม การถอนแบบช้าให้ผลตอบแทนและ Sharpe ratio สูงสุดในบรรดาตารางเวลาที่ทดสอบในตัวอย่างดังกล่าว จึงควรประเมินความเร็วในการถอนอย่างเป็นระบบแทนการมองเป็นการตัดสินใจตัดออกเพียงครั้งเดียว
+
+ANM2016:
+  en:
+    title: "Obviating the Bin Width Effect of the 1/t Algorithm for Multidimensional Numerical Integration"
+    map_caption: "Conceptual map: removing discretization error from 1/t numerical integration"
+    map:
+      - title: "Conventional 1/t"
+        detail: "A fixed representative y-value is assigned to each histogram bin."
+      - title: "Source of error"
+        detail: "The fixed approximation creates bin-width dependence and eventual error saturation."
+      - title: "Adaptive approximation"
+        detail: "Replace the fixed value with the running average of sampled y-values."
+      - title: "Convergent integration"
+        detail: "Estimates approach exact integrals from one through six dimensions."
+    problem_heading: "The problem"
+    problem: >-
+      The conventional 1/t Monte Carlo integration algorithm can stop improving because a fixed value represents every point inside a histogram bin. This bin-width effect produces persistent approximation error and prevents reliable convergence in multidimensional integration.
+    benefits_heading: "Who benefits:"
+    beneficiaries:
+      - "Numerical analysts"
+      - "Computational physicists and engineers"
+      - "Researchers using Monte Carlo integration"
+      - "Developers of high-dimensional simulation software"
+    method_heading: "Method"
+    method: >-
+      The proposed approximation replaces each fixed bin midpoint with the running average of sampled y-values inside that bin. This average is updated during the 1/t simulation, so the integral estimate improves with the Monte Carlo sample size. The paper decomposes the error to prove that the conventional method retains a nonzero bin-width residue, whereas the new error tends to zero at the N^(-1/2) sampling rate. It then tests exactly integrable cases from one through six dimensions using 50 independent runs and multiple bin widths.
+    results_heading: "Results"
+    results: >-
+      The revised estimates converge toward the exact integral values without error saturation, including when the bins are relatively wide. At dy = 0.1 in the one-dimensional test, the absolute error was 77.51 times lower than for the conventional 1/t estimate; at dy = 1 in the three-dimensional test, it was about 89,732 times lower. The proposed error continued to decrease proportionally to N^(-1/2), enabling coarser bins and substantial computational savings.
+  th:
+    title: "การขจัดผลกระทบจากความกว้างของช่วงของอัลกอริทึม 1/t สำหรับการอินทิเกรตเชิงตัวเลขหลายมิติ"
+    map_caption: "แผนผังแนวคิด: การขจัดความคลาดเคลื่อนจากการแบ่งช่วงในการอินทิเกรตด้วยอัลกอริทึม 1/t"
+    map:
+      - title: "อัลกอริทึม 1/t แบบเดิม"
+        detail: "กำหนดค่า y ตัวแทนคงที่ให้แต่ละช่วงของฮิสโตแกรม"
+      - title: "ต้นเหตุของความคลาดเคลื่อน"
+        detail: "ค่าประมาณคงที่ทำให้ผลลัพธ์ขึ้นกับความกว้างของช่วงและเกิดการอิ่มตัวของความคลาดเคลื่อน"
+      - title: "การประมาณแบบปรับตัว"
+        detail: "แทนค่าคงที่ด้วยค่าเฉลี่ยสะสมของค่า y ที่สุ่มได้"
+      - title: "การอินทิเกรตที่ลู่เข้า"
+        detail: "ค่าประมาณเข้าใกล้ค่าจริงตั้งแต่หนึ่งมิติถึงหกมิติ"
+    problem_heading: "ปัญหาที่งานวิจัยแก้ไข"
+    problem: >-
+      อัลกอริทึมมอนติคาร์โล 1/t แบบเดิมอาจหยุดพัฒนา เพราะใช้ค่าคงที่เพียงค่าเดียวแทนทุกจุดภายในช่วงของฮิสโตแกรม ผลจากความกว้างของช่วงนี้ก่อให้เกิดความคลาดเคลื่อนที่คงอยู่และทำให้การอินทิเกรตหลายมิติไม่ลู่เข้าอย่างน่าเชื่อถือ
+    benefits_heading: "ผู้ได้รับประโยชน์:"
+    beneficiaries:
+      - "นักวิเคราะห์เชิงตัวเลข"
+      - "นักฟิสิกส์เชิงคำนวณและวิศวกร"
+      - "นักวิจัยที่ใช้การอินทิเกรตแบบมอนติคาร์โล"
+      - "ผู้พัฒนาซอฟต์แวร์จำลองหลายมิติ"
+    method_heading: "วิธีการ"
+    method: >-
+      วิธีที่เสนอแทนจุดกึ่งกลางคงที่ของแต่ละช่วงด้วยค่าเฉลี่ยสะสมของค่า y ที่สุ่มได้ภายในช่วงนั้น และปรับค่าเฉลี่ยระหว่างการจำลอง 1/t ทำให้ค่าปริพันธ์ดีขึ้นตามจำนวนตัวอย่างมอนติคาร์โล งานวิจัยแยกองค์ประกอบความคลาดเคลื่อนเพื่อพิสูจน์ว่าวิธีเดิมมีเศษคงเหลือจากความกว้างของช่วง แต่ความคลาดเคลื่อนของวิธีใหม่ลู่เข้าสู่ศูนย์ด้วยอัตรา N^(-1/2) จากนั้นทดสอบกรณีที่ทราบค่าจริงตั้งแต่หนึ่งถึงหกมิติ ด้วยการจำลองอิสระ 50 ครั้งและหลายค่าความกว้างของช่วง
+    results_heading: "ผลการศึกษา"
+    results: >-
+      ค่าประมาณจากวิธีใหม่ลู่เข้าสู่ค่าปริพันธ์จริงโดยไม่เกิดการอิ่มตัวของความคลาดเคลื่อน แม้ใช้ช่วงที่ค่อนข้างกว้าง ในการทดสอบหนึ่งมิติที่ dy = 0.1 ความคลาดเคลื่อนสัมบูรณ์ต่ำกว่าวิธี 1/t เดิม 77.51 เท่า และในการทดสอบสามมิติที่ dy = 1 ต่ำกว่าประมาณ 89,732 เท่า ความคลาดเคลื่อนยังคงลดลงตามอัตรา N^(-1/2) จึงสามารถใช้ช่วงที่กว้างขึ้นและลดเวลาคำนวณได้มาก
+
+CPC2014:
+  en:
+    title: "A 1/t algorithm with the density of two states for estimating multidimensional integrals"
+    map_caption: "Conceptual map: simplifying the density of states for faster rare-region exploration"
+    map:
+      - title: "Difficult integrand"
+        detail: "Sharp peaks create rare states that a random walker may miss or become trapped near."
+      - title: "Two-state density"
+        detail: "Split the integrand range at an arbitrary sampled threshold instead of many fixed bins."
+      - title: "1/t random walk"
+        detail: "Explore the two states without requiring exact integrand boundaries."
+      - title: "Efficient estimate"
+        detail: "Reduce Monte Carlo trials while avoiding error saturation in high dimensions."
+    problem_heading: "The problem"
+    problem: >-
+      Multidimensional integrals with sharp peaks contain rare regions that are difficult for a random walker to reach and escape. Conventional density-of-states discretization also requires many bins and knowledge of integration boundaries, increasing computation and creating error saturation.
+    benefits_heading: "Who benefits:"
+    beneficiaries:
+      - "Computational physicists"
+      - "Numerical-integration researchers"
+      - "Scientists evaluating sharply peaked high-dimensional functions"
+      - "Simulation developers seeking lower Monte Carlo cost"
+    method_heading: "Method"
+    method: >-
+      After a small preliminary sample, the method chooses a reachable threshold y_s in a high-density part of the integrand range and divides y-space into only two states: y < y_s and y >= y_s. A standard 1/t random walk then moves between these states while within-state averages are updated. This avoids fine fixed-width discretization and removes the need to determine y_min and y_max. The study tests multivariate Gaussian integrals in one through six dimensions, Gaussian-ring integrals in two through six dimensions, and a setting-sun Feynman-diagram integral using 50 independent runs with N_final = 10^8.
+    results_heading: "Results"
+    results: >-
+      The two-state method reached accurate values in every Gaussian test through six dimensions, including 0.9995586 for the 6D Gaussian and 0.9992425 for the 6D Gaussian ring, while conventional many-bin 1/t sampling could not visit every state in the 5D and 6D Gaussian tests within 10^8 trials. For the setting-sun example, the estimate 1.594486 x 10^9 closely matched adaptive quadrature at 1.596160 x 10^9, whereas crude Monte Carlo returned only 4.041376 x 10^7. The error decreased at the expected N^(-1/2) rate without saturation.
+  th:
+    title: "อัลกอริทึม 1/t ที่ใช้ความหนาแน่นสองสถานะสำหรับประมาณปริพันธ์หลายมิติ"
+    map_caption: "แผนผังแนวคิด: การทำให้ความหนาแน่นของสถานะเรียบง่ายเพื่อสำรวจบริเวณที่พบได้ยากอย่างรวดเร็ว"
+    map:
+      - title: "ฟังก์ชันที่คำนวณยาก"
+        detail: "ยอดแหลมก่อให้เกิดสถานะที่พบได้ยาก ซึ่งตัวเดินสุ่มอาจเข้าไม่ถึงหรือติดอยู่ใกล้บริเวณนั้น"
+      - title: "ความหนาแน่นสองสถานะ"
+        detail: "แบ่งพิสัยของฟังก์ชันด้วยเกณฑ์สุ่มเพียงจุดเดียวแทนการใช้หลายช่วงคงที่"
+      - title: "การเดินสุ่ม 1/t"
+        detail: "สำรวจสองสถานะโดยไม่ต้องทราบขอบเขตที่แน่นอนของฟังก์ชัน"
+      - title: "ค่าประมาณที่มีประสิทธิภาพ"
+        detail: "ลดจำนวนการทดลองมอนติคาร์โลและหลีกเลี่ยงการอิ่มตัวของความคลาดเคลื่อน"
+    problem_heading: "ปัญหาที่งานวิจัยแก้ไข"
+    problem: >-
+      ปริพันธ์หลายมิติที่มียอดแหลมมีบริเวณหายากซึ่งตัวเดินสุ่มเข้าถึงและออกจากบริเวณนั้นได้ยาก การแบ่งความหนาแน่นของสถานะแบบเดิมยังต้องใช้หลายช่วงและต้องทราบขอบเขตการอินทิเกรต ทำให้ใช้เวลาคำนวณสูงและเกิดการอิ่มตัวของความคลาดเคลื่อน
+    benefits_heading: "ผู้ได้รับประโยชน์:"
+    beneficiaries:
+      - "นักฟิสิกส์เชิงคำนวณ"
+      - "นักวิจัยด้านการอินทิเกรตเชิงตัวเลข"
+      - "นักวิทยาศาสตร์ที่วิเคราะห์ฟังก์ชันหลายมิติซึ่งมียอดแหลม"
+      - "ผู้พัฒนาการจำลองที่ต้องการลดต้นทุนมอนติคาร์โล"
+    method_heading: "วิธีการ"
+    method: >-
+      หลังสุ่มตัวอย่างเบื้องต้นจำนวนเล็กน้อย วิธีนี้เลือกเกณฑ์ y_s ที่เข้าถึงได้ในบริเวณที่มีความหนาแน่นสูง แล้วแบ่งปริภูมิ y เป็นเพียงสองสถานะ คือ y < y_s และ y >= y_s จากนั้นใช้การเดินสุ่ม 1/t ตามปกติระหว่างสองสถานะ พร้อมปรับค่าเฉลี่ยภายในสถานะ จึงไม่ต้องแบ่งช่วงคงที่ละเอียดหรือกำหนด y_min และ y_max งานวิจัยทดสอบปริพันธ์เกาส์เซียนหลายตัวแปรตั้งแต่หนึ่งถึงหกมิติ ปริพันธ์วงแหวนเกาส์เซียนตั้งแต่สองถึงหกมิติ และปริพันธ์แผนภาพไฟน์แมนแบบ setting-sun ด้วยการจำลองอิสระ 50 ครั้งและ N_final = 10^8
+    results_heading: "ผลการศึกษา"
+    results: >-
+      วิธีสองสถานะให้ค่าที่แม่นยำในการทดสอบเกาส์เซียนทุกกรณีถึงหกมิติ โดยได้ 0.9995586 สำหรับเกาส์เซียน 6D และ 0.9992425 สำหรับวงแหวนเกาส์เซียน 6D ขณะที่วิธี 1/t แบบหลายช่วงเยี่ยมไม่ครบทุกสถานะในการทดสอบเกาส์เซียน 5D และ 6D ภายใน 10^8 การทดลอง สำหรับตัวอย่าง setting-sun ค่าประมาณ 1.594486 x 10^9 ใกล้เคียงกับวิธีควอดราเจอร์แบบปรับตัวที่ 1.596160 x 10^9 แต่มอนติคาร์โลพื้นฐานให้เพียง 4.041376 x 10^7 ความคลาดเคลื่อนลดลงตามอัตรา N^(-1/2) โดยไม่เกิดการอิ่มตัว
+
+CPC2021:
+  en:
+    title: "Wang–Landau Sampling for Estimation of the Reliability of Physical Networks"
+    map_caption: "Conceptual map: comparing Wang–Landau ensembles for network reliability"
+    map:
+      - title: "Physical network"
+        detail: "Represent communication or transportation systems as directed graphs with uncertain links."
+      - title: "Three ensembles"
+        detail: "Sample a binary structure function, a reliability polynomial, or average connection probabilities."
+      - title: "Benchmark networks"
+        detail: "Test bridge, ladder, and dodecahedron structures across reliability levels."
+      - title: "Method selection"
+        detail: "Match the sampling ensemble to network size, topology, and reliability regime."
+    problem_heading: "The problem"
+    problem: >-
+      Reliable communication and transportation design requires estimating whether important nodes remain connected after link failures. Standard simulation becomes difficult for large or highly reliable networks because failure configurations are rare and convergence can be extremely slow.
+    benefits_heading: "Who benefits:"
+    beneficiaries:
+      - "Network-reliability engineers"
+      - "Communication and transportation-system designers"
+      - "Infrastructure risk analysts"
+      - "Researchers developing rare-event Monte Carlo methods"
+    method_heading: "Method"
+    method: >-
+      The study formulates three Wang–Landau ensembles: a connected/disconnected structure-function walk; a reliability-polynomial walk over the number of operational edges; and a probability-space walk that combines a two-state density with average connection probabilities. Their accuracy and cost are compared on bridge, 17-edge ladder, and 30-edge dodecahedron networks. Tests use edge-operation probabilities from 0.8 to 0.999, 30 independent runs, and up to 10^8 Monte Carlo trials; the dodecahedron probability-space method is also evaluated with the 1/t refinement.
+    results_heading: "Results"
+    results: >-
+      The structure-function walk works only at lower reliability and fails when disconnected configurations become too rare. Reliability-polynomial and probability-space walks are accurate for the bridge and ladder networks, but on the ladder the probability-space approach needs about 4.07 x 10^4 trials versus 347.98 x 10^4 for the polynomial method. For the 2^30-state dodecahedron, only the probability-space 1/t method returns estimates within its run limit: 3.6509 x 10^-2 at p = 0.8 and 2.7279 x 10^-3 at p = 0.9. High variance reduces accuracy at p = 0.95. The method samples just 0.093% of all dodecahedron subgraphs, showing both its efficiency and the need for variance reduction at extreme reliability.
+  th:
+    title: "การสุ่มตัวอย่างแบบวัง–ลันเดาสำหรับการประมาณความน่าเชื่อถือของโครงข่ายกายภาพ"
+    map_caption: "แผนผังแนวคิด: การเปรียบเทียบเอนเซมเบิลวัง–ลันเดาสำหรับความน่าเชื่อถือของโครงข่าย"
+    map:
+      - title: "โครงข่ายกายภาพ"
+        detail: "แทนระบบสื่อสารหรือขนส่งด้วยกราฟมีทิศทางที่การเชื่อมโยงอาจขัดข้อง"
+      - title: "สามเอนเซมเบิล"
+        detail: "สุ่มจากฟังก์ชันโครงสร้างสองสถานะ พหุนามความน่าเชื่อถือ หรือความน่าจะเป็นเฉลี่ยของการเชื่อมต่อ"
+      - title: "โครงข่ายทดสอบ"
+        detail: "ทดสอบโครงข่ายสะพาน บันได และทรงสิบสองหน้าในหลายระดับความน่าเชื่อถือ"
+      - title: "เลือกวิธีที่เหมาะสม"
+        detail: "จับคู่วิธีสุ่มกับขนาด รูปแบบการเชื่อมต่อ และระดับความน่าเชื่อถือของโครงข่าย"
+    problem_heading: "ปัญหาที่งานวิจัยแก้ไข"
+    problem: >-
+      การออกแบบระบบสื่อสารและขนส่งที่เชื่อถือได้ต้องประเมินว่าโหนดสำคัญยังเชื่อมต่อกันหรือไม่เมื่อการเชื่อมโยงบางส่วนขัดข้อง การจำลองแบบมาตรฐานทำได้ยากในโครงข่ายขนาดใหญ่หรือมีความน่าเชื่อถือสูง เพราะเหตุการณ์ล้มเหลวพบได้น้อยและการลู่เข้าใช้เวลานานมาก
+    benefits_heading: "ผู้ได้รับประโยชน์:"
+    beneficiaries:
+      - "วิศวกรด้านความน่าเชื่อถือของโครงข่าย"
+      - "ผู้ออกแบบระบบสื่อสารและการขนส่ง"
+      - "นักวิเคราะห์ความเสี่ยงโครงสร้างพื้นฐาน"
+      - "นักวิจัยที่พัฒนาวิธีมอนติคาร์โลสำหรับเหตุการณ์หายาก"
+    method_heading: "วิธีการ"
+    method: >-
+      งานวิจัยสร้างเอนเซมเบิล Wang–Landau สามแบบ ได้แก่ การเดินบนฟังก์ชันโครงสร้างที่แบ่งเป็นสถานะเชื่อมต่อและไม่เชื่อมต่อ การเดินบนพหุนามความเชื่อถือได้โดยจำแนกตามจำนวนขอบที่ใช้งาน และการเดินในปริภูมิความน่าจะเป็นที่รวมความหนาแน่นสองสถานะกับความน่าจะเป็นการเชื่อมต่อเฉลี่ย จากนั้นเปรียบเทียบความแม่นยำและต้นทุนกับโครงข่ายสะพาน โครงข่ายบันได 17 ขอบ และโครงข่ายโดเดคาฮีดรอน 30 ขอบ โดยใช้ความน่าจะเป็นที่ขอบทำงานตั้งแต่ 0.8 ถึง 0.999 จำลองอิสระ 30 รอบ และสูงสุด 10^8 การทดลองมอนติคาร์โล พร้อมทดสอบการปรับแบบ 1/t สำหรับวิธีปริภูมิความน่าจะเป็นบนโครงข่ายโดเดคาฮีดรอน
+    results_heading: "ผลการศึกษา"
+    results: >-
+      การเดินบนฟังก์ชันโครงสร้างใช้ได้เฉพาะเมื่อความเชื่อถือได้ไม่สูงมาก และล้มเหลวเมื่อรูปแบบที่ไม่เชื่อมต่อพบได้น้อยเกินไป วิธีพหุนามและวิธีปริภูมิความน่าจะเป็นให้ผลแม่นยำกับโครงข่ายสะพานและบันได แต่สำหรับโครงข่ายบันได วิธีปริภูมิความน่าจะเป็นใช้ประมาณ 4.07 x 10^4 การทดลอง เทียบกับ 347.98 x 10^4 สำหรับวิธีพหุนาม สำหรับโดเดคาฮีดรอนที่มี 2^30 สถานะ มีเพียงวิธีปริภูมิความน่าจะเป็นแบบ 1/t ที่ให้ค่าประมาณภายในขีดจำกัดการรัน โดยได้ 3.6509 x 10^-2 เมื่อ p = 0.8 และ 2.7279 x 10^-3 เมื่อ p = 0.9 อย่างไรก็ตาม ความแปรปรวนสูงทำให้ความแม่นยำลดลงที่ p = 0.95 วิธีนี้สุ่มเพียง 0.093% ของโครงข่ายย่อยทั้งหมด จึงแสดงทั้งประสิทธิภาพและความจำเป็นของเทคนิคลดความแปรปรวนเมื่อความเชื่อถือได้สูงมาก
+
+DS2026:
+  en:
+    title: "Policy-state gated regime dynamics in European emission allowance futures"
+    map_caption: "Conceptual map: observable conditions, market regimes, and carbon-market monitoring"
+    map:
+      - title: "Market and policy inputs"
+        detail: "EUA futures, allowance-surplus records, gas volatility, and trading activity."
+      - title: "Regime model"
+        detail: "Estimate low- and high-volatility return states with condition-dependent transitions."
+      - title: "Robust comparison"
+        detail: "Test transition structures, return distributions, persistence, and volatility benchmarks."
+      - title: "Stress monitoring"
+        detail: "Interpret observable price conditions as timely signals, without making causal claims."
+    problem_heading: "The problem"
+    problem: >-
+      European Union Allowance returns alternate between calm and stressed periods, but it is unclear whether observable policy and market conditions explain transitions between those regimes reliably enough for practical monitoring.
+    benefits_heading: "Who benefits:"
+    beneficiaries:
+      - "Carbon-market policymakers and regulators"
+      - "EUA traders and portfolio managers"
+      - "Energy-market and climate-risk analysts"
+      - "Researchers studying regime-switching financial markets"
+    method_heading: "Method"
+    method: >-
+      The study combines daily EUA futures prices with official Total Number of Allowances in Circulation records, Dutch gas-market volatility, and allowance trading activity. A policy-state-gated regime-switching return model links these observables to movements between low- and high-volatility states and is compared with alternative transition structures, return distributions, and volatility benchmarks.
+    results_heading: "Results"
+    results: >-
+      Distinct volatility regimes are supported. Changes in the relative position of allowance prices provide the most stable transition signal, mainly for movement out of stressed conditions. Allowance-surplus information, gas volatility, and trading activity add context but not robust independent transition information after trends and model complexity are considered. The framework is useful for interpreting stress, while flexible volatility models remain stronger for forecasting the full return distribution.
+  th:
+    title: "พลวัตของระบอบที่กำกับด้วยสถานะนโยบายในสัญญาซื้อขายล่วงหน้าสิทธิการปล่อยก๊าซเรือนกระจกของยุโรป"
+    map_caption: "แผนผังแนวคิด: เงื่อนไขที่สังเกตได้ ระบอบตลาด และการติดตามตลาดคาร์บอน"
+    map:
+      - title: "ข้อมูลตลาดและนโยบาย"
+        detail: "สัญญาซื้อขายล่วงหน้า EUA ข้อมูลส่วนเกินของสิทธิ ความผันผวนของก๊าซ และกิจกรรมการซื้อขาย"
+      - title: "แบบจำลองระบอบ"
+        detail: "ประมาณสถานะผลตอบแทนที่มีความผันผวนต่ำและสูง พร้อมการเปลี่ยนผ่านที่ขึ้นกับเงื่อนไข"
+      - title: "การเปรียบเทียบความทนทาน"
+        detail: "ทดสอบโครงสร้างการเปลี่ยนผ่าน การแจกแจงผลตอบแทน ความคงอยู่ และแบบจำลองความผันผวนอ้างอิง"
+      - title: "ติดตามภาวะตึงเครียด"
+        detail: "ตีความสภาวะราคาเป็นสัญญาณทันเวลาโดยไม่อ้างความสัมพันธ์เชิงสาเหตุ"
+    problem_heading: "ปัญหาที่งานวิจัยแก้ไข"
+    problem: >-
+      ผลตอบแทนของสิทธิการปล่อยก๊าซเรือนกระจกสหภาพยุโรปสลับระหว่างช่วงสงบและช่วงตึงเครียด แต่ยังไม่ชัดเจนว่าเงื่อนไขด้านนโยบายและตลาดที่สังเกตได้อธิบายการเปลี่ยนผ่านระหว่างระบอบเหล่านี้ได้อย่างน่าเชื่อถือเพียงพอสำหรับการติดตามเชิงปฏิบัติหรือไม่
+    benefits_heading: "ผู้ได้รับประโยชน์:"
+    beneficiaries:
+      - "ผู้กำหนดนโยบายและหน่วยงานกำกับดูแลตลาดคาร์บอน"
+      - "ผู้ซื้อขาย EUA และผู้จัดการพอร์ตโฟลิโอ"
+      - "นักวิเคราะห์ตลาดพลังงานและความเสี่ยงด้านสภาพภูมิอากาศ"
+      - "นักวิจัยด้านตลาดการเงินที่มีการสลับระบอบ"
+    method_heading: "วิธีการ"
+    method: >-
+      งานวิจัยผสานราคาสัญญาซื้อขายล่วงหน้า EUA รายวันกับข้อมูลทางการของจำนวนสิทธิหมุนเวียนทั้งหมด ความผันผวนของตลาดก๊าซเนเธอร์แลนด์ และกิจกรรมการซื้อขายสิทธิ แบบจำลองผลตอบแทนแบบสลับระบอบที่กำกับด้วยสถานะนโยบายเชื่อมตัวแปรเหล่านี้กับการเคลื่อนย้ายระหว่างสถานะความผันผวนต่ำและสูง พร้อมเปรียบเทียบกับโครงสร้างการเปลี่ยนผ่าน การแจกแจงผลตอบแทน และแบบจำลองความผันผวนทางเลือก
+    results_heading: "ผลการศึกษา"
+    results: >-
+      ผลการศึกษาสนับสนุนการมีอยู่ของระบอบความผันผวนที่แตกต่างกัน การเปลี่ยนแปลงตำแหน่งสัมพัทธ์ของราคาสิทธิให้สัญญาณการเปลี่ยนผ่านที่เสถียรที่สุด โดยเฉพาะการออกจากภาวะตึงเครียด ข้อมูลส่วนเกินของสิทธิ ความผันผวนของก๊าซ และกิจกรรมซื้อขายให้บริบททางเศรษฐกิจ แต่ไม่ให้ข้อมูลการเปลี่ยนผ่านอิสระที่ทนทานเมื่อคำนึงถึงแนวโน้มและความซับซ้อนของแบบจำลอง กรอบงานเหมาะสำหรับตีความภาวะตึงเครียด ขณะที่แบบจำลองความผันผวนที่ยืดหยุ่นยังคาดการณ์การแจกแจงผลตอบแทนทั้งชุดได้ดีกว่า
+
+EE2024:
+  en:
+    title: "Mechanisms for Implementing Fossil Fuel Divestment in Portfolio Management with Impact on Risk, Return and Carbon Reduction"
+    map_caption: "Conceptual map: how divestment schedules change portfolio and carbon outcomes"
+    map:
+      - title: "Investment universe"
+        detail: "S&P 500, FTSE 100, and global ETFs with sector, ESG, and carbon information."
+      - title: "Divestment mechanism"
+        detail: "Apply immediate or gradual schedules and reinvest divested capital."
+      - title: "Portfolio assessment"
+        detail: "Measure returns, risk, tracking error, diversification, fees, dividends, and carbon footprint."
+      - title: "Investor trade-offs"
+        detail: "Match divestment speed and screening rules to financial and climate objectives."
+    problem_heading: "The problem"
+    problem: >-
+      Fossil-fuel divestment is often evaluated as a one-time exclusion, leaving investors without clear evidence about how implementation speed and reinvestment affect portfolio risk, return, stability, and carbon reduction over time.
+    benefits_heading: "Who benefits:"
+    beneficiaries:
+      - "Institutional and retail portfolio managers"
+      - "Pension funds and long-horizon asset owners"
+      - "ETF providers and investment advisers"
+      - "Climate-finance policymakers and ESG analysts"
+    method_heading: "Method"
+    method: >-
+      Dynamic multi-period asset-allocation methods evaluate slow, fast, and instantaneous divestment schedules over 2010-2020 for S&P 500 and FTSE 100 portfolios and five global iShares ETFs. The analysis combines sector and ESG screening with withdrawal, shorting, and reinvestment rules, then tracks return, risk, concentration, tracking error, diversification, fees, dividends, and carbon-footprint reduction.
+    results_heading: "Results"
+    results: >-
+      Return profiles are largely insensitive to the schedule, but rapid divestment can increase concentration, risk, and tracking error. Slower schedules provide greater stability and can improve carbon reduction through reinvestment. Removing energy and utilities can reduce carbon footprint by up to 7%, while ETF divestment offers further reductions with fee and dividend trade-offs. ESG-based FTSE 100 screening can improve diversification.
+  th:
+    title: "กลไกการดำเนินการถอนการลงทุนจากเชื้อเพลิงฟอสซิลในการบริหารพอร์ตโฟลิโอและผลต่อความเสี่ยง ผลตอบแทน และการลดคาร์บอน"
+    map_caption: "แผนผังแนวคิด: ตารางเวลาการถอนการลงทุนเปลี่ยนผลลัพธ์ของพอร์ตโฟลิโอและคาร์บอนอย่างไร"
+    map:
+      - title: "ขอบเขตสินทรัพย์ลงทุน"
+        detail: "S&P 500, FTSE 100 และ ETF ทั่วโลก พร้อมข้อมูลอุตสาหกรรม ESG และคาร์บอน"
+      - title: "กลไกการถอนการลงทุน"
+        detail: "ใช้ตารางเวลาแบบทันทีหรือค่อยเป็นค่อยไป และนำเงินทุนกลับไปลงทุนใหม่"
+      - title: "ประเมินพอร์ตโฟลิโอ"
+        detail: "วัดผลตอบแทน ความเสี่ยง tracking error การกระจายความเสี่ยง ค่าธรรมเนียม เงินปันผล และคาร์บอนฟุตพรินต์"
+      - title: "สมดุลตามเป้าหมายนักลงทุน"
+        detail: "จับคู่ความเร็วและเกณฑ์คัดกรองกับเป้าหมายทางการเงินและสภาพภูมิอากาศ"
+    problem_heading: "ปัญหาที่งานวิจัยแก้ไข"
+    problem: >-
+      การถอนการลงทุนจากเชื้อเพลิงฟอสซิลมักถูกประเมินเหมือนเป็นการตัดสินใจตัดสินทรัพย์ออกเพียงครั้งเดียว ทำให้นักลงทุนขาดหลักฐานที่ชัดเจนว่าความเร็วในการดำเนินการและการนำเงินไปลงทุนซ้ำส่งผลต่อความเสี่ยง ผลตอบแทน เสถียรภาพ และการลดคาร์บอนของพอร์ตโฟลิโอตลอดเวลาอย่างไร
+    benefits_heading: "ผู้ได้รับประโยชน์:"
+    beneficiaries:
+      - "ผู้จัดการพอร์ตโฟลิโอสถาบันและรายย่อย"
+      - "กองทุนบำนาญและเจ้าของสินทรัพย์ระยะยาว"
+      - "ผู้ให้บริการ ETF และที่ปรึกษาการลงทุน"
+      - "ผู้กำหนดนโยบายการเงินเพื่อสภาพภูมิอากาศและนักวิเคราะห์ ESG"
+    method_heading: "วิธีการ"
+    method: >-
+      งานวิจัยใช้วิธีจัดสรรสินทรัพย์แบบพลวัตหลายช่วงเวลาเพื่อประเมินตารางเวลาการถอนแบบช้า เร็ว และทันที ระหว่างปี 2010-2020 ในพอร์ต S&P 500, FTSE 100 และ ETF iShares ทั่วโลก 5 กอง การวิเคราะห์รวมการคัดกรองตามอุตสาหกรรมและ ESG เข้ากับการถอนเงิน การเปิดสถานะขาย และกฎการลงทุนซ้ำ แล้วติดตามผลตอบแทน ความเสี่ยง การกระจุกตัว tracking error การกระจายความเสี่ยง ค่าธรรมเนียม เงินปันผล และการลดคาร์บอนฟุตพรินต์
+    results_heading: "ผลการศึกษา"
+    results: >-
+      รูปแบบผลตอบแทนโดยรวมไม่ไวต่อตารางเวลา แต่การถอนการลงทุนอย่างรวดเร็วอาจเพิ่มการกระจุกตัว ความเสี่ยง และ tracking error ตารางเวลาที่ช้ากว่าให้เสถียรภาพมากขึ้นและช่วยลดคาร์บอนผ่านการลงทุนซ้ำ การถอนอุตสาหกรรมพลังงานและสาธารณูปโภคลดคาร์บอนฟุตพรินต์ได้สูงสุดร้อยละ 7 ส่วนการถอน ETF ที่มีคาร์บอนสูงให้การลดเพิ่มเติมแต่มีข้อแลกเปลี่ยนด้านค่าธรรมเนียมและเงินปันผล การคัดกรอง FTSE 100 ตาม ESG ยังช่วยเพิ่มการกระจายความเสี่ยงได้
+
+eml2025:
+  en:
+    title: "A Stochastic Evolutionary Game Reformulation of the Lux--Marchesi Financial Market Model"
+    map_caption: "Conceptual map: from heterogeneous trading to finite-population regime analysis"
+    map:
+      - title: "Three trading strategies"
+        detail: "Fundamentalists interact with optimistic and pessimistic chartists through excess-demand price feedback."
+      - title: "Finite-population revision"
+        detail: "Realised payoffs, memory, social reinforcement, mutation, and revision opportunities update trader counts."
+      - title: "Reduced analytical model"
+        detail: "A two-strategy birth-death approximation studies fixation under explicit state-reduction assumptions."
+      - title: "Replicated diagnostics"
+        detail: "Regime residence, exits, switching-rule perturbations, and fixation comparative statics reveal both mechanisms and limits."
+    problem_heading: "The problem"
+    problem: >-
+      The Lux–Marchesi mechanism explains endogenous financial instability, but its usual simulation framing does not make finite-population transition probabilities, fixation, long-run regime selection, or residence and exit behaviour explicit. The paper builds that analytical bridge while separating genuine model implications from claims that the simulations do not support.
+    benefits_heading: "Who benefits:"
+    beneficiaries:
+      - "Financial-market and behavioural-finance researchers"
+      - "Agent-based modelling specialists"
+      - "Market-risk and stress-testing teams"
+      - "Students of evolutionary game theory and market microstructure"
+    method_heading: "Method"
+    method: >-
+      The model couples fundamentalists and optimistic and pessimistic chartists to excess-demand price feedback. Realised returns update payoff memory, attractiveness, and exponential fitness; mutation-selection destination probabilities and origin-specific multinomial revision rows then update the finite population. A reduced chartist-versus-fundamentalist birth-death approximation derives fixation probabilities under stated time-homogeneity and state-reduction assumptions. The numerical study uses 200 replications for each of eight regimes, plus a separate 300-replication matched comparison with a Lux–Marchesi-style switching-intensity rule.
+    results_heading: "Results"
+    results: >-
+      Under the reduced-model assumptions, stronger selection and price impact raise chartist fixation when cumulative chartist payoff advantages are positive. The simulations distinguish calm, noisy, and chartist-dominated regimes, but optimistic and pessimistic corner paths are persistent rather than demonstrated metastable bubbles or crashes. Lag-one absolute-return autocorrelation stays near zero (-0.004 to 0.008), so this parameterisation does not establish volatility clustering. Both update rules admit the designed perturbations in the matched experiment; the evidence is proof of mechanism, not empirical calibration.
+  th:
+    title: "การปรับแบบจำลองตลาดการเงินลักซ์–มาร์เคซีใหม่ด้วยเกมเชิงวิวัฒนาการแบบสุ่ม"
+    map_caption: "แผนผังแนวคิด: จากการซื้อขายแบบหลากหลายสู่การวิเคราะห์ระบอบตลาดในประชากรจำกัด"
+    map:
+      - title: "สามกลยุทธ์การซื้อขาย"
+        detail: "นักพื้นฐานและนักวิเคราะห์กราฟฝ่ายมองบวกและมองลบเชื่อมโยงกันผ่านวงจรป้อนกลับของราคา"
+      - title: "การปรับกลยุทธ์ในประชากรจำกัด"
+        detail: "ผลตอบแทนจริง ความทรงจำ แรงเสริมทางสังคม การกลายพันธุ์ และโอกาสทบทวนปรับจำนวนผู้ค้า"
+      - title: "แบบจำลองลดรูปเพื่อการวิเคราะห์"
+        detail: "กระบวนการเกิด–ตายสองกลยุทธ์ใช้ศึกษาความน่าจะเป็นการครอบงำภายใต้ข้อสมมติที่ระบุชัดเจน"
+      - title: "การวินิจฉัยแบบทำซ้ำ"
+        detail: "ระยะพำนัก การออกจากระบอบ การเปรียบเทียบกฎการสลับ และการวิเคราะห์ความไวเผยทั้งกลไกและข้อจำกัด"
+    problem_heading: "ปัญหาที่งานวิจัยแก้ไข"
+    problem: >-
+      กลไกลักซ์–มาร์เคซีอธิบายความไม่เสถียรทางการเงินที่เกิดจากภายในระบบ แต่กรอบการจำลองแบบเดิมยังไม่ได้แสดงความน่าจะเป็นการเปลี่ยนผ่านของประชากรจำกัด การครอบงำของกลยุทธ์ การเลือกระบอบในระยะยาว ตลอดจนการพำนักและการออกจากระบอบอย่างชัดเจน งานวิจัยนี้สร้างสะพานเชิงวิเคราะห์ดังกล่าว พร้อมแยกผลที่แบบจำลองรองรับออกจากข้ออ้างที่การจำลองยังยืนยันไม่ได้
+    benefits_heading: "ผู้ได้รับประโยชน์:"
+    beneficiaries:
+      - "นักวิจัยตลาดการเงินและการเงินเชิงพฤติกรรม"
+      - "ผู้เชี่ยวชาญด้านแบบจำลองที่ใช้ตัวแทน"
+      - "ทีมบริหารความเสี่ยงตลาดและการทดสอบภาวะวิกฤต"
+      - "ผู้ศึกษาทฤษฎีเกมเชิงวิวัฒนาการและโครงสร้างจุลภาคของตลาด"
+    method_heading: "วิธีการ"
+    method: >-
+      แบบจำลองเชื่อมนักพื้นฐานกับนักวิเคราะห์กราฟฝ่ายมองบวกและมองลบผ่านวงจรป้อนกลับของราคาจากอุปสงค์ส่วนเกิน ผลตอบแทนจริงใช้ปรับความทรงจำของผลตอบแทน ความน่าดึงดูด และ fitness แบบเอ็กซ์โพเนนเชียล จากนั้นความน่าจะเป็นปลายทางแบบการกลายพันธุ์–การคัดเลือกและแถวการทบทวนแบบพหุนามจำแนกตามกลยุทธ์ต้นทางจะปรับประชากรจำกัด แบบจำลองเกิด–ตายลดรูปที่รวมเป็นนักวิเคราะห์กราฟเทียบกับนักพื้นฐานใช้หาความน่าจะเป็นการครอบงำภายใต้ข้อสมมติด้านเวลาและการลดสถานะที่ระบุไว้ การศึกษาเชิงตัวเลขทำซ้ำ 200 ครั้งในแต่ละระบอบ 8 แบบ และเปรียบเทียบแบบจับคู่ 300 ครั้งกับกฎความเข้มการสลับแบบลักซ์–มาร์เคซี
+    results_heading: "ผลการศึกษา"
+    results: >-
+      ภายใต้ข้อสมมติของแบบจำลองลดรูป ความเข้มการคัดเลือกและผลกระทบต่อราคาที่สูงขึ้นเพิ่มโอกาสที่นักวิเคราะห์กราฟจะครอบงำ เมื่อความได้เปรียบของผลตอบแทนสะสมเป็นบวก การจำลองแยกระบอบสงบ มีสัญญาณรบกวน และระบอบที่นักวิเคราะห์กราฟครองตลาดได้ แต่เส้นทางมุมมองบวกและลบเป็นระบอบเก็งกำไรที่คงอยู่ ไม่ใช่ฟองสบู่หรือการพังทลายกึ่งเสถียรที่พิสูจน์แล้ว สหสัมพันธ์อันดับหนึ่งของค่าสัมบูรณ์ผลตอบแทนอยู่ใกล้ศูนย์ (-0.004 ถึง 0.008) จึงยังไม่ยืนยันการกระจุกตัวของความผันผวน ทั้งสองกฎยอมให้การรบกวนที่ออกแบบไว้ขยายตัวในการทดลองแบบจับคู่ หลักฐานจึงเป็นการพิสูจน์กลไก ไม่ใช่การสอบเทียบเชิงประจักษ์
+
+lvarvix2026:
+  en:
+    title: "Stress-Responsive Lambda Value at Risk with a VIX-Driven Smooth Sigmoid Distortion"
+    map_caption: "Conceptual map: converting market stress into an adaptive tail-risk limit"
+    map:
+      - title: "Predictive distribution"
+        detail: "Start with any no-look-ahead forecast of portfolio or asset returns."
+      - title: "VIX stress signal"
+        detail: "Standardise rolling log VIX to describe current option-implied market stress."
+      - title: "Smooth distortion"
+        detail: "Map stress through a bounded monotone sigmoid into a state-dependent ΛVaR target."
+      - title: "Adaptive risk control"
+        detail: "Tighten limits in stress and relax them as market conditions normalise."
+    problem_heading: "The problem"
+    problem: >-
+      Conventional Value at Risk uses a fixed exception probability even though market stress changes over time. A fixed target may therefore react too slowly in crises and remain unnecessarily restrictive when conditions normalise.
+    benefits_heading: "Who benefits:"
+    beneficiaries:
+      - "Market-risk managers"
+      - "Banks, asset managers, and trading desks"
+      - "Risk-governance and model-validation teams"
+      - "Researchers studying dynamic tail-risk measures"
+    method_heading: "Method"
+    method: >-
+      The study models the ΛVaR probability/loss function as a smooth, bounded, monotone sigmoid whose position and steepness depend on a rolling standardised score of log VIX. A modular forecast-and-distort pipeline pairs this mechanism with any predictive return distribution under strict no-look-ahead constraints and evaluates it out of sample against fixed-alpha VaR and time-invariant ΛVaR.
+    results_heading: "Results"
+    results: >-
+      The VIX-driven rule tightens loss limits during stress and relaxes them as conditions normalise, creating interpretable trade-offs among average tightness, turnover, and exceedance severity. The direction of coverage effects remains stable across reasonable constraints, while replacing VIX with realised-volatility stress proxies weakens calibration.
+  th:
+    title: "Lambda Value at Risk ที่ตอบสนองต่อภาวะตึงเครียดด้วยการบิดเบือนซิกมอยด์แบบเรียบที่ขับเคลื่อนด้วย VIX"
+    map_caption: "แผนผังแนวคิด: การแปลงภาวะตึงเครียดของตลาดเป็นขีดจำกัดความเสี่ยงส่วนหางแบบปรับตัว"
+    map:
+      - title: "การแจกแจงพยากรณ์"
+        detail: "เริ่มจากการพยากรณ์ผลตอบแทนของสินทรัพย์หรือพอร์ตโฟลิโอที่ไม่ใช้ข้อมูลอนาคต"
+      - title: "สัญญาณความเครียด VIX"
+        detail: "ทำค่าล็อก VIX แบบเลื่อนช่วงให้เป็นมาตรฐานเพื่อสะท้อนความเครียดที่ตลาดออปชันคาดหมาย"
+      - title: "การบิดเบือนแบบเรียบ"
+        detail: "ส่งสัญญาณผ่านฟังก์ชันซิกมอยด์มีขอบเขตและเพิ่มทางเดียวไปสู่เป้าหมาย ΛVaR ที่ขึ้นกับสถานะ"
+      - title: "ควบคุมความเสี่ยงแบบปรับตัว"
+        detail: "ทำขีดจำกัดให้เข้มขึ้นในภาวะตึงเครียดและผ่อนคลายเมื่อภาวะตลาดกลับสู่ปกติ"
+    problem_heading: "ปัญหาที่งานวิจัยแก้ไข"
+    problem: >-
+      Value at Risk แบบเดิมใช้ความน่าจะเป็นของการเกินขีดจำกัดคงที่ แม้ว่าความตึงเครียดของตลาดจะเปลี่ยนไปตามเวลา เป้าหมายคงที่จึงอาจตอบสนองช้าเกินไปในช่วงวิกฤตและเข้มงวดเกินความจำเป็นเมื่อภาวะตลาดกลับสู่ปกติ
+    benefits_heading: "ผู้ได้รับประโยชน์:"
+    beneficiaries:
+      - "ผู้จัดการความเสี่ยงตลาด"
+      - "ธนาคาร บริษัทจัดการสินทรัพย์ และฝ่ายซื้อขาย"
+      - "ทีมกำกับดูแลความเสี่ยงและตรวจสอบความถูกต้องของแบบจำลอง"
+      - "นักวิจัยด้านมาตรวัดความเสี่ยงส่วนหางแบบพลวัต"
+    method_heading: "วิธีการ"
+    method: >-
+      งานวิจัยกำหนดฟังก์ชันความน่าจะเป็น/ผลขาดทุนของ ΛVaR เป็นซิกมอยด์แบบเรียบ มีขอบเขต และเพิ่มทางเดียว โดยตำแหน่งและความชันขึ้นกับคะแนนมาตรฐานแบบเลื่อนช่วงของค่าล็อก VIX กระบวนการ forecast-and-distort แบบแยกส่วนสามารถใช้ร่วมกับการแจกแจงผลตอบแทนพยากรณ์ใดก็ได้ภายใต้ข้อกำหนดห้ามใช้ข้อมูลอนาคต และประเมินนอกตัวอย่างเทียบกับ VaR ที่ใช้ระดับแอลฟาคงที่และ ΛVaR ที่ไม่เปลี่ยนตามเวลา
+    results_heading: "ผลการศึกษา"
+    results: >-
+      กฎที่ขับเคลื่อนด้วย VIX ทำขีดจำกัดผลขาดทุนให้เข้มขึ้นในช่วงตึงเครียดและผ่อนคลายเมื่อภาวะกลับสู่ปกติ ทำให้เห็นข้อแลกเปลี่ยนระหว่างความเข้มงวดเฉลี่ย การปรับพอร์ต และความรุนแรงของการเกินขีดจำกัดอย่างชัดเจน ทิศทางของผลด้านความครอบคลุมยังคงเสถียรภายใต้ข้อจำกัดที่สมเหตุสมผล ขณะที่การแทน VIX ด้วยตัวแปรความเครียดจากความผันผวนที่เกิดขึ้นจริงทำให้การปรับเทียบอ่อนลง
+
+ORF2026:
+  en:
+    title: "State Conditional Boosting for Prospective Early Warning of CFPB Reported Relief Workload"
+    map_caption: "Conceptual map: prospective early warning for CFPB-reported relief workload"
+    map:
+      - title: "Complaint panel"
+        detail: "Build a complete weekly company-product panel from complaint and reported-relief records."
+      - title: "Operational states"
+        detail: "Separate ordinary activity, count escalation, joint escalation, and excess-relief composition."
+      - title: "Prospective models"
+        detail: "Compare persistence rules, a recurrent count model, and matched boosting learners."
+      - title: "Review priority"
+        detail: "Rank established high-activity cells for earlier administrative attention."
+    problem_heading: "The problem"
+    problem: >-
+      Consumer complaint databases contain useful supervisory signals, but a complaint is not proof of verified consumer harm. The practical task is to identify which established, high-activity company-product cells deserve earlier administrative attention when reported relief workload begins to escalate.
+    benefits_heading: "Who benefits:"
+    beneficiaries:
+      - "Financial regulators"
+      - "Supervisory and risk analysts"
+      - "Consumer-complaint operations teams"
+      - "Researchers developing transparent early-warning systems"
+    method_heading: "Method"
+    method: >-
+      The study builds a calendar-complete weekly company-product panel and treats company-reported relief as an observable workload marker. It defines four operational states and compares persistence rules and a recurrent negative-binomial model with matched LightGBM, XGBoost, and CatBoost learners. Evaluation includes calibration, rolling targets, model-confidence sets, drift diagnostics, periodic refitting, and SHAP explanations.
+    results_heading: "Results"
+    results: >-
+      Delayed relief persistence recovers much of the event-ranking signal, while matched boosting retains incremental value. State representation improves pooled excess-relief discrimination for LightGBM and XGBoost but not CatBoost, and capacity comparisons identify no universally superior model. The system supports review prioritisation; it is not a detector of verified consumer harm.
+  th:
+    title: "การบูสต์แบบมีเงื่อนไขตามสถานะสำหรับการเตือนล่วงหน้าเชิงคาดการณ์ภาระงานการเยียวยาที่รายงานต่อ CFPB"
+    map_caption: "แผนผังแนวคิด: การเตือนล่วงหน้าเชิงคาดการณ์สำหรับภาระงานการเยียวยาที่รายงานต่อ CFPB"
+    map:
+      - title: "ข้อมูลข้อร้องเรียนแบบพาเนล"
+        detail: "สร้างพาเนลรายสัปดาห์ระดับบริษัท–ผลิตภัณฑ์ให้ครบปฏิทินจากข้อร้องเรียนและข้อมูลการเยียวยา"
+      - title: "สถานะการดำเนินงาน"
+        detail: "แยกกิจกรรมปกติ การเพิ่มจำนวน การเพิ่มพร้อมกัน และองค์ประกอบการเยียวยาส่วนเกิน"
+      - title: "แบบจำลองเชิงคาดการณ์"
+        detail: "เปรียบเทียบกฎการคงอยู่ แบบจำลองนับแบบเวียนเกิด และวิธี boosting ที่จับคู่กัน"
+      - title: "จัดลำดับการตรวจสอบ"
+        detail: "จัดอันดับคู่บริษัท–ผลิตภัณฑ์ที่มีกิจกรรมสูงเพื่อรับการตรวจสอบเชิงบริหารเร็วขึ้น"
+    problem_heading: "ปัญหาที่งานวิจัยแก้ไข"
+    problem: >-
+      ฐานข้อมูลข้อร้องเรียนของผู้บริโภคให้สัญญาณที่มีประโยชน์ต่อการกำกับดูแล แต่ข้อร้องเรียนไม่ได้เป็นหลักฐานยืนยันความเสียหายของผู้บริโภค ภารกิจเชิงปฏิบัติคือการระบุคู่บริษัท–ผลิตภัณฑ์ที่มีกิจกรรมสูงและควรได้รับการตรวจสอบเชิงบริหารเร็วขึ้น เมื่อภาระงานจากการเยียวยาที่รายงานเริ่มเพิ่มสูงขึ้น
+    benefits_heading: "ผู้ได้รับประโยชน์:"
+    beneficiaries:
+      - "หน่วยงานกำกับดูแลทางการเงิน"
+      - "นักวิเคราะห์ด้านการกำกับดูแลและความเสี่ยง"
+      - "ทีมปฏิบัติการจัดการข้อร้องเรียนของผู้บริโภค"
+      - "นักวิจัยที่พัฒนาระบบเตือนล่วงหน้าที่โปร่งใส"
+    method_heading: "วิธีการ"
+    method: >-
+      งานวิจัยสร้างพาเนลรายสัปดาห์ระดับบริษัท–ผลิตภัณฑ์ที่เติมปฏิทินครบถ้วนและใช้การเยียวยาที่บริษัทรายงานเป็นตัวบ่งชี้ภาระงาน โดยกำหนดสถานะการดำเนินงานสี่แบบ และเปรียบเทียบกฎการคงอยู่กับแบบจำลองทวินามลบแบบเวียนเกิด รวมทั้ง LightGBM, XGBoost และ CatBoost ที่จับคู่กัน การประเมินครอบคลุมการปรับเทียบ ขอบเขตเป้าหมายแบบเลื่อน ชุดความเชื่อมั่นของแบบจำลอง การวินิจฉัยการเปลี่ยนแปลง การปรับแบบจำลองเป็นระยะ และคำอธิบายด้วย SHAP
+    results_heading: "ผลการศึกษา"
+    results: >-
+      ตัวแปรการคงอยู่ของการเยียวยาที่ล่าช้ากู้คืนสัญญาณส่วนใหญ่สำหรับการจัดอันดับเหตุการณ์ได้ ขณะที่วิธี boosting ที่จับคู่กันยังเพิ่มคุณค่าได้อีก การแทนสถานะช่วยเพิ่มการจำแนกการเยียวยาส่วนเกินแบบรวมสำหรับ LightGBM และ XGBoost แต่ไม่พบผลดังกล่าวใน CatBoost และการเปรียบเทียบภายใต้ขีดความสามารถไม่พบแบบจำลองที่ดีที่สุดเสมอไป ระบบนี้ใช้สนับสนุนการจัดลำดับการตรวจสอบ ไม่ใช่เครื่องมือตรวจจับความเสียหายที่ได้รับการยืนยัน
+
+SSJ2025:
+  en:
+    title: "Asymptotic Confidence Ellipse for Lognormal Distribution with Applications in Actuarial Pricing"
+    map_caption: "Conceptual map: joint parameter uncertainty translated into pricing decisions"
+    map:
+      - title: "Lognormal losses"
+        detail: "Model positive insurance losses using jointly estimated location and scale parameters."
+      - title: "Confidence ellipse"
+        detail: "Use maximum-likelihood asymptotics to represent joint parameter uncertainty."
+      - title: "Simulation validation"
+        detail: "Check coverage and sample-size requirements across parameter and sample settings."
+      - title: "Actuarial pricing"
+        detail: "Convert uncertainty into premium intervals and required policy-sales targets."
+    problem_heading: "The problem"
+    problem: >-
+      Actuarial pricing based on lognormal losses depends on two estimated parameters whose uncertainties are related. Separate intervals can hide this joint uncertainty and give insurers limited guidance about premium accuracy or the number of policies required.
+    benefits_heading: "Who benefits:"
+    beneficiaries:
+      - "Actuaries and insurance pricing teams"
+      - "Risk and reserving analysts"
+      - "Statisticians using lognormal models"
+      - "Insurers planning sample sizes and policy volumes"
+    method_heading: "Method"
+    method: >-
+      The paper derives an asymptotic joint confidence ellipse from the maximum-likelihood estimators of lognormal parameters. Monte Carlo experiments use nine parameter settings, sample sizes of 10, 100, and 1,000, and 1,000 replications. A theoretical lower bound for the sample size needed to attain a chosen accuracy is derived, verified by simulation, and applied to 1,338 health-insurance records.
+    results_heading: "Results"
+    results: >-
+      Empirical coverage ranges from 94.27% to 95.13%, close to the nominal 95% level even for small samples. The joint ellipse produces tighter premium confidence intervals than treating parameters separately, while the derived sample-size relationship supports pricing accuracy, reserve planning, and policy-volume decisions.
+  th:
+    title: "วงรีความเชื่อมั่นเชิงกำกับสำหรับการแจกแจงล็อกนอร์มอลและการประยุกต์ในการกำหนดราคาเชิงคณิตศาสตร์ประกันภัย"
+    map_caption: "แผนผังแนวคิด: แปลงความไม่แน่นอนร่วมของพารามิเตอร์เป็นการตัดสินใจด้านราคา"
+    map:
+      - title: "ความเสียหายแบบล็อกนอร์มอล"
+        detail: "จำลองความเสียหายประกันภัยที่เป็นบวกด้วยพารามิเตอร์ตำแหน่งและมาตราส่วนที่ประมาณร่วมกัน"
+      - title: "วงรีความเชื่อมั่น"
+        detail: "ใช้คุณสมบัติเชิงกำกับของตัวประมาณภาวะน่าจะเป็นสูงสุดเพื่อแทนความไม่แน่นอนร่วม"
+      - title: "ตรวจสอบด้วยการจำลอง"
+        detail: "ประเมินความครอบคลุมและขนาดตัวอย่างที่ต้องการในหลายค่าพารามิเตอร์และขนาดตัวอย่าง"
+      - title: "กำหนดราคาเชิงประกันภัย"
+        detail: "แปลงความไม่แน่นอนเป็นช่วงความเชื่อมั่นของเบี้ยและเป้าหมายจำนวนกรมธรรม์"
+    problem_heading: "ปัญหาที่งานวิจัยแก้ไข"
+    problem: >-
+      การกำหนดราคาเชิงคณิตศาสตร์ประกันภัยด้วยความเสียหายแบบล็อกนอร์มอลขึ้นกับพารามิเตอร์ประมาณสองค่าที่มีความไม่แน่นอนสัมพันธ์กัน ช่วงความเชื่อมั่นแยกกันอาจปิดบังความไม่แน่นอนร่วมและให้คำแนะนำจำกัดเกี่ยวกับความแม่นยำของเบี้ยหรือจำนวนกรมธรรม์ที่ต้องการ
+    benefits_heading: "ผู้ได้รับประโยชน์:"
+    beneficiaries:
+      - "นักคณิตศาสตร์ประกันภัยและทีมกำหนดราคา"
+      - "นักวิเคราะห์ความเสี่ยงและเงินสำรอง"
+      - "นักสถิติที่ใช้แบบจำลองล็อกนอร์มอล"
+      - "บริษัทประกันที่วางแผนขนาดตัวอย่างและปริมาณกรมธรรม์"
+    method_heading: "วิธีการ"
+    method: >-
+      งานวิจัยสร้างวงรีความเชื่อมั่นร่วมเชิงกำกับจากตัวประมาณภาวะน่าจะเป็นสูงสุดของพารามิเตอร์ล็อกนอร์มอล การทดลองมอนติคาร์โลใช้พารามิเตอร์ 9 ชุด ขนาดตัวอย่าง 10, 100 และ 1,000 และจำลองซ้ำ 1,000 รอบ พร้อมอนุมานและตรวจสอบขอบล่างเชิงทฤษฎีของขนาดตัวอย่างที่จำเป็นต่อความแม่นยำเป้าหมาย ก่อนประยุกต์กับข้อมูลประกันสุขภาพ 1,338 ราย
+    results_heading: "ผลการศึกษา"
+    results: >-
+      ความครอบคลุมเชิงประจักษ์อยู่ระหว่างร้อยละ 94.27 ถึง 95.13 ใกล้ระดับเป้าหมายร้อยละ 95 แม้ในตัวอย่างขนาดเล็ก วงรีร่วมให้ช่วงความเชื่อมั่นของเบี้ยที่กระชับกว่าการพิจารณาพารามิเตอร์แยกกัน และความสัมพันธ์ของขนาดตัวอย่างช่วยสนับสนุนความแม่นยำด้านราคา การวางแผนเงินสำรอง และการตัดสินใจด้านจำนวนกรมธรรม์
+
+SSRN20151:
+  en:
+    title: "Structural Change Detection in Panel-MIDAS-ARDL Time Series Regression Models: An Application to Firm Values and ESG Scores"
+    map_caption: "Conceptual map: detecting and validating changes in mixed-frequency ESG valuation relationships"
+    map:
+      - title: "Mixed-frequency panel"
+        detail: "Model weekly Tobin's Q with daily market factors and a daily Best-Minus-Worst ESG factor across 11 sector ETFs."
+      - title: "Three-stage estimation"
+        detail: "Use GLS-induced independence, nonlinear MIDAS estimation, and SBS-Cross-Entropy break detection."
+      - title: "Validate candidates"
+        detail: "Cluster overlapping-window candidates with K-means and silhouette analysis, then retain significant changes using Welch tests."
+      - title: "Sector-specific ESG effects"
+        detail: "Compare dated breaks and stable relationships to show that ESG valuation effects vary across sectors and time."
+    problem_heading: "The problem"
+    problem: >-
+      Firm valuation is observed weekly while market and ESG factors are available daily, and the ESG–valuation relationship may shift after economic, political, or regulatory events. Conventional same-frequency or constant-parameter panel models can discard timing information or hide sector-specific structural breaks, producing an average effect that is unreliable for investment and policy interpretation.
+    benefits_heading: "Who benefits:"
+    beneficiaries:
+      - "ESG and sustainable-investment analysts"
+      - "ETF managers and equity researchers"
+      - "Financial econometricians working with mixed-frequency panels"
+      - "Risk teams monitoring changing valuation relationships"
+    method_heading: "Method"
+    method: >-
+      The paper develops a Panel-MIDAS-ARDL procedure for cross-sectionally dependent mixed-frequency data. Stage 1 applies iterative GLS-induced independence to the autoregressive component; Stage 2 estimates the remaining daily covariates by nonlinear least squares; Stage 3 applies Sequential Binary Segmentation Cross-Entropy to the ESG coefficient. Overlapping-window candidates are consolidated using K-means with silhouette selection and validated by Welch's t-tests at the 5% level. The application models weekly Tobin's Q for 11 S&P 500 sector ETFs using daily Fama–French factors, momentum, and a Best-Minus-Worst ESG factor from mid-March 2013 through December 2022.
+    results_heading: "Results"
+    results: >-
+      Significant ESG-related breaks appear in materials, energy, financials, information technology, consumer staples, health care, and consumer discretionary ETFs, often near the 2014 oil-price collapse, the 2015 Paris Agreement, the 2016 US election, and the COVID-19 period. Information technology records four validated changes, while communication services, industrials, real estate, and utilities show no significant changes. The results demonstrate a time-varying, sector-heterogeneous ESG valuation effect rather than one stable coefficient; associations with major events are interpretive, not causal identification.
+  th:
+    title: "การตรวจจับการเปลี่ยนแปลงเชิงโครงสร้างในแบบจำลองถดถอยอนุกรมเวลา Panel-MIDAS-ARDL: การประยุกต์กับมูลค่าบริษัทและคะแนน ESG"
+    map_caption: "แผนผังแนวคิด: ตรวจจับและตรวจสอบการเปลี่ยนแปลงของความสัมพันธ์ระหว่าง ESG กับมูลค่าในข้อมูลต่างความถี่"
+    map:
+      - title: "พาเนลต่างความถี่"
+        detail: "อธิบาย Tobin's Q รายสัปดาห์ด้วยปัจจัยตลาดรายวันและปัจจัย ESG แบบ Best-Minus-Worst ใน ETF รายอุตสาหกรรม 11 กอง"
+      - title: "การประมาณสามขั้น"
+        detail: "ใช้ GLS-induced independence การประมาณ MIDAS แบบไม่เชิงเส้น และ SBS-Cross-Entropy เพื่อตรวจจับจุดเปลี่ยน"
+      - title: "ตรวจสอบจุดเปลี่ยนที่เป็นไปได้"
+        detail: "จัดกลุ่มผลจากหน้าต่างซ้อนทับด้วย K-means และ silhouette ก่อนคัดจุดที่มีนัยสำคัญด้วย Welch's t-test"
+      - title: "ผลของ ESG เฉพาะอุตสาหกรรม"
+        detail: "เปรียบเทียบวันที่เกิดจุดเปลี่ยนกับความสัมพันธ์ที่คงที่ เพื่อแสดงว่าผลของ ESG ต่างกันตามเวลาและอุตสาหกรรม"
+    problem_heading: "ปัญหาที่งานวิจัยแก้ไข"
+    problem: >-
+      มูลค่าบริษัทถูกสังเกตรายสัปดาห์ ขณะที่ปัจจัยตลาดและ ESG มีข้อมูลรายวัน และความสัมพันธ์ระหว่าง ESG กับมูลค่าอาจเปลี่ยนหลังเหตุการณ์เศรษฐกิจ การเมือง หรือกฎระเบียบ แบบจำลองพาเนลความถี่เดียวหรือสัมประสิทธิ์คงที่อาจสูญเสียข้อมูลด้านเวลาและบดบังจุดเปลี่ยนเฉพาะอุตสาหกรรม ทำให้ผลเฉลี่ยไม่น่าเชื่อถือสำหรับการลงทุนและนโยบาย
+    benefits_heading: "ผู้ได้รับประโยชน์:"
+    beneficiaries:
+      - "นักวิเคราะห์ ESG และการลงทุนยั่งยืน"
+      - "ผู้จัดการ ETF และนักวิเคราะห์หลักทรัพย์"
+      - "นักเศรษฐมิติการเงินที่ใช้พาเนลต่างความถี่"
+      - "ทีมความเสี่ยงที่ติดตามความสัมพันธ์ด้านมูลค่าที่เปลี่ยนแปลง"
+    method_heading: "วิธีการ"
+    method: >-
+      งานวิจัยพัฒนากระบวนการ Panel-MIDAS-ARDL สำหรับข้อมูลต่างความถี่ที่มีการพึ่งพาข้ามหน่วย ขั้นที่ 1 ใช้ iterative GLS-induced independence กับส่วนอัตถดถอย ขั้นที่ 2 ประมาณตัวแปรรายวันที่เหลือด้วยกำลังสองน้อยที่สุดแบบไม่เชิงเส้น และขั้นที่ 3 ใช้ Sequential Binary Segmentation Cross-Entropy กับสัมประสิทธิ์ ESG จุดที่เป็นไปได้จากหน้าต่างซ้อนทับถูกรวมด้วย K-means และการเลือกด้วย silhouette แล้วตรวจสอบด้วย Welch's t-test ที่ระดับ 5% การประยุกต์ใช้ Tobin's Q รายสัปดาห์ของ ETF รายอุตสาหกรรม S&P 500 จำนวน 11 กอง ร่วมกับปัจจัย Fama–French โมเมนตัม และปัจจัย ESG แบบ Best-Minus-Worst รายวัน ตั้งแต่กลางเดือนมีนาคม 2013 ถึงธันวาคม 2022
+    results_heading: "ผลการศึกษา"
+    results: >-
+      พบจุดเปลี่ยนที่มีนัยสำคัญใน ETF กลุ่มวัสดุ พลังงาน การเงิน เทคโนโลยีสารสนเทศ สินค้าอุปโภคบริโภคพื้นฐาน สุขภาพ และสินค้าฟุ่มเฟือย โดยมักอยู่ใกล้ช่วงราคาน้ำมันตกในปี 2014 ความตกลงปารีสปี 2015 การเลือกตั้งสหรัฐฯ ปี 2016 และช่วงโควิด-19 กลุ่มเทคโนโลยีสารสนเทศมีจุดเปลี่ยนที่ผ่านการตรวจสอบ 4 จุด ขณะที่บริการสื่อสาร อุตสาหกรรม อสังหาริมทรัพย์ และสาธารณูปโภคไม่พบจุดเปลี่ยนที่มีนัยสำคัญ ผลลัพธ์จึงชี้ว่าผลของ ESG ต่อมูลค่าผันแปรตามเวลาและอุตสาหกรรม ไม่ใช่สัมประสิทธิ์คงที่เพียงค่าเดียว ส่วนความเชื่อมโยงกับเหตุการณ์สำคัญเป็นการตีความ มิใช่การพิสูจน์เหตุและผล
+
+SSRN20241:
+  en:
+    title: "Development of ESG Factors for Enhancing Factor Model in the Thai Stock Market"
+    map_caption: "Conceptual map: constructing rating-specific Thai ESG factors and testing their contribution to asset-pricing models"
+    map:
+      - title: "Thai ESG ratings"
+        detail: "Use Thailand Sustainability Investment information to classify stronger and weaker ESG stocks."
+      - title: "BMW factor"
+        detail: "Construct an ESG best-minus-worst return factor."
+      - title: "Model tests"
+        detail: "Test covariance distinctiveness and augment the Fama–French three-factor model."
+      - title: "Thai stock explanation"
+        detail: "Compare explanatory performance for THSI-listed returns against q-factor models."
+    problem_heading: "The problem"
+    problem: >-
+      Conventional equity factor models do not explicitly represent ESG characteristics in the Thai market, while rating providers may classify firms differently. Investors therefore need evidence that an ESG factor is distinct from established market factors and improves return explanation.
+    benefits_heading: "Who benefits:"
+    beneficiaries:
+      - "Thai equity investors and portfolio managers"
+      - "ESG analysts and sustainability-rating providers"
+      - "Asset-pricing researchers"
+      - "Fund designers using THSI-listed securities"
+    method_heading: "Method"
+    method: >-
+      The study uses daily observations for 520 Thai stocks from January 2013 to November 2023. For ESG Book, Refinitiv, and S&P Global separately, k-means clustering divides firms into equally weighted Better ESG and Worse ESG portfolios, and BMW is their return difference. Wald tests assess covariance distinctiveness before each rating-specific BMW factor is added to a Fama–French specification. Stock-level least-squares regressions, t-tests, adjusted R-squared, Durbin–Watson screening, and a paired sign test compare the augmented models with the q-factor model for THSI-listed stocks.
+    results_heading: "Results"
+    results: >-
+      All nine covariance-replacement tests reject equality at p<10^-15, and BMW factors also differ significantly across rating providers. Relative to the q-factor model, the median adjusted R-squared gains are 0.0058 for BMWR, 0.0056 for BMWB, and 0.0045 for BMWS, with sign-test p-values reported as 0.0000. Portfolio outcomes differ by provider, so the rating source materially affects conclusions. A BMW coefficient measures exposure to the market-wide ESG premium, not the causal effect of a firm's own ESG practices.
+  th:
+    title: "การพัฒนาปัจจัย ESG เพื่อยกระดับแบบจำลองปัจจัยในตลาดหุ้นไทย"
+    map_caption: "แผนผังแนวคิด: การสร้างปัจจัย ESG ของไทยแยกตามผู้ให้คะแนนและทดสอบข้อมูลที่เพิ่มเข้าสู่แบบจำลองกำหนดราคาสินทรัพย์"
+    map:
+      - title: "อันดับ ESG ของไทย"
+        detail: "ใช้ข้อมูล Thailand Sustainability Investment เพื่อจัดกลุ่มหุ้น ESG ที่ดีกว่าและด้อยกว่า"
+      - title: "ปัจจัย BMW"
+        detail: "สร้างปัจจัยผลตอบแทน ESG แบบดีที่สุดลบแย่ที่สุด"
+      - title: "ทดสอบแบบจำลอง"
+        detail: "ทดสอบความแตกต่างของโครงสร้างความแปรปรวนร่วมและเพิ่มปัจจัยในแบบจำลอง Fama–French สามปัจจัย"
+      - title: "อธิบายผลตอบแทนหุ้นไทย"
+        detail: "เปรียบเทียบความสามารถอธิบายหุ้นใน THSI กับแบบจำลอง q-factor"
+    problem_heading: "ปัญหาที่งานวิจัยแก้ไข"
+    problem: >-
+      แบบจำลองปัจจัยหุ้นแบบดั้งเดิมไม่ได้แทนคุณลักษณะ ESG ของตลาดไทยโดยตรง ขณะที่ผู้ให้คะแนนแต่ละรายอาจจัดกลุ่มบริษัทต่างกัน นักลงทุนจึงต้องการหลักฐานว่าปัจจัย ESG แตกต่างจากปัจจัยตลาดเดิมและช่วยอธิบายผลตอบแทนได้ดีขึ้น
+    benefits_heading: "ผู้ได้รับประโยชน์:"
+    beneficiaries:
+      - "นักลงทุนหุ้นไทยและผู้จัดการพอร์ตโฟลิโอ"
+      - "นักวิเคราะห์ ESG และผู้ให้บริการจัดอันดับความยั่งยืน"
+      - "นักวิจัยด้านการกำหนดราคาสินทรัพย์"
+      - "ผู้ออกแบบกองทุนที่ใช้หลักทรัพย์ใน THSI"
+    method_heading: "วิธีการ"
+    method: >-
+      งานวิจัยใช้ข้อมูลรายวันของหุ้นไทย 520 บริษัทตั้งแต่เดือนมกราคม 2013 ถึงพฤศจิกายน 2023 สำหรับข้อมูลจาก ESG Book, Refinitiv และ S&P Global แยกกัน อัลกอริทึม k-means แบ่งบริษัทเป็นพอร์ต Better ESG และ Worse ESG ที่ถ่วงน้ำหนักเท่ากัน แล้วสร้าง BMW จากผลต่างของผลตอบแทน การทดสอบ Wald ตรวจความแตกต่างของโครงสร้างความแปรปรวนร่วมก่อนเพิ่ม BMW ของแต่ละผู้ให้คะแนนในแบบจำลอง Fama–French จากนั้นใช้การถดถอยกำลังสองน้อยที่สุดรายหุ้น t-tests, adjusted R-squared, การคัดกรอง Durbin–Watson และ paired sign test เพื่อเปรียบเทียบกับแบบจำลอง q-factor สำหรับหุ้นใน THSI
+    results_heading: "ผลการศึกษา"
+    results: >-
+      การทดสอบแทนปัจจัยทั้ง 9 กรณีปฏิเสธความเท่ากันของความแปรปรวนร่วมที่ p<10^-15 และปัจจัย BMW ยังแตกต่างกันอย่างมีนัยสำคัญระหว่างผู้ให้คะแนน เมื่อเทียบกับแบบจำลอง q-factor ค่ามัธยฐานของ adjusted R-squared เพิ่มขึ้น 0.0058 สำหรับ BMWR, 0.0056 สำหรับ BMWB และ 0.0045 สำหรับ BMWS โดยรายงานค่า p ของ sign test เท่ากับ 0.0000 ผลตอบแทนพอร์ตแตกต่างกันตามผู้ให้คะแนน ดังนั้นแหล่งคะแนนจึงมีผลต่อข้อสรุปอย่างสำคัญ ทั้งนี้สัมประสิทธิ์ BMW วัดความไวต่อส่วนชดเชย ESG ของตลาด ไม่ใช่ผลเชิงสาเหตุจากแนวปฏิบัติ ESG ของบริษัทเอง
+
+SSRN20242:
+  en:
+    title: "Leveraging Generative Pre-trained Transformers for the Integration of Environmental, Social, and Governance Considerations into Investment Management for Thai Stock"
+    map_caption: "Conceptual map: grounding an ESG-focused GPT in Thai sustainability documents and retaining human oversight"
+    map:
+      - title: "ESG information"
+        detail: "Collect large volumes of reports, disclosures, news, and other unstructured text."
+      - title: "GPT interpretation"
+        detail: "Summarise, classify, and extract material environmental, social, and governance signals."
+      - title: "Investment workflow"
+        detail: "Support materiality assessment, data analysis, strategy integration, and risk management."
+      - title: "Responsible decisions"
+        detail: "Improve analyst access to evidence while retaining governance and human review."
+    problem_heading: "The problem"
+    problem: >-
+      Thai 56-1 One Reports are long and complex, while sustainability information is often treated as non-financial and is difficult for general investors to combine with financial analysis. Investors therefore need an accessible way to extract material ESG issues without reading hundreds of pages unaided.
+    benefits_heading: "Who benefits:"
+    beneficiaries:
+      - "Thai equity analysts and portfolio managers"
+      - "ESG research and stewardship teams"
+      - "Investment-compliance and risk professionals"
+      - "Regulators and financial-technology developers"
+    method_heading: "Method"
+    method: >-
+      The software grounds a GPT in SET industry-specific ESG Metrics guidance and 2021 ESG reports from all sectors. A Python and LangChain workflow combines a prompt chain, which assigns the role of an experienced ESG analyst, with a retrieval toolchain backed by document embeddings and a vector database. Users upload a Thai 56-1 One Report and receive three structured outputs: Materiality Assessment, Stakeholder Engagement, and Challenges and Limitations. The paper illustrates the workflow with the 454-page PTT and 350-page SCBX reports.
+    results_heading: "Results"
+    results: >-
+      The examples show that the GPT can distil lengthy One Reports into concise ESG points and support materiality review and engagement planning. The study does not benchmark accuracy against other methods, and the system is not trained for real-time stock prediction or definitive investment advice. Data bias, non-standard reporting, incomplete public information, and changing ESG issues remain important risks; the authors recommend broader data, advanced validation, continuous updates, and human oversight.
+  th:
+    title: "การใช้ประโยชน์จากแบบจำลอง Generative Pre-trained Transformer เพื่อบูรณาการประเด็นสิ่งแวดล้อม สังคม และธรรมาภิบาลในการบริหารการลงทุนหุ้นไทย"
+    map_caption: "แผนผังแนวคิด: การสร้าง GPT ด้าน ESG บนเอกสารความยั่งยืนของไทยโดยคงการกำกับดูแลของมนุษย์"
+    map:
+      - title: "ข้อมูล ESG"
+        detail: "รวบรวมรายงาน การเปิดเผยข้อมูล ข่าว และข้อความไม่มีโครงสร้างจำนวนมาก"
+      - title: "การตีความด้วย GPT"
+        detail: "สรุป จัดประเภท และสกัดสัญญาณด้านสิ่งแวดล้อม สังคม และธรรมาภิบาลที่มีสาระสำคัญ"
+      - title: "กระบวนการลงทุน"
+        detail: "สนับสนุนการประเมินสาระสำคัญ การวิเคราะห์ข้อมูล การรวมเข้ากับกลยุทธ์ และการบริหารความเสี่ยง"
+      - title: "การตัดสินใจอย่างรับผิดชอบ"
+        detail: "เพิ่มการเข้าถึงหลักฐานของนักวิเคราะห์ พร้อมคงธรรมาภิบาลและการตรวจสอบโดยมนุษย์"
+    problem_heading: "ปัญหาที่งานวิจัยแก้ไข"
+    problem: >-
+      รายงาน 56-1 One Report ของไทยมีความยาวและซับซ้อน ขณะที่ข้อมูลความยั่งยืนมักถูกมองเป็นข้อมูลที่ไม่ใช่การเงินและเชื่อมเข้ากับการวิเคราะห์ทางการเงินได้ยาก นักลงทุนทั่วไปจึงต้องการวิธีที่เข้าถึงง่ายเพื่อสกัดประเด็น ESG ที่มีสาระสำคัญโดยไม่ต้องอ่านเอกสารหลายร้อยหน้าด้วยตนเองทั้งหมด
+    benefits_heading: "ผู้ได้รับประโยชน์:"
+    beneficiaries:
+      - "นักวิเคราะห์หุ้นไทยและผู้จัดการพอร์ตโฟลิโอ"
+      - "ทีมวิจัย ESG และการใช้สิทธิผู้ถือหุ้น"
+      - "ผู้เชี่ยวชาญด้านการปฏิบัติตามกฎและความเสี่ยงการลงทุน"
+      - "หน่วยงานกำกับและนักพัฒนาเทคโนโลยีการเงิน"
+    method_heading: "วิธีการ"
+    method: >-
+      ซอฟต์แวร์สร้าง GPT บนคู่มือตัวชี้วัด ESG รายอุตสาหกรรมของ SET และรายงาน ESG ปี 2021 จากทุกกลุ่มอุตสาหกรรม กระบวนการ Python และ LangChain ผสาน prompt chain ที่กำหนดบทบาทเป็นนักวิเคราะห์ ESG ที่มีประสบการณ์เข้ากับ toolchain สำหรับค้นคืนข้อมูลจาก embeddings และฐานข้อมูลเวกเตอร์ ผู้ใช้อัปโหลดรายงาน 56-1 One Report แล้วรับผลลัพธ์ที่มีโครงสร้างสามส่วน ได้แก่ การประเมินสาระสำคัญ การมีส่วนร่วมของผู้มีส่วนได้ส่วนเสีย และความท้าทายและข้อจำกัด งานวิจัยสาธิตด้วยรายงาน PTT 454 หน้าและ SCBX 350 หน้า
+    results_heading: "ผลการศึกษา"
+    results: >-
+      ตัวอย่างแสดงว่า GPT สามารถย่อย One Report ที่ยาวให้เป็นประเด็น ESG กระชับ และสนับสนุนการทบทวนสาระสำคัญกับการวางแผนมีส่วนร่วม อย่างไรก็ตาม งานวิจัยยังไม่ได้เปรียบเทียบความแม่นยำกับวิธีอื่น และระบบไม่ได้ฝึกเพื่อพยากรณ์ราคาหุ้นแบบเรียลไทม์หรือให้คำแนะนำการลงทุนที่เด็ดขาด ความเสี่ยงสำคัญคืออคติของข้อมูล รายงานที่ไม่มีมาตรฐาน ข้อมูลสาธารณะที่ไม่ครบ และประเด็น ESG ที่เปลี่ยนแปลง ผู้เขียนจึงเสนอให้เพิ่มข้อมูล พัฒนาการตรวจสอบความถูกต้อง อัปเดตอย่างต่อเนื่อง และคงการกำกับดูแลของมนุษย์
+
+STA2024:
+  en:
+    title: "Forward Jump Random Walk on a Cycle Graph and Its Hitting Time"
+    map_caption: "Conceptual map: exact arrival-state and first-hitting-time analysis for uniform forward jumps on a finite cycle"
+    map:
+      - title: "Cycle graph"
+        detail: "Place the walker on a finite ring of states."
+      - title: "Forward jumps"
+        detail: "Allow only forward moves of at most m vertices at each step."
+      - title: "Combinatorial derivation"
+        detail: "Count paths to obtain trigonometric-sum formulas without eigenvector calculations."
+      - title: "Exact distributions"
+        detail: "Characterise arrival probabilities, hitting time, mean, and variance."
+    problem_heading: "The problem"
+    problem: >-
+      Random walks on cycle graphs are useful models for periodic systems, but restricting movement to forward jumps changes arrival and hitting-time behaviour. Exact formulas are needed without relying exclusively on eigenvector methods.
+    benefits_heading: "Who benefits:"
+    beneficiaries:
+      - "Probability and stochastic-process researchers"
+      - "Graph-theory and combinatorics specialists"
+      - "Network and electrical-circuit analysts"
+      - "Educators and simulation developers"
+    method_heading: "Method"
+    method: >-
+      On a cycle with d states, each step is an independent uniform forward jump X in {1,...,m}. The paper counts paths to derive the arrival-state probability mass function in complex-root, trigonometric-sum, and combinatorial forms. Recurrences and probability generating functions then yield the first-hitting-time distribution, its exact expected value, and its variance. A twelve-state circular-board experiment illustrates and validates the formulas.
+    results_heading: "Results"
+    results: >-
+      The arrival distribution approaches uniformity faster as the jump limit m or the number of steps n increases, and is uniform immediately when m=d. In the d=12 experiment, the expected hitting time ranges from 7.75 to 12 steps: m=4 is fastest and m=12 is longest. Larger allowed jumps generally increase both the mean and variability of hitting time, while graph size has comparatively little influence in the studied setting.
+  th:
+    title: "การเดินสุ่มแบบกระโดดไปข้างหน้าบนกราฟวงรอบและเวลาการถึงเป้าหมาย"
+    map_caption: "แผนผังแนวคิด: การวิเคราะห์สถานะปลายทางและเวลาการถึงเป้าหมายครั้งแรกแบบแม่นตรงสำหรับการกระโดดไปข้างหน้าอย่างสม่ำเสมอบนวงรอบจำกัด"
+    map:
+      - title: "กราฟวงรอบ"
+        detail: "วางตัวเดินสุ่มบนวงแหวนที่มีจำนวนสถานะจำกัด"
+      - title: "การกระโดดไปข้างหน้า"
+        detail: "อนุญาตให้เคลื่อนที่ไปข้างหน้าได้ไม่เกิน m จุดยอดในแต่ละก้าว"
+      - title: "การอนุมานเชิงการจัดหมู่"
+        detail: "นับเส้นทางเพื่อสร้างสูตรผลบวกตรีโกณมิติโดยไม่ต้องคำนวณเวกเตอร์ลักษณะเฉพาะ"
+      - title: "การแจกแจงแบบแม่นตรง"
+        detail: "อธิบายความน่าจะเป็นของสถานะปลายทาง เวลาการถึงเป้าหมาย ค่าเฉลี่ย และความแปรปรวน"
+    problem_heading: "ปัญหาที่งานวิจัยแก้ไข"
+    problem: >-
+      การเดินสุ่มบนกราฟวงรอบใช้แทนระบบที่เป็นคาบได้ แต่การจำกัดให้เคลื่อนที่ด้วยการกระโดดไปข้างหน้าทำให้พฤติกรรมของสถานะปลายทางและเวลาการถึงเป้าหมายเปลี่ยนไป จึงต้องการสูตรที่แม่นตรงโดยไม่พึ่งวิธีเวกเตอร์ลักษณะเฉพาะเพียงอย่างเดียว
+    benefits_heading: "ผู้ได้รับประโยชน์:"
+    beneficiaries:
+      - "นักวิจัยด้านความน่าจะเป็นและกระบวนการสุ่ม"
+      - "ผู้เชี่ยวชาญทฤษฎีกราฟและคณิตศาสตร์เชิงการจัด"
+      - "นักวิเคราะห์เครือข่ายและวงจรไฟฟ้า"
+      - "ผู้สอนและนักพัฒนาแบบจำลอง"
+    method_heading: "วิธีการ"
+    method: >-
+      บนวงรอบที่มี d สถานะ แต่ละก้าวเป็นการกระโดดไปข้างหน้าอิสระ X ในเซต {1,...,m} ด้วยความน่าจะเป็นสม่ำเสมอ งานวิจัยนับเส้นทางเพื่อสร้างฟังก์ชันมวลความน่าจะเป็นของสถานะปลายทางในรูปจำนวนเชิงซ้อน ผลบวกตรีโกณมิติ และสูตรเชิงการจัดหมู่ จากนั้นใช้ความสัมพันธ์เวียนเกิดและฟังก์ชันก่อกำเนิดความน่าจะเป็นเพื่อหาการแจกแจงเวลาการถึงเป้าหมายครั้งแรก ค่าคาดหมาย และความแปรปรวนแบบแม่นตรง พร้อมสาธิตด้วยเกมกระดานวงรอบ 12 สถานะ
+    results_heading: "ผลการศึกษา"
+    results: >-
+      การแจกแจงสถานะปลายทางเข้าใกล้การแจกแจงสม่ำเสมอเร็วขึ้นเมื่อขีดจำกัดการกระโดด m หรือจำนวนก้าว n เพิ่มขึ้น และสม่ำเสมอทันทีเมื่อ m=d สำหรับการทดลองที่ d=12 ค่าคาดหมายของเวลาการถึงเป้าหมายอยู่ระหว่าง 7.75 ถึง 12 ก้าว โดย m=4 เร็วที่สุดและ m=12 นานที่สุด โดยทั่วไปการอนุญาตให้กระโดดไกลขึ้นเพิ่มทั้งค่าเฉลี่ยและความแปรปรวนของเวลาการถึงเป้าหมาย ขณะที่ขนาดกราฟมีอิทธิพลค่อนข้างน้อยในกรณีที่ศึกษา
+
+THAI2023:
+  en:
+    title: "Moringa Leaf Powder Production Planning using Mixed-Integer Linear Programming"
+    map_caption: "Conceptual map: optimising a twelve-week moringa production plan"
+    map:
+      - title: "Production requirements"
+        detail: "Represent weekly demand, processing decisions, capacity, and inventory conditions."
+      - title: "MILP model"
+        detail: "Minimise total production and inventory cost while satisfying every customer demand."
+      - title: "Branch and bound"
+        detail: "Solve the integer planning model in R over a twelve-week horizon."
+      - title: "Cost-saving plan"
+        detail: "Compare optimised schedules with unplanned production under low and high inventory costs."
+    problem_heading: "The problem"
+    problem: >-
+      Moringa leaf-powder producers must meet customer demand while coordinating production and inventory. Unplanned scheduling can create avoidable costs, especially as operations and inventory become more complex for medium and large businesses.
+    benefits_heading: "Who benefits:"
+    beneficiaries:
+      - "Moringa leaf-powder producers"
+      - "Small and medium agro-processing businesses"
+      - "Production and inventory planners"
+      - "Agricultural supply-chain researchers"
+    method_heading: "Method"
+    method: >-
+      A mixed-integer linear programming model minimises production and inventory cost while satisfying all customer demand. The model is solved with a branch-and-bound algorithm implemented in R for a twelve-week horizon. Two simulated cases represent low inventory cost at a university production setting and higher inventory cost in a medium or large business.
+    results_heading: "Results"
+    results: >-
+      Optimised planning reduces total production cost by 7.06% compared with unplanned production in the low-inventory-cost case and by 14.30% in the high-cost case. The approach is especially useful for medium and large businesses with more complex processes and costs, provided the model assumptions and operational constraints are satisfied.
+  th:
+    title: "การวางแผนการผลิตผงใบมะรุมด้วยโปรแกรมเชิงเส้นจำนวนเต็มผสม"
+    map_caption: "แผนผังแนวคิด: การหาค่าเหมาะที่สุดของแผนผลิตผงใบมะรุมระยะเวลา 12 สัปดาห์"
+    map:
+      - title: "ความต้องการการผลิต"
+        detail: "แทนอุปสงค์รายสัปดาห์ การตัดสินใจผลิต กำลังการผลิต และเงื่อนไขสินค้าคงคลัง"
+      - title: "แบบจำลอง MILP"
+        detail: "ลดต้นทุนการผลิตและสินค้าคงคลังรวมให้ต่ำที่สุด พร้อมตอบสนองอุปสงค์ของลูกค้าทั้งหมด"
+      - title: "วิธี Branch and Bound"
+        detail: "แก้แบบจำลองวางแผนจำนวนเต็มด้วยภาษา R ตลอดช่วงเวลา 12 สัปดาห์"
+      - title: "แผนลดต้นทุน"
+        detail: "เปรียบเทียบตารางการผลิตที่เหมาะที่สุดกับการผลิตที่ไม่มีแผนภายใต้ต้นทุนสินค้าคงคลังต่ำและสูง"
+    problem_heading: "ปัญหาที่งานวิจัยแก้ไข"
+    problem: >-
+      ผู้ผลิตผงใบมะรุมต้องตอบสนองอุปสงค์ของลูกค้าพร้อมประสานการผลิตและสินค้าคงคลัง การผลิตที่ไม่มีแผนอาจก่อให้เกิดต้นทุนที่หลีกเลี่ยงได้ โดยเฉพาะเมื่อกระบวนการและสินค้าคงคลังซับซ้อนขึ้นในธุรกิจขนาดกลางและขนาดใหญ่
+    benefits_heading: "ผู้ได้รับประโยชน์:"
+    beneficiaries:
+      - "ผู้ผลิตผงใบมะรุม"
+      - "ธุรกิจแปรรูปเกษตรขนาดเล็กและขนาดกลาง"
+      - "ผู้วางแผนการผลิตและสินค้าคงคลัง"
+      - "นักวิจัยห่วงโซ่อุปทานการเกษตร"
+    method_heading: "วิธีการ"
+    method: >-
+      แบบจำลองโปรแกรมเชิงเส้นจำนวนเต็มผสมลดต้นทุนการผลิตและสินค้าคงคลังให้ต่ำที่สุด พร้อมตอบสนองอุปสงค์ของลูกค้าทั้งหมด แบบจำลองแก้ด้วยอัลกอริทึม Branch and Bound ที่พัฒนาด้วยภาษา R สำหรับช่วงเวลา 12 สัปดาห์ กรณีจำลองสองแบบแทนต้นทุนสินค้าคงคลังต่ำในหน่วยผลิตระดับมหาวิทยาลัย และต้นทุนสูงกว่าในธุรกิจขนาดกลางหรือขนาดใหญ่
+    results_heading: "ผลการศึกษา"
+    results: >-
+      การวางแผนที่เหมาะที่สุดลดต้นทุนการผลิตรวมได้ร้อยละ 7.06 เมื่อเทียบกับการผลิตที่ไม่มีแผนในกรณีต้นทุนสินค้าคงคลังต่ำ และลดได้ร้อยละ 14.30 ในกรณีต้นทุนสูง วิธีนี้มีประโยชน์เป็นพิเศษต่อธุรกิจขนาดกลางและขนาดใหญ่ที่มีกระบวนการและต้นทุนซับซ้อน โดยต้องตรวจสอบว่าสมมติฐานและข้อจำกัดการดำเนินงานของแบบจำลองเป็นจริงก่อนตัดสินใจ
+
+AMM2014:
+  en:
+    title: "An Improved 1/t Method for Numerical Integration of Ill-Behaved Integrals"
+    map_caption: "Conceptual map: combining density-of-states sampling with within-bin averages"
+    map:
+      - title: "Difficult integrals"
+        detail: "Start with sharply peaked integrands that ordinary random sampling rarely visits."
+      - title: "1/t density sampling"
+        detail: "Explore the integrand-value space and estimate its density of states."
+      - title: "Adaptive bin averages"
+        detail: "Replace each fixed bin representative with the sampled average value inside that bin."
+      - title: "Convergent estimates"
+        detail: "Compare estimates with exact values and competing Monte Carlo methods."
+    problem_heading: "The problem"
+    problem: >-
+      Ordinary Monte Carlo sampling can miss narrow, sharply peaked regions and severely underestimate ill-behaved integrals. The conventional 1/t method samples these regions more effectively, but its fixed representative value within each bin produces bin-width error and eventual error saturation.
+    benefits_heading: "Who benefits:"
+    beneficiaries:
+      - "Computational scientists evaluating difficult multidimensional integrals"
+      - "Monte Carlo and density-of-states researchers"
+      - "Applied mathematicians studying numerical convergence"
+      - "Physics and engineering analysts working with sharply peaked functions"
+    method_heading: "Method"
+    method: >-
+      The proposed estimator retains the 1/t random walk for estimating the density of states g(y), but replaces the fixed representative value of each y-space bin with the continuously updated mean of the integrand values actually sampled in that bin. The resulting approximation is a sum of g(y) times the within-bin mean. Tests use sharply peaked Gaussian integrals in one, two, and three dimensions with zero means, standard deviations equal to the square root of 0.4, and the domain [-10, 10] in each dimension. Simple sampling, the conventional 1/t algorithm, and the proposed method are compared over four bin widths, 10^10 trials per run, and 50 independent simulations using exact integral values and fractional accuracy.
+    results_heading: "Results"
+    results: >-
+      Simple sampling severely underestimated the sharply localized integrals, while the conventional 1/t estimates remained sensitive to bin width and eventually reached an error plateau. At bin width 0.0005, the proposed estimates for the one-, two-, and three-dimensional cases were 1.585321, 2.513090, and 3.984088, close to the respective exact values 1.585331, 2.513274, and 3.984371. Its error continued to decrease approximately as N^-1/2 without saturation. Because accuracy was no longer governed by bin width, wider bins could reach all states faster and reduce computational effort.
+  th:
+    title: "วิธี 1/t ที่ปรับปรุงแล้วสำหรับการหาปริพันธ์เชิงตัวเลขของฟังก์ชันที่คำนวณได้ยาก"
+    map_caption: "แผนผังแนวคิด: การรวมการสุ่มความหนาแน่นของสถานะกับค่าเฉลี่ยภายในช่วง"
+    map:
+      - title: "ปริพันธ์ที่คำนวณยาก"
+        detail: "เริ่มจากฟังก์ชันที่มียอดแหลมเฉพาะบริเวณ ซึ่งการสุ่มทั่วไปเข้าถึงได้น้อย"
+      - title: "การสุ่มความหนาแน่นแบบ 1/t"
+        detail: "สำรวจปริภูมิค่าของฟังก์ชันและประมาณความหนาแน่นของสถานะ"
+      - title: "ค่าเฉลี่ยในช่วงที่ปรับตัว"
+        detail: "แทนค่าคงที่ประจำช่วงด้วยค่าเฉลี่ยจากตัวอย่างที่พบจริงภายในช่วงนั้น"
+      - title: "ค่าประมาณที่ลู่เข้า"
+        detail: "เปรียบเทียบผลกับค่าจริงและวิธีมอนติคาร์โลแบบอื่น"
+    problem_heading: "ปัญหาที่งานวิจัยแก้ไข"
+    problem: >-
+      การสุ่มมอนติคาร์โลทั่วไปอาจไม่พบพื้นที่แคบที่ฟังก์ชันมียอดสูงมาก จึงประเมินปริพันธ์ที่คำนวณยากต่ำกว่าความเป็นจริงอย่างมาก แม้อัลกอริทึม 1/t แบบเดิมสำรวจพื้นที่ดังกล่าวได้ดีขึ้น แต่การใช้ค่าคงที่แทนแต่ละช่วงทำให้เกิดความคลาดเคลื่อนจากความกว้างช่วงและเกิดภาวะความคลาดเคลื่อนอิ่มตัว
+    benefits_heading: "ผู้ได้รับประโยชน์:"
+    beneficiaries:
+      - "นักวิทยาศาสตร์เชิงคำนวณที่ประเมินปริพันธ์หลายมิติซึ่งคำนวณได้ยาก"
+      - "นักวิจัยด้านมอนติคาร์โลและความหนาแน่นของสถานะ"
+      - "นักคณิตศาสตร์ประยุกต์ที่ศึกษาการลู่เข้าเชิงตัวเลข"
+      - "นักวิเคราะห์ฟิสิกส์และวิศวกรรมที่ทำงานกับฟังก์ชันยอดแหลม"
+    method_heading: "วิธีการ"
+    method: >-
+      ตัวประมาณที่เสนอคงการเดินสุ่มแบบ 1/t ไว้เพื่อประมาณความหนาแน่นของสถานะ g(y) แต่แทนค่าคงที่ประจำแต่ละช่วงในปริภูมิ y ด้วยค่าเฉลี่ยของค่าฟังก์ชันที่สุ่มพบจริงภายในช่วงนั้นและปรับค่าอย่างต่อเนื่อง ค่าปริพันธ์จึงประมาณจากผลรวมของ g(y) คูณค่าเฉลี่ยภายในช่วง งานวิจัยทดสอบกับปริพันธ์เกาส์เซียนยอดแหลมหนึ่ง สอง และสามมิติ โดยกำหนดค่าเฉลี่ยเป็นศูนย์ ส่วนเบี่ยงเบนมาตรฐานเท่ากับรากที่สองของ 0.4 และโดเมน [-10, 10] ในแต่ละมิติ จากนั้นเปรียบเทียบการสุ่มอย่างง่าย อัลกอริทึม 1/t แบบเดิม และวิธีที่เสนอภายใต้ความกว้างช่วงสี่ระดับ การทดลอง 10^10 ครั้งต่อรอบ และการจำลองอิสระ 50 ชุด โดยใช้ค่าปริพันธ์จริงและความคลาดเคลื่อนเชิงสัดส่วน
+    results_heading: "ผลการศึกษา"
+    results: >-
+      การสุ่มอย่างง่ายประเมินปริพันธ์ยอดแหลมต่ำกว่าความเป็นจริงอย่างมาก ขณะที่ค่าประมาณจาก 1/t แบบเดิมยังไวต่อความกว้างช่วงและเกิดภาวะความคลาดเคลื่อนอิ่มตัว เมื่อใช้ความกว้างช่วง 0.0005 วิธีที่เสนอให้ค่าประมาณกรณีหนึ่ง สอง และสามมิติเท่ากับ 1.585321, 2.513090 และ 3.984088 ซึ่งใกล้ค่าจริง 1.585331, 2.513274 และ 3.984371 ตามลำดับ ความคลาดเคลื่อนลดลงโดยประมาณตาม N^-1/2 โดยไม่อิ่มตัว และเมื่อความแม่นยำไม่ถูกกำหนดด้วยความกว้างช่วงแล้ว จึงใช้ช่วงที่กว้างเพื่อเข้าถึงทุกสถานะได้เร็วขึ้นและลดภาระการคำนวณ
+
+KAJ2023:
+  en:
+    title: "Production Performances and Morphometric Traits of Maehongson Chickens Comparing Praduhangdum, Male Layer Chickens, and Broiler"
+    map_caption: "Conceptual map: comparing four chicken groups under common rearing conditions"
+    map:
+      - title: "Four chicken groups"
+        detail: "Compare Maehongson, Praduhangdum, male layer, and broiler chickens."
+      - title: "Controlled rearing"
+        detail: "Use the same feed and management conditions in a completely randomised design."
+      - title: "Production and morphology"
+        detail: "Measure growth, feed intake, conversion, body dimensions, and crowing frequency."
+      - title: "Breed decisions"
+        detail: "Identify performance differences relevant to farmers and breed development."
+    problem_heading: "The problem"
+    problem: >-
+      Farmers and breed-development programmes lacked a direct comparison of Maehongson chickens with Praduhangdum, male layer, and broiler chickens raised under the same conditions. Evidence was needed on growth, feed efficiency, body form, and distinctive traits to support production choices and local-breed development.
+    benefits_heading: "Who benefits:"
+    beneficiaries:
+      - "Native-chicken farmers and producer groups"
+      - "Livestock breeders and extension officers"
+      - "Agricultural and animal-science researchers"
+      - "Communities developing Maehongson chicken as a geographical-indication product"
+    method_heading: "Method"
+    method: >-
+      A completely randomised experiment used 600 one-day-old chickens: 150 Maehongson, 150 Praduhangdum, 150 male Rhode Island Red layers, and 150 ROSS-308 broilers, with ten pens of fifteen birds per group. All groups received the same commercial native-chicken feed and unrestricted water under common housing conditions. Body weight and feed intake were recorded weekly; eight morphometric traits were measured by sex at several ages; and the crowing of thirty 16-week-old Maehongson males was recorded over 24 hours in eight three-hour periods. The analysis combined ANOVA with Duncan's multiple-range test, Pearson correlation, three-cluster K-means, and Poisson regression.
+    results_heading: "Results"
+    results: >-
+      Broilers had the highest average daily gain at 32.53 grams per day, followed by Praduhangdum at 17.76, male layers at 9.79, and Maehongson chickens at 8.52. Broilers also had the most favourable feed conversion from zero to five weeks (1.37), while Praduhangdum reached the highest final body weight at sixteen weeks (2,011 grams). Female Maehongson chickens had the smallest body width at five and sixteen weeks. The thirty Maehongson males produced 1,219 crows in 24 hours, peaking from 09:00 to 12:00; clustering and regression linked frequent crowing particularly with body height and body weight, providing traits useful for breeding and crowing-contest selection.
+  th:
+    title: "ประสิทธิภาพการผลิตและลักษณะสัณฐานวิทยาของไก่แม่ฮ่องสอนเมื่อเทียบกับไก่ประดู่หางดำ ไก่ไข่เพศผู้ และไก่เนื้อ"
+    map_caption: "แผนผังแนวคิด: การเปรียบเทียบไก่สี่กลุ่มภายใต้สภาพการเลี้ยงเดียวกัน"
+    map:
+      - title: "ไก่สี่กลุ่ม"
+        detail: "เปรียบเทียบไก่แม่ฮ่องสอน ไก่ประดู่หางดำ ไก่ไข่เพศผู้ และไก่เนื้อ"
+      - title: "การเลี้ยงแบบควบคุม"
+        detail: "ใช้อาหารและการจัดการเดียวกันภายใต้แผนการทดลองแบบสุ่มสมบูรณ์"
+      - title: "การผลิตและสัณฐานวิทยา"
+        detail: "วัดการเจริญเติบโต การกินอาหาร อัตราแลกเนื้อ ขนาดร่างกาย และความถี่การขัน"
+      - title: "การตัดสินใจด้านสายพันธุ์"
+        detail: "ระบุความแตกต่างที่สำคัญต่อเกษตรกรและการพัฒนาสายพันธุ์"
+    problem_heading: "ปัญหาที่งานวิจัยแก้ไข"
+    problem: >-
+      เกษตรกรและโครงการพัฒนาสายพันธุ์ยังขาดการเปรียบเทียบโดยตรงระหว่างไก่แม่ฮ่องสอน ไก่ประดู่หางดำ ไก่ไข่เพศผู้ และไก่เนื้อที่เลี้ยงภายใต้สภาพเดียวกัน จึงต้องการหลักฐานด้านการเจริญเติบโต ประสิทธิภาพอาหาร รูปร่าง และลักษณะเฉพาะ เพื่อสนับสนุนการเลือกเลี้ยงและพัฒนาสายพันธุ์ท้องถิ่น
+    benefits_heading: "ผู้ได้รับประโยชน์:"
+    beneficiaries:
+      - "เกษตรกรผู้เลี้ยงไก่พื้นเมืองและกลุ่มผู้ผลิต"
+      - "นักปรับปรุงพันธุ์ปศุสัตว์และเจ้าหน้าที่ส่งเสริม"
+      - "นักวิจัยด้านเกษตรและสัตวศาสตร์"
+      - "ชุมชนที่พัฒนาไก่แม่ฮ่องสอนเป็นสินค้าสิ่งบ่งชี้ทางภูมิศาสตร์"
+    method_heading: "วิธีการ"
+    method: >-
+      การทดลองแบบสุ่มสมบูรณ์ใช้ลูกไก่อายุหนึ่งวัน 600 ตัว ได้แก่ ไก่แม่ฮ่องสอน ไก่ประดู่หางดำ ไก่ไข่เพศผู้สายพันธุ์โรดไอส์แลนด์เรด และไก่เนื้อ ROSS-308 กลุ่มละ 150 ตัว จัดเป็น 10 ซ้ำ ซ้ำละ 15 ตัว ทุกกลุ่มได้รับอาหารไก่พื้นเมืองสำเร็จรูปชนิดเดียวกัน ให้น้ำเต็มที่ และเลี้ยงในสภาพแวดล้อมเดียวกัน บันทึกน้ำหนักตัวและอาหารทุกสัปดาห์ วัดสัณฐานวิทยา 8 ลักษณะแยกเพศในหลายช่วงอายุ และบันทึกการขันของไก่แม่ฮ่องสอนเพศผู้อายุ 16 สัปดาห์ 30 ตัว นาน 24 ชั่วโมง แบ่งเป็น 8 ช่วง ช่วงละ 3 ชั่วโมง วิเคราะห์ด้วย ANOVA วิธีพหุพิสัยของ Duncan สหสัมพันธ์ Pearson การจัดกลุ่ม K-means สามกลุ่ม และการถดถอย Poisson
+    results_heading: "ผลการศึกษา"
+    results: >-
+      ไก่เนื้อมีน้ำหนักเพิ่มเฉลี่ยต่อวันสูงสุด 32.53 กรัมต่อวัน รองลงมาคือไก่ประดู่หางดำ 17.76 กรัม ไก่ไข่เพศผู้ 9.79 กรัม และไก่แม่ฮ่องสอน 8.52 กรัม ไก่เนื้อมีอัตราแลกเนื้อช่วง 0–5 สัปดาห์ดีที่สุดที่ 1.37 ขณะที่ไก่ประดู่หางดำมีน้ำหนักตัวสุดท้ายที่อายุ 16 สัปดาห์สูงสุด 2,011 กรัม ไก่แม่ฮ่องสอนเพศเมียมีความกว้างลำตัวต่ำสุดที่อายุ 5 และ 16 สัปดาห์ ไก่แม่ฮ่องสอนเพศผู้ 30 ตัวขันรวม 1,219 ครั้งใน 24 ชั่วโมง และขันสูงสุดช่วง 09.00–12.00 น. การจัดกลุ่มและการถดถอยชี้ว่าความถี่การขันสัมพันธ์เด่นกับความสูงและน้ำหนักตัว จึงใช้ประกอบการคัดเลือกพันธุ์และคัดเลือกไก่เพื่อประกวดการขันได้
+
+Wald2025:
+  en:
+    title: "Curvature-Calibrated Wald Confidence Ellipsoids in Nonlinear Regression"
+    map_caption: "Conceptual map: calibrating Wald regions for nonlinear model curvature"
+    map:
+      - title: "Nonlinear regression"
+        detail: "Estimate parameters where local model curvature weakens ordinary linear approximations."
+      - title: "Curvature factor"
+        detail: "Measure intrinsic and parameter-effects curvature and bound the nonlinear remainder."
+      - title: "Calibrated cutoff"
+        detail: "Inflate the conventional chi-squared threshold using the data-dependent curvature bound."
+      - title: "Coverage evaluation"
+        detail: "Compare Wald, calibrated, and likelihood-ratio regions in benchmark nonlinear models."
+    problem_heading: "The problem"
+    problem: >-
+      Standard Wald confidence ellipsoids are convenient because they have a closed form, but their finite-sample coverage can be much lower than the nominal level when a nonlinear regression model is strongly curved. More accurate likelihood-based regions can be computationally heavier and still offer no simple explanation of how curvature affects coverage.
+    benefits_heading: "Who benefits:"
+    beneficiaries:
+      - "Applied statisticians using nonlinear regression"
+      - "Scientists fitting growth, decay, and dose-response models"
+      - "Risk and actuarial analysts requiring interpretable confidence regions"
+      - "Statistical-software developers implementing finite-sample corrections"
+    method_heading: "Method"
+    method: >-
+      The paper combines intrinsic and parameter-effects curvature with a higher-order expansion of the nonlinear least-squares estimator. A data-dependent curvature factor controls the nonlinear remainder and supplies an explicit upper bound on the coverage error of the ordinary Wald region. That bound motivates an inflated chi-squared cutoff for a corrected ellipsoid using quantities available from standard nonlinear-regression software. Simulations use Michaelis–Menten, exponential-decay, and logistic-growth models and compare classical Wald, calibrated, and likelihood-ratio regions.
+    results_heading: "Results"
+    results: >-
+      In moderately nonlinear settings, the calibrated ellipsoid substantially improves coverage and usually matches or exceeds likelihood-ratio performance with only modest volume inflation. Under severe curvature and weak identification, it still improves on the ordinary Wald region but does not always restore nominal coverage, clearly showing the practical limit of the correction.
+  th:
+    title: "ทรงรีความเชื่อมั่นแบบ Wald ที่ปรับเทียบด้วยความโค้งสำหรับการถดถอยไม่เชิงเส้น"
+    map_caption: "แผนผังแนวคิด: การปรับเทียบขอบเขต Wald ให้สอดคล้องกับความโค้งของแบบจำลองไม่เชิงเส้น"
+    map:
+      - title: "การถดถอยไม่เชิงเส้น"
+        detail: "ประมาณพารามิเตอร์ในกรณีที่ความโค้งของแบบจำลองลดความแม่นยำของการประมาณเชิงเส้น"
+      - title: "ตัวประกอบความโค้ง"
+        detail: "วัดความโค้งแท้และความโค้งจากผลของพารามิเตอร์ พร้อมควบคุมพจน์คงเหลือไม่เชิงเส้น"
+      - title: "ค่าตัดที่ปรับเทียบ"
+        detail: "ขยายเกณฑ์ไคกำลังสองแบบเดิมด้วยขอบเขตความโค้งที่ขึ้นกับข้อมูล"
+      - title: "ประเมินความครอบคลุม"
+        detail: "เปรียบเทียบขอบเขต Wald แบบปรับเทียบ และแบบอัตราส่วนภาวะน่าจะเป็นในแบบจำลองมาตรฐาน"
+    problem_heading: "ปัญหาที่งานวิจัยแก้ไข"
+    problem: >-
+      ทรงรีความเชื่อมั่นแบบ Wald ใช้งานสะดวกเพราะมีสูตรปิด แต่ความน่าจะเป็นครอบคลุมในตัวอย่างจำกัดอาจต่ำกว่าระดับที่กำหนดมากเมื่อแบบจำลองถดถอยไม่เชิงเส้นมีความโค้งสูง ขอบเขตที่อาศัยภาวะน่าจะเป็นซึ่งแม่นยำกว่าอาจใช้การคำนวณมาก และไม่ได้อธิบายอย่างง่ายว่าความโค้งกระทบความครอบคลุมอย่างไร
+    benefits_heading: "ผู้ได้รับประโยชน์:"
+    beneficiaries:
+      - "นักสถิติประยุกต์ที่ใช้การถดถอยไม่เชิงเส้น"
+      - "นักวิทยาศาสตร์ที่ประมาณแบบจำลองการเติบโต การสลายตัว และการตอบสนองต่อขนาดยา"
+      - "นักวิเคราะห์ความเสี่ยงและคณิตศาสตร์ประกันภัยที่ต้องการขอบเขตความเชื่อมั่นซึ่งตีความได้"
+      - "นักพัฒนาซอฟต์แวร์สถิติที่สร้างวิธีแก้ไขสำหรับตัวอย่างจำกัด"
+    method_heading: "วิธีการ"
+    method: >-
+      งานวิจัยผสานความโค้งแท้และความโค้งจากผลของพารามิเตอร์เข้ากับการขยายอันดับสูงของตัวประมาณกำลังสองน้อยที่สุดไม่เชิงเส้น ตัวประกอบความโค้งที่ขึ้นกับข้อมูลใช้ควบคุมพจน์คงเหลือไม่เชิงเส้นและให้ขอบเขตบนที่ชัดเจนของความคลาดเคลื่อนด้านความครอบคลุมของขอบเขต Wald แบบเดิม ขอบเขตดังกล่าวนำไปสู่การขยายค่าตัดไคกำลังสองสำหรับทรงรีที่แก้ไขแล้ว โดยใช้ปริมาณที่มีในซอฟต์แวร์การถดถอยทั่วไป การจำลองใช้แบบจำลอง Michaelis–Menten การสลายตัวแบบเอ็กซ์โพเนนเชียล และการเติบโตแบบโลจิสติก พร้อมเปรียบเทียบขอบเขต Wald แบบเดิม แบบปรับเทียบ และแบบอัตราส่วนภาวะน่าจะเป็น
+    results_heading: "ผลการศึกษา"
+    results: >-
+      ในกรณีไม่เชิงเส้นระดับปานกลาง ทรงรีที่ปรับเทียบช่วยเพิ่มความครอบคลุมอย่างมาก และโดยทั่วไปให้ผลเทียบเท่าหรือดีกว่าขอบเขตอัตราส่วนภาวะน่าจะเป็น โดยเพิ่มปริมาตรเพียงเล็กน้อย เมื่อความโค้งรุนแรงและพารามิเตอร์ระบุได้ไม่ชัดเจน วิธีนี้ยังดีกว่า Wald แบบเดิม แต่ไม่สามารถคืนระดับความครอบคลุมตามที่กำหนดได้ทุกครั้ง จึงแสดงขีดจำกัดเชิงปฏิบัติของการแก้ไขได้อย่างชัดเจน

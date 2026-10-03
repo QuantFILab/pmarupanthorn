@@ -18,16 +18,16 @@ publication_types: ["article-journal"]
 publication: "*SSRN*"
 publication_short: ""
 
-abstract:In this study, we develop a stress-responsive tail-risk limit that extends conventional fixedlevel Value-at-Risk by allowing the nominal exception target to vary systematically with market conditions. We implement this idea within the ΛVaR framework by modelling the probability/loss function Λ t (•) as a smooth, bounded, monotone sigmoid whose location and steepness are driven by an option-implied stress signal: a rolling, standardised score based on the log of the Cboe VIX Index. The construction remains deliberately modular. Any predictive return distribution can be paired with the same stress mechanism through a simple "forecast-and-distort" pipeline that aligns the predictive CDF with the stress-indexed target curve under strict, no-look-ahead information constraints. Using an out-of-sample estimation scheme, we evaluate whether the VIX-linked specification improves tail-risk control relative to both fixed-α VaR and time-invariant ΛVaR. Empirically, the VIX-driven rule tightens loss limits in stress episodes and relaxes them as conditions normalise, yielding economically interpretable trade-offs in average tightness, turnover, and exceedance severity. Sensitivity analyses show that the direction of coverage effects is stable across reasonable constraint sets, while ablation exercises indicate that substituting realised-volatility stress proxies for VIX weakens calibration. Taken together, the results point to a practical route for implementing dynamic, state-dependent tail-risk targets with transparent policy controls.
+abstract: ""
 # Summary. An optional shortened abstract.
-summary: 
+summary: "A VIX-driven Lambda Value at Risk framework that adapts tail-risk limits smoothly as market stress changes."
 
 tags:
 - Market Microstructure
-featured: true
-# links:
-# - name: ""
-#   url: ""
+featured: false
+links:
+- name: "<span class='research-link-en'>Preprint</span><span class='research-link-th' lang='th' hidden>ฉบับพิมพ์ล่วงหน้า</span>"
+  url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6002314"
 url_pdf: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6002314
 url_code: ''
 url_dataset: ''
@@ -42,7 +42,7 @@ url_video: ''
 image:
   caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/jdD8gXaTZsc)'
   focal_point: ""
-  preview_only: false
+  preview_only: true
 
 # Associated Projects (optional).
 #   Associate this publication with one or more of your projects.
@@ -59,4 +59,4 @@ projects: []
 slides: example
 ---
 
-
+{{< research-bilingual key="lvarvix2026" >}}

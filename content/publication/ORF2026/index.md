@@ -4,7 +4,7 @@ authors:
 - Nassamon Bootwisas
 - admin
 date: "2026-09-12T00:00:00Z"
-doi: "https://doi.org/10.1007/s43069-026-00695-2"
+doi: "10.1007/s43069-026-00695-2"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: "2026-09-12T00:00:00Z"
@@ -17,11 +17,20 @@ publication_types: ["article-journal"]
 # Publication name and optional abbreviated publication name.
 publication: "*Operations Research Forum, 7, 106, 2026*"
 publication_short: "*Oper. Res. Forum*"
+journal_metrics:
+  as_of: 2025
+  scopus:
+    quartile: Q2
+    percentile: "73rd percentile"
+    url: "https://www.scopus.com/sourceid/21101080460"
+  scimago:
+    quartile: Q2
+    url: "https://www.scimagojr.com/journalsearch.php?q=21101080460&tip=sid&clean=0"
 
-abstract: Consumer complaint records can help prioritize supervisory review, but they do not directly identify verified consumer harm. This study formulates a prospective company product review problem using a calendar-complete design and defines company-reported relief as the primary observable workload marker. The state conditional representation distinguishes ordinary activity, relief count escalation, overlapping count and composition escalation, and excess relief composition. The evaluation includes explicit persistence rules, a global recurrent negative binomial forecaster, alternative boosted tree learners, probability calibration, model confidence sets, rolling target boundaries, drift diagnostics, periodic refitting, and global and local Shapley contributions. Delayed relief persistence recovers much of the event ranking signal, although matched boosting retains incremental value. The state representation improves pooled excess relief discrimination under LightGBM and XGBoost but not CatBoost, and weekly capacity comparisons do not identify a unique winner. The evidence supports administrative review prioritization among established high activity cells rather than verified harm detection or universal model superiority.
+abstract: ""
 
 # Summary. An optional shortened abstract.
-summary: ""
+summary: "An explainable, prospective early-warning framework for prioritizing review of company-product cells with escalating CFPB-reported relief workload."
 
 tags:
 - Statistical Machine Learning
@@ -39,11 +48,17 @@ url_slides: ''
 url_source: ''
 url_video: ''
 
+links:
+- name: "<span class='research-link-en'>Preprint not available</span><span class='research-link-th' lang='th' hidden>ยังไม่มีฉบับพิมพ์ล่วงหน้า</span>"
+  url: "#preprint-unavailable"
+
 image:
   caption: "Model ranking, calibration, and XGBoost state contributions."
   focal_point: Center
-  preview_only: false
+  preview_only: true
 
 projects: []
 slides: ""
 ---
+
+{{< research-bilingual key="ORF2026" >}}

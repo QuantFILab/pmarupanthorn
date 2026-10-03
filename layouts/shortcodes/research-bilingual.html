@@ -1,0 +1,60 @@
+{{- $key := .Get "key" -}}
+{{- $entry := index site.Data.research_overviews $key -}}
+{{- if not $entry -}}
+  {{- errorf "No bilingual research overview found for %q" $key -}}
+{{- end -}}
+{{- $english := $entry.en -}}
+{{- $thai := $entry.th -}}
+
+<div class="research-bilingual" data-research-bilingual data-title-en="{{ $english.title }}" data-title-th="{{ $thai.title }}">
+  <div class="research-language-switch" role="group" aria-label="Select article language">
+    <button class="research-language-button" type="button" data-research-language="en" aria-controls="research-content-{{ $key }}-en" aria-pressed="true">English</button>
+    <button class="research-language-button research-thai-font" type="button" data-research-language="th" aria-controls="research-content-{{ $key }}-th" aria-pressed="false">ไทย</button>
+  </div>
+
+  {{- range $language, $content := dict "en" $english "th" $thai }}
+  <section id="research-content-{{ $key }}-{{ $language }}" class="research-language-panel{{ if eq $language "th" }} research-language-panel--th{{ end }}" data-research-language-panel="{{ $language }}" lang="{{ $language }}"{{ if eq $language "th" }} hidden{{ end }}>
+    {{- $mapImage := $.Page.Resources.GetMatch (printf "concept-map-%s.*" $language) }}
+    {{- with $mapImage }}
+    <figure class="research-concept-map research-concept-map--image">
+      <img src="{{ .RelPermalink }}" alt="{{ $content.map_caption }}" loading="eager">
+    </figure>
+    {{- else }}
+    <figure class="research-concept-map" aria-labelledby="research-map-caption-{{ $key }}-{{ $language }}">
+      <figcaption id="research-map-caption-{{ $key }}-{{ $language }}">{{ $content.map_caption }}</figcaption>
+      <ol class="research-map-flow">
+        {{- range $index, $step := $content.map }}
+        <li class="research-map-step">
+          <span class="research-map-number" aria-hidden="true">{{ add $index 1 }}</span>
+          <strong>{{ $step.title }}</strong>
+          <p>{{ $step.detail }}</p>
+        </li>
+        {{- end }}
+      </ol>
+    </figure>
+    {{- end }}
+
+    <h2>{{ $content.problem_heading }}</h2>
+    <p>{{ $content.problem }}</p>
+    <p><strong>{{ $content.benefits_heading }}</strong></p>
+    <ul>
+      {{- range $content.beneficiaries }}
+      <li>{{ . }}</li>
+      {{- end }}
+    </ul>
+
+    <h2>{{ $content.method_heading }}</h2>
+    <p>{{ $content.method }}</p>
+
+    <h2>{{ $content.results_heading }}</h2>
+    <p>{{ $content.results }}</p>
+  </section>
+  {{- end }}
+
+  <noscript>
+    <style>
+      .research-language-switch { display: none !important; }
+      .research-language-panel[hidden] { display: block !important; }
+    </style>
+  </noscript>
+</div>

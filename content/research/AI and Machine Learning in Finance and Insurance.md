@@ -6,6 +6,10 @@ date: "2024-06-28T00:00:00Z"
 
 type: docs
 
+image:
+  filename: research-themes/ai-machine-learning.png
+  focal_point: Center
+
 # Optional header image (relative to `assets/media/` folder).
 header:
   caption: ""
@@ -17,13 +21,13 @@ header:
 ### Large Language Models
 
 
-- [Leveraging Generative Pre-trained Transformers for the Integration of Environmental, Social, and Governance Considerations into Investment Management for Thai Stock](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4715431) (Nuthdanai, Teerasit, Pasin, Jutha, Chanon, Carat)
+- [Leveraging Generative Pre-trained Transformers for the Integration of Environmental, Social, and Governance Considerations into Investment Management for Thai Stock]({{< relref "/publication/SSRN20242" >}}) (Nuthdanai, Teerasit, Pasin, Jutha, Chanon, Carat)
 
 ___
 
 ### Classification in Financial Market
 
-- [State Conditional Boosting for Prospective Early Warning of CFPB Reported Relief Workload](https://quantfilab.github.io/pmarupanthorn/publication/orf2026/) (Nassamon, Pasin)
+- [State Conditional Boosting for Prospective Early Warning of CFPB Reported Relief Workload]({{< relref "/publication/ORF2026" >}}) (Nassamon, Pasin)
 
 ___
 

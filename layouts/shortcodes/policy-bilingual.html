@@ -1,0 +1,82 @@
+{{- $key := .Get "key" -}}
+{{- $entry := index site.Data.policy_overviews $key -}}
+{{- if not $entry -}}
+  {{- errorf "No bilingual policy overview found for %q" $key -}}
+{{- end -}}
+{{- $english := $entry.en -}}
+{{- $thai := $entry.th -}}
+
+<style>
+  .policy-category-style .research-language-switch {
+    justify-content: flex-start;
+    margin-bottom: 1.5rem;
+  }
+
+  .policy-category-panel {
+    font-size: 14px;
+  }
+
+  .policy-category-panel h3 {
+    margin-top: 1.25rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .policy-category-panel hr {
+    margin: 1.5rem 0;
+  }
+
+  .policy-category-panel ul {
+    margin-bottom: 0;
+  }
+
+  .policy-category-panel.research-language-panel--th,
+  .policy-category-panel.research-language-panel--th p,
+  .policy-category-panel.research-language-panel--th li {
+    font-size: 1.3rem !important;
+    line-height: 1.45 !important;
+  }
+
+  .policy-category-panel.research-language-panel--th h3 {
+    font-size: 1.65rem !important;
+    line-height: 1.2 !important;
+  }
+</style>
+
+<div class="research-bilingual policy-category-style" data-research-bilingual data-title-en="{{ $english.title }}" data-title-th="{{ $thai.title }}">
+  <div class="research-language-switch" role="group" aria-label="Select policy language">
+    <button class="research-language-button" type="button" data-research-language="en" aria-controls="policy-content-{{ $key }}-en" aria-pressed="true">English</button>
+    <button class="research-language-button research-thai-font" type="button" data-research-language="th" aria-controls="policy-content-{{ $key }}-th" aria-pressed="false">ไทย</button>
+  </div>
+
+  {{- range $language, $content := dict "en" $english "th" $thai }}
+  <section id="policy-content-{{ $key }}-{{ $language }}" class="research-language-panel policy-category-panel{{ if eq $language "th" }} research-language-panel--th{{ end }}" data-research-language-panel="{{ $language }}" lang="{{ $language }}"{{ if eq $language "th" }} hidden{{ end }}>
+    <h3>{{ $content.focus_heading }}</h3>
+    <ul>
+      {{- range $content.focus }}
+      <li>{{ . }}</li>
+      {{- end }}
+    </ul>
+
+    <hr>
+
+    <h3>{{ $content.country_heading }}</h3>
+    <p>{{ $content.country }}</p>
+
+    <hr>
+
+    <h3>{{ $content.official_heading }}</h3>
+    <ul>
+      {{- range $content.sources }}
+      <li><a href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ .label }}</a></li>
+      {{- end }}
+    </ul>
+  </section>
+  {{- end }}
+
+  <noscript>
+    <style>
+      .research-language-switch { display: none !important; }
+      .research-language-panel[hidden] { display: block !important; }
+    </style>
+  </noscript>
+</div>

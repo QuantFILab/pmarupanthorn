@@ -7,10 +7,10 @@ authors:
 - Gareth W Peters
 - Kylie-Anne Richards
 date: "2024-07-03T00:00:00Z"
-doi: "https://doi.org/10.1016/j.eneco.2024.107724"
+doi: "10.1016/j.eneco.2024.107724"
 
 # Schedule page publish date (NOT publication's date).
-publishDate: "2017-01-01T00:00:00Z"
+publishDate: "2024-07-03T00:00:00Z"
 
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
@@ -18,21 +18,31 @@ publishDate: "2017-01-01T00:00:00Z"
 publication_types: ["article-journal"]
 
 # Publication name and optional abbreviated publication name.
-publication: "*Energy Economics, 107724, 2024*"
-publication_short: ""
+publication: "*Energy Economics, 136, 107724, 2024*"
+publication_short: "*Energy Econ.*"
+journal_metrics:
+  as_of: 2025
+  scopus:
+    quartile: Q1
+    percentile: "99th percentile"
+    url: "https://www.scopus.com/sourceid/29374"
+  scimago:
+    quartile: Q1
+    url: "https://www.scimagojr.com/journalsearch.php?q=29374&tip=sid&clean=0"
 
-abstract: Mechanisms to incentivize divestment strategies, such as divestment schedules, are an important component of carbon reduction strategies. We use dynamic asset allocation methodologies to assess this impact over time on index portfolios (S&P 500 and FTSE 100), and global exchange-traded funds (ETFs). Although return profiles are not affected, the risk profile of S&P 500 divestment portfolios is impacted by rapid divestment strategies as divestment concentration increases. Instantaneous divestment may benefit management structure, while slower divestment provides greater stability in portfolios’ tracking errors and benefits carbon reduction, especially from reinvested capital. Divesting from energy and utilities sectors reduces carbon footprint of up to 7%, while ETFs’ divesting from highly carbon concentrated ETFs offers further carbon footprint reductions. Investing in funds with low carbon footprint results in lower dividend returns and management fees. Although ETFs’ returns are insensitive to divestment strategies and schedules, their risk profiles are affected, proportionally to their carbon intensity, especially for rapid divestment and at the expense of higher tracking errors. Divestment strategies based on ESG rating screening of FTSE 100 portfolios improve diversification and impact risk/return performance. Our study underscores the importance of considering investors’ demographics, such as dividends, management structure, and carbon reduction targets.
+abstract: ""
 # Summary. An optional shortened abstract.
-summary: 
+summary: "A dynamic assessment of how fossil-fuel divestment schedules affect portfolio risk, return, stability, and carbon reduction."
 
 tags:
 - Sustainable Finance
 - Portfolio Optimization
-- Statisitical Machine Learning
+- Dynamic Asset Allocation
+- Carbon Reduction
 featured: true
-# links:
-# - name: ""
-#   url: ""
+links:
+- name: "<span class='research-link-en open-access-link'>Open Access</span><span class='research-link-th open-access-link' lang='th' hidden>บทความแบบเปิด (Open Access)</span>"
+  url: "https://www.sciencedirect.com/science/article/pii/S0140988324004328"
 url_pdf: https://www.sciencedirect.com/science/article/pii/S0140988324004328
 url_code: 'https://github.com/QuantFILab/Divfolio'
 url_dataset: ''
@@ -45,9 +55,9 @@ url_video: ''
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
 image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/jdD8gXaTZsc)'
-  focal_point: ""
-  preview_only: false
+  caption: 'Conceptual map of dynamic fossil-fuel divestment schedules and portfolio trade-offs.'
+  focal_point: "Center"
+  preview_only: true
 
 # Associated Projects (optional).
 #   Associate this publication with one or more of your projects.
@@ -61,7 +71,7 @@ projects: []
 #   Simply enter your slide deck's filename without extension.
 #   E.g. `slides: "example"` references `content/slides/example/index.md`.
 #   Otherwise, set `slides: ""`.
-slides: example
+slides: ""
 ---
 
-
+{{< research-bilingual key="EE2024" >}}

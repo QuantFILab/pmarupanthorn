@@ -4,6 +4,9 @@ weight: 70
 summary: My focus is on applying the Monte Carlo method in various fields, with an emphasis on improving and developing novel approaches.
 date: "2024-03-29T00:00:00Z"
 type: docs
+image:
+  filename: research-themes/monte-carlo-simulation.png
+  focal_point: Center
 # reading_time: false  # Show estimated reading time?
 # share: false  # Show social sharing links?
 # profile: false  # Show author profile?
@@ -19,22 +22,22 @@ header:
   
 ### Monte Carlo Integration
 
-- [A 1/t Algorithm with the Density of Two States for Estimating Multidimensional Integrals](https://www.sciencedirect.com/science/article/abs/pii/S0010465517302060) (Wanyok, Pasin)
-- [Obviating the Bin Width Effect of the 1/t Algorithm for Multidimensional Numerical Integration](https://www.sciencedirect.com/science/article/abs/pii/S0168927415001373) (Wanyok, Pasin)
-- [An Improved 1/t Method for Numerical Integration of Ill-Behaved Integrals](https://www.researchgate.net/profile/Wanyok-Atisattapong/publication/280941144_An_improved_1t_method_for_numerical_integration_of_ill-behaved_integrals/links/55cd860908aeeaab209b5424/An-improved-1-t-method-for-numerical-integration-of-ill-behaved-integrals.pdf) (Wanyok, Pasin)
+- [A 1/t Algorithm with the Density of Two States for Estimating Multidimensional Integrals]({{< relref "/publication/CPC2014" >}}) (Wanyok, Pasin)
+- [Obviating the Bin Width Effect of the 1/t Algorithm for Multidimensional Numerical Integration]({{< relref "/publication/ANM2016" >}}) (Wanyok, Pasin)
+- [An Improved 1/t Method for Numerical Integration of Ill-Behaved Integrals]({{< relref "/publication/AMM2014" >}}) (Wanyok, Pasin)
 
 ___
 
 ### Ramdom Walk on Network
 
-- [Forward Jump Random Walk on a Cycle Graph and Its Hitting Time](https://ph02.tci-thaijo.org/index.php/SciTechAsia/article/view/251338) (Rachanai, Pasin)
-- [Wang–Landau Sampling for Estimation of the Reliability of Physical Networks](https://www.sciencedirect.com/science/article/abs/pii/S0010465521000059) (Wanyok, Pasin)
+- [Forward Jump Random Walk on a Cycle Graph and Its Hitting Time]({{< relref "/publication/STA2024" >}}) (Rachanai, Pasin)
+- [Wang–Landau Sampling for Estimation of the Reliability of Physical Networks]({{< relref "/publication/CPC2021" >}}) (Wanyok, Pasin)
 ___
 
 ### Confidence Region and Asymptotic Statistics
 
-- [Asymptotic Confidence Ellipse for Lognormal Distribution with Applications in Actuarial Pricing](https://ird.sut.ac.th/journal/sjst/#/los/manuscript/25865) (Nassamon, Uparittha, Pasin)
-- [Curvature-Calibrated Wald Confidence Ellipsoids in Nonlinear Regression](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5860422) (Nassamon, Pasin)
+- [Asymptotic Confidence Ellipse for Lognormal Distribution with Applications in Actuarial Pricing]({{< relref "/publication/SSJ2025" >}}) (Nassamon, Uparittha, Pasin)
+- [Curvature-Calibrated Wald Confidence Ellipsoids in Nonlinear Regression]({{< relref "/publication/Wald2025" >}}) (Nassamon, Pasin)
 ___
 
 ### Stochastic Optimization

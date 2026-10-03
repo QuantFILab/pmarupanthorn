@@ -14,21 +14,31 @@ publishDate: "2017-01-01T00:00:00Z"
 publication_types: ["article-journal"]
 
 # Publication name and optional abbreviated publication name.
-publication: "*Science & Technology Asia, 29-46, 2024*"
+publication: "*Science & Technology Asia, 29(1), 29-46, 2024*"
 publication_short: ""
+journal_metrics:
+  as_of: 2025
+  scopus:
+    quartile: Q3
+    percentile: "28th percentile"
+    url: "https://www.scopus.com/sourceid/21100902543"
+  scimago:
+    quartile: Q3
+    url: "https://www.scimagojr.com/journalsearch.php?q=21100902543&tip=sid&clean=0"
+doi: "10.14456/scitechasia.2024.3"
 
-abstract: This paper presents an investigation into a random walk on a cycle graph with restricted forward movement at most 𝑚 steps, known as the forward jump random walk. The study derives exact formulas for the probability mass function of the arriving state, the hitting time, and its expected value and variance, where those solutions can be expressed in terms of trigonometric sums. These formulas are obtained using a combinatorial method as an alternative to the eigenvector-based approach commonly used.
+abstract: ""
 # Summary. An optional shortened abstract.
-summary: 
+summary: "Exact combinatorial formulas for arrival probabilities and hitting-time moments of a forward-jump random walk on a cycle graph."
 
 tags:
 - Stochastic Process
 - Simulation
 featured: false
-# links:
-# - name: ""
-#   url: ""
-url_pdf: https://ph02.tci-thaijo.org/index.php/SciTechAsia/article/view/251338
+links:
+- name: "<span class='research-link-en'>Open Access</span><span class='research-link-th' lang='th' hidden>บทความเปิด</span>"
+  url: "https://ph02.tci-thaijo.org/index.php/SciTechAsia/article/view/251338"
+url_pdf: https://ph02.tci-thaijo.org/index.php/SciTechAsia/article/download/251338/170314/941086
 url_code: 'https://github.com/QuantFILab/Forward-Jump-Random-Walk'
 url_dataset: ''
 url_poster: ''
@@ -42,7 +52,7 @@ url_video: ''
 image:
   caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/jdD8gXaTZsc)'
   focal_point: ""
-  preview_only: false
+  preview_only: true
 
 # Associated Projects (optional).
 #   Associate this publication with one or more of your projects.
@@ -59,4 +69,4 @@ projects: []
 slides: example
 ---
 
-
+{{< research-bilingual key="STA2024" >}}

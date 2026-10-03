@@ -1,0 +1,85 @@
+THETS2026:
+  en:
+    title: "Thailand Emissions Trading System Transition (Thailand ETS)"
+    focus_heading: "Policy Focus"
+    focus:
+      - "Facility-level measurement, reporting, verification, and emissions-data readiness"
+      - "Sector coverage, emissions-cap, allowance-allocation, and compliance design"
+      - "Registry, trading-platform, market-oversight, and price-stability safeguards"
+      - "Phased piloting, competitiveness assessment, and transition evaluation"
+    country_heading: "Country"
+    country: "Thailand"
+    official_heading: "Official Policy Information"
+    map_caption: "Transition pathway from voluntary carbon mechanisms to a regulated Thailand ETS"
+    map:
+      - title: "Voluntary foundation"
+        detail: "Build on T-VER experience and Thailand V-ETS pilot activities without confusing carbon credits with emission allowances."
+      - title: "MRV readiness"
+        detail: "Establish consistent facility-level measurement, reporting, verification, registries, and auditable emissions data."
+      - title: "ETS market design"
+        detail: "Set sector coverage, the emissions cap, allowance allocation, trading rules, compliance obligations, and market safeguards."
+      - title: "Phased transition"
+        detail: "Pilot, evaluate, and refine the system before broader mandatory implementation under Thailand's climate framework."
+    context_heading: "Policy context"
+    context: >-
+      Thailand is preparing the institutional and legal foundations for stronger carbon pricing. Existing voluntary mechanisms—including T-VER and pilot emissions-rights trading—provide useful experience, while the draft Climate Change Act contemplates mandatory greenhouse-gas reporting and an emissions trading system. The transition must clearly distinguish project-based carbon credits from facility-level emission allowances and must protect data integrity, competitiveness, and market confidence.
+    stakeholders_heading: "Who benefits:"
+    stakeholders:
+      - "Thai climate-policy agencies and market regulators"
+      - "Industrial facilities that may become covered entities"
+      - "Carbon-market participants, financial institutions, and investors"
+      - "Verification bodies, registry operators, and emissions-data providers"
+    framework_heading: "Transition framework"
+    framework: >-
+      A phased quantitative framework should first establish verified emissions baselines and assess sector readiness. Policymakers can then simulate alternative caps, free allocation, auctioning, banking, compliance periods, and price-containment mechanisms. Registry and trading-platform tests should run alongside MRV pilots. Distributional, competitiveness, carbon-leakage, liquidity, and price-volatility effects should be evaluated before each expansion, with transparent review points for adjusting the cap and operating rules.
+    outcomes_heading: "Expected policy outcomes"
+    outcomes: >-
+      A carefully staged transition can provide predictable compliance obligations, credible emissions reductions, transparent allowance ownership, and clearer carbon-price signals for low-carbon investment. The final design remains dependent on enacted legislation, reliable facility data, regulator capacity, and consultation with affected sectors; the transition framework therefore emphasises testing and revision rather than assuming that one imported ETS design will fit Thailand unchanged.
+    sources_heading: "Official references:"
+    sources:
+      - label: "Thailand Greenhouse Gas Management Organization: Pilot Project for GHG Emissions Rights Trading System"
+        url: "https://carbonmarket.tgo.or.th/index.php?lang=EN&mod=dHJhZGVfcGlsb3Q%3D"
+      - label: "Department of Climate Change and Environment: ETS mechanism under the draft Climate Change Act"
+        url: "https://www.dcce.go.th/14391/"
+  th:
+    title: "การเปลี่ยนผ่านสู่ระบบซื้อขายสิทธิในการปล่อยก๊าซเรือนกระจกของประเทศไทย (Thailand ETS)"
+    focus_heading: "ประเด็นนโยบาย"
+    focus:
+      - "ความพร้อมของระบบตรวจวัด รายงาน ทวนสอบ และข้อมูลการปล่อยระดับสถานประกอบการ"
+      - "การกำหนดภาคส่วน เพดานการปล่อย การจัดสรรสิทธิ และข้อกำหนดการปฏิบัติตาม"
+      - "ทะเบียน แพลตฟอร์มซื้อขาย การกำกับตลาด และมาตรการรักษาเสถียรภาพราคา"
+      - "การทดลองเป็นระยะ การประเมินความสามารถในการแข่งขัน และการติดตามผลการเปลี่ยนผ่าน"
+    country_heading: "ประเทศ"
+    country: "ประเทศไทย"
+    official_heading: "ข้อมูลนโยบายจากหน่วยงานทางการ"
+    map_caption: "เส้นทางการเปลี่ยนผ่านจากกลไกคาร์บอนภาคสมัครใจสู่ระบบ ETS ภาคบังคับของประเทศไทย"
+    map:
+      - title: "ฐานจากภาคสมัครใจ"
+        detail: "ต่อยอดประสบการณ์ T-VER และโครงการนำร่อง Thailand V-ETS โดยแยกคาร์บอนเครดิตออกจากสิทธิการปล่อยอย่างชัดเจน"
+      - title: "ความพร้อมด้าน MRV"
+        detail: "จัดทำระบบตรวจวัด รายงาน และทวนสอบระดับสถานประกอบการ รวมถึงทะเบียนและข้อมูลการปล่อยที่ตรวจสอบย้อนหลังได้"
+      - title: "การออกแบบตลาด ETS"
+        detail: "กำหนดภาคส่วน เพดานการปล่อย การจัดสรรสิทธิ กฎการซื้อขาย หน้าที่ปฏิบัติตาม และมาตรการรักษาเสถียรภาพตลาด"
+      - title: "การเปลี่ยนผ่านเป็นระยะ"
+        detail: "ทดลอง ประเมิน และปรับปรุงระบบก่อนขยายการบังคับใช้ภายใต้กรอบกฎหมายด้านภูมิอากาศของไทย"
+    context_heading: "บริบทเชิงนโยบาย"
+    context: >-
+      ประเทศไทยกำลังเตรียมโครงสร้างสถาบันและกฎหมายสำหรับการกำหนดราคาคาร์บอนที่เข้มแข็งขึ้น กลไกภาคสมัครใจที่มีอยู่ เช่น T-VER และโครงการนำร่องซื้อขายสิทธิการปล่อยก๊าซเรือนกระจก ช่วยสร้างประสบการณ์เบื้องต้น ขณะที่ร่างพระราชบัญญัติการเปลี่ยนแปลงสภาพภูมิอากาศกำหนดแนวทางสำหรับการรายงานก๊าซเรือนกระจกภาคบังคับและระบบ ETS การเปลี่ยนผ่านต้องแยกคาร์บอนเครดิตระดับโครงการออกจากสิทธิการปล่อยระดับสถานประกอบการอย่างชัดเจน พร้อมคุ้มครองความถูกต้องของข้อมูล ความสามารถในการแข่งขัน และความเชื่อมั่นของตลาด
+    stakeholders_heading: "ผู้ได้รับประโยชน์:"
+    stakeholders:
+      - "หน่วยงานนโยบายภูมิอากาศและหน่วยงานกำกับตลาดของไทย"
+      - "สถานประกอบการอุตสาหกรรมที่อาจอยู่ภายใต้ระบบ"
+      - "ผู้เข้าร่วมตลาดคาร์บอน สถาบันการเงิน และนักลงทุน"
+      - "หน่วยทวนสอบ ผู้ดำเนินงานทะเบียน และผู้ให้บริการข้อมูลการปล่อย"
+    framework_heading: "กรอบการเปลี่ยนผ่าน"
+    framework: >-
+      กรอบเชิงปริมาณแบบเป็นระยะควรเริ่มจากการจัดทำเส้นฐานการปล่อยที่ผ่านการทวนสอบและประเมินความพร้อมรายภาคส่วน จากนั้นจึงจำลองทางเลือกของเพดานการปล่อย การจัดสรรสิทธิฟรี การประมูล การสะสมสิทธิ ช่วงเวลาปฏิบัติตาม และกลไกควบคุมราคา ควรทดสอบทะเบียนและแพลตฟอร์มซื้อขายควบคู่กับระบบ MRV พร้อมประเมินผลด้านการกระจายภาระ ความสามารถในการแข่งขัน การรั่วไหลของคาร์บอน สภาพคล่อง และความผันผวนของราคา ก่อนขยายระบบแต่ละระยะ โดยกำหนดจุดทบทวนที่โปร่งใสสำหรับปรับเพดานและกติกา
+    outcomes_heading: "ผลลัพธ์เชิงนโยบายที่คาดหวัง"
+    outcomes: >-
+      การเปลี่ยนผ่านอย่างเป็นขั้นตอนช่วยสร้างภาระการปฏิบัติตามที่คาดการณ์ได้ การลดการปล่อยที่น่าเชื่อถือ ความโปร่งใสของการถือครองสิทธิ และสัญญาณราคาคาร์บอนที่ชัดเจนขึ้นสำหรับการลงทุนคาร์บอนต่ำ อย่างไรก็ตาม การออกแบบสุดท้ายยังขึ้นกับกฎหมายที่ประกาศใช้ คุณภาพข้อมูลระดับสถานประกอบการ ขีดความสามารถของหน่วยงานกำกับ และการรับฟังภาคส่วนที่ได้รับผลกระทบ กรอบนี้จึงเน้นการทดลองและปรับปรุง มากกว่าการนำแบบจำลอง ETS ต่างประเทศมาใช้กับไทยโดยไม่ปรับบริบท
+    sources_heading: "แหล่งข้อมูลทางการ:"
+    sources:
+      - label: "องค์การบริหารจัดการก๊าซเรือนกระจก: โครงการนำร่องระบบซื้อขายสิทธิในการปล่อยก๊าซเรือนกระจก"
+        url: "https://carbonmarket.tgo.or.th/index.php?lang=TH&mod=dHJhZGVfcGlsb3Q%3D"
+      - label: "กรมการเปลี่ยนแปลงสภาพภูมิอากาศและสิ่งแวดล้อม: กลไก ETS ภายใต้ร่างกฎหมายการเปลี่ยนแปลงสภาพภูมิอากาศ"
+        url: "https://www.dcce.go.th/14391/"

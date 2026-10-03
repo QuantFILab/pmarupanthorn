@@ -7,8 +7,8 @@ authors:
 - Jutha Koryanyong
 - Chanon Chanpiwat
 - Carat Pathomsathit
-date: "2024-02-03T00:00:00Z"
-doi: "https://doi.org/10.2139/ssrn.4715431"
+date: "2024-03-01T00:00:00Z"
+doi: "10.2139/ssrn.4715431"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: "2017-01-01T00:00:00Z"
@@ -22,17 +22,17 @@ publication_types: ["article-journal"]
 publication: "*SSRN, 2024*"
 publication_short: ""
 
-abstract: In this software paper, we outline the development and potential of Generative Pre-trained Transformer (GPT) models for integrating Environmental, Social, and Governance (ESG) factors into the investment management process, particularly for Thai stocks. As sustainable and responsible investing gains momentum, this study explores how GPT models, known for their advanced natural language processing capabilities, can revolutionize ESG integration. We examine GPT's ability to analyze and interpret vast amounts of ESG-related data, aiding in more informed and data-driven investment decisions. Our software covers applications of GPT in ESG investment strategies, such as materiality assessment, data analysis, integration strategy, and risk management. The paper also delves into the challenges and opportunities presented by GPT in sustainable investing, emphasizing its impact on enhancing investor engagement, ensuring compliance, and contributing to the broader objectives of sustainable financial markets.
+abstract: ""
 # Summary. An optional shortened abstract.
-summary: 
+summary: "A practical framework for using GPT models to integrate unstructured ESG information into Thai-stock analysis and investment management."
 
 tags:
 - Large Language Model 
 - Sustainable Finance
-featured: true
-# links:
-# - name: ""
-#   url: ""
+featured: false
+links:
+- name: "<span class='research-link-en'>Preprint</span><span class='research-link-th' lang='th' hidden>ฉบับพิมพ์ล่วงหน้า</span>"
+  url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4715431"
 url_pdf: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4715431
 url_code: ''
 url_dataset: ''
@@ -47,7 +47,7 @@ url_video: ''
 image:
   caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/jdD8gXaTZsc)'
   focal_point: ""
-  preview_only: false
+  preview_only: true
 
 # Associated Projects (optional).
 #   Associate this publication with one or more of your projects.
@@ -64,4 +64,4 @@ projects: []
 slides: example
 ---
 
-
+{{< research-bilingual key="SSRN20242" >}}

@@ -6,6 +6,10 @@ date: "2024-06-28T00:00:00Z"
 
 type: docs
 
+image:
+  filename: research-themes/quantitative-trading.png
+  focal_point: Center
+
 # Optional header image (relative to `assets/media/` folder).
 header:
   caption: ""

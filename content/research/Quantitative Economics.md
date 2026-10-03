@@ -6,6 +6,10 @@ date: "2026-09-26T00:00:00Z"
 
 type: docs
 
+image:
+  filename: research-themes/quantitative-economics.png
+  focal_point: Center
+
 header:
   caption: ""
   image: ""

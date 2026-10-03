@@ -20,6 +20,7 @@ sections:
     id: papers
     content:
       title: Featured Publications
+      count: 0
       filters:
         folders:
           - publication
@@ -70,9 +71,10 @@ sections:
         - **Vice President**, [Thailand Association of Quantitative Analysts and Financial Engineers (TQF)](https://www.tqf.or.th/team)
         - **Director**, [QuantCorner Research Laboratory](https://www.quant-corner.com/about-3)
         - **Co-Founder / Quantitative Researcher / Trader**, L2 Technology
+        - **Co-Founder / Researcher / Lecturer**, Groundup Academy
         - **WorldQuant BRAIN Gold Level**, [Certificate of Accomplishment](/pmarupanthorn/uploads/worldquant-brain-gold-certificate.png)
 
-        **Current site portfolio:** 15 publications and working papers · 44 talks and workshops · 10 courses · 10 research themes
+        **Current site portfolio:** 19 publications and working papers · 46 talks and workshops · 10 courses · 11 research themes
   - block: markdown
     id: collaboration
     content:

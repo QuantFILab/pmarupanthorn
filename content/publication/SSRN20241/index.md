@@ -8,7 +8,7 @@ authors:
 - Chanon Chanpiwat
 - Carat Pathomsathit
 date: "2024-02-13T00:00:00Z"
-doi: "https://doi.org/10.2139/ssrn.4706129"
+doi: "10.2139/ssrn.4706129"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: "2017-01-01T00:00:00Z"
@@ -22,9 +22,9 @@ publication_types: ["article-journal"]
 publication: "*SSRN, 2024*"
 publication_short: ""
 
-abstract: This study investigates the incorporation of Environmental, Social, and Governance (ESG) factors into Thai stock market analysis, emphasizing the Thailand Sustainability Investment (THSI) platform. Central to this is the integration of a'best minus worst'derived ESG factor into the Fama-French three-factor model, serving as a proxy for ESG impact on stock returns. The research employs a homogeneity covariance matrix test to establish the ESG Best Minus Worst (BMW) factor's distinctiveness from traditional market factors. Results show the ESG BMW factor's unique covariance structure, enhancing existing models and highlighting variability due to different rating agency methodologies, thus impacting investment decisions. The study finds the modified Fama-French model with the ESG BMW factor more effective than q-factor models in explaining THSI-listed stock returns, demonstrating its relevance in Thai market analysis.
+abstract: ""
 # Summary. An optional shortened abstract.
-summary: 
+summary: "A Thai ESG best-minus-worst factor that adds distinct information to conventional asset-pricing models for THSI-listed stocks."
 
 tags:
 - Sustainable Finance
@@ -34,10 +34,10 @@ tags:
 categories:
 - Asset Management
   
-featured: true
-# links:
-# - name: ""
-#   url: ""
+featured: false
+links:
+- name: "<span class='research-link-en'>Preprint</span><span class='research-link-th' lang='th' hidden>ฉบับพิมพ์ล่วงหน้า</span>"
+  url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4706129"
 url_pdf: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4706129
 url_code: 'https://github.com/QuantFILab/SETFactorModel'
 url_dataset: ''
@@ -52,7 +52,7 @@ url_video: ''
 image:
   caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/jdD8gXaTZsc)'
   focal_point: ""
-  preview_only: false
+  preview_only: true
 
 # Associated Projects (optional).
 #   Associate this publication with one or more of your projects.
@@ -69,4 +69,4 @@ projects: []
 slides: example
 ---
 
-
+{{< research-bilingual key="SSRN20241" >}}

@@ -17,11 +17,20 @@ publication_types: ["article-journal"]
 # Publication name and optional abbreviated publication name.
 publication: "*Discover Sustainability, 2026*"
 publication_short: "*Discov. Sustain.*"
+journal_metrics:
+  as_of: 2025
+  scopus:
+    quartile: Q2
+    percentile: "64th percentile"
+    url: "https://www.scopus.com/sourceid/21101138720"
+  scimago:
+    quartile: Q1
+    url: "https://www.scimagojr.com/journalsearch.php?q=21101138720&tip=sid&clean=0"
 
-abstract: European Union emission allowances are policy-created financial assets whose returns alternate between calmer and more stressed market conditions. Although regime-switching models can describe these shifts, it remains unclear whether observable policy and market conditions explain transitions between them in a statistically reliable and practically useful way. This study uses daily European Union Allowance futures prices from Refinitiv Workspace, official records of the Total Number of Allowances in Circulation, Dutch gas-market volatility, and allowance-market trading activity. A regime-switching return model links these observable conditions to movements between low- and high-volatility states and is evaluated against alternative transition structures, return distributions, and volatility benchmarks. The results confirm distinct volatility states and show that changes in the relative position of allowance prices provide the most stable transition signal, primarily by indicating movement out of stressed conditions. Policy-surplus information, gas volatility, and trading activity offer economically plausible context but do not provide robust independent transition information after persistent trends and model complexity are taken into account. For policymakers, allowance-price conditions can therefore serve as a timely indicator of market stress, whereas annually updated policy-surplus measures should not be interpreted as precise daily drivers. For risk managers, observable price conditions improve the interpretation of changing market states, although flexible volatility models remain stronger for forecasting the full return distribution. The study contributes a carefully bounded framework for monitoring carbon-market stress rather than a causal policy model or a universally superior forecasting method.
+abstract: ""
 
 # Summary. An optional shortened abstract.
-summary: ""
+summary: "A policy-state-gated regime model for interpreting low- and high-volatility conditions in European emission allowance futures."
 
 tags:
 - Emissions Trading System
@@ -29,6 +38,10 @@ tags:
 - Regime Switching
 - Risk Management
 featured: true
+
+links:
+- name: "<span class='research-link-en open-access-link'>Open Access</span><span class='research-link-th open-access-link' lang='th' hidden>บทความแบบเปิด (Open Access)</span>"
+  url: "https://doi.org/10.1007/s43621-026-04695-4"
 
 url_pdf: https://link.springer.com/article/10.1007/s43621-026-04695-4
 url_code: ''
@@ -42,8 +55,10 @@ url_video: ''
 image:
   caption: "Refinitiv EUA futures price and estimated high-stress regime."
   focal_point: Center
-  preview_only: false
+  preview_only: true
 
 projects: []
 slides: ""
 ---
+
+{{< research-bilingual key="DS2026" >}}

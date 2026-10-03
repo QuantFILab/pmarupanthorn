@@ -7,7 +7,7 @@ authors:
 - Christina S Nikitopoulos
 - Kylie-Anne Richards
 date: "2024-05-13T00:00:00Z"
-doi: "https://doi.org/10.1017/S1748499524000046"
+doi: "10.1017/S1748499524000046"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: "2017-01-01T00:00:00Z"
@@ -18,12 +18,21 @@ publishDate: "2017-01-01T00:00:00Z"
 publication_types: ["article-journal"]
 
 # Publication name and optional abbreviated publication name.
-publication: "*Annals of Actuarial Science, 1 - 44, 2024*"
+publication: "*Annals of Actuarial Science, 18(2), 379-422, 2024*"
 publication_short: ""
+journal_metrics:
+  as_of: 2025
+  scopus:
+    quartile: Q1
+    percentile: "79th percentile"
+    url: "https://www.scopus.com/sourceid/21100889419"
+  scimago:
+    quartile: Q1
+    url: "https://www.scimagojr.com/journalsearch.php?q=21100889419&tip=sid&clean=0"
 
-abstract: This paper introduces DivFolio, a multiperiod portfolio selection and analytic software application that incorporates automated and user-determined divestment practices accommodating Environmental Social Governance (ESG) and portfolio carbon footprint considerations. This freely available portfolio analytics software tool is written in R with a GUI interface developed as an R Shiny application for ease of user experience. Users can utilize this software to dynamically assess the performance of asset selections from global equity, exchange-traded funds, exchange-traded notes, and depositary receipts markets over multiple time periods. This assessment is based on the impact of ESG investment and fossil-fuel divestment practices on portfolio behavior in terms of risk, return, stability, diversification, and climate mitigation credentials of associated investment decisions. We highlight two applications of DivFolio. The first revolves around using sector scanning to divest from a specialized portfolio featuring constituents of the FTSE 100. The second, rooted in actuarial considerations, focuses on divestment strategies informed by environmental risk assessments for mixed pension portfolios in the US and UK.
+abstract: ""
 # Summary. An optional shortened abstract.
-summary: 
+summary: "An accessible R Shiny workflow for evaluating how ESG and carbon-divestment choices affect portfolio risk, return, diversification, and climate objectives over time."
 
 tags:
 - Sustainable Finance
@@ -31,10 +40,10 @@ tags:
 - Statisitical Machine Learning
 - R Shiny
 featured: true
-# links:
-# - name: ""
-#   url: ""
-url_pdf: https://www.cambridge.org/core/journals/annals-of-actuarial-science/article/divfolio-a-shiny-application-for-portfolio-divestment-in-green-finance-wealth-management/80986512D29D1D2D3CDD7ADEB2FE0428
+links:
+- name: "<span class='research-link-en'>Open Access</span><span class='research-link-th' lang='th' hidden>บทความเปิด</span>"
+  url: "https://www.cambridge.org/core/journals/annals-of-actuarial-science/article/divfolio-a-shiny-application-for-portfolio-divestment-in-green-finance-wealth-management/80986512D29D1D2D3CDD7ADEB2FE0428"
+url_pdf: https://www.cambridge.org/core/services/aop-cambridge-core/content/view/80986512D29D1D2D3CDD7ADEB2FE0428/S1748499524000046a.pdf/divfolio_a_shiny_application_for_portfolio_divestment_in_green_finance_wealth_management.pdf
 url_code: 'https://github.com/QuantFILab/Divfolio'
 url_dataset: ''
 url_poster: ''
@@ -48,7 +57,7 @@ url_video: ''
 image:
   caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/jdD8gXaTZsc)'
   focal_point: ""
-  preview_only: false
+  preview_only: true
 
 # Associated Projects (optional).
 #   Associate this publication with one or more of your projects.
@@ -65,4 +74,4 @@ projects: []
 slides: example
 ---
 
-
+{{< research-bilingual key="AAS" >}}

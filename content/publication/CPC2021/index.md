@@ -4,7 +4,7 @@ authors:
 - Wanyok Atisattapong
 - admin
 date: "2021-06-24T00:00:00Z"
-doi: "https://doi.org/10.1016/j.cpc.2021.107831"
+doi: "10.1016/j.cpc.2021.107831"
 
 
 # Publication type.
@@ -15,19 +15,28 @@ publication_types: ["article-journal"]
 # Publication name and optional abbreviated publication name.
 publication: "*Computer Physics Communications, 262, 2021*"
 publication_short: ""
+journal_metrics:
+  as_of: 2025
+  scopus:
+    quartile: Q1
+    percentile: "93rd percentile"
+    url: "https://www.scopus.com/sourceid/13184"
+  scimago:
+    quartile: Q1
+    url: "https://www.scimagojr.com/journalsearch.php?q=13184&tip=sid&clean=0"
 
-abstract: Modern physical networks, for example in communication and transportation, can be interpreted as directed graphs. Network models are used to identify the probability that given nodes are connected, and therefore the effect of a failure at a given link. This is essential for network design, optimization, and reliability. In this study, we investigated three alternative ensembles for estimating network reliability using the Wang–Landau algorithm. The first performed random walks on a structure function having two possible states, connected and disconnected. The second used random walks on a reliability polynomial. The third combined random walks with the average of connecting probabilities. The accuracy and limitations of the three ensembles were compared by estimating the reliability of three network models a bridge network, a ladder-type network, and a dodecahedron network. The simulation results showed that the use of a random walk on a structure function failed to produce estimates when applied to highly reliable networks in any of the three network types. The other two approaches performed efficiently for bridge or ladder-type networks at any level of network reliability. The random walk on a probability space using the 1/t algorithm was the only ensemble that was able to yield accurate estimates for a dodecahedron network, though even this failed at the highest level of network reliability. The other two methods failed to converge within 108 Monte Carlo trials. The use of the average of connecting probabilities required a shorter computation time when applied to a large network. Methods that can reduce variance for large, highly reliable networks require further investigation.
+abstract: ""
 # Summary. An optional shortened abstract.
-summary: 
+summary: "A comparison of three Wang–Landau sampling ensembles for estimating the reliability of bridge, ladder, and dodecahedron networks."
 
 tags:
 - Monte Carlo Method
 - Simulation
 - Network
 featured: false
-# links:
-# - name: ""
-#   url: ""
+links:
+- name: "<span class='research-link-en'>Preprint not available</span><span class='research-link-th' lang='th' hidden>ยังไม่มีฉบับพิมพ์ล่วงหน้า</span>"
+  url: "#preprint-unavailable"
 url_pdf: https://www.sciencedirect.com/science/article/abs/pii/S0010465521000059
 url_code: ''
 url_dataset: ''
@@ -42,7 +51,7 @@ url_video: ''
 image:
   caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/jdD8gXaTZsc)'
   focal_point: ""
-  preview_only: false
+  preview_only: true
 
 # Associated Projects (optional).
 #   Associate this publication with one or more of your projects.
@@ -59,4 +68,4 @@ projects: []
 slides: example
 ---
 
-
+{{< research-bilingual key="CPC2021" >}}

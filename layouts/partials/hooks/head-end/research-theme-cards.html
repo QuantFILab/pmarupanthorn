@@ -1,0 +1,465 @@
+<style>
+  #research .grid {
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 1.25rem !important;
+  }
+
+  #research .grid > .group {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    overflow: hidden;
+    border: 1px solid rgb(148 163 184 / 0.28);
+    border-radius: 1rem;
+    padding: 0.95rem 1.25rem 0.95rem 1.4rem;
+    background: linear-gradient(160deg, rgb(255 255 255 / 0.98), rgb(248 250 252 / 0.94));
+    box-shadow: 0 0.7rem 2rem rgb(15 23 42 / 0.08);
+    transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+  }
+
+  #research .grid > .group::before {
+    content: "";
+    position: absolute;
+    inset: 0 auto 0 0;
+    width: 0.32rem;
+    background: linear-gradient(180deg, rgb(var(--color-primary-400)), rgb(var(--color-primary-700)));
+  }
+
+  #research .grid > .group:hover {
+    transform: translateY(-0.35rem);
+    border-color: rgb(var(--color-primary-500) / 0.55);
+    box-shadow: 0 1rem 2.4rem rgb(15 23 42 / 0.14);
+  }
+
+  #research .grid > .group > .overflow-hidden {
+    display: none;
+  }
+
+  #research .grid > .group > .research-card-main {
+    display: flex;
+    flex: 1;
+    padding: 0;
+  }
+
+  #research .grid > .group > .research-card-main > div {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  #research .grid > .group h2 {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.42rem;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0.2rem;
+    letter-spacing: -0.015em;
+  }
+
+  #research .grid > .group h2 > a {
+    min-width: 0;
+  }
+
+  #research .grid > .group p {
+    display: none;
+  }
+
+  #research .grid > .group time {
+    display: inline-flex;
+    border-radius: 9999px;
+    padding: 0.2rem 0.55rem;
+    background: rgb(148 163 184 / 0.12);
+  }
+
+  #research .grid > .group .grow {
+    display: none;
+  }
+
+  #research .grid > .group .flex-none {
+    display: none;
+  }
+
+  #research .research-count-badge {
+    display: inline-grid;
+    flex: 0 0 auto;
+    min-width: 1.45rem;
+    height: 1.45rem;
+    margin-top: 0.08rem;
+    padding: 0 0.32rem;
+    place-items: center;
+    border-radius: 9999px;
+    background: rgb(var(--color-primary-600));
+    color: #fff;
+    font-size: 0.72rem;
+    font-weight: 800;
+    line-height: 1;
+    vertical-align: 0.12rem;
+    font-variant-numeric: tabular-nums;
+    box-shadow: 0 0.18rem 0.45rem rgb(var(--color-primary-700) / 0.25);
+  }
+
+  #research .research-expand-button {
+    display: inline-grid;
+    flex: 0 0 auto;
+    width: 1.8rem;
+    height: 1.8rem;
+    margin-left: auto;
+    place-items: center;
+    border: 1px solid rgb(var(--color-primary-500) / 0.5);
+    border-radius: 9999px;
+    background: rgb(var(--color-primary-50));
+    color: rgb(var(--color-primary-700));
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1;
+    transition: background-color 160ms ease, color 160ms ease, transform 160ms ease;
+  }
+
+  #research .research-expand-button:hover,
+  #research .research-expand-button:focus-visible,
+  #research .research-expand-button[aria-expanded="true"] {
+    background: rgb(var(--color-primary-600));
+    color: #fff;
+    outline: none;
+  }
+
+  #research .research-expand-button[aria-expanded="true"] {
+    transform: rotate(45deg);
+  }
+
+  #research .research-paper-panel {
+    width: 100%;
+    margin-top: 0.8rem;
+    border-top: 1px solid rgb(148 163 184 / 0.28);
+    padding-top: 0.8rem;
+  }
+
+  #research .research-paper-panel[hidden] {
+    display: none !important;
+  }
+
+  #research .research-paper-table-wrap {
+    overflow-x: auto;
+  }
+
+  #research .research-paper-table {
+    width: 100%;
+    border: 0;
+    border-collapse: collapse;
+    background: transparent;
+    font-size: 0.86rem;
+  }
+
+  #research .research-paper-table th,
+  #research .research-paper-table td {
+    border: 0;
+    padding: 0.55rem 0.65rem;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  #research .research-paper-table th {
+    color: rgb(71 85 105);
+    font-size: 0.68rem;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  #research .research-paper-table tbody tr + tr td {
+    border-top: 1px solid rgb(226 232 240 / 0.82);
+  }
+
+  #research .research-paper-table td:first-child {
+    width: 56%;
+  }
+
+  #research .research-paper-table a {
+    color: rgb(var(--color-primary-700));
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  #research .research-paper-table a:hover,
+  #research .research-paper-table a:focus-visible {
+    text-decoration: underline;
+  }
+
+  #research .research-quality-pill {
+    display: inline-flex;
+    align-items: center;
+    border-radius: 9999px;
+    padding: 0.25rem 0.55rem;
+    background: rgb(241 245 249);
+    color: rgb(71 85 105);
+    font-size: 0.72rem;
+    font-weight: 700;
+    white-space: nowrap;
+  }
+
+  #research .research-quality-pill[data-quartile="Q1"] {
+    background: rgb(220 252 231);
+    color: rgb(21 128 61);
+  }
+
+  #research .research-quality-pill[data-quartile="Q2"] {
+    background: rgb(219 234 254);
+    color: rgb(29 78 216);
+  }
+
+  #research .research-quality-pill[data-quartile="Q3"] {
+    background: rgb(254 249 195);
+    color: rgb(161 98 7);
+  }
+
+  #research .research-quality-pill[data-quartile="Q4"] {
+    background: rgb(255 237 213);
+    color: rgb(194 65 12);
+  }
+
+  #research .research-paper-empty {
+    margin: 0;
+    color: rgb(100 116 139);
+    font-size: 0.85rem;
+  }
+
+  .dark #research .grid > .group {
+    border-color: rgb(71 85 105 / 0.75);
+    background: linear-gradient(160deg, rgb(15 23 42 / 0.98), rgb(15 23 42 / 0.86));
+    box-shadow: 0 0.8rem 2rem rgb(0 0 0 / 0.28);
+  }
+
+  .dark #research .grid > .group:hover {
+    border-color: rgb(var(--color-primary-400) / 0.75);
+    box-shadow: 0 1rem 2.5rem rgb(0 0 0 / 0.4);
+  }
+
+  .dark #research .research-count-badge {
+    background: rgb(var(--color-primary-400));
+    color: rgb(6 30 26);
+  }
+
+  .dark #research .research-expand-button {
+    border-color: rgb(var(--color-primary-400) / 0.65);
+    background: rgb(15 23 42);
+    color: rgb(var(--color-primary-300));
+  }
+
+  .dark #research .research-paper-panel,
+  .dark #research .research-paper-table tbody tr + tr td {
+    border-color: rgb(71 85 105 / 0.65);
+  }
+
+  .dark #research .research-paper-table th,
+  .dark #research .research-paper-empty {
+    color: rgb(148 163 184);
+  }
+
+  .dark #research .research-paper-table a {
+    color: rgb(var(--color-primary-300));
+  }
+
+  .dark #research .research-quality-pill {
+    background: rgb(51 65 85);
+    color: rgb(226 232 240);
+  }
+
+  @media (max-width: 760px) {
+    #research .grid {
+      grid-template-columns: minmax(0, 1fr) !important;
+      gap: 1rem !important;
+    }
+
+    #research .grid > .group {
+      min-height: 0;
+    }
+
+    #research .research-paper-table th:nth-child(2),
+    #research .research-paper-table td:nth-child(2) {
+      display: none;
+    }
+
+    #research .research-paper-table td:first-child {
+      width: 65%;
+    }
+  }
+</style>
+
+{{- $researchCounts := dict -}}
+{{- $researchPapers := dict -}}
+{{- with site.GetPage "/research" -}}
+  {{- range .RegularPages -}}
+    {{- $paperCount := len (findRE `(?m)^\s*-\s+\[[^\]]+\]\([^)]+\)` .RawContent) -}}
+    {{- $researchCounts = merge $researchCounts (dict .RelPermalink $paperCount) -}}
+    {{- $papers := slice -}}
+    {{- $matches := findRESubmatch `(?m)\{\{<\s*relref\s+"(/publication/[^"]+)"\s*>\}\}` .RawContent -}}
+    {{- range $matches -}}
+      {{- $pagePath := index . 1 -}}
+      {{- with site.GetPage $pagePath -}}
+        {{- $journal := .Params.publication | markdownify | plainify -}}
+        {{- $journal = replaceRE `,.*$` "" $journal -}}
+        {{- $scopusQuartile := "" -}}
+        {{- $scopusPercentile := "" -}}
+        {{- $scimagoQuartile := "" -}}
+        {{- with .Params.journal_metrics.scopus -}}
+          {{- $scopusQuartile = .quartile | default "" -}}
+          {{- $scopusPercentile = .percentile | default "" -}}
+        {{- end -}}
+        {{- with .Params.journal_metrics.scimago -}}
+          {{- $scimagoQuartile = .quartile | default "" -}}
+        {{- end -}}
+        {{- $papers = $papers | append (dict
+          "title" .Title
+          "url" .RelPermalink
+          "journal" ($journal | default "Undefined")
+          "year" (.Date | time.Format "2006")
+          "scopusQuartile" $scopusQuartile
+          "scopusPercentile" $scopusPercentile
+          "scimagoQuartile" $scimagoQuartile
+        ) -}}
+      {{- end -}}
+    {{- end -}}
+    {{- $researchPapers = merge $researchPapers (dict .RelPermalink $papers) -}}
+  {{- end -}}
+{{- end -}}
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const researchGrid = document.querySelector('#research .grid');
+    if (!researchGrid) return;
+
+    const researchCounts = {{ $researchCounts | jsonify | safeJS }};
+    const researchPapers = {{ $researchPapers | jsonify | safeJS }};
+    const qualityOrder = { Q1: 1, Q2: 2, Q3: 3, Q4: 4 };
+
+    function createCell(text) {
+      const cell = document.createElement('td');
+      cell.textContent = text;
+      return cell;
+    }
+
+    function getBestQuality(paper) {
+      const candidates = [];
+      if (qualityOrder[paper.scopusQuartile]) {
+        candidates.push({
+          quartile: paper.scopusQuartile,
+          source: 'Scopus',
+          percentile: paper.scopusPercentile
+        });
+      }
+      if (qualityOrder[paper.scimagoQuartile]) {
+        candidates.push({ quartile: paper.scimagoQuartile, source: 'SCImago', percentile: '' });
+      }
+      if (!candidates.length) return { quartile: '', text: 'Undefined' };
+
+      candidates.sort(function (a, b) {
+        return qualityOrder[a.quartile] - qualityOrder[b.quartile];
+      });
+      const best = candidates[0];
+      const percentile = best.source === 'Scopus' && best.percentile ? ' · ' + best.percentile : '';
+      return {
+        quartile: best.quartile,
+        text: best.quartile + ' · ' + best.source + percentile
+      };
+    }
+
+    researchGrid.querySelectorAll(':scope > .group').forEach(function (card) {
+      const titleLink = card.querySelector('h2 a[href]');
+      const titleHeading = titleLink ? titleLink.closest('h2') : null;
+      if (!titleLink || !titleHeading || titleHeading.querySelector('.research-count-badge')) return;
+
+      const cardMain = Array.from(card.children).find(function (child) {
+        return child !== card.querySelector(':scope > .overflow-hidden');
+      });
+      if (cardMain) cardMain.classList.add('research-card-main');
+
+      const href = titleLink.getAttribute('href');
+      const count = researchCounts[href] ?? researchCounts[new URL(titleLink.href).pathname] ?? 0;
+      const papers = researchPapers[href] ?? researchPapers[new URL(titleLink.href).pathname] ?? [];
+      const title = titleLink.textContent.trim();
+      const badge = document.createElement('span');
+
+      badge.className = 'research-count-badge';
+      badge.textContent = count;
+      badge.title = count + ' research ' + (count === 1 ? 'paper' : 'papers');
+      badge.setAttribute('aria-label', count + ' research ' + (count === 1 ? 'paper' : 'papers') + ' in ' + title);
+      titleHeading.insertBefore(badge, titleLink);
+
+      const panelId = 'research-papers-' + Math.random().toString(36).slice(2, 10);
+      const button = document.createElement('button');
+      button.className = 'research-expand-button';
+      button.type = 'button';
+      button.textContent = '+';
+      button.title = 'Show papers in ' + title;
+      button.setAttribute('aria-label', 'Show papers in ' + title);
+      button.setAttribute('aria-expanded', 'false');
+      button.setAttribute('aria-controls', panelId);
+      titleHeading.appendChild(button);
+
+      const panel = document.createElement('div');
+      panel.className = 'research-paper-panel';
+      panel.id = panelId;
+      panel.hidden = true;
+
+      if (!papers.length) {
+        const empty = document.createElement('p');
+        empty.className = 'research-paper-empty';
+        empty.textContent = 'No papers are listed in this theme yet.';
+        panel.appendChild(empty);
+      } else {
+        const wrap = document.createElement('div');
+        wrap.className = 'research-paper-table-wrap';
+        const table = document.createElement('table');
+        table.className = 'research-paper-table';
+        const thead = document.createElement('thead');
+        const headRow = document.createElement('tr');
+        ['Paper', 'Journal', 'Best quality'].forEach(function (heading) {
+          const th = document.createElement('th');
+          th.scope = 'col';
+          th.textContent = heading;
+          headRow.appendChild(th);
+        });
+        thead.appendChild(headRow);
+        table.appendChild(thead);
+
+        const tbody = document.createElement('tbody');
+        papers.forEach(function (paper) {
+          const row = document.createElement('tr');
+          const titleCell = document.createElement('td');
+          const paperLink = document.createElement('a');
+          paperLink.href = paper.url;
+          paperLink.textContent = paper.title;
+          titleCell.appendChild(paperLink);
+          row.appendChild(titleCell);
+          row.appendChild(createCell(paper.journal + ' · ' + paper.year));
+
+          const qualityCell = document.createElement('td');
+          const quality = getBestQuality(paper);
+          const qualityPill = document.createElement('span');
+          qualityPill.className = 'research-quality-pill';
+          qualityPill.textContent = quality.text;
+          if (quality.quartile) qualityPill.dataset.quartile = quality.quartile;
+          qualityCell.appendChild(qualityPill);
+          row.appendChild(qualityCell);
+          tbody.appendChild(row);
+        });
+        table.appendChild(tbody);
+        wrap.appendChild(table);
+        panel.appendChild(wrap);
+      }
+
+      card.appendChild(panel);
+
+      button.addEventListener('click', function () {
+        const expanded = button.getAttribute('aria-expanded') === 'true';
+        button.setAttribute('aria-expanded', String(!expanded));
+        button.setAttribute('aria-label', (expanded ? 'Show' : 'Hide') + ' papers in ' + title);
+        button.title = (expanded ? 'Show' : 'Hide') + ' papers in ' + title;
+        panel.hidden = expanded;
+      });
+    });
+  });
+</script>

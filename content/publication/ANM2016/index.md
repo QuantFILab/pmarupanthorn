@@ -4,7 +4,7 @@ authors:
 - Wanyok Atisattapong
 - admin
 date: "2016-06-01T00:00:00Z"
-doi: "https://doi.org/10.1016/j.apnum.2015.09.004"
+doi: "10.1016/j.apnum.2015.09.004"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: "2017-01-01T00:00:00Z"
@@ -17,19 +17,28 @@ publication_types: ["article-journal"]
 # Publication name and optional abbreviated publication name.
 publication: "*Applied Numerical Mathematics, 104, 133-140, 2016*"
 publication_short: ""
+journal_metrics:
+  as_of: 2025
+  scopus:
+    quartile: Q1
+    percentile: "81st percentile"
+    url: "https://www.scopus.com/sourceid/28067"
+  scimago:
+    quartile: Q1
+    url: "https://www.scimagojr.com/journalsearch.php?q=28067&tip=sid&clean=0"
 
-abstract: In this work we improve the accuracy and the convergence of the 1/t algorithm for multidimensional numerical integration. The proposed strategy is to introduce a new approximation method which obviates the bin width effect of the conventional 1/t algorithm by using the average of y values, which varies as the number of Monte Carlo trials changes, instead of the fixed value of y. The non-convergence of the 1/t algorithm and the convergence of the new method are proved by theoretical analysis. The potential of the method is illustrated by the evaluation of one-, two-and multi-dimensional integrals up to six dimensions. Our results show that the numerical estimates from our method converge to their exact values without either error saturation or the bin with effect, in contrast with the conventional 1/t algorithm.
+abstract: ""
 # Summary. An optional shortened abstract.
-summary: 
+summary: "A convergent 1/t Monte Carlo integration method that removes fixed-bin approximation error for integrals through six dimensions."
 
 tags:
 - Monte Carlo Method
 - Simulation
 - Numerical Integration
 featured: false
-# links:
-# - name: ""
-#   url: ""
+links:
+- name: "<span class='research-link-en'>Preprint not available</span><span class='research-link-th' lang='th' hidden>ยังไม่มีฉบับพิมพ์ล่วงหน้า</span>"
+  url: "#preprint-unavailable"
 url_pdf: https://www.sciencedirect.com/science/article/abs/pii/S0168927415001373
 url_code: ''
 url_dataset: ''
@@ -44,7 +53,7 @@ url_video: ''
 image:
   caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/jdD8gXaTZsc)'
   focal_point: ""
-  preview_only: false
+  preview_only: true
 
 # Associated Projects (optional).
 #   Associate this publication with one or more of your projects.
@@ -61,7 +70,4 @@ projects: []
 slides: example
 ---
 
-
-
-
-
+{{< research-bilingual key="ANM2016" >}}

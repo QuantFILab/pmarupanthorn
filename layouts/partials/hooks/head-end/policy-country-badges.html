@@ -1,0 +1,290 @@
+<style>
+  .policy-index-language-switch {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    padding-top: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .policy-index-language-button {
+    min-width: 7rem;
+    border: 1px solid rgb(var(--color-primary-600));
+    border-radius: 9999px;
+    padding: 0.5rem 1.25rem;
+    background: transparent;
+    color: rgb(var(--color-primary-700));
+    cursor: pointer;
+    font-weight: 700;
+    transition: background-color 150ms ease, color 150ms ease, box-shadow 150ms ease;
+  }
+
+  .policy-index-language-button:hover,
+  .policy-index-language-button:focus-visible {
+    box-shadow: 0 0 0 3px rgb(var(--color-primary-200));
+    outline: none;
+  }
+
+  .policy-index-language-button[aria-pressed="true"] {
+    background: rgb(var(--color-primary-600));
+    color: #fff;
+  }
+
+  .dark .policy-index-language-button {
+    border-color: rgb(var(--color-primary-400));
+    color: rgb(var(--color-primary-300));
+  }
+
+  .dark .policy-index-language-button[aria-pressed="true"] {
+    background: rgb(var(--color-primary-500));
+    color: #fff;
+  }
+
+  #policy-research .policy-country-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.42rem;
+    margin-bottom: 0.55rem;
+    border: 1px solid rgb(var(--color-primary-500) / 0.45);
+    border-radius: 9999px;
+    padding: 0.34rem 0.68rem;
+    background: rgb(var(--color-primary-50) / 0.92);
+    color: rgb(var(--color-primary-800));
+    font-size: 0.75rem;
+    font-weight: 750;
+    line-height: 1;
+    cursor: default;
+    box-shadow: 0 0.2rem 0.65rem rgb(15 23 42 / 0.08);
+  }
+
+  #policy-research .policy-country-flag {
+    font-size: 1rem;
+    line-height: 1;
+  }
+
+  .dark #policy-research .policy-country-badge {
+    border-color: rgb(var(--color-primary-400) / 0.55);
+    background: rgb(var(--color-primary-950) / 0.55);
+    color: rgb(var(--color-primary-200));
+    box-shadow: 0 0.2rem 0.65rem rgb(0 0 0 / 0.22);
+  }
+
+  body.policy-index-language-th #policy-research,
+  body.policy-index-language-th #industry-research,
+  body.policy-index-language-th .policy-index-language-switch {
+    font-family: "TH SarabunPSK", "TH Sarabun New", sans-serif !important;
+  }
+
+  body.policy-index-language-th #policy-research h2,
+  body.policy-index-language-th #industry-research h2 {
+    font-size: 1.65rem;
+    line-height: 1.15;
+  }
+
+  body.policy-index-language-th #policy-research p,
+  body.policy-index-language-th #industry-research p {
+    font-size: 1.3rem;
+    line-height: 1.35;
+  }
+
+  body.policy-index-language-th #policy-research time,
+  body.policy-index-language-th #industry-research time,
+  body.policy-index-language-th #policy-research .policy-country-badge {
+    font-size: 1.1rem;
+  }
+
+  body.policy-index-language-th .policy-index-language-button {
+    font-size: 1.3rem;
+    line-height: 1;
+  }
+</style>
+
+{{- $policyCards := dict -}}
+{{- with site.GetPage "/policy-industry-support" -}}
+  {{- range .RegularPages -}}
+    {{- $countryEn := .Params.country | default "" -}}
+    {{- $countryTh := .Params.country_th | default $countryEn -}}
+    {{- $details := dict
+      "titleEn" .Title
+      "titleTh" (.Params.title_th | default .Title)
+      "summaryEn" (.Params.summary | default "")
+      "summaryTh" (.Params.summary_th | default (.Params.summary | default ""))
+      "countryEn" $countryEn
+      "countryTh" $countryTh
+      "flag" (.Params.country_flag | default "🌐")
+    -}}
+    {{- $policyCards = merge $policyCards (dict .RelPermalink $details) -}}
+  {{- end -}}
+{{- end -}}
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const policySection = document.querySelector('#policy-research');
+    const industrySection = document.querySelector('#industry-research');
+    const policyGrid = policySection ? policySection.querySelector('.grid') : null;
+    if (!policySection || !policyGrid) return;
+
+    const policyCards = {{ $policyCards | jsonify | safeJS }};
+    const originalHtmlLanguage = document.documentElement.lang || 'en';
+    const documentTitleSuffixIndex = document.title.indexOf(' | ');
+    const documentTitleSuffix = documentTitleSuffixIndex >= 0
+      ? document.title.slice(documentTitleSuffixIndex)
+      : '';
+
+    const switcher = document.createElement('div');
+    switcher.className = 'policy-index-language-switch';
+    switcher.setAttribute('role', 'group');
+    switcher.setAttribute('aria-label', 'Select page language');
+    switcher.innerHTML =
+      '<button type="button" class="policy-index-language-button" data-policy-language="en" aria-pressed="true">English</button>' +
+      '<button type="button" class="policy-index-language-button" data-policy-language="th" aria-pressed="false">ไทย</button>';
+    policySection.parentNode.insertBefore(switcher, policySection);
+
+    const languageButtons = Array.from(switcher.querySelectorAll('[data-policy-language]'));
+    const sectionTranslations = {
+      'policy-research': {
+        enTitle: 'Policy Research',
+        thTitle: 'งานวิจัยเชิงนโยบาย',
+        enText: 'Evidence-based research and quantitative analysis for policymakers, regulators, and public-sector organizations.',
+        thText: 'งานวิจัยเชิงประจักษ์และการวิเคราะห์เชิงปริมาณสำหรับผู้กำหนดนโยบาย หน่วยงานกำกับดูแล และองค์กรภาครัฐ'
+      },
+      'industry-research': {
+        enTitle: 'Industry Research',
+        thTitle: 'งานวิจัยสำหรับภาคอุตสาหกรรม',
+        enText: 'Applied quantitative research that helps organizations understand risk, improve decisions, and turn data into practical solutions.',
+        thText: 'งานวิจัยเชิงปริมาณประยุกต์ที่ช่วยให้องค์กรเข้าใจความเสี่ยง ปรับปรุงการตัดสินใจ และเปลี่ยนข้อมูลให้เป็นแนวทางแก้ไขที่นำไปใช้ได้จริง'
+      }
+    };
+
+    function getCardDetails(link) {
+      const href = link.getAttribute('href');
+      return policyCards[href] || policyCards[new URL(link.href).pathname];
+    }
+
+    function prepareCard(card) {
+      const titleLink = card.querySelector('h2 a[href]');
+      const titleHeading = titleLink ? titleLink.closest('h2') : null;
+      if (!titleLink || !titleHeading) return null;
+
+      const details = getCardDetails(titleLink);
+      if (!details) return null;
+
+      const summaryLink = card.querySelector('p a[href]');
+      const dateElement = card.querySelector('time[datetime]');
+      const titleTarget = titleLink.querySelector('span') || titleLink;
+
+      let badge = card.querySelector('.policy-country-badge');
+      if (details.countryEn && !badge) {
+        badge = document.createElement('span');
+        badge.className = 'policy-country-badge';
+
+        const flag = document.createElement('span');
+        flag.className = 'policy-country-flag';
+        flag.setAttribute('aria-hidden', 'true');
+        flag.textContent = details.flag;
+
+        const label = document.createElement('span');
+        label.className = 'policy-country-label';
+
+        badge.append(flag, label);
+        titleHeading.parentNode.insertBefore(badge, titleHeading);
+      }
+
+      let thaiDate = '';
+      if (dateElement) {
+        dateElement.dataset.policyDateEn = dateElement.textContent.trim();
+        const dateParts = dateElement.getAttribute('datetime').split('-').map(Number);
+        if (dateParts.length === 3 && dateParts.every(Number.isFinite)) {
+          const localDate = new Date(dateParts[0], dateParts[1] - 1, dateParts[2]);
+          thaiDate = new Intl.DateTimeFormat('th-TH', {
+            day: 'numeric',
+            month: 'short',
+            year: 'numeric'
+          }).format(localDate);
+        }
+      }
+
+      return { details, titleTarget, summaryLink, dateElement, thaiDate, badge };
+    }
+
+    const cards = Array.from(document.querySelectorAll('#policy-research .grid > .group, #industry-research .grid > .group'))
+      .map(prepareCard)
+      .filter(Boolean);
+
+    function translateSection(section, language) {
+      if (!section) return;
+      const translation = sectionTranslations[section.id];
+      const headingBlock = section.querySelector(':scope > .flex.flex-col.items-center.max-w-prose');
+      if (!translation || !headingBlock) return;
+
+      const heading = headingBlock.querySelector(':scope > div');
+      const description = headingBlock.querySelector(':scope > p');
+      if (heading) heading.textContent = language === 'th' ? translation.thTitle : translation.enTitle;
+      if (description) description.textContent = language === 'th' ? translation.thText : translation.enText;
+    }
+
+    function setLanguage(language) {
+      const selected = language === 'th' ? 'th' : 'en';
+      const isThai = selected === 'th';
+
+      languageButtons.forEach(function (button) {
+        button.setAttribute('aria-pressed', String(button.dataset.policyLanguage === selected));
+      });
+
+      translateSection(policySection, selected);
+      translateSection(industrySection, selected);
+
+      cards.forEach(function (card) {
+        card.titleTarget.textContent = isThai ? card.details.titleTh : card.details.titleEn;
+        if (card.summaryLink) {
+          card.summaryLink.textContent = isThai ? card.details.summaryTh : card.details.summaryEn;
+        }
+        if (card.dateElement) {
+          card.dateElement.textContent = isThai && card.thaiDate
+            ? card.thaiDate
+            : card.dateElement.dataset.policyDateEn;
+        }
+        if (card.badge) {
+          const country = isThai ? card.details.countryTh : card.details.countryEn;
+          const label = card.badge.querySelector('.policy-country-label');
+          if (label) label.textContent = country;
+          card.badge.setAttribute(
+            'aria-label',
+            (isThai ? 'ประเทศหรือภูมิภาคของนโยบาย: ' : 'Policy country or region: ') + country
+          );
+        }
+      });
+
+      document.body.classList.toggle('policy-index-language-th', isThai);
+      document.documentElement.lang = isThai ? 'th' : originalHtmlLanguage;
+      switcher.setAttribute('aria-label', isThai ? 'เลือกภาษาของหน้า' : 'Select page language');
+      document.title = (isThai ? 'การสนับสนุนนโยบายและภาคอุตสาหกรรม' : 'Policy/Industry Support') + documentTitleSuffix;
+
+      try {
+        window.localStorage.setItem('publication-language', selected);
+      } catch (error) {
+        // The language switch still works when storage is unavailable.
+      }
+    }
+
+    let initialLanguage = 'en';
+    try {
+      const savedLanguage = window.localStorage.getItem('publication-language');
+      if (savedLanguage === 'en' || savedLanguage === 'th') {
+        initialLanguage = savedLanguage;
+      } else if (window.navigator.language.toLowerCase().startsWith('th')) {
+        initialLanguage = 'th';
+      }
+    } catch (error) {
+      if (window.navigator.language.toLowerCase().startsWith('th')) initialLanguage = 'th';
+    }
+
+    languageButtons.forEach(function (button) {
+      button.addEventListener('click', function () {
+        setLanguage(button.dataset.policyLanguage);
+      });
+    });
+
+    setLanguage(initialLanguage);
+  });
+</script>

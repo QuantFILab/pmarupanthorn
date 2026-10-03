@@ -20,7 +20,7 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Quantitative Researcher · PhD · CQF
+role: Quantitative Researcher · Co-Founder, Groundup Academy · PhD · CQF
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
@@ -104,7 +104,7 @@ work:
     summary: |
       - Conduct research on multi-strategy trading across cryptocurrency, derivatives, U.S. equities, Thai equities, and currency markets, with a focus on statistical arbitrage.
       - Lead technology-driven initiatives, including LLM applications for legal analytics and blockchain-based infrastructure projects.
-  - position: Researcher / Lecturer
+  - position: Co-Founder / Researcher / Lecturer
     company_name: Groundup Academy
     company_url: ''
     company_logo: ''
@@ -159,7 +159,7 @@ awards:
 
 ## About Me
 
-My background is in Applied Mathematics, with a keen interest in challenging problems in Finance, Insurance, and Risk Management. I am currently an energetic Quantitative Researcher and University Lecturer. I warmly welcome collaborative work with energetic colleagues who share similar interests. If you are interested in collaborating on research, workshops, seminars, lectures, or teaming up for enjoyable challenges, please feel free to contact me. 
+My background is in Applied Mathematics, with a keen interest in challenging problems in Finance, Insurance, and Risk Management. I am currently an energetic Quantitative Researcher, University Lecturer, and Co-Founder of Groundup Academy. I warmly welcome collaborative work with energetic colleagues who share similar interests. If you are interested in collaborating on research, workshops, seminars, lectures, or teaming up for enjoyable challenges, please feel free to contact me.
 
 My main projects for 2026 to 2031 are listed below:
   - Emission Trading System and Carbon Credit
@@ -168,4 +168,3 @@ My main projects for 2026 to 2031 are listed below:
   - Insurance-linked Investment
   - Stochastic Model in Financial and Insurance Technology
   - Statistical Machine Learning and XAI
-

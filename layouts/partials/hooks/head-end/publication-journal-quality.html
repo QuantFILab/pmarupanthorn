@@ -1,0 +1,125 @@
+<style>
+  .journal-quality {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    margin-top: 0.7rem;
+  }
+
+  .journal-quality__label {
+    margin-right: 0.1rem;
+    color: rgb(71 85 105);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  .journal-quality__badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    min-height: 1.75rem;
+    border: 1px solid transparent;
+    border-radius: 9999px;
+    padding: 0.28rem 0.7rem;
+    font-size: 0.75rem;
+    line-height: 1;
+    text-decoration: none !important;
+    transition: transform 150ms ease, box-shadow 150ms ease;
+  }
+
+  a.journal-quality__badge:hover,
+  a.journal-quality__badge:focus-visible {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgb(15 23 42 / 0.14);
+    outline: none;
+  }
+
+  .journal-quality__source {
+    font-weight: 600;
+  }
+
+  .journal-quality__badge--scopus {
+    border-color: #f6a64b;
+    background: #fff7ed;
+    color: #9a3412 !important;
+  }
+
+  .journal-quality__badge--scimago {
+    border-color: #55a5ce;
+    background: #eff8ff;
+    color: #075985 !important;
+  }
+
+  .journal-quality__badge--undefined {
+    border-color: rgb(203 213 225);
+    background: rgb(248 250 252);
+    color: rgb(100 116 139);
+  }
+
+  .journal-quality--card {
+    margin-top: 0.6rem;
+  }
+
+  .journal-quality--card .journal-quality__label {
+    flex-basis: 100%;
+  }
+
+  .journal-quality--card .journal-quality__badge {
+    min-height: 1.6rem;
+    padding: 0.24rem 0.58rem;
+    font-size: 0.7rem;
+  }
+
+  .journal-quality--best {
+    display: inline-flex;
+    margin: 0.45rem 0 0.15rem;
+    vertical-align: middle;
+  }
+
+  .journal-quality--best .journal-quality__badge {
+    min-height: 1.55rem;
+    padding: 0.22rem 0.56rem;
+    font-size: 0.7rem;
+  }
+
+  .journal-quality--list {
+    margin: 0.45rem 0 0.15rem;
+  }
+
+  .journal-quality--list .journal-quality__badge {
+    min-height: 1.55rem;
+    padding: 0.22rem 0.56rem;
+    font-size: 0.7rem;
+  }
+
+  .dark .journal-quality__label {
+    color: rgb(203 213 225);
+  }
+
+  .dark .journal-quality__badge--scopus {
+    border-color: #c2410c;
+    background: rgb(124 45 18 / 0.32);
+    color: #fdba74 !important;
+  }
+
+  .dark .journal-quality__badge--scimago {
+    border-color: #0369a1;
+    background: rgb(7 89 133 / 0.3);
+    color: #7dd3fc !important;
+  }
+
+  .dark .journal-quality__badge--undefined {
+    border-color: rgb(71 85 105);
+    background: rgb(30 41 59);
+    color: rgb(203 213 225);
+  }
+
+  @media (max-width: 520px) {
+    .journal-quality__label {
+      flex-basis: 100%;
+    }
+  }
+</style>

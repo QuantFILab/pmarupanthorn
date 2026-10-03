@@ -22,6 +22,10 @@ main:
     weight: 23
     parent: Research
     url: /projects/
+  - name: Policy/Industry Support
+    weight: 24
+    parent: Research
+    url: /policy-industry-support/
   - name: Talks
     url: /event/
     weight: 30
