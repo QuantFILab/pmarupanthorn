@@ -20,6 +20,10 @@ publication_types: ["article-journal"]
 # Publication name and optional abbreviated publication name.
 publication: "*Journal of Management Sciences Suratthani Rajabhat University, 9(2), 269-292, 2022*"
 publication_short: ""
+journal_metrics:
+  tci:
+    tier: "Tier 1"
+    url: "https://so03.tci-thaijo.org/index.php/msj"
 
 abstract: ""
 # Summary. An optional shortened abstract.

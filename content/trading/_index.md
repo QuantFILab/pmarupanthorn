@@ -20,10 +20,12 @@ sections:
               <p>Develop alpha intellectual property for a research organisation or contracted programme.</p>
               <p class="quant-practice-tier__path"><span>Alpha IP</span><span aria-hidden="true">→</span><span>Merit or contract payment</span></p>
             </div>
+            <button class="quant-practice-expand-button" type="button" aria-expanded="false" aria-controls="research-ip-tier-panel" aria-label="Show Research IP and Consultant Compensation details" title="Show details">+</button>
           </header>
 
-          <div class="quant-practice-table-wrap">
-            <table class="quant-practice-table">
+          <div class="quant-practice-tier__panel" id="research-ip-tier-panel" hidden>
+            <div class="quant-practice-table-wrap">
+              <table class="quant-practice-table">
               <thead>
                 <tr>
                   <th scope="col">Platform / Programme</th>
@@ -43,7 +45,8 @@ sections:
                   <td>Contract-based researcher compensation.</td>
                 </tr>
               </tbody>
-            </table>
+              </table>
+            </div>
           </div>
         </section>
 
@@ -55,10 +58,12 @@ sections:
               <p>Submit portfolio algorithms, signals, or predictions and earn from measured performance.</p>
               <p class="quant-practice-tier__path"><span>Model performance</span><span aria-hidden="true">→</span><span>Allocation or reward</span></p>
             </div>
+            <button class="quant-practice-expand-button" type="button" aria-expanded="false" aria-controls="performance-reward-tier-panel" aria-label="Show Allocation, Staking and Competition Rewards details" title="Show details">+</button>
           </header>
 
-          <div class="quant-practice-table-wrap">
-            <table class="quant-practice-table">
+          <div class="quant-practice-tier__panel" id="performance-reward-tier-panel" hidden>
+            <div class="quant-practice-table-wrap">
+              <table class="quant-practice-table">
               <thead>
                 <tr>
                   <th scope="col">Platform / Programme</th>
@@ -83,7 +88,8 @@ sections:
                   <td>Leaderboard and competition payouts based on out-of-sample performance.</td>
                 </tr>
               </tbody>
-            </table>
+              </table>
+            </div>
           </div>
         </section>
 
@@ -95,10 +101,12 @@ sections:
               <p>Apply quantitative-finance knowledge to AI training and evaluation without supplying trading capital.</p>
               <p class="quant-practice-tier__path"><span>Quant expertise</span><span aria-hidden="true">→</span><span>Contract income</span></p>
             </div>
+            <button class="quant-practice-expand-button" type="button" aria-expanded="false" aria-controls="expert-work-tier-panel" aria-label="Show Paid Quantitative Expertise details" title="Show details">+</button>
           </header>
 
-          <div class="quant-practice-table-wrap">
-            <table class="quant-practice-table">
+          <div class="quant-practice-tier__panel" id="expert-work-tier-panel" hidden>
+            <div class="quant-practice-table-wrap">
+              <table class="quant-practice-table">
               <thead>
                 <tr>
                   <th scope="col">Platform / Programme</th>
@@ -118,7 +126,8 @@ sections:
                   <td>Flexible freelance compensation for expert review work.</td>
                 </tr>
               </tbody>
-            </table>
+              </table>
+            </div>
           </div>
         </section>
 
@@ -130,10 +139,12 @@ sections:
               <p>Submit rigorous public research that you would publish as part of your academic or professional work.</p>
               <p class="quant-practice-tier__path"><span>Published paper</span><span aria-hidden="true">→</span><span>Prize and recognition</span></p>
             </div>
+            <button class="quant-practice-expand-button" type="button" aria-expanded="false" aria-controls="research-award-tier-panel" aria-label="Show Published-Research Awards details" title="Show details">+</button>
           </header>
 
-          <div class="quant-practice-table-wrap">
-            <table class="quant-practice-table">
+          <div class="quant-practice-tier__panel" id="research-award-tier-panel" hidden>
+            <div class="quant-practice-table-wrap">
+              <table class="quant-practice-table">
               <thead>
                 <tr>
                   <th scope="col">Platform / Programme</th>
@@ -147,8 +158,14 @@ sections:
                   <td>An original, publicly available quantitative-trading research paper.</td>
                   <td>Cash prizes, research tools, professional recognition, and visibility for work that would be published anyway.</td>
                 </tr>
+                <tr>
+                  <th scope="row"><a href="https://www.cmri.or.th/en/grant-network/cmdf-publication-bonus" target="_blank" rel="noopener">CMDF International Publication Bonus Scheme</a></th>
+                  <td>High-quality Thai capital-market research published in an eligible leading international journal.</td>
+                  <td>Publication support of THB 500,000 for First Tier or THB 300,000 for Second Tier, subject to the scheme's eligibility rules.</td>
+                </tr>
               </tbody>
-            </table>
+              </table>
+            </div>
           </div>
         </section>
     design:

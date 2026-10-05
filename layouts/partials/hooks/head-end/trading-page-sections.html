@@ -52,13 +52,23 @@
     content: "";
   }
 
+  #quant-practice > .flex.flex-col.items-center.max-w-prose {
+    width: min(calc(100% - 2rem), 86rem);
+    max-width: 86rem;
+  }
+
   #quant-practice .prose {
-    width: min(100%, 72rem);
-    max-width: 72rem;
+    width: 100%;
+    max-width: 86rem;
   }
 
   #quant-practice .quant-practice-tier {
     margin: 0;
+    border: 1px solid rgb(148 163 184 / 30%);
+    border-radius: 1rem;
+    padding: 1rem 1.15rem;
+    background: linear-gradient(160deg, rgb(255 255 255 / 98%), rgb(248 250 252 / 94%));
+    box-shadow: 0 0.7rem 2rem rgb(15 23 42 / 8%);
   }
 
   #quant-practice .quant-practice-tier + .quant-practice-tier {
@@ -68,10 +78,15 @@
   #quant-practice .quant-practice-tier__header {
     display: flex;
     gap: 0.9rem;
-    margin: 0 0 1rem;
-    padding: 0 0 0.9rem;
-    border-bottom: 1px solid rgb(148 163 184 / 30%);
-    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    align-items: center;
+  }
+
+  #quant-practice .quant-practice-tier__header > div {
+    min-width: 0;
+    flex: 1;
   }
 
   #quant-practice .quant-practice-tier__label {
@@ -118,17 +133,59 @@
     align-items: center;
   }
 
+  #quant-practice .quant-practice-expand-button {
+    display: inline-grid;
+    width: 1.9rem;
+    height: 1.9rem;
+    margin-left: auto;
+    place-items: center;
+    flex: 0 0 auto;
+    border: 1px solid rgb(var(--color-primary-500) / 50%);
+    border-radius: 9999px;
+    background: rgb(var(--color-primary-50));
+    color: rgb(var(--color-primary-700));
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1;
+    transition: background-color 160ms ease, color 160ms ease, transform 160ms ease;
+  }
+
+  #quant-practice .quant-practice-expand-button:hover,
+  #quant-practice .quant-practice-expand-button:focus-visible,
+  #quant-practice .quant-practice-expand-button[aria-expanded="true"] {
+    background: rgb(var(--color-primary-600));
+    color: #fff;
+    outline: none;
+  }
+
+  #quant-practice .quant-practice-expand-button[aria-expanded="true"] {
+    transform: rotate(45deg);
+  }
+
+  #quant-practice .quant-practice-tier__panel {
+    width: 100%;
+    margin-top: 0.9rem;
+    border-top: 1px solid rgb(148 163 184 / 28%);
+    padding-top: 0.75rem;
+  }
+
+  #quant-practice .quant-practice-tier__panel[hidden] {
+    display: none !important;
+  }
+
   #quant-practice .quant-practice-table-wrap {
     width: 100%;
-    overflow-x: auto;
+    overflow: visible;
   }
 
   #quant-practice .quant-practice-table {
     width: 100%;
-    min-width: 50rem;
+    min-width: 0;
     margin: 0;
     border: 0;
     border-collapse: collapse;
+    table-layout: fixed;
     background: transparent;
     font-size: 0.86rem;
   }
@@ -139,6 +196,7 @@
     padding: 0.72rem 0.65rem;
     text-align: left;
     vertical-align: top;
+    overflow-wrap: anywhere;
   }
 
   #quant-practice .quant-practice-table thead th {
@@ -386,8 +444,10 @@
     display: none;
   }
 
-  .dark #quant-practice .quant-practice-tier__header {
-    border-bottom-color: rgb(71 85 105 / 70%);
+  .dark #quant-practice .quant-practice-tier {
+    border-color: rgb(71 85 105 / 75%);
+    background: linear-gradient(160deg, rgb(15 23 42 / 98%), rgb(15 23 42 / 86%));
+    box-shadow: 0 0.8rem 2rem rgb(0 0 0 / 28%);
   }
 
   .dark #quant-practice .quant-practice-tier__header h3 {
@@ -401,6 +461,16 @@
   .dark #quant-practice .quant-practice-tier__header .quant-practice-tier__path {
     background: rgb(30 41 59);
     color: rgb(var(--color-primary-300));
+  }
+
+  .dark #quant-practice .quant-practice-expand-button {
+    border-color: rgb(var(--color-primary-400) / 65%);
+    background: rgb(15 23 42);
+    color: rgb(var(--color-primary-300));
+  }
+
+  .dark #quant-practice .quant-practice-tier__panel {
+    border-top-color: rgb(71 85 105 / 65%);
   }
 
   .dark #quant-practice .quant-practice-table thead th,
@@ -510,6 +580,23 @@
       padding-inline: 0.55rem;
     }
 
+    #quant-practice .quant-practice-tier {
+      padding: 0.9rem;
+    }
+
+    #quant-practice .quant-practice-table thead th:nth-child(2),
+    #quant-practice .quant-practice-table tbody td:nth-child(2) {
+      display: none;
+    }
+
+    #quant-practice .quant-practice-table tbody th {
+      width: 42%;
+    }
+
+    #quant-practice .quant-practice-table tbody td:last-child {
+      width: 58%;
+    }
+
     #trading-achievement .trading-achievement-grid {
       grid-template-columns: minmax(0, 1fr);
     }
@@ -546,3 +633,28 @@
     }
   }
 </style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const buttons = document.querySelectorAll('#quant-practice .quant-practice-expand-button');
+    const isThai = document.documentElement.lang.toLowerCase().startsWith('th');
+
+    buttons.forEach(function (button) {
+      button.addEventListener('click', function () {
+        const panel = document.getElementById(button.getAttribute('aria-controls'));
+        if (!panel) return;
+
+        const expanded = button.getAttribute('aria-expanded') === 'true';
+        const heading = button.closest('.quant-practice-tier').querySelector('h3');
+        const action = expanded
+          ? (isThai ? 'แสดงรายละเอียด' : 'Show details')
+          : (isThai ? 'ซ่อนรายละเอียด' : 'Hide details');
+
+        button.setAttribute('aria-expanded', String(!expanded));
+        button.setAttribute('aria-label', action + ': ' + (heading ? heading.textContent.trim() : ''));
+        button.title = action;
+        panel.hidden = expanded;
+      });
+    });
+  });
+</script>

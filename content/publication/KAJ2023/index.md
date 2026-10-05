@@ -13,6 +13,10 @@ doi: "10.14456/kaj.2023.63"
 publication_types: ["article-journal"]
 publication: "*Khon Kaen Agriculture Journal, 51(5), 842–855, 2023*"
 publication_short: "*Khon Kaen Agric. J.*"
+journal_metrics:
+  tci:
+    tier: "Tier 1"
+    url: "https://li01.tci-thaijo.org/index.php/agkasetkaj"
 abstract: ""
 summary: "A controlled comparison of production efficiency and morphometric traits among Maehongson, Praduhangdum, male layer, and broiler chickens."
 tags:

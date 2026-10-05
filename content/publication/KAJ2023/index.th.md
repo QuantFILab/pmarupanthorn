@@ -13,6 +13,10 @@ doi: "10.14456/kaj.2023.63"
 publication_types: ["article-journal"]
 publication: "*Khon Kaen Agriculture Journal, 51(5), 842–855, 2023*"
 publication_short: "*Khon Kaen Agric. J.*"
+journal_metrics:
+  tci:
+    tier: "Tier 1"
+    url: "https://li01.tci-thaijo.org/index.php/agkasetkaj"
 abstract: ""
 summary: "การเปรียบเทียบที่ควบคุมของประสิทธิภาพการผลิตและลักษณะมอร์ฟอเมตริกในไก่แม่ฮ่องสอน ไก่ประดู่หางดำ ไก่ไข่เพศผู้ และไก่เนื้อ"
 tags:

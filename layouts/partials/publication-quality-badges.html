@@ -5,9 +5,11 @@
 {{ $metrics := $page.Params.journal_metrics }}
 {{ $scopus := false }}
 {{ $scimago := false }}
+{{ $tci := false }}
 {{ with $metrics }}
   {{ $scopus = .scopus }}
   {{ $scimago = .scimago }}
+  {{ $tci = .tci }}
 {{ end }}
 
 {{ $quartileRank := dict "Q1" 1 "Q2" 2 "Q3" 3 "Q4" 4 }}
@@ -39,12 +41,22 @@
   {{ end }}
 {{ end }}
 
+{{ with $tci }}
+  {{ if eq $bestRank 99 }}
+    {{ $bestRank = 1 }}
+    {{ $bestQuartile = .tier | default "Tier 1" }}
+    {{ $bestSource = "TCI" }}
+    {{ $bestPercentile = "" }}
+    {{ $bestURL = .url | default "" }}
+  {{ end }}
+{{ end }}
+
 <div class="journal-quality journal-quality--{{ $variant }}" aria-label="{{ if $isThai }}ตัวชี้วัดคุณภาพวารสาร{{ else }}Journal quality metrics{{ end }}">
   {{ if eq $variant "best" }}
     <span class="journal-quality__label">{{ if $isThai }}คุณภาพสูงสุด{{ else }}Best quality{{ end }}</span>
 
     {{ if $bestQuartile }}
-      <a class="journal-quality__badge {{ if eq $bestSource "Scopus" }}journal-quality__badge--scopus{{ else }}journal-quality__badge--scimago{{ end }}"
+      <a class="journal-quality__badge {{ if eq $bestSource "Scopus" }}journal-quality__badge--scopus{{ else if eq $bestSource "SCImago" }}journal-quality__badge--scimago{{ else }}journal-quality__badge--tci{{ end }}"
          href="{{ $bestURL }}" target="_blank" rel="noopener"
          title="{{ if $isThai }}ผลการจัดอันดับวารสารที่ดีที่สุดสำหรับบทความปี {{ $publicationYear }}{{ else }}Best available journal-quality result for this {{ $publicationYear }} publication{{ end }}">
         <span class="journal-quality__source">{{ $bestSource }} {{ $publicationYear }}</span>
@@ -86,6 +98,15 @@
         <span class="journal-quality__source">SCImago</span>
         <strong>{{ if $isThai }}ไม่ระบุ{{ else }}Undefined{{ end }}</strong>
       </span>
+    {{ end }}
+
+    {{ with $tci }}
+      <a class="journal-quality__badge journal-quality__badge--tci"
+         href="{{ .url }}" target="_blank" rel="noopener"
+         title="{{ if $isThai }}TCI: ระดับคุณภาพวารสารสำหรับบทความปี {{ $publicationYear }}{{ else }}TCI: journal tier for this {{ $publicationYear }} publication{{ end }}">
+        <span class="journal-quality__source">TCI {{ $publicationYear }}</span>
+        <strong>{{ .tier | default "Tier 1" }}</strong>
+      </a>
     {{ end }}
   {{ end }}
 </div>

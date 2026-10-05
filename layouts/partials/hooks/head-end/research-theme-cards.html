@@ -223,7 +223,8 @@
     white-space: nowrap;
   }
 
-  #research .research-quality-pill[data-quartile="Q1"] {
+  #research .research-quality-pill[data-quartile="Q1"],
+  #research .research-quality-pill[data-quartile="TCI1"] {
     background: rgb(220 252 231);
     color: rgb(21 128 61);
   }
@@ -327,12 +328,16 @@
         {{- $scopusQuartile := "" -}}
         {{- $scopusPercentile := "" -}}
         {{- $scimagoQuartile := "" -}}
+        {{- $tciTier := "" -}}
         {{- with .Params.journal_metrics.scopus -}}
           {{- $scopusQuartile = .quartile | default "" -}}
           {{- $scopusPercentile = .percentile | default "" -}}
         {{- end -}}
         {{- with .Params.journal_metrics.scimago -}}
           {{- $scimagoQuartile = .quartile | default "" -}}
+        {{- end -}}
+        {{- with .Params.journal_metrics.tci -}}
+          {{- $tciTier = .tier | default "" -}}
         {{- end -}}
         {{- $papers = $papers | append (dict
           "title" .Title
@@ -342,6 +347,7 @@
           "scopusQuartile" $scopusQuartile
           "scopusPercentile" $scopusPercentile
           "scimagoQuartile" $scimagoQuartile
+          "tciTier" $tciTier
         ) -}}
       {{- end -}}
     {{- end -}}
@@ -389,16 +395,21 @@
       if (qualityOrder[paper.scimagoQuartile]) {
         candidates.push({ quartile: paper.scimagoQuartile, source: 'SCImago', percentile: '' });
       }
+      if (paper.tciTier) {
+        candidates.push({ quartile: 'TCI1', label: paper.tciTier, source: 'TCI', percentile: '' });
+      }
       if (!candidates.length) return { quartile: '', text: labels.undefined };
 
       candidates.sort(function (a, b) {
-        return qualityOrder[a.quartile] - qualityOrder[b.quartile];
+        const rankA = a.quartile === 'TCI1' ? 1 : qualityOrder[a.quartile];
+        const rankB = b.quartile === 'TCI1' ? 1 : qualityOrder[b.quartile];
+        return rankA - rankB;
       });
       const best = candidates[0];
       const percentile = best.source === 'Scopus' && best.percentile ? ' · ' + best.percentile : '';
       return {
         quartile: best.quartile,
-        text: best.quartile + ' · ' + best.source + percentile
+        text: (best.label || best.quartile) + ' · ' + best.source + percentile
       };
     }
 

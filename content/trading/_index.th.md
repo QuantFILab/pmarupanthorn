@@ -20,10 +20,12 @@ sections:
               <p>พัฒนาอัลฟาเป็นทรัพย์สินทางปัญญาให้แก่องค์กรวิจัยหรือโครงการแบบสัญญาจ้าง</p>
               <p class="quant-practice-tier__path"><span>ทรัพย์สินทางปัญญาด้านอัลฟา</span><span aria-hidden="true">→</span><span>ค่าตอบแทนตามผลงานหรือสัญญา</span></p>
             </div>
+            <button class="quant-practice-expand-button" type="button" aria-expanded="false" aria-controls="research-ip-tier-panel-th" aria-label="แสดงรายละเอียดทรัพย์สินทางปัญญาด้านการวิจัยและค่าตอบแทนที่ปรึกษา" title="แสดงรายละเอียด">+</button>
           </header>
 
-          <div class="quant-practice-table-wrap">
-            <table class="quant-practice-table">
+          <div class="quant-practice-tier__panel" id="research-ip-tier-panel-th" hidden>
+            <div class="quant-practice-table-wrap">
+              <table class="quant-practice-table">
               <thead>
                 <tr>
                   <th scope="col">แพลตฟอร์ม / โครงการ</th>
@@ -43,7 +45,8 @@ sections:
                   <td>ค่าตอบแทนนักวิจัยในรูปแบบสัญญาจ้าง</td>
                 </tr>
               </tbody>
-            </table>
+              </table>
+            </div>
           </div>
         </section>
 
@@ -55,10 +58,12 @@ sections:
               <p>ส่งอัลกอริทึมพอร์ตโฟลิโอ สัญญาณ หรือค่าพยากรณ์ เพื่อรับรายได้ตามผลงานที่วัดได้</p>
               <p class="quant-practice-tier__path"><span>ผลงานของแบบจำลอง</span><span aria-hidden="true">→</span><span>เงินทุนหรือรางวัล</span></p>
             </div>
+            <button class="quant-practice-expand-button" type="button" aria-expanded="false" aria-controls="performance-reward-tier-panel-th" aria-label="แสดงรายละเอียดการจัดสรรเงินทุน การวางโทเคน และรางวัลการแข่งขัน" title="แสดงรายละเอียด">+</button>
           </header>
 
-          <div class="quant-practice-table-wrap">
-            <table class="quant-practice-table">
+          <div class="quant-practice-tier__panel" id="performance-reward-tier-panel-th" hidden>
+            <div class="quant-practice-table-wrap">
+              <table class="quant-practice-table">
               <thead>
                 <tr>
                   <th scope="col">แพลตฟอร์ม / โครงการ</th>
@@ -83,7 +88,8 @@ sections:
                   <td>ค่าตอบแทนจากอันดับและการแข่งขันตามผลงานนอกตัวอย่าง</td>
                 </tr>
               </tbody>
-            </table>
+              </table>
+            </div>
           </div>
         </section>
 
@@ -95,10 +101,12 @@ sections:
               <p>ใช้ความรู้ด้านการเงินเชิงปริมาณในการฝึกและประเมิน AI โดยไม่ต้องใช้เงินทุนซื้อขายของตนเอง</p>
               <p class="quant-practice-tier__path"><span>ความเชี่ยวชาญเชิงปริมาณ</span><span aria-hidden="true">→</span><span>รายได้จากสัญญาจ้าง</span></p>
             </div>
+            <button class="quant-practice-expand-button" type="button" aria-expanded="false" aria-controls="expert-work-tier-panel-th" aria-label="แสดงรายละเอียดรายได้จากความเชี่ยวชาญเชิงปริมาณ" title="แสดงรายละเอียด">+</button>
           </header>
 
-          <div class="quant-practice-table-wrap">
-            <table class="quant-practice-table">
+          <div class="quant-practice-tier__panel" id="expert-work-tier-panel-th" hidden>
+            <div class="quant-practice-table-wrap">
+              <table class="quant-practice-table">
               <thead>
                 <tr>
                   <th scope="col">แพลตฟอร์ม / โครงการ</th>
@@ -118,7 +126,8 @@ sections:
                   <td>ค่าตอบแทนฟรีแลนซ์แบบยืดหยุ่นสำหรับงานตรวจสอบโดยผู้เชี่ยวชาญ</td>
                 </tr>
               </tbody>
-            </table>
+              </table>
+            </div>
           </div>
         </section>
 
@@ -130,10 +139,12 @@ sections:
               <p>ส่งงานวิจัยสาธารณะที่มีคุณภาพ ซึ่งเป็นส่วนหนึ่งของงานวิชาการหรือวิชาชีพที่คุณตั้งใจเผยแพร่อยู่แล้ว</p>
               <p class="quant-practice-tier__path"><span>บทความวิจัยที่เผยแพร่</span><span aria-hidden="true">→</span><span>รางวัลและการยอมรับ</span></p>
             </div>
+            <button class="quant-practice-expand-button" type="button" aria-expanded="false" aria-controls="research-award-tier-panel-th" aria-label="แสดงรายละเอียดรางวัลสำหรับงานวิจัยที่เผยแพร่" title="แสดงรายละเอียด">+</button>
           </header>
 
-          <div class="quant-practice-table-wrap">
-            <table class="quant-practice-table">
+          <div class="quant-practice-tier__panel" id="research-award-tier-panel-th" hidden>
+            <div class="quant-practice-table-wrap">
+              <table class="quant-practice-table">
               <thead>
                 <tr>
                   <th scope="col">แพลตฟอร์ม / โครงการ</th>
@@ -147,8 +158,14 @@ sections:
                   <td>บทความวิจัยการซื้อขายเชิงปริมาณที่เป็นต้นฉบับและเปิดให้สาธารณะเข้าถึง</td>
                   <td>เงินรางวัล เครื่องมือวิจัย การยอมรับทางวิชาชีพ และการมองเห็นสำหรับงานที่ตั้งใจเผยแพร่อยู่แล้ว</td>
                 </tr>
+                <tr>
+                  <th scope="row"><a href="https://www.cmri.or.th/th/grant-network/cmdf-publication-bonus" target="_blank" rel="noopener">โครงการสนับสนุนการตีพิมพ์ CMDF</a></th>
+                  <td>งานวิจัยคุณภาพสูงด้านตลาดทุนไทยที่ตีพิมพ์ในวารสารชั้นนำในต่างประเทศตามรายชื่อที่กำหนด</td>
+                  <td>เงินสนับสนุน 500,000 บาทสำหรับกลุ่ม First Tier หรือ 300,000 บาทสำหรับกลุ่ม Second Tier ตามหลักเกณฑ์ของโครงการ</td>
+                </tr>
               </tbody>
-            </table>
+              </table>
+            </div>
           </div>
         </section>
     design:
