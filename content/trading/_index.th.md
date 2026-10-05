@@ -14,8 +14,11 @@ sections:
       text: |
         <div class="trading-practice-grid">
           <article class="trading-practice-card">
-            <span class="trading-practice-card__index">01</span>
-            <div>
+            <div class="trading-practice-card__media">
+              <span class="trading-practice-card__index">01</span>
+              <span class="trading-practice-card__symbol" aria-hidden="true">α</span>
+            </div>
+            <div class="trading-practice-card__body">
               <h3><a href="/pmarupanthorn/th/trading/worldquant-brain-alpha-research/">การวิจัยอัลฟาบน WorldQuant BRAIN</a></h3>
               <p>การวิจัยอัลฟาเชิงปริมาณและการพัฒนาแบบจำลอง</p>
               <a class="trading-practice-card__link" href="/pmarupanthorn/th/trading/worldquant-brain-alpha-research/">อ่านบทนำ <span aria-hidden="true">→</span></a>
@@ -23,8 +26,11 @@ sections:
           </article>
 
           <article class="trading-practice-card trading-practice-card--placeholder">
-            <span class="trading-practice-card__index">02</span>
-            <div>
+            <div class="trading-practice-card__media">
+              <span class="trading-practice-card__index">02</span>
+              <span class="trading-practice-card__symbol" aria-hidden="true">＋</span>
+            </div>
+            <div class="trading-practice-card__body">
               <h3>การฝึกปฏิบัติด้านควอนต์อื่น ๆ</h3>
               <p>รายละเอียดเพิ่มเติมจะเพิ่มในภายหลัง</p>
             </div>

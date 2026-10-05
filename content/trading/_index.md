@@ -14,8 +14,11 @@ sections:
       text: |
         <div class="trading-practice-grid">
           <article class="trading-practice-card">
-            <span class="trading-practice-card__index">01</span>
-            <div>
+            <div class="trading-practice-card__media">
+              <span class="trading-practice-card__index">01</span>
+              <span class="trading-practice-card__symbol" aria-hidden="true">α</span>
+            </div>
+            <div class="trading-practice-card__body">
               <h3><a href="/pmarupanthorn/trading/worldquant-brain-alpha-research/">WorldQuant BRAIN Alpha Research</a></h3>
               <p>Quantitative alpha research and model development.</p>
               <a class="trading-practice-card__link" href="/pmarupanthorn/trading/worldquant-brain-alpha-research/">Read the introduction <span aria-hidden="true">→</span></a>
@@ -23,8 +26,11 @@ sections:
           </article>
 
           <article class="trading-practice-card trading-practice-card--placeholder">
-            <span class="trading-practice-card__index">02</span>
-            <div>
+            <div class="trading-practice-card__media">
+              <span class="trading-practice-card__index">02</span>
+              <span class="trading-practice-card__symbol" aria-hidden="true">＋</span>
+            </div>
+            <div class="trading-practice-card__body">
               <h3>Other Quant Practice</h3>
               <p>Additional practice details will be added here.</p>
             </div>
