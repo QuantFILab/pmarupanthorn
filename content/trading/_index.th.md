@@ -12,13 +12,13 @@ sections:
     content:
       title: "การฝึกปฏิบัติเชิงปริมาณ"
       text: |
-        <section class="quant-practice-tier" aria-labelledby="alpha-research-tier-th">
+        <section class="quant-practice-tier" aria-labelledby="research-ip-tier-th">
           <header class="quant-practice-tier__header">
             <span class="quant-practice-tier__label">Tier 01</span>
             <div>
-              <h3 id="alpha-research-tier-th">การวิจัยอัลฟา</h3>
-              <p>แพลตฟอร์มวิจัยเชิงปริมาณภายนอกสำหรับพัฒนาและทดสอบสัญญาณพยากรณ์</p>
-              <p class="quant-practice-tier__path"><span>อัลฟา</span><span aria-hidden="true">→</span><span>รายได้</span></p>
+              <h3 id="research-ip-tier-th">ทรัพย์สินทางปัญญาด้านการวิจัยและค่าตอบแทนที่ปรึกษา</h3>
+              <p>พัฒนาอัลฟาเป็นทรัพย์สินทางปัญญาให้แก่องค์กรวิจัยหรือโครงการแบบสัญญาจ้าง</p>
+              <p class="quant-practice-tier__path"><span>ทรัพย์สินทางปัญญาด้านอัลฟา</span><span aria-hidden="true">→</span><span>ค่าตอบแทนตามผลงานหรือสัญญา</span></p>
             </div>
           </header>
 
@@ -27,35 +27,125 @@ sections:
               <thead>
                 <tr>
                   <th scope="col">แพลตฟอร์ม / โครงการ</th>
-                  <th scope="col">ลักษณะการฝึกปฏิบัติ</th>
-                  <th scope="col">หน้าเนื้อหา</th>
+                  <th scope="col">สิ่งที่คุณนำเสนอ</th>
+                  <th scope="col">ช่องทางสร้างรายได้</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <th scope="row"><a href="/pmarupanthorn/th/trading/worldquant-brain-alpha-research/">การวิจัยอัลฟาบน WorldQuant BRAIN</a></th>
-                  <td>การวิจัยอัลฟาเชิงปริมาณและการพัฒนาแบบจำลอง</td>
-                  <td><a class="quant-practice-table__link" href="/pmarupanthorn/th/trading/worldquant-brain-alpha-research/">อ่านบทนำ <span aria-hidden="true">→</span></a></td>
+                  <td>อัลฟาที่ผ่านการตรวจสอบและเป็นไปตามเกณฑ์การส่งผลงานของโครงการ</td>
+                  <td>ค่าตอบแทนที่ปรึกษาวิจัยตามผลงาน หลังผ่านคุณสมบัติและกระบวนการเข้าร่วม</td>
                 </tr>
                 <tr>
                   <th scope="row"><a href="/pmarupanthorn/th/trading/trexquant-global-alpha-researcher/">Trexquant Global Alpha Researcher (GAR)</a></th>
-                  <td>การวิจัยอัลฟา การจำลอง และการพัฒนากลยุทธ์ระดับโลกในรูปแบบสัญญาจ้าง</td>
-                  <td><a class="quant-practice-table__link" href="/pmarupanthorn/th/trading/trexquant-global-alpha-researcher/">อ่านบทนำ <span aria-hidden="true">→</span></a></td>
+                  <td>แบบจำลองอัลฟาระดับโลก การจำลอง และงานวิจัยกลยุทธ์</td>
+                  <td>ค่าตอบแทนนักวิจัยในรูปแบบสัญญาจ้าง</td>
                 </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="quant-practice-tier" aria-labelledby="performance-reward-tier-th">
+          <header class="quant-practice-tier__header">
+            <span class="quant-practice-tier__label">Tier 02</span>
+            <div>
+              <h3 id="performance-reward-tier-th">การจัดสรรเงินทุน การวางโทเคน และรางวัลการแข่งขัน</h3>
+              <p>ส่งอัลกอริทึมพอร์ตโฟลิโอ สัญญาณ หรือค่าพยากรณ์ เพื่อรับรายได้ตามผลงานที่วัดได้</p>
+              <p class="quant-practice-tier__path"><span>ผลงานของแบบจำลอง</span><span aria-hidden="true">→</span><span>เงินทุนหรือรางวัล</span></p>
+            </div>
+          </header>
+
+          <div class="quant-practice-table-wrap">
+            <table class="quant-practice-table">
+              <thead>
+                <tr>
+                  <th scope="col">แพลตฟอร์ม / โครงการ</th>
+                  <th scope="col">สิ่งที่คุณนำเสนอ</th>
+                  <th scope="col">ช่องทางสร้างรายได้</th>
+                </tr>
+              </thead>
+              <tbody>
                 <tr>
                   <th scope="row"><a href="https://quantiacs.com/" target="_blank" rel="noopener">Quantiacs</a></th>
-                  <td>ทางเลือกที่แข็งแกร่งสำหรับพัฒนาอัลกอริทึมพอร์ตโฟลิโอแบบครบวงจร</td>
-                  <td><a class="quant-practice-table__link" href="https://quantiacs.com/" target="_blank" rel="noopener">แพลตฟอร์มทางการ <span aria-hidden="true">↗</span></a></td>
+                  <td>อัลกอริทึมพอร์ตโฟลิโอแบบครบวงจรที่พัฒนาและทดสอบบนแพลตฟอร์ม</td>
+                  <td>เงินรางวัลการแข่งขัน การจัดสรรเงินทุน และส่วนแบ่งกำไรที่เกิดขึ้น</td>
                 </tr>
                 <tr>
                   <th scope="row"><a href="https://signals.numer.ai/" target="_blank" rel="noopener">Numerai Signals</a></th>
-                  <td>เหมาะที่สุดเมื่อทรัพย์สินทางปัญญาหลักคือข้อมูลหรือแบบจำลองปัจจัยของคุณเอง</td>
-                  <td><a class="quant-practice-table__link" href="https://signals.numer.ai/" target="_blank" rel="noopener">แพลตฟอร์มทางการ <span aria-hidden="true">↗</span></a></td>
+                  <td>ข้อมูล แบบจำลองปัจจัย หรือสัญญาณตลาดหุ้นที่มีความแตกต่างและเป็นของคุณเอง</td>
+                  <td>เลือกวาง NMR กับสัญญาณที่เข้าเกณฑ์ เพื่อรับหรือสูญเสีย NMR ตามผลงาน</td>
                 </tr>
                 <tr>
                   <th scope="row"><a href="https://docs.crunchdao.com/competitions/competitions/datacrunch-competition" target="_blank" rel="noopener">CrunchDAO / DataCrunch</a></th>
-                  <td>การแข่งขันวิจัยขั้นสูงที่เชื่อมโยงกับการสร้างอัลฟาในตลาดการเงินจริง</td>
-                  <td><a class="quant-practice-table__link" href="https://docs.crunchdao.com/competitions/competitions/datacrunch-competition" target="_blank" rel="noopener">แพลตฟอร์มทางการ <span aria-hidden="true">↗</span></a></td>
+                  <td>แบบจำลองและค่าพยากรณ์ในการแข่งขันขั้นสูงที่เชื่อมโยงกับตลาดการเงินจริง</td>
+                  <td>ค่าตอบแทนจากอันดับและการแข่งขันตามผลงานนอกตัวอย่าง</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="quant-practice-tier" aria-labelledby="expert-work-tier-th">
+          <header class="quant-practice-tier__header">
+            <span class="quant-practice-tier__label">Tier 03</span>
+            <div>
+              <h3 id="expert-work-tier-th">รายได้จากความเชี่ยวชาญเชิงปริมาณ</h3>
+              <p>ใช้ความรู้ด้านการเงินเชิงปริมาณในการฝึกและประเมิน AI โดยไม่ต้องใช้เงินทุนซื้อขายของตนเอง</p>
+              <p class="quant-practice-tier__path"><span>ความเชี่ยวชาญเชิงปริมาณ</span><span aria-hidden="true">→</span><span>รายได้จากสัญญาจ้าง</span></p>
+            </div>
+          </header>
+
+          <div class="quant-practice-table-wrap">
+            <table class="quant-practice-table">
+              <thead>
+                <tr>
+                  <th scope="col">แพลตฟอร์ม / โครงการ</th>
+                  <th scope="col">สิ่งที่คุณนำเสนอ</th>
+                  <th scope="col">ช่องทางสร้างรายได้</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"><a href="https://www.mercor.com/experts/finance/" target="_blank" rel="noopener">Mercor</a></th>
+                  <td>ความเชี่ยวชาญด้านการเงินและเชิงปริมาณระดับสูงเพื่อฝึกและพัฒนาระบบ AI</td>
+                  <td>งานผู้เชี่ยวชาญทางไกลแบบมีค่าตอบแทน โดยไม่ต้องใช้เงินทุนซื้อขายส่วนตัว</td>
+                </tr>
+                <tr>
+                  <th scope="row"><a href="https://www.alignerr.com/en/jobs/04cfa108-7cd8-4e0a-a571-ced00ce19363" target="_blank" rel="noopener">Alignerr</a></th>
+                  <td>การประเมินแบบอะซิงโครนัสสำหรับแบบจำลองเชิงปริมาณ ค่าพยากรณ์ สมมติฐาน และผลลัพธ์จาก AI</td>
+                  <td>ค่าตอบแทนฟรีแลนซ์แบบยืดหยุ่นสำหรับงานตรวจสอบโดยผู้เชี่ยวชาญ</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="quant-practice-tier" aria-labelledby="research-award-tier-th">
+          <header class="quant-practice-tier__header">
+            <span class="quant-practice-tier__label">Tier 04</span>
+            <div>
+              <h3 id="research-award-tier-th">รางวัลสำหรับงานวิจัยที่เผยแพร่</h3>
+              <p>ส่งงานวิจัยสาธารณะที่มีคุณภาพ ซึ่งเป็นส่วนหนึ่งของงานวิชาการหรือวิชาชีพที่คุณตั้งใจเผยแพร่อยู่แล้ว</p>
+              <p class="quant-practice-tier__path"><span>บทความวิจัยที่เผยแพร่</span><span aria-hidden="true">→</span><span>รางวัลและการยอมรับ</span></p>
+            </div>
+          </header>
+
+          <div class="quant-practice-table-wrap">
+            <table class="quant-practice-table">
+              <thead>
+                <tr>
+                  <th scope="col">แพลตฟอร์ม / โครงการ</th>
+                  <th scope="col">สิ่งที่คุณนำเสนอ</th>
+                  <th scope="col">ช่องทางสร้างรายได้</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"><a href="https://quantpedia.com/a-new-stage-a-new-deadline-quantpedia-awards-2027-are-here-again/" target="_blank" rel="noopener">Quantpedia Awards</a></th>
+                  <td>บทความวิจัยการซื้อขายเชิงปริมาณที่เป็นต้นฉบับและเปิดให้สาธารณะเข้าถึง</td>
+                  <td>เงินรางวัล เครื่องมือวิจัย การยอมรับทางวิชาชีพ และการมองเห็นสำหรับงานที่ตั้งใจเผยแพร่อยู่แล้ว</td>
                 </tr>
               </tbody>
             </table>

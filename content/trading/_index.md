@@ -12,13 +12,13 @@ sections:
     content:
       title: Quant Practice
       text: |
-        <section class="quant-practice-tier" aria-labelledby="alpha-research-tier">
+        <section class="quant-practice-tier" aria-labelledby="research-ip-tier">
           <header class="quant-practice-tier__header">
             <span class="quant-practice-tier__label">Tier 01</span>
             <div>
-              <h3 id="alpha-research-tier">Alpha Research</h3>
-              <p>External quantitative-research platforms for developing and testing predictive signals.</p>
-              <p class="quant-practice-tier__path"><span>Alpha</span><span aria-hidden="true">→</span><span>Money</span></p>
+              <h3 id="research-ip-tier">Research IP &amp; Consultant Compensation</h3>
+              <p>Develop alpha intellectual property for a research organisation or contracted programme.</p>
+              <p class="quant-practice-tier__path"><span>Alpha IP</span><span aria-hidden="true">→</span><span>Merit or contract payment</span></p>
             </div>
           </header>
 
@@ -27,35 +27,125 @@ sections:
               <thead>
                 <tr>
                   <th scope="col">Platform / Programme</th>
-                  <th scope="col">Practice focus</th>
-                  <th scope="col">Page</th>
+                  <th scope="col">What you contribute</th>
+                  <th scope="col">How you earn</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <th scope="row"><a href="/pmarupanthorn/trading/worldquant-brain-alpha-research/">WorldQuant BRAIN Alpha Research</a></th>
-                  <td>Quantitative alpha research and model development.</td>
-                  <td><a class="quant-practice-table__link" href="/pmarupanthorn/trading/worldquant-brain-alpha-research/">Introduction <span aria-hidden="true">→</span></a></td>
+                  <td>Validated alphas that satisfy the programme's submission criteria.</td>
+                  <td>Merit-based research-consultant compensation after qualification and onboarding.</td>
                 </tr>
                 <tr>
                   <th scope="row"><a href="/pmarupanthorn/trading/trexquant-global-alpha-researcher/">Trexquant Global Alpha Researcher (GAR)</a></th>
-                  <td>Contract-based global alpha research, simulation, and strategy development.</td>
-                  <td><a class="quant-practice-table__link" href="/pmarupanthorn/trading/trexquant-global-alpha-researcher/">Introduction <span aria-hidden="true">→</span></a></td>
+                  <td>Global alpha models, simulations, and strategy research.</td>
+                  <td>Contract-based researcher compensation.</td>
                 </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="quant-practice-tier" aria-labelledby="performance-reward-tier">
+          <header class="quant-practice-tier__header">
+            <span class="quant-practice-tier__label">Tier 02</span>
+            <div>
+              <h3 id="performance-reward-tier">Allocation, Staking &amp; Competition Rewards</h3>
+              <p>Submit portfolio algorithms, signals, or predictions and earn from measured performance.</p>
+              <p class="quant-practice-tier__path"><span>Model performance</span><span aria-hidden="true">→</span><span>Allocation or reward</span></p>
+            </div>
+          </header>
+
+          <div class="quant-practice-table-wrap">
+            <table class="quant-practice-table">
+              <thead>
+                <tr>
+                  <th scope="col">Platform / Programme</th>
+                  <th scope="col">What you contribute</th>
+                  <th scope="col">How you earn</th>
+                </tr>
+              </thead>
+              <tbody>
                 <tr>
                   <th scope="row"><a href="https://quantiacs.com/" target="_blank" rel="noopener">Quantiacs</a></th>
-                  <td>A strong alternative for developing complete portfolio algorithms.</td>
-                  <td><a class="quant-practice-table__link" href="https://quantiacs.com/" target="_blank" rel="noopener">Official platform <span aria-hidden="true">↗</span></a></td>
+                  <td>Complete portfolio algorithms developed and tested on the platform.</td>
+                  <td>Contest prizes, capital allocation, and a share of generated profits.</td>
                 </tr>
                 <tr>
                   <th scope="row"><a href="https://signals.numer.ai/" target="_blank" rel="noopener">Numerai Signals</a></th>
-                  <td>Best suited when the intellectual asset is your own data or factor model.</td>
-                  <td><a class="quant-practice-table__link" href="https://signals.numer.ai/" target="_blank" rel="noopener">Official platform <span aria-hidden="true">↗</span></a></td>
+                  <td>Your own distinctive data, factor model, or stock-market signal.</td>
+                  <td>Optionally stake eligible signals to earn—or lose—NMR according to performance.</td>
                 </tr>
                 <tr>
                   <th scope="row"><a href="https://docs.crunchdao.com/competitions/competitions/datacrunch-competition" target="_blank" rel="noopener">CrunchDAO / DataCrunch</a></th>
-                  <td>Advanced research competitions with live financial relevance to alpha.</td>
-                  <td><a class="quant-practice-table__link" href="https://docs.crunchdao.com/competitions/competitions/datacrunch-competition" target="_blank" rel="noopener">Official platform <span aria-hidden="true">↗</span></a></td>
+                  <td>Models and predictions tested in advanced competitions with live financial relevance.</td>
+                  <td>Leaderboard and competition payouts based on out-of-sample performance.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="quant-practice-tier" aria-labelledby="expert-work-tier">
+          <header class="quant-practice-tier__header">
+            <span class="quant-practice-tier__label">Tier 03</span>
+            <div>
+              <h3 id="expert-work-tier">Paid Quantitative Expertise</h3>
+              <p>Apply quantitative-finance knowledge to AI training and evaluation without supplying trading capital.</p>
+              <p class="quant-practice-tier__path"><span>Quant expertise</span><span aria-hidden="true">→</span><span>Contract income</span></p>
+            </div>
+          </header>
+
+          <div class="quant-practice-table-wrap">
+            <table class="quant-practice-table">
+              <thead>
+                <tr>
+                  <th scope="col">Platform / Programme</th>
+                  <th scope="col">What you contribute</th>
+                  <th scope="col">How you earn</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"><a href="https://www.mercor.com/experts/finance/" target="_blank" rel="noopener">Mercor</a></th>
+                  <td>High-value finance and quantitative expertise for training and improving AI systems.</td>
+                  <td>Paid remote expert contracts; no personal trading capital is required.</td>
+                </tr>
+                <tr>
+                  <th scope="row"><a href="https://www.alignerr.com/en/jobs/04cfa108-7cd8-4e0a-a571-ced00ce19363" target="_blank" rel="noopener">Alignerr</a></th>
+                  <td>Asynchronous evaluation of quantitative models, forecasts, assumptions, and AI outputs.</td>
+                  <td>Flexible freelance compensation for expert review work.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="quant-practice-tier" aria-labelledby="research-award-tier">
+          <header class="quant-practice-tier__header">
+            <span class="quant-practice-tier__label">Tier 04</span>
+            <div>
+              <h3 id="research-award-tier">Published-Research Awards</h3>
+              <p>Submit rigorous public research that you would publish as part of your academic or professional work.</p>
+              <p class="quant-practice-tier__path"><span>Published paper</span><span aria-hidden="true">→</span><span>Prize and recognition</span></p>
+            </div>
+          </header>
+
+          <div class="quant-practice-table-wrap">
+            <table class="quant-practice-table">
+              <thead>
+                <tr>
+                  <th scope="col">Platform / Programme</th>
+                  <th scope="col">What you contribute</th>
+                  <th scope="col">How you earn</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"><a href="https://quantpedia.com/a-new-stage-a-new-deadline-quantpedia-awards-2027-are-here-again/" target="_blank" rel="noopener">Quantpedia Awards</a></th>
+                  <td>An original, publicly available quantitative-trading research paper.</td>
+                  <td>Cash prizes, research tools, professional recognition, and visibility for work that would be published anyway.</td>
                 </tr>
               </tbody>
             </table>

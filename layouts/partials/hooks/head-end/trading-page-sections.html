@@ -61,6 +61,10 @@
     margin: 0;
   }
 
+  #quant-practice .quant-practice-tier + .quant-practice-tier {
+    margin-top: 2.4rem;
+  }
+
   #quant-practice .quant-practice-tier__header {
     display: flex;
     gap: 0.9rem;
@@ -121,7 +125,7 @@
 
   #quant-practice .quant-practice-table {
     width: 100%;
-    min-width: 42rem;
+    min-width: 50rem;
     margin: 0;
     border: 0;
     border-collapse: collapse;
@@ -150,7 +154,7 @@
   }
 
   #quant-practice .quant-practice-table tbody th {
-    width: 38%;
+    width: 30%;
     color: #0f172a;
     font-size: 0.88rem;
     font-weight: 700;
@@ -158,14 +162,15 @@
   }
 
   #quant-practice .quant-practice-table tbody td:nth-child(2) {
-    width: 44%;
+    width: 35%;
     color: #64748b;
     line-height: 1.5;
   }
 
   #quant-practice .quant-practice-table tbody td:last-child {
-    width: 18%;
-    white-space: nowrap;
+    width: 35%;
+    color: #475569;
+    line-height: 1.5;
   }
 
   #quant-practice .quant-practice-table a {
@@ -399,7 +404,8 @@
   }
 
   .dark #quant-practice .quant-practice-table thead th,
-  .dark #quant-practice .quant-practice-table tbody td:nth-child(2) {
+  .dark #quant-practice .quant-practice-table tbody td:nth-child(2),
+  .dark #quant-practice .quant-practice-table tbody td:last-child {
     color: #94a3b8;
   }
 
@@ -455,6 +461,43 @@
 
   .dark #trading-record .grid > .group > div:nth-child(2) h2 {
     color: #f8fafc;
+  }
+
+  html:lang(th) #quant-practice .quant-practice-tier__header h3 {
+    font-size: 1.2rem;
+    line-height: 1.45;
+  }
+
+  html:lang(th) #quant-practice .quant-practice-tier__header p {
+    font-size: 0.92rem;
+    line-height: 1.65;
+  }
+
+  html:lang(th) #quant-practice .quant-practice-tier__header .quant-practice-tier__path {
+    font-size: 0.88rem;
+    line-height: 1.45;
+  }
+
+  html:lang(th) #quant-practice .quant-practice-tier__label {
+    font-size: 0.76rem;
+  }
+
+  html:lang(th) #quant-practice .quant-practice-table {
+    font-size: 1rem;
+  }
+
+  html:lang(th) #quant-practice .quant-practice-table thead th {
+    font-size: 0.78rem;
+    line-height: 1.5;
+  }
+
+  html:lang(th) #quant-practice .quant-practice-table tbody th {
+    font-size: 1rem;
+    line-height: 1.65;
+  }
+
+  html:lang(th) #quant-practice .quant-practice-table tbody td {
+    line-height: 1.65;
   }
 
   @media (max-width: 720px) {
