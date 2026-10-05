@@ -1,0 +1,316 @@
+<style>
+  #communication > .flex.flex-col.items-center.max-w-prose {
+    width: min(calc(100% - 2rem), 86rem);
+    max-width: 86rem;
+  }
+
+  #communication .prose {
+    width: 100%;
+    max-width: 86rem;
+  }
+
+  #communication .communication-table-wrap {
+    width: 100%;
+    overflow: visible;
+  }
+
+  #communication .communication-table {
+    width: 100%;
+    margin: 0;
+    border: 0;
+    border-collapse: collapse;
+    table-layout: fixed;
+    background: transparent;
+    font-size: 0.9rem;
+  }
+
+  #communication .communication-table th,
+  #communication .communication-table td {
+    border: 0;
+    padding: 0.9rem 0.75rem;
+    text-align: left;
+    vertical-align: top;
+    overflow-wrap: anywhere;
+  }
+
+  #communication .communication-table thead th {
+    color: rgb(71 85 105);
+    font-size: 0.7rem;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  #communication .communication-table tbody tr + tr > * {
+    border-top: 1px solid rgb(226 232 240 / 82%);
+  }
+
+  #communication .communication-table th:first-child,
+  #communication .communication-table td:first-child {
+    width: 12%;
+  }
+
+  #communication .communication-table th:nth-child(2),
+  #communication .communication-table td:nth-child(2) {
+    width: 14%;
+  }
+
+  #communication .communication-table th:nth-child(3),
+  #communication .communication-table td:nth-child(3) {
+    width: 56%;
+  }
+
+  #communication .communication-table th:last-child,
+  #communication .communication-table td:last-child {
+    width: 18%;
+  }
+
+  #communication .communication-table td:nth-child(3) {
+    color: rgb(51 65 85);
+    line-height: 1.65;
+  }
+
+  #communication .communication-table time {
+    color: rgb(71 85 105);
+    font-size: 0.82rem;
+    font-weight: 700;
+    white-space: nowrap;
+  }
+
+  #communication .communication-table a {
+    color: rgb(var(--color-primary-700));
+    font-weight: 750;
+    line-height: 1.45;
+    text-decoration: none;
+  }
+
+  #communication .communication-table a:hover,
+  #communication .communication-table a:focus-visible {
+    text-decoration: underline;
+  }
+
+  #communication .communication-tag {
+    display: inline-flex;
+    margin: 0 0.3rem 0.3rem 0;
+    border-radius: 9999px;
+    padding: 0.28rem 0.58rem;
+    font-size: 0.72rem;
+    font-weight: 800;
+    line-height: 1;
+    white-space: nowrap;
+  }
+
+  #communication .communication-tag[data-kind="research"] {
+    background: rgb(220 252 231);
+    color: rgb(21 128 61);
+  }
+
+  #communication .communication-tag[data-kind="talk"] {
+    background: rgb(219 234 254);
+    color: rgb(29 78 216);
+  }
+
+  #communication .communication-tag[data-kind="trading"] {
+    background: rgb(255 237 213);
+    color: rgb(194 65 12);
+  }
+
+  .dark #communication .communication-table thead th {
+    color: rgb(148 163 184);
+  }
+
+  .dark #communication .communication-table tbody tr + tr > * {
+    border-top-color: rgb(71 85 105 / 70%);
+  }
+
+  .dark #communication .communication-table td:nth-child(3) {
+    color: rgb(203 213 225);
+  }
+
+  .dark #communication .communication-table time {
+    color: rgb(148 163 184);
+  }
+
+  .dark #communication .communication-table a {
+    color: rgb(var(--color-primary-300));
+  }
+
+  .dark #communication .communication-tag[data-kind="research"] {
+    background: rgb(20 83 45 / 55%);
+    color: rgb(187 247 208);
+  }
+
+  .dark #communication .communication-tag[data-kind="talk"] {
+    background: rgb(30 64 175 / 48%);
+    color: rgb(191 219 254);
+  }
+
+  .dark #communication .communication-tag[data-kind="trading"] {
+    background: rgb(154 52 18 / 48%);
+    color: rgb(254 215 170);
+  }
+
+  html[lang^="th"] #communication .communication-table {
+    font-size: 1.08rem;
+  }
+
+  html[lang^="th"] #communication .communication-table thead th {
+    font-size: 0.88rem;
+  }
+
+  html[lang^="th"] #communication .communication-tag {
+    font-size: 0.9rem;
+  }
+
+  html[lang^="th"] #communication .communication-table time {
+    font-size: 0.96rem;
+  }
+
+  #communication .communication-pagination {
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.9rem;
+    margin-top: 1.25rem;
+    font-size: 0.82rem;
+    font-weight: 750;
+  }
+
+  #communication .communication-pagination:not([hidden]) {
+    display: flex;
+  }
+
+  #communication .communication-pagination a {
+    border-radius: 9999px;
+    padding: 0.42rem 0.78rem;
+    color: rgb(var(--color-primary-700));
+    text-decoration: none;
+  }
+
+  #communication .communication-pagination a:hover,
+  #communication .communication-pagination a:focus-visible {
+    background: rgb(var(--color-primary-100));
+  }
+
+  #communication .communication-pagination a[hidden] {
+    display: none;
+  }
+
+  #communication .communication-page-status {
+    color: rgb(100 116 139);
+  }
+
+  .dark #communication .communication-pagination a {
+    color: rgb(var(--color-primary-300));
+  }
+
+  .dark #communication .communication-pagination a:hover,
+  .dark #communication .communication-pagination a:focus-visible {
+    background: rgb(var(--color-primary-900) / 45%);
+  }
+
+  .dark #communication .communication-page-status {
+    color: rgb(148 163 184);
+  }
+
+  html[lang^="th"] #communication .communication-pagination {
+    font-size: 1rem;
+  }
+
+  @media (max-width: 720px) {
+    #communication .communication-table,
+    #communication .communication-table tbody,
+    #communication .communication-table tr,
+    #communication .communication-table td {
+      display: block;
+      width: 100%;
+    }
+
+    #communication .communication-table thead {
+      display: none;
+    }
+
+    #communication .communication-table tbody tr {
+      padding: 1rem 0;
+    }
+
+    #communication .communication-table tbody tr + tr {
+      border-top: 1px solid rgb(226 232 240 / 82%);
+    }
+
+    #communication .communication-table tbody tr + tr > * {
+      border-top: 0;
+    }
+
+    #communication .communication-table td {
+      padding: 0.28rem 0;
+    }
+
+    #communication .communication-table td:first-child,
+    #communication .communication-table td:nth-child(2),
+    #communication .communication-table td:nth-child(3),
+    #communication .communication-table td:last-child {
+      width: 100%;
+    }
+
+    .dark #communication .communication-table tbody tr + tr {
+      border-top-color: rgb(71 85 105 / 70%);
+    }
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const table = document.querySelector('#communication .communication-table');
+    const pagination = document.querySelector('#communication .communication-pagination');
+    if (!table || !pagination) return;
+
+    const rows = Array.from(table.querySelectorAll('tbody tr'));
+    const pageSize = 5;
+    const pageCount = Math.ceil(rows.length / pageSize);
+    if (pageCount <= 1) return;
+
+    const previous = pagination.querySelector('.communication-page-prev');
+    const next = pagination.querySelector('.communication-page-next');
+    const status = pagination.querySelector('.communication-page-status');
+    const isThai = document.documentElement.lang.toLowerCase().startsWith('th');
+    const params = new URLSearchParams(window.location.search);
+    let currentPage = Math.min(Math.max(Number(params.get('communication_page')) || 1, 1), pageCount);
+
+    const pageHref = (page) => {
+      const url = new URL(window.location.href);
+      url.searchParams.set('communication_page', String(page));
+      url.hash = 'communication';
+      return `${url.pathname}${url.search}${url.hash}`;
+    };
+
+    const showPage = (page, updateHistory = false) => {
+      currentPage = Math.min(Math.max(page, 1), pageCount);
+      rows.forEach((row, index) => {
+        row.hidden = Math.floor(index / pageSize) + 1 !== currentPage;
+      });
+      previous.hidden = currentPage === 1;
+      next.hidden = currentPage === pageCount;
+      previous.href = pageHref(currentPage - 1);
+      next.href = pageHref(currentPage + 1);
+      status.textContent = isThai
+        ? `หน้า ${currentPage} จาก ${pageCount}`
+        : `Page ${currentPage} of ${pageCount}`;
+      pagination.hidden = false;
+      if (updateHistory) history.replaceState(null, '', pageHref(currentPage));
+    };
+
+    previous.addEventListener('click', (event) => {
+      event.preventDefault();
+      showPage(currentPage - 1, true);
+      document.querySelector('#communication')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+
+    next.addEventListener('click', (event) => {
+      event.preventDefault();
+      showPage(currentPage + 1, true);
+      document.querySelector('#communication')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+
+    showPage(currentPage);
+  });
+</script>

@@ -16,6 +16,63 @@ sections:
         url: uploads/resume.pdf
     design:
       columns: '1'
+  - block: markdown
+    id: communication
+    content:
+      title: Communication
+      text: |
+        <div class="communication-table-wrap">
+          <table class="communication-table">
+            <thead>
+              <tr>
+                <th scope="col">Date</th>
+                <th scope="col">Type</th>
+                <th scope="col">Announcement</th>
+                <th scope="col">More</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><time datetime="2026-09-12">12 Sep 2026</time></td>
+                <td><span class="communication-tag" data-kind="research">Research</span></td>
+                <td>I'm delighted to share that our paper, <strong>“State Conditional Boosting for Prospective Early Warning of CFPB Reported Relief Workload,”</strong> has been published in <em>Operations Research Forum</em>. The research develops an explainable prospective early-warning framework for prioritising company–product cells with increasing CFPB-reported relief workload.</td>
+                <td><a href="/pmarupanthorn/publication/orf2026/">Read the research summary <span aria-hidden="true">→</span></a></td>
+              </tr>
+              <tr>
+                <td><time datetime="2026-09-13">13 Sep 2026</time></td>
+                <td><span class="communication-tag" data-kind="research">Research</span></td>
+                <td>I'm delighted to share that our paper, <strong>“Policy-state gated regime dynamics in European emission allowance futures,”</strong> has been published in <em>Discover Sustainability</em>. The study introduces a policy-state-gated regime model for interpreting low- and high-volatility conditions in European carbon-allowance futures.</td>
+                <td><a href="/pmarupanthorn/publication/ds2026/">Read the research summary <span aria-hidden="true">→</span></a></td>
+              </tr>
+              <tr>
+                <td><time datetime="2026-11-21">21 Nov 2026</time></td>
+                <td><span class="communication-tag" data-kind="talk">Talk</span><span class="communication-tag" data-kind="trading">Trading</span></td>
+                <td>I'm pleased to announce that I will present <strong>“Statistical Arbitrage in Derivative Market”</strong> at CAF Seminar 2026, hosted at the Stock Exchange of Thailand on 21 November 2026. The session will connect statistical-arbitrage methods with systematic trading in derivative markets.</td>
+                <td><a href="/pmarupanthorn/event/cafstatarb2026/">View talk details <span aria-hidden="true">→</span></a></td>
+              </tr>
+              <tr>
+                <td><time datetime="2026-10-10">10 Oct 2026</time></td>
+                <td><span class="communication-tag" data-kind="talk">Talk</span></td>
+                <td>I'm honoured to deliver the keynote lecture <strong>“Quantitative Finance in the Age of Digital Innovation”</strong> at the DIFT 2026-2 Conference on 10 October 2026. The lecture will introduce how quantitative finance, data-driven research, and systematic methods connect with digital innovation and financial technology.</td>
+                <td><a href="/pmarupanthorn/event/dift2026-2/">View keynote details <span aria-hidden="true">→</span></a></td>
+              </tr>
+              <tr>
+                <td><time datetime="2026-09-30">30 Sep 2026</time></td>
+                <td><span class="communication-tag" data-kind="talk">Talk</span><span class="communication-tag" data-kind="trading">Trading</span></td>
+                <td>I recently delivered <strong>“Quant Career: Financial Engineer,”</strong> a free Groundup Academy session introducing the responsibilities, technical skills, and financial-modelling knowledge required for careers in equity and commodity derivatives.</td>
+                <td><a href="/pmarupanthorn/event/quantcareer2026/">View session summary <span aria-hidden="true">→</span></a></td>
+              </tr>
+            </tbody>
+          </table>
+          <nav class="communication-pagination" aria-label="Communication pages" hidden>
+            <a class="communication-page-prev" href="#communication">← Previous</a>
+            <span class="communication-page-status" aria-live="polite"></span>
+            <a class="communication-page-next" href="#communication">Next →</a>
+          </nav>
+        </div>
+    design:
+      spacing:
+        padding: ["3rem", "0", "3rem", "0"]
   - block: collection
     id: papers
     content:
