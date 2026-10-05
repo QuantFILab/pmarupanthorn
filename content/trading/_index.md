@@ -12,30 +12,55 @@ sections:
     content:
       title: Quant Practice
       text: |
-        <div class="trading-practice-grid">
-          <article class="trading-practice-card">
-            <div class="trading-practice-card__media">
-              <span class="trading-practice-card__index">01</span>
-              <span class="trading-practice-card__symbol" aria-hidden="true">α</span>
+        <section class="quant-practice-tier" aria-labelledby="alpha-research-tier">
+          <header class="quant-practice-tier__header">
+            <span class="quant-practice-tier__label">Tier 01</span>
+            <div>
+              <h3 id="alpha-research-tier">Alpha Research</h3>
+              <p>External quantitative-research platforms for developing and testing predictive signals.</p>
+              <p class="quant-practice-tier__path"><span>Alpha</span><span aria-hidden="true">→</span><span>Money</span></p>
             </div>
-            <div class="trading-practice-card__body">
-              <h3><a href="/pmarupanthorn/trading/worldquant-brain-alpha-research/">WorldQuant BRAIN Alpha Research</a></h3>
-              <p>Quantitative alpha research and model development.</p>
-              <a class="trading-practice-card__link" href="/pmarupanthorn/trading/worldquant-brain-alpha-research/">Read the introduction <span aria-hidden="true">→</span></a>
-            </div>
-          </article>
+          </header>
 
-          <article class="trading-practice-card trading-practice-card--placeholder">
-            <div class="trading-practice-card__media">
-              <span class="trading-practice-card__index">02</span>
-              <span class="trading-practice-card__symbol" aria-hidden="true">＋</span>
-            </div>
-            <div class="trading-practice-card__body">
-              <h3>Other Quant Practice</h3>
-              <p>Additional practice details will be added here.</p>
-            </div>
-          </article>
-        </div>
+          <div class="quant-practice-table-wrap">
+            <table class="quant-practice-table">
+              <thead>
+                <tr>
+                  <th scope="col">Platform / Programme</th>
+                  <th scope="col">Practice focus</th>
+                  <th scope="col">Page</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"><a href="/pmarupanthorn/trading/worldquant-brain-alpha-research/">WorldQuant BRAIN Alpha Research</a></th>
+                  <td>Quantitative alpha research and model development.</td>
+                  <td><a class="quant-practice-table__link" href="/pmarupanthorn/trading/worldquant-brain-alpha-research/">Introduction <span aria-hidden="true">→</span></a></td>
+                </tr>
+                <tr>
+                  <th scope="row"><a href="/pmarupanthorn/trading/trexquant-global-alpha-researcher/">Trexquant Global Alpha Researcher (GAR)</a></th>
+                  <td>Contract-based global alpha research, simulation, and strategy development.</td>
+                  <td><a class="quant-practice-table__link" href="/pmarupanthorn/trading/trexquant-global-alpha-researcher/">Introduction <span aria-hidden="true">→</span></a></td>
+                </tr>
+                <tr>
+                  <th scope="row"><a href="https://quantiacs.com/" target="_blank" rel="noopener">Quantiacs</a></th>
+                  <td>A strong alternative for developing complete portfolio algorithms.</td>
+                  <td><a class="quant-practice-table__link" href="https://quantiacs.com/" target="_blank" rel="noopener">Official platform <span aria-hidden="true">↗</span></a></td>
+                </tr>
+                <tr>
+                  <th scope="row"><a href="https://signals.numer.ai/" target="_blank" rel="noopener">Numerai Signals</a></th>
+                  <td>Best suited when the intellectual asset is your own data or factor model.</td>
+                  <td><a class="quant-practice-table__link" href="https://signals.numer.ai/" target="_blank" rel="noopener">Official platform <span aria-hidden="true">↗</span></a></td>
+                </tr>
+                <tr>
+                  <th scope="row"><a href="https://docs.crunchdao.com/competitions/competitions/datacrunch-competition" target="_blank" rel="noopener">CrunchDAO / DataCrunch</a></th>
+                  <td>Advanced research competitions with live financial relevance to alpha.</td>
+                  <td><a class="quant-practice-table__link" href="https://docs.crunchdao.com/competitions/competitions/datacrunch-competition" target="_blank" rel="noopener">Official platform <span aria-hidden="true">↗</span></a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
     design:
       spacing:
         padding: ["4.5rem", "0", "3rem", "0"]

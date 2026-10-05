@@ -17,6 +17,23 @@ tags:
 
 The platform is designed for people with different backgrounds. You do not need to begin as a professional trader. Curiosity, logical thinking, basic statistics, and a willingness to test ideas carefully are useful starting points.
 
+## How can the research lead to income?
+
+<a class="quant-practice-concept-map" href="concept-map-en.png" target="_blank" rel="noopener">
+  <img src="concept-map-en.png" alt="Conceptual map explaining how WorldQuant BRAIN alpha research may lead to possible income and what a participant must invest" loading="lazy">
+</a>
+
+The diagram separates **possible income** from **required investment**:
+
+- **No platform registration fee:** WorldQuant states that registering for a BRAIN account and participating in the 2026 International Quant Championship are free.
+- **No live-trading deposit:** BRAIN is a simulation and research platform, so this research path does not require depositing personal trading capital into a brokerage account.
+- **What you invest:** time, learning, repeated experimentation, research discipline, and access to a computer and the internet.
+- **Research Consultant route:** qualifying alpha submissions accumulate points. WorldQuant currently states that reaching **10,000 points and Gold level may lead to an invitation** to its Research Consultant Program, subject to location, eligibility, and successful onboarding.
+- **Possible compensation:** onboarded research consultants may have an opportunity to receive merit-based compensation for the quality of their ideas. This is not automatic or guaranteed income.
+- **Other routes:** eligible competitions may offer cash prizes, while strong performance may lead to consideration for internships or full-time opportunities.
+
+These routes and requirements can change. Check the [official BRAIN overview](https://www.worldquant.com/brain/), [Research Consultant Program](https://platform.worldquantbrain.com/consultant-program/), and current competition rules before making decisions. Information checked on 5 October 2026.
+
 ## What is an alpha?
 
 In simple language, an **alpha** is a mathematical rule that tries to identify which financial instruments may perform relatively better or worse in the future.
