@@ -33,7 +33,7 @@ tags:
 - Monte Carlo Method
 - Simulation
 - Network
-featured: false
+featured: true
 links:
 - name: "<span class='research-link-en'>Preprint not available</span><span class='research-link-th' lang='th' hidden>ยังไม่มีฉบับพิมพ์ล่วงหน้า</span>"
   url: "#preprint-unavailable"
