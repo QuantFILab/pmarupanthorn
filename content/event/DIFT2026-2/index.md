@@ -3,6 +3,7 @@ title: "Quantitative Finance in the Age of Digital Innovation"
 
 event: "Digital Innovation and Financial Technology Conference (DIFT 2026-2)"
 event_url: "https://icdi.cmu.ac.th/dift/2026-2/"
+url_slides: "/pmarupanthorn/slides/dift2026-2.html"
 
 location: "International College of Digital Innovation, Chiang Mai University"
 address:
@@ -61,5 +62,5 @@ The lecture introduces quantitative finance to a broad audience and discusses ho
 - **Date:** 10 October 2026
 - **Organizer:** International College of Digital Innovation, Chiang Mai University
 - **Speaker:** Dr. Pasin Marupanthorn, Vice President, Thai Association of Quantitative Analysts and Financial Engineers (TQF)
+- **Presentation:** [Open the keynote slides](/pmarupanthorn/slides/dift2026-2.html)
 - **Conference website:** [DIFT 2026-2](https://icdi.cmu.ac.th/dift/2026-2/)
-
