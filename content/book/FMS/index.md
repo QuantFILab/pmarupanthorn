@@ -70,20 +70,19 @@ image:
   }
 </style>
 
-### Calculus I
+### Single Variable Calculus
 
 <table>
   <tr>
     <td class="left-cell">
-      <img src="https://github.com/QuantFILab/pmarupanthorn/blob/07d2ccea5e5a4c554ed0f49a46456596e9bd1aed/content/book/FMS/cal1.png?raw=true" alt="Book Cover" class="book-cover" />
+      <img src="cal1.png" alt="Cover of Single Variable Calculus, 1st Edition" class="book-cover" />
     </td>
     <td class="right-cell">
       <div class="book-description">
-        This book covers topics including limits and continuity, derivatives and integrals of real-valued functions of a real variable, indeterminate forms, applications of derivatives, techniques for finding integrals, and applications of integrals. All theorems are accompanied by detailed proofs, and visualizations are provided to enhance understanding
+        <strong>Single Variable Calculus, 1st Edition</strong> is Volume 1 of the Fundamental Mathematics and Statistics Series. It develops limits and continuity, differentiation, integration, indeterminate forms, applications of derivatives, integration techniques, and applications of integrals. Detailed proofs and visual explanations support both rigorous study and independent learning.
       </div>
       <div class="button-container">
-        <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4939118" class="button">Thai</a>
-        <a href="link_to_english_version" class="button">English</a>
+        <a href="https://www.researchgate.net/profile/Pasin-Marupanthorn/publication/417125511_khaelkhulaskhxngfangkchantawpaerdeiyw/links/6ae34e060fef1c1d0a0c58aa/khaelkhulaskhxngfangkchantawpaerdeiyw.pdf?origin=profileOverview&amp;_tp=eyJjb250ZXh0Ijp7InBhZ2UiOiJwcm9maWxlIiwicHJldmlvdXNQYWdlIjoicHVibGljYXRpb24iLCJwb3NpdGlvbiI6InBhZ2VDb250ZW50Iiwic3ViUGFnZSI6Im92ZXJ2aWV3In19" class="button">Read the book</a>
       </div>
     </td>
   </tr>

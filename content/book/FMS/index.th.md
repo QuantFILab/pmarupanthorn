@@ -69,20 +69,19 @@ image:
   }
 </style>
 
-### แคลคูลัส I
+### แคลคูลัสของฟังก์ชันตัวแปรเดียว
 
 <table>
   <tr>
     <td class="left-cell">
-      <img src="https://github.com/QuantFILab/pmarupanthorn/blob/07d2ccea5e5a4c554ed0f49a46456596e9bd1aed/content/book/FMS/cal1.png?raw=true" alt="Book Cover" class="book-cover" />
+      <img src="cal1.png" alt="ปกหนังสือแคลคูลัสของฟังก์ชันตัวแปรเดียว ฉบับพิมพ์ครั้งที่ 1" class="book-cover" />
     </td>
     <td class="right-cell">
       <div class="book-description">
-        หนังสือเล่มนี้ครอบคลุมหัวข้อต่าง ๆ รวมถึงลิมิตและความต่อเนื่อง อนุพันธ์และอินทิกรัลของฟังก์ชันค่าจริงของตัวแปรจริง รูปแบบไม่แน่นอน การประยุกต์ใช้อนุพันธ์ เทคนิคในการหาค่าอินทิกรัล และการประยุกต์ใช้อินทิกรัล ทฤษฎีบททั้งหมดมีการพิสูจน์อย่างละเอียด พร้อมทั้งมีภาพประกอบเพื่อเสริมความเข้าใจ
+        <strong>แคลคูลัสของฟังก์ชันตัวแปรเดียว ฉบับพิมพ์ครั้งที่ 1</strong> เป็นเล่มที่ 1 ในชุดวิชาคณิตศาสตร์พื้นฐานและสถิติ เนื้อหาครอบคลุมลิมิตและความต่อเนื่อง การหาอนุพันธ์ การหาปริพันธ์ รูปแบบไม่กำหนด การประยุกต์อนุพันธ์ เทคนิคการหาปริพันธ์ และการประยุกต์ปริพันธ์ พร้อมการพิสูจน์อย่างละเอียดและภาพอธิบายเพื่อสนับสนุนการเรียนรู้อย่างเป็นระบบและการศึกษาด้วยตนเอง
       </div>
       <div class="button-container">
-        <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4939118" class="button">Thai</a>
-        <a href="link_to_english_version" class="button">English</a>
+        <a href="https://www.researchgate.net/profile/Pasin-Marupanthorn/publication/417125511_khaelkhulaskhxngfangkchantawpaerdeiyw/links/6ae34e060fef1c1d0a0c58aa/khaelkhulaskhxngfangkchantawpaerdeiyw.pdf?origin=profileOverview&amp;_tp=eyJjb250ZXh0Ijp7InBhZ2UiOiJwcm9maWxlIiwicHJldmlvdXNQYWdlIjoicHVibGljYXRpb24iLCJwb3NpdGlvbiI6InBhZ2VDb250ZW50Iiwic3ViUGFnZSI6Im92ZXJ2aWV3In19" class="button">อ่านหนังสือ</a>
       </div>
     </td>
   </tr>
