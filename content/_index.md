@@ -33,6 +33,12 @@ sections:
             </thead>
             <tbody>
               <tr>
+                <td><time datetime="2026-10-26">26 Oct 2026</time></td>
+                <td><span class="communication-tag" data-kind="talk">Talk</span><span class="communication-tag" data-kind="trading">Trading</span></td>
+                <td>Applications are open for <strong>Quant Bootcamp 2026</strong>, a 12-module programme from QuantCU and QuantCorner combining quantitative-finance foundations, Python, factor models, statistics, risk, time series, backtesting, statistical arbitrage, AI, industry guidance, and hands-on projects using real efin.finance data.</td>
+                <td><a href="/pmarupanthorn/event/quantbootcamp2026/">View programme details <span aria-hidden="true">→</span></a></td>
+              </tr>
+              <tr>
                 <td><time datetime="2026-09-12">12 Sep 2026</time></td>
                 <td><span class="communication-tag" data-kind="research">Research</span></td>
                 <td>I'm delighted to share that our paper, <strong>“State Conditional Boosting for Prospective Early Warning of CFPB Reported Relief Workload,”</strong> has been published in <em>Operations Research Forum</em>. The research develops an explainable prospective early-warning framework for prioritising company–product cells with increasing CFPB-reported relief workload.</td>
