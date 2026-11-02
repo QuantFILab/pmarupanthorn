@@ -75,7 +75,7 @@ image:
 <table>
   <tr>
     <td class="left-cell">
-      <img src="cal1.png" alt="Cover of Single Variable Calculus, 1st Edition" class="book-cover" />
+      <img src="/pmarupanthorn/book/fms/cal1.png" alt="Cover of Single Variable Calculus, 1st Edition" class="book-cover" />
     </td>
     <td class="right-cell">
       <div class="book-description">

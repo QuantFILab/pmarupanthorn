@@ -74,7 +74,7 @@ image:
 <table>
   <tr>
     <td class="left-cell">
-      <img src="cal1.png" alt="ปกหนังสือแคลคูลัสของฟังก์ชันตัวแปรเดียว ฉบับพิมพ์ครั้งที่ 1" class="book-cover" />
+      <img src="/pmarupanthorn/book/fms/cal1.png" alt="ปกหนังสือแคลคูลัสของฟังก์ชันตัวแปรเดียว ฉบับพิมพ์ครั้งที่ 1" class="book-cover" />
     </td>
     <td class="right-cell">
       <div class="book-description">
