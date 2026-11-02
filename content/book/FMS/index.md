@@ -93,13 +93,45 @@ image:
 <table>
   <tr>
     <td class="left-cell">
-      <img src="https://github.com/QuantFILab/pmarupanthorn/blob/main/content/book/FMS/cal2.png?raw=true" alt="Book Cover" class="book-cover" />
+      <img src="/pmarupanthorn/book/fms/cal2.png" alt="Cover of Multivariable Calculus and Infinite Series, 1st Edition" class="book-cover" />
     </td>
     <td class="right-cell">
       <div class="book-description">
         This is a brief description of the book. It provides an overview of the content, highlights key features, and explains the intended audience. The description should be concise yet informative, giving potential readers a clear idea of what to expect from the book.
       </div>
     <p class="upcoming">upcoming</p>
+    </td>
+  </tr>
+</table>
+
+### Vector Calculus
+
+<table>
+  <tr>
+    <td class="left-cell">
+      <img src="/pmarupanthorn/book/fms/vector-calculus.png" alt="Cover of Vector Calculus, 1st Edition" class="book-cover" />
+    </td>
+    <td class="right-cell">
+      <div class="book-description">
+        <strong>Vector Calculus, 1st Edition</strong> is Volume 3 of the Fundamental Mathematics and Statistics Series. This forthcoming volume extends multivariable methods to vector-valued functions, vector fields, and their differential and integral structure.
+      </div>
+      <p class="upcoming">Upcoming</p>
+    </td>
+  </tr>
+</table>
+
+### Linear and Matrix Algebra
+
+<table>
+  <tr>
+    <td class="left-cell">
+      <img src="/pmarupanthorn/book/fms/linear-matrix-algebra.png" alt="Cover of Linear and Matrix Algebra, 1st Edition" class="book-cover" />
+    </td>
+    <td class="right-cell">
+      <div class="book-description">
+        <strong>Linear and Matrix Algebra, 1st Edition</strong> is Volume 4 of the Fundamental Mathematics and Statistics Series. This forthcoming volume develops the linear and matrix structures used throughout mathematics, statistics, data analysis, and quantitative finance.
+      </div>
+      <p class="upcoming">Upcoming</p>
     </td>
   </tr>
 </table>

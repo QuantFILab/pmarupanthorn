@@ -87,16 +87,50 @@ image:
   </tr>
 </table>
 
-### แคลคูลัส II<table>
+### แคลคูลัส II
+
+<table>
   <tr>
     <td class="left-cell">
-      <img src="https://github.com/QuantFILab/pmarupanthorn/blob/main/content/book/FMS/cal2.png?raw=true" alt="Book Cover" class="book-cover" />
+      <img src="/pmarupanthorn/book/fms/cal2.png" alt="ปกหนังสือแคลคูลัสหลายตัวแปรและอนุกรมอนันต์ ฉบับพิมพ์ครั้งที่ 1" class="book-cover" />
     </td>
     <td class="right-cell">
       <div class="book-description">
         นี่คือคำอธิบายสั้น ๆ ของหนังสือ ซึ่งให้ภาพรวมของเนื้อหา เน้นคุณสมบัติสำคัญ และอธิบายกลุ่มผู้อ่านที่ตั้งใจจะได้อ่าน คำอธิบายควรกระชับแต่ให้ข้อมูลเพียงพอ เพื่อให้ผู้อ่านที่มีโอกาสได้อ่านเข้าใจชัดเจนว่าควรคาดหวังอะไรจากหนังสือเล่มนี้
       </div>
     <p class="upcoming">upcoming</p>
+    </td>
+  </tr>
+</table>
+
+### แคลคูลัสเวกเตอร์
+
+<table>
+  <tr>
+    <td class="left-cell">
+      <img src="/pmarupanthorn/book/fms/vector-calculus.png" alt="ปกหนังสือแคลคูลัสเวกเตอร์ ฉบับพิมพ์ครั้งที่ 1" class="book-cover" />
+    </td>
+    <td class="right-cell">
+      <div class="book-description">
+        <strong>แคลคูลัสเวกเตอร์ ฉบับพิมพ์ครั้งที่ 1</strong> เป็นเล่มที่ 3 ในชุดวิชาคณิตศาสตร์พื้นฐานและสถิติ หนังสือที่กำลังจัดทำเล่มนี้ต่อยอดแคลคูลัสหลายตัวแปรไปสู่ฟังก์ชันค่าเวกเตอร์ สนามเวกเตอร์ และโครงสร้างเชิงอนุพันธ์และปริพันธ์ที่เกี่ยวข้อง
+      </div>
+      <p class="upcoming">กำลังจัดทำ</p>
+    </td>
+  </tr>
+</table>
+
+### พีชคณิตเชิงเส้นและเมทริกซ์
+
+<table>
+  <tr>
+    <td class="left-cell">
+      <img src="/pmarupanthorn/book/fms/linear-matrix-algebra.png" alt="ปกหนังสือพีชคณิตเชิงเส้นและเมทริกซ์ ฉบับพิมพ์ครั้งที่ 1" class="book-cover" />
+    </td>
+    <td class="right-cell">
+      <div class="book-description">
+        <strong>พีชคณิตเชิงเส้นและเมทริกซ์ ฉบับพิมพ์ครั้งที่ 1</strong> เป็นเล่มที่ 4 ในชุดวิชาคณิตศาสตร์พื้นฐานและสถิติ หนังสือที่กำลังจัดทำเล่มนี้พัฒนาแนวคิดและโครงสร้างของพีชคณิตเชิงเส้นและเมทริกซ์ที่ใช้ในคณิตศาสตร์ สถิติ การวิเคราะห์ข้อมูล และการเงินเชิงปริมาณ
+      </div>
+      <p class="upcoming">กำลังจัดทำ</p>
     </td>
   </tr>
 </table>
